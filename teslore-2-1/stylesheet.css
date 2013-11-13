@@ -76,6 +76,187 @@ table tbody tr td
 {
     text-align: center;
 }
+div.content div.thing
+{
+    background-image: url(%%T3%%);
+    margin-bottom: 0px !important;
+    width: 80%
+}
+div.content div.thing.odd
+{
+    background-image: url(%%T4%%);
+}
+div.content div.thing.even
+{
+    background-image: url(%%T2%%);
+}
+div.content div.thing span.rank
+{
+    display: none !important;
+}
+div.content div.thing div.arrow
+{
+    background-image: url(%%Arrows%%);
+    height: 14px;
+    width: 15px;
+}
+div.content div.thing div.arrow.up
+{
+    background-position: 0px 0px;
+}
+div.content div.thing div.arrow.down
+{
+    background-position: 0px -15px;
+}
+div.content div.thing div.arrow.upmod
+{
+    background-position: -15px 0;
+}
+div.content div.thing div.arrow.downmod
+{
+    background-position: -15px -15px;
+}
+div.content div.thing div.score
+{
+    font-family: "EB Garamond","Palatino Linotype","Book Antiqua","Georgia",monospace;
+}
+div.content div.thing div.score.likes
+{
+    color: #FF8B60 !important;
+}
+div.content div.thing div.score.unvoted
+{
+    color: #212121 !important;
+}
+div.content div.thing div.score.dislikes
+{
+    color: #9494FF !important;
+}
+div.content div.thing div.entry p.title a.title
+{
+    font-family: "EB Garamond","Palatino Linotype","Book Antiqua","Georgia",monospace;
+}
+div.content div.thing div.entry p.title span.domain /*self.teslore*/
+{
+    display: none !important;
+}
+div.content div.thing div.entry p.tagline
+{
+    color: #70381A !important;
+}
+div.content div.thing div.entry p.tagline span.userattrs a.moderator
+{
+    color: #861D1D !important;
+}
+div.content div.thing div.entry div.expando-button /*Self-text expansion*/
+{
+    background-color: transparent;
+    background-image: url(%%expando%%);
+    height: 16px;
+    width: 20px;
+}
+div.content div.thing div.entry div.expando-button.collapsed /*Open*/
+{
+    background-position: 6px -2px;
+}
+div.content div.thing div.entry div.expando-button.collapsed:hover
+{
+    background-position: 6px -22px;
+}
+div.content div.thing div.entry div.expando-button.expanded /*Close*/
+{
+    background-position: -13px -2px;
+}
+div.content div.thing div.entry div.expando-button.expanded:hover
+{
+    background-position: -13px -22px;
+}
+div.content div.thing div.entry div.expando div.usertext-body div.md
+{
+    max-width: 75em !important;
+}
+div.content div.thing div.entry ul.flat-list.buttons li a
+{
+    color: #70381A !important;
+}
+div.content div.commentarea div.menuarea
+{
+    color: #70381A !important;
+}
+
+/*Extra Settings*/
+div.NERPageMarker /*RES Page Marker*/
+{
+    width: 80% !important;
+    background-color: #F5F5F5 !important;
+}
+div#progressIndicator /*RES Loading*/
+{
+    width: 80% !important;
+}
+div.content p.tagline em /*Deleted Author*/
+{
+    font-size: 0px;
+}
+div.content p.tagline em:after
+{
+    content: "[ZER0-SUMMED]";
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: -1px;
+}
+div.content .grayed div.md /*Censored Text*/
+{
+    margin: 5px 0;
+}
+div.content .grayed div.md:after
+{
+    content: "[NUMINIT]";
+}
+div.content .grayed div.md p
+{
+    display: none !important;
+}
+.RES-keyNav-activeElement,
+.commentarea .RES-keyNav-activeElement .md,
+.commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+.keyHighlight
+{
+    outline: none !important;
+    background-color: transparent !important;
+}
+.thing.comment:nth-child(4n+1) p.parent {
+    background-color: transparent !important;
+    background-image: url(%%T1%%) !important;
+}
+.thing.comment:nth-child(4n+3) p.parent {
+    background-color: transparent !important;
+    background-image: url(%%T3%%) !important;
+}
+.comment, /*1*/
+.comment .comment .comment, /*3*/
+.comment .comment .comment .comment .comment, /*5*/
+.comment .comment .comment .comment .comment .comment .comment, /*7*/
+.comment .comment .comment .comment .comment .comment .comment .comment .comment /*9*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T1%%) !important;
+}
+.comment .comment, /*2*/
+.comment .comment .comment .comment, /*4*/
+.comment .comment .comment .comment .comment .comment, /*6*/
+.comment .comment .comment .comment .comment .comment .comment .comment, /*8*/
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment /*10*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T4%%) !important;
+}
+.new-comment .usertext-body /*Gold-highlit new comments*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T3%%) !important;
+    border: solid 1px #161616 !important;
+}
 
 /*Spoiler Code*/
 a[href="#s"], /*#links will be kind to mobile users*/
