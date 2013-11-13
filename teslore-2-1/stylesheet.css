@@ -1,0 +1,173 @@
+/*Written by /u/myrrlyn and /u/numinit*/
+
+html
+{
+    position: relative !important; /*Reddit Companion's shinebar does not cooperate without this*/
+}
+body
+{
+    background-attachment: fixed;
+    background-image: url(%%Map%%);
+    background-position: center center;
+}
+.md a
+{
+    color: #7EB5B5;
+    font-family: "Helvetica Neue", Helvetica, Segoe, Verdana, sans-serif;
+    font-size: 12px;
+}
+.md a.author
+{
+    margin: 2px 1px 1px 1px;
+}
+.md a.author.moderator
+{
+    color: #861D1D !important;
+}
+a.voteWeight /*RES user-votes box*/
+{
+    background-color: transparent;
+}
+.md blockquote
+{
+    background-image: url(%%T2%%) !important;
+    border-left: 6px solid #333333 !important;
+    padding: 1px 2px 1px 5px !important;
+}
+.md blockquote p
+{
+    font-family: "EB Garamond", "Book Antiqua", Georgia, "Palatino Linotype", serif !important;
+}
+.md code
+{
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    font-size: small;
+}
+{
+    background-image: url(%%T2%%) !important;
+    border-left: 6px solid #333333 !important;
+    padding: 1px 2px 1px 5px !important;
+}
+.md blockquote p
+{
+    font-family: "EB Garamond", "Book Antiqua", Georgia, "Palatino Linotype", serif !important;
+}
+.md code
+{
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    font-size: small;
+}
+.md p
+{
+    color: #000000;
+    margin: 7px 10px;
+    line-height: 16px;
+}
+table
+{
+    border-collapse: separate;
+}
+table thead tr th
+{
+    text-align: center;
+    
+}
+table tbody tr td
+{
+    text-align: center;
+}
+
+/*Spoiler Code*/
+a[href="#s"], /*#links will be kind to mobile users*/
+a[href="/s"], /*/links require a mouse*/
+a[href="#spoiler"], /*Backwards compatibility*/
+a[href="/spoiler"]
+{
+    background-color: #000000 !important;
+    border-radius: 3px;
+    color: #FFFFFF !important;
+    cursor: default;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+a[href="#g"],
+a[href="/g"],
+a[href="#conjecture"], /*Optional call for conjecture code*/
+a[href="/conjecture"]
+{
+    background-color: #558800 !important;
+    /*background-image: url(%%Conjecture-Cover%%);*/
+    border-radius: 3px;
+    color: #000000 !important;
+    cursor: default;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+a[href="#s"]:hover, /*Mouse*/
+a[href="#s"]:active, /*Touch (mobile)*/
+a[href="/s"]:hover,
+a[href="/s"]:active,
+a[href="#spoiler"]:hover,
+a[href="#spoiler"]:active,
+a[href="/spoiler"]:hover,
+a[href="/spoiler"]:active
+{
+    color: #FFFF00 !important;
+}
+a[href="#g"]:hover,
+a[href="#g"]:active,
+a[href="/g"]:hover,
+a[href="/g"]:active,
+a[href="#conjecture"]:hover,
+a[href="#conjecture"]:active,
+a[href="/conjecture"]:hover,
+a[href="/conjecture"]:active
+{
+    color: #FFFF00 !important;
+}
+a[href="#s"]::after,
+a[href="/s"]::after,
+a[href="#spoiler"]::after,
+a[href="/spoiler"]::after
+{
+    background: #000000 !important;
+    color: #000000; /*NOT !important, so that :hover::after can overwrite it*/
+    content: attr(title);
+    font-weight: normal;
+    padding-left: 4px;
+}
+a[href="#g"]::after,
+a[href="/g"]::after,
+a[href="#conjecture"]::after,
+a[href="/conjecture"]::after
+{
+    background-color: #558800 !important;
+    color: #000000;
+    /*background-image: url(%%Conjecture-Cover%%);*/
+    /*color: #C3A787 !important;*/
+    content: attr(title);
+    font-weight: normal;
+    padding-left: 4px;
+}
+a[href="#s"]:hover::after,
+a[href="#s"]:active::after,
+a[href="/s"]:hover::after,
+a[href="/s"]:active::after,
+a[href="#spoiler"]:hover::after,
+a[href="#spoiler"]:active::after,
+a[href="/spoiler"]:hover::after,
+a[href="/spoiler"]:active::after
+{
+    color: #FFFFFF !important;
+}
+a[href="#g"]:hover::after,
+a[href="#g"]:active::after,
+a[href="/g"]:hover::after,
+a[href="/g"]:active::after,
+a[href="#conjecture"]:hover::after,
+a[href="#conjecture"]:active::after,
+a[href="/conjecture"]:hover::after,
+a[href="/conjecture"]:active::after
+{
+    color: #000000 !important;
+}
