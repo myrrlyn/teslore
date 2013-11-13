@@ -77,6 +77,79 @@ table tbody tr td
     text-align: center;
 }
 
+/*Submission Page*/
+form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
+form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
+form#newlink.submit.content div.formtabs-content div#reddit-field /*fit with color scheme*/
+{
+    background-color: transparent;
+    background-image: url(%%Bar-Texture%%);
+}
+form#newlink.submit.content div.formtabs-content span.title /*Color change*/
+{
+    color: #F5F5F5;
+}
+
+/*Moderator Tools*/
+div.linefield,
+div.linefield span.title
+{ 
+    background-color: transparent;
+    background-image: url(%%Bar-Texture%%);
+    color: #F5F5F5;
+}
+div#sr-form div.linefield input, /*Setting various text inputs*/
+div#sr-form div.linefield div textarea, /*to parchment texture*/
+div.flairgrant div.linefield input, /*rather than plain white*/
+div.flairgrant div.usertable span.flaircell input,
+div.flairlist div.flairtemplate span.flaircell input
+{
+    background-color: transparent;
+    background-image: url(%%Parchment%%);
+}
+div.content ul.tabmenu li a
+{
+    background: #161616;
+    color: #F5F5F5;
+}
+div.content ul.tabmenu li.selected a
+{
+    background: #F5F5F5;
+    color: orangered;
+}
+div.content form#subreddit_stylesheet.pretty-form.sr-form div.sheets div.col div textarea#stylesheet_contents
+{
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    height: 500px !important;
+    width: 99% !important;
+}
+div.content div.stylesheet-customize-container div#images ul#image-preview-list li
+{
+    margin-bottom: 20px !important;
+    padding-bottom: 0px !important;
+    width: 25% !important;
+}
+
+/*Wiki*/
+div.md.wiki
+{
+    padding: 0 5px;
+    background-color: #EEEEEE;
+    border: 1px solid #336699;
+    border-radius: 7px;
+}
+div.md.wiki a
+{
+    color: #336699;
+}
+
+/*Reddit Gold links*/
+a.gold,
+div.roundfield.gold-accent span.title
+{
+    color: #9a7d2e !important;
+    font-weight: bold !important;
+}
 /*Spoiler Code*/
 a[href="#s"], /*#links will be kind to mobile users*/
 a[href="/s"], /*/links require a mouse*/
