@@ -76,6 +76,175 @@ table tbody tr td
 {
     text-align: center;
 }
+div#header
+{
+    background-color: transparent !important;
+    border: none;
+    font-size: x-small !important;
+    z-index: 5 !important;
+}
+div#header div#sr-header-area /*Subreddit list*/
+{
+    background-color: transparent;
+    background-image: url(%%DarkTex%%);
+    border-bottom: 0px;
+    z-index: 6 !important;
+}
+div#header div#sr-header-area a,
+div#header div#sr-header-area span
+{
+    color: #F5F5F5;
+    font-family: Georgia, "Book Antiqua", "EB Garamond", "Palatino Linotype", "Helvetica Neue", Helvetica, sans-serif;
+}
+div#header div#sr-header-area div.drop-choices.srdrop /*Dropdown menu of subreddits*/
+{
+    background-color: transparent;
+    background-image: url(%%DarkTex%%);
+    z-index: 50 !important;
+}
+div#header div#sr-header-area  div.drop-choices.srdrop a.choice:hover
+{
+    background-color: #F5F5F5;
+    color: #161616;
+}
+div#header div#sr-header-area div.sr-list ul.flat-list li a[href*="/r/mod"], /*coloring specific links*/
+div#header div#sr-header-area a[href*="/r/mod"]
+{
+    color: #228822 !important;
+}
+div#header div#sr-header-area div.sr-list ul.flat-list li a.gold,
+div#header div#sr-header-area div#RESStaticShortcuts a.gold,
+div#header div#sr-header-area a[href*="/r/lounge"],
+div#header div#sr-header-area a[href*="/r/lounge"]
+{
+    color: #9A7D2E !important;
+}
+div#header div#sr-header-area a[href*="/r/teslore"],
+div#header div#sr-header-area a[href$="/r/teslore"]
+{
+    color: #BF2F2F !important;
+    font-size: 125% !important;
+}
+div#header div#sr-header-area a#sr-more-link
+{
+    background-image: url(%%DarkTex%%);
+    border-bottom: 0px;
+    z-index: 7 !important;
+}
+div#header div#sr-header-area div#RESShortcutsEditContainer, /*RES buttons*/
+div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsSort,
+div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsRight,
+div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsLeft,
+div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsAdd,
+div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsTrash
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%)!important;
+    color: #F5F5F5;
+    z-index: 9 !important;
+}
+div#header div#header-bottom-left /*Main header background*/
+{
+    background-image: url(%%CapitalCol%%);
+    height: 113px !important;
+    z-index: 5 !important;
+}
+div#header div#header-bottom-left a img#header-img /*Snoo*/
+{
+    height: 60px !important;
+    width: 215px !important;
+    z-index: 6 !important;
+}
+div#header div#header-bottom-left span.redditname.pagename a /*name of subreddit*/
+{
+    background-image: url(%%RealmT%%);
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 10px 160px 0px 0px;
+    text-indent: -9999px;
+    z-index: 6 !important;
+}
+div#header div#header-bottom-left ul.tabmenu /*Tab menu*/
+{
+    border: none;
+    position: absolute;
+    top: 85px;
+    left: 5px;
+    z-index: 8 !important;
+}
+div#header div#header-bottom-left ul.tabmenu li a /*Tab menu buttons*/
+{
+    background-color: transparent;
+    color: #F5F5F5;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+div#header div#header-bottom-left ul.tabmenu li.selected a /*currently selected button*/
+{
+    background-color: #F5F5F5 !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 12px;
+    color: #BF2F2F !important;
+}
+div#header div#header-bottom-left ul.tabmenu li a[href*="/gilded"]
+{
+    color: #9A7D2E !important;
+}
+div#header div#header-bottom-left ul.tabmenu li a[href*="/wiki"]
+{
+    color: #228822 !important;
+}
+div#header div#header-bottom-left ul.tabmenu li a#viewImagesButton /*RES function needs not be shown*/
+{
+    display: none !important;
+}
+div#header div#header-bottom-right, /*User bar*/
+div#header div#header-bottom-right.res-navTop /*RES' name for user bar*/
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%);
+    position: absolute;
+    top: 23px;
+    bottom: 93px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    margin: -5px 5px -5px 0px;
+    z-index: 9 !important;
+}
+div#header div#header-bottom-right.res-navTop div#userbarToggle.userbarHide
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%);
+    border-right: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    color: #7EB5B5 !important;
+    line-height: 20px;
+    z-index: 9 !important;
+}
+div#header div#header-bottom-right.res-navTop div#userbarToggle.userbarShow
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%);
+    border-right: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #7EB5B5 !important;
+    line-height: 20px;
+    z-index: 9 !important;
+}
+div#header div#header-bottom-right a,
+div#header div#header-bottom-right form,
+div#header div#header-bottom-right span
+{
+    color: #F5F5F5 !important;
+}
 
 /*Spoiler Code*/
 a[href="#s"], /*#links will be kind to mobile users*/
