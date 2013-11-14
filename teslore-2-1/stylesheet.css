@@ -295,6 +295,269 @@ div.content div.stylesheet-customize-container div#images ul#image-preview-list 
     margin-bottom: 20px !important;
     padding-bottom: 0px !important;
     width: 25% !important;
+=======
+div.side /*Sidebar*/
+{
+    background-color: transparent;
+    background-image: url(%%DarkTex%%);
+    border: none;
+    color: #F5F5F5;
+    margin-right: 5px;
+    position: relative;
+    top: -90px;
+    width: 300px !important;
+    z-index: 15 !important;
+}
+div.side a /*Sidebar links*/
+{
+    color: #7EB5B5;
+}
+div.side form#search input[type="text"] /*Search*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T3%%) !important;
+    color: #C7C7C7 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+}
+div.side form#search div#searchexpando.infobar /*Search Expansion*/
+{
+    background-color: #161616;
+    border: none;
+    border-radius: 0px !important;
+    color: #EEEEEE;
+    margin: -5px 0 16px 0 !important;
+    padding-top: 10px;
+    }
+div.side form#search div#searchexpando.infobar label /*Checkbox definition*/
+{
+    color: #F5F5F5;
+}
+div.side div.linkinfo /*Link Info*/
+{
+    background-color: #161616;
+    border: none;
+    border-radius: 10px;
+    color: #EEEEEE;
+    margin-bottom: 0px;
+    position: absolute !important;
+    top: 260px;
+    right: 15px;
+    width: 260px !important;
+    z-index: 20;
+}
+div.side div.linkinfo div.shortlink input
+{
+    background-color: transparent !important;
+    background-image: url(%%T3%%) !important;
+    color: #C7C7C7 !important;
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+}
+div.side form.login-form.login-form-side
+{
+    display: none !important;
+}
+div.side div.sponshorshipbox
+{
+    display: none !important;
+}
+div.side div.sidebox.submit div.morelink /*Submission*/
+{
+    background-color: #161616 !important;
+    border: none;
+    position: relative !important;
+    top: 300px;
+    right: 0px;
+    height: 29px;
+    width: 300px;
+    vertical-align: middle;
+    z-index: 20;
+}
+div.side div.sidebox.submit div.morelink:before /*Flag-tail image*/
+{
+    content: url(%%Submit-Tail%%);
+    position: absolute !important;
+    right: 300px;
+}
+div.side div.sidebox.submit div.morelink:hover
+{
+    background-color: #161616;
+    border: none;
+    height: 29px;
+    width: 300px;
+}
+div.side div.sidebox.submit div.morelink a /*Submission Text*/
+{
+    background-color: #161616;
+    color: #FFFFFF;
+    font-family: serif !important;
+    font-size: large;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.side div.sidebox.submit div.morelink a:hover
+{
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #FFFFFF;
+}
+div.side div.sidebox.submit div.morelink div.nub /*Ill-fitting nub*/
+{
+    display: none !important;
+}
+div.side div.titlebox /*Moving items away from sidebar edge*/
+{
+    padding-left: 5px;
+}
+div.side div.titlebox h1.redditname /*Banner in sidebar*/
+{
+    background-image: url(%%FlagSans%%);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    display: block;
+    position: relative !important;
+    top: -56px;
+    left: 0px;
+    margin-left: -5px;
+    overflow: hidden !important;
+    text-indent: 9999px;
+    z-index: 17;
+}
+div.side div.titlebox span.subscribers span.word,
+div.side div.titlebox p.users-online span.word
+{
+    display: none;
+}
+div.side div.titlebox span.subscribers:after
+{
+    content: " scholars";
+}
+div.side div.titlebox p.users-online span.number:after
+{
+    content: " scholars present";
+}
+div.side div.titlebox div.leavemoderator,
+div.side form.toggle.flairtoggle
+{
+    background-color: transparent;
+}
+div.side div.titlebox div.leavemoderator,
+div.side div.titlebox div.leavemoderator a
+{
+    font-size: 10px;
+}
+div.side div.flairselector form div.customizer /*Custom Flair Text*/
+{
+    display: none;
+}
+div.side div.flairselector /*Flair List*/
+{
+    background-color: transparent !important;
+    background-image: url(%%Parchment%%) !important;
+    box-shadow: none !important;
+    position: relative !important;
+    top: 0px !important;
+    left: -81px !important;
+    width: 346px !important;
+}
+div.side div.flairselector h2
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%) !important;
+}
+div.side div.titlebox div.bottom span.flair /*Remove creator flair*/
+{
+    display: none;
+}
+div.side div.titlebox div.bottom span.age time /*Subreddit age*/
+{
+    display: none !important;
+}
+div.side div.titlebox div.bottom span.age::after
+{
+    content: "6 eras";
+}
+div.side div#moderation_tools div.title h1 /*Mod Toolbox Title*/
+{
+    padding-left: 5px;
+}
+div.side div#moderation_tools ul li ul li a /*Moderator Toolbox*/
+{
+    background-color: transparent !important;
+}
+div.side div.sidecontentbox div.title /*Moving away from sidebar edge*/
+{
+    padding-left: 5px;
+}
+div.side div.sidebox.create div.morelink /*Subreddit creation*/
+{
+    background-color: #161616 !important;
+    border: none;
+    height: 29px;
+    width: 300px;
+    vertical-align: middle;
+    z-index: 20;
+}
+div.side div.sidebox.create div.morelink:before /*Flag-tail image*/
+{
+    content: url(%%Submit-Tail%%);
+    position: absolute !important;
+    right: 300px;
+}
+div.side div.sidebox.create div.morelink:hover
+{
+    background-color: #161616;
+    border: none;
+    height: 29px;
+    width: 300px;
+}
+div.side div.sidebox.create div.morelink a /*Creation Text*/
+{
+    background-color: #161616;
+    color: #FFFFFF;
+    font-family: serif !important;
+    font-size: large;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.side div.sidebox.create div.morelink a:hover
+{
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #FFFFFF;
+}
+div.side div.sidebox.create div.morelink div.nub, /*Ill-fitting nub*/
+div.side div.sidebox.create div.spacer
+{
+    display: none !important;
+}
+div.side div.sidecontentbox a.helplink + div.title h1 /*Step 1 in Renaming Moderators*/
+{
+    display: none;
+}
+div.side div.sidecontentbox a.helplink + div.title::before /*Step 2 in Renaming Moderators*/
+{
+    content: "ELDER COUNCIL";
+    color: #861D1D;
+    display: block;
+    font-size: 130%;
+}
+div.side div.sidecontentbox a.helplink /*Step 3 in Renaming Moderators*/
+{
+    color: #861D1D;
+    position: relative;
+    top: -1px;
+}
+div.side div.sidecontentbox ul.content li a.author
+{
+    color: #861D1D;
+>>>>>>> origin/sidebar
 }
 
 /*Wiki*/
