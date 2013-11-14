@@ -1,5 +1,46 @@
 /*Written by /u/myrrlyn and /u/numinit*/
 
+/*                    INDEX
+|-Flair                 |   Line 0038
+|--User Flair           |   Line 0055
+|--Link Flair           |   Line 0173
+|--User Attributes      |   Line 0195
+|-Notification Text     |
+|--Date Injection       |
+|--Sidebar Date         |
+|--Sidebar Com Thread   |
+|--Sidebar Announcement |
+|-Global Attributes     |
+|--Formatting           |
+|-Header                |
+|--Subreddit Bar        |
+|--Banner               |
+|---Subreddit Name      |
+|---Tab Menu            |
+|--User Bar             |
+|-Sidebar               |
+|--Search               |
+|--Link Info            |
+|--Sponsorship          |
+|--Submission           |
+|--Titlebox             |
+|---H1 Banner           |
+|---Subscribers         |
+|---Buttons             |
+|---Flair Selector      |
+|---Sub Info            |
+|--Moderation Tools     |
+|--Create Subreddit     |
+|--Moderators           |
+|-Content               |
+|-Extra Settings        |
+|--Submission           |
+|--Moderator Tools      |
+|--Wiki                 |
+|-Spoilers              |
+*/
+
+/*-Flair*/
 span.flair /*Rendered Flair*/
 {
     background-color: transparent;
@@ -15,6 +56,8 @@ span.flair /*Rendered Flair*/
     vertical-align: middle;
     z-index: 10;
 }
+
+/*--User Flair*/
 span.flair-Council /*Moderators*/
 {
     background-position: 0px -30px;
@@ -103,7 +146,7 @@ span.flair-MK /*/u/MKirkbride*/
     top: -2px;
     left: -4px;
 }
-a[href$="/MKirkbride"].author.id-t2_dhl5b /*Specific User ID*/
+a[href$="/MKirkbride"].author.id-T1_dhl5b /*Specific User ID*/
 {
     background-color: #0B0B0B !important;
     color: #821C1C !important;
@@ -112,7 +155,7 @@ a[href$="/MKirkbride"].author.id-t2_dhl5b /*Specific User ID*/
     border-radius: 0px !important;
     border: none !important;
 }
-a[href$="/MKirkbride"].author.id-t2_dhl5b::after /*Postfix*/
+a[href$="/MKirkbride"].author.id-T1_dhl5b::after /*Postfix*/
 {
     background-color: #0B0B0B !important;
     color: #821C1C !important;
@@ -120,8 +163,8 @@ a[href$="/MKirkbride"].author.id-t2_dhl5b::after /*Postfix*/
     border-radius: 0px !important;
     border: none !important;
 }
-a[href$="/MKirkbride"].author.id-t2_dhl5b + span.RESUserTag, /*RES Functions*/
-a[href$="/MKirkbride"].author.id-t2_dhl5b + span.RESUserTag + a.voteWeight
+a[href$="/MKirkbride"].author.id-T1_dhl5b + span.RESUserTag, /*RES Functions*/
+a[href$="/MKirkbride"].author.id-T1_dhl5b + span.RESUserTag + a.voteWeight
 {
     display: none !important; /*Disabled for aesthetics*/
     border-radius: 0px !important;
@@ -131,6 +174,8 @@ span.flair.flair-MK + span.userattrs /*Disabled for aesthetics*/
 {
     display: none;
 }
+
+/*--Link Flair*/
 div.linkflair span.linkflairlabel
 {
     padding: 2px;
@@ -152,7 +197,7 @@ div.linkflair.linkflair-Question span.linkflairlabel
     color: #161616;
 }
 
-
+/*--User Attributes*/
 /*
 body:not(.comments-page) span.userattrs a.friend
 {
@@ -190,6 +235,121 @@ body.comments-page span.userattrs a.moderator
     z-index: 9;
 }
 */
+
+/*-Notification Text*/
+
+/*--Date Injection*/
+/*
+div.content::before {
+*/
+/* @begin AkatoshBot */
+/*
+    content: "Hermaeus Mora's Summoning Day";
+*/
+/* @end AkatoshBot */
+/*
+    background-image: url(%%T3%%);
+    border: none;
+    border-radius: 8px;
+    color: #000000;
+    font-family: "Book Antiqua", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 5px;
+    position: absolute !important;
+    top: 52px !important;
+    right: 606px !important;
+    width: auto;
+    z-index: 25;
+}
+*/
+
+/*--Sidebar Date*/
+div.side a[href*="#date"]
+{
+    border: 0px solid #161616;
+    color: #161616;
+    display: inline-block;
+    font-family: "Book Antiqua", "Helvetica Neue", Helvetica, sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0px 7px 0px;
+    position: absolute;
+    top: 0px;
+    right: 315px;
+    width: 300px;
+    height: 19px;
+    text-align: center;
+    background-image: url(%%T3%%);
+}
+div.side a[href*="#date"]:after
+{
+/* @begin AkatoshBot */
+    content: "Tirdas, 12 Sun's Dusk 4E203";
+/* @end AkatoshBot */
+}
+div.side a[href$="#date"]:before
+{
+/*    background-image: url(%%Date-Tail%%);*/
+    content:"";
+    width: 25px;
+    height: 29px;
+    position: absolute;
+    top: 0px;
+    right: 300px;
+}
+
+/*--Sidebar Com Thread*/
+div.side a[href*="#com"]
+{
+    border-bottom: 0px solid #F5F5F5;
+    color: #F5F5F5;
+    display: inline-block;
+    font-family: "Book Antiqua", "Helvetica Neue", Helvetica, sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 0px 0px 0px;
+    position: absolute;
+    top: 40px;
+    right: 315px;
+    width: 300px;
+    height: 21px;
+    text-align: center;
+    background-image: url(%%T2%%);
+}
+div.side a[href*="#com"]:after
+{
+/* @begin AkatoshBot */
+    content: "Weekly Community Thread";
+/* @end AkatoshBot */
+}
+
+/*--Sidebar Announcement*/
+div.side a[href*="#announcement"]
+{
+    border-top: 1px solid #F5F5F5;
+    color: #F5F5F5;
+    display: inline-block;
+    font-family: "Book Antiqua", "Helvetica Neue", Helvetica, sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 0px 1px 0px;
+    position: absolute;
+    top: 65px;
+    right: 315px;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    background-image: url(%%T2%%);
+}
+div.side a[href*="#announcement"]:after
+{
+/* @begin AkatoshBot */
+    content: "Important Announcement";
+/* @end AkatoshBot */
+}
+
+/*-Global Attributes*/
 html
 {
     position: relative !important; /*Reddit Companion's shinebar does not cooperate without this*/
@@ -200,6 +360,8 @@ body
     background-image: url(%%Map%%);
     background-position: center center;
 }
+
+/*--Formatting*/
 .md a
 {
     color: #7EB5B5;
@@ -214,27 +376,19 @@ body
 {
     color: #861D1D !important;
 }
+a.gold, /*Reddit Gold links*/
+div.roundfield.gold-accent span.title
+{
+    color: #9a7d2e !important;
+    font-weight: bold !important;
+}
 a.voteWeight /*RES user-votes box*/
 {
     background-color: transparent;
 }
 .md blockquote
 {
-    background-image: url(%%T2%%) !important;
-    border-left: 6px solid #333333 !important;
-    padding: 1px 2px 1px 5px !important;
-}
-.md blockquote p
-{
-    font-family: "EB Garamond", "Book Antiqua", Georgia, "Palatino Linotype", serif !important;
-}
-.md code
-{
-    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
-    font-size: small;
-}
-{
-    background-image: url(%%T2%%) !important;
+    background-image: url(%%T1%%) !important;
     border-left: 6px solid #333333 !important;
     padding: 1px 2px 1px 5px !important;
 }
@@ -267,6 +421,7 @@ table tbody tr td
     text-align: center;
 }
 
+/*-Header*/
 div#header
 {
     background-color: transparent !important;
@@ -274,6 +429,8 @@ div#header
     font-size: x-small !important;
     z-index: 5 !important;
 }
+
+/*--Subreddit Bar*/
 div#header div#sr-header-area /*Subreddit list*/
 {
     background-color: transparent;
@@ -332,6 +489,8 @@ div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsTras
     color: #F5F5F5;
     z-index: 9 !important;
 }
+
+/*--Banner*/
 div#header div#header-bottom-left /*Main header background*/
 {
     background-image: url(%%CapitalCol%%);
@@ -344,7 +503,9 @@ div#header div#header-bottom-left a img#header-img /*Snoo*/
     width: 215px !important;
     z-index: 6 !important;
 }
-div#header div#header-bottom-left span.redditname.pagename a /*name of subreddit*/
+
+/*---Subreddit Name*/
+div#header div#header-bottom-left span.redditname.pagename a
 {
     background-image: url(%%RealmT%%);
     background-repeat: no-repeat;
@@ -353,7 +514,9 @@ div#header div#header-bottom-left span.redditname.pagename a /*name of subreddit
     text-indent: -9999px;
     z-index: 6 !important;
 }
-div#header div#header-bottom-left ul.tabmenu /*Tab menu*/
+
+/*---Tab Menu*/
+div#header div#header-bottom-left ul.tabmenu
 {
     border: none;
     position: absolute;
@@ -387,7 +550,9 @@ div#header div#header-bottom-left ul.tabmenu li a#viewImagesButton /*RES functio
 {
     display: none !important;
 }
-div#header div#header-bottom-right, /*User bar*/
+
+/*--User Bar*/
+div#header div#header-bottom-right,
 div#header div#header-bottom-right.res-navTop /*RES' name for user bar*/
 {
     background-color: transparent !important;
@@ -435,7 +600,7 @@ div#header div#header-bottom-right span
     color: #F5F5F5 !important;
 }
 
-/*Sidebar*/
+/*-Sidebar*/
 div.side
 {
     background-color: transparent;
@@ -452,10 +617,12 @@ div.side a /*Sidebar links*/
 {
     color: #7EB5B5;
 }
+
+/*--Search*/
 div.side form#search input[type="text"] /*Search*/
 {
     background-color: transparent !important;
-    background-image: url(%%T3%%) !important;
+    background-image: url(%%T2%%) !important;
     color: #C7C7C7 !important;
     margin-left: 10px;
     margin-right: 10px;
@@ -475,7 +642,9 @@ div.side form#search div#searchexpando.infobar label /*Checkbox definition*/
 {
     color: #F5F5F5;
 }
-div.side div.linkinfo /*Link Info*/
+
+/*--Link Info*/
+div.side div.linkinfo
 {
     background-color: #161616;
     border: none;
@@ -491,7 +660,7 @@ div.side div.linkinfo /*Link Info*/
 div.side div.linkinfo div.shortlink input
 {
     background-color: transparent !important;
-    background-image: url(%%T3%%) !important;
+    background-image: url(%%T2%%) !important;
     color: #C7C7C7 !important;
     font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
 }
@@ -503,6 +672,8 @@ div.side div.sponshorshipbox
 {
     display: none !important;
 }
+
+/*--Submission*/
 div.side div.sidebox.submit div.morelink /*Submission*/
 {
     background-color: #161616 !important;
@@ -548,10 +719,14 @@ div.side div.sidebox.submit div.morelink div.nub /*Ill-fitting nub*/
 {
     display: none !important;
 }
+
+/*--Titlebox*/
 div.side div.titlebox /*Moving items away from sidebar edge*/
 {
     padding-left: 5px;
 }
+
+/*---H1 Banner*/
 div.side div.titlebox h1.redditname /*Banner in sidebar*/
 {
     background-image: url(%%FlagSans%%);
@@ -568,6 +743,8 @@ div.side div.titlebox h1.redditname /*Banner in sidebar*/
     text-indent: 9999px;
     z-index: 17;
 }
+
+/*---Subscribers*/
 div.side div.titlebox span.subscribers span.word,
 div.side div.titlebox p.users-online span.word
 {
@@ -581,6 +758,8 @@ div.side div.titlebox p.users-online span.number:after
 {
     content: " scholars present";
 }
+
+/*---Buttons*/
 div.side div.titlebox div.leavemoderator,
 div.side form.toggle.flairtoggle
 {
@@ -591,11 +770,9 @@ div.side div.titlebox div.leavemoderator a
 {
     font-size: 10px;
 }
-div.side div.flairselector form div.customizer /*Custom Flair Text*/
-{
-    display: none;
-}
-div.side div.flairselector /*Flair List*/
+
+/*---Flair Selector*/
+div.side div.titlebox div.tagline div.flairselector /*Flair List*/
 {
     background-color: transparent !important;
     background-image: url(%%Parchment%%) !important;
@@ -605,11 +782,17 @@ div.side div.flairselector /*Flair List*/
     left: -81px !important;
     width: 346px !important;
 }
-div.side div.flairselector h2
+div.side div.titlebox div.tagline div.flairselector h2
 {
     background-color: transparent !important;
     background-image: url(%%DarkTex%%) !important;
 }
+div.side div.titlebox div.tagline  div.flairselector form div.customizer /*Custom Flair Text*/
+{
+    display: none;
+}
+
+/*---Sub Info*/
 div.side div.titlebox div.bottom span.flair /*Remove creator flair*/
 {
     display: none;
@@ -622,6 +805,8 @@ div.side div.titlebox div.bottom span.age::after
 {
     content: "6 eras";
 }
+
+/*--Moderation Tools*/
 div.side div#moderation_tools div.title h1 /*Mod Toolbox Title*/
 {
     padding-left: 5px;
@@ -630,11 +815,13 @@ div.side div#moderation_tools ul li ul li a /*Moderator Toolbox*/
 {
     background-color: transparent !important;
 }
+
+/*--Create Subreddit*/
 div.side div.sidecontentbox div.title /*Moving away from sidebar edge*/
 {
     padding-left: 5px;
 }
-div.side div.sidebox.create div.morelink /*Subreddit creation*/
+div.side div.sidebox.create div.morelink /*Subreddit Creation*/
 {
     background-color: #161616 !important;
     border: none;
@@ -677,6 +864,8 @@ div.side div.sidebox.create div.spacer
 {
     display: none !important;
 }
+
+/*--Moderators*/
 div.side div.sidecontentbox a.helplink + div.title h1 /*Step 1 in Renaming Moderators*/
 {
     display: none;
@@ -699,219 +888,207 @@ div.side div.sidecontentbox ul.content li a.author
     color: #861D1D;
 }
 
-/*Content*/
+/*-Content*/
 div.content div.thing
-=======
-span.flair /*Rendered Flair*/
->>>>>>> origin/flair
+{
+    margin-bottom: 0px !important;
+    width: 80%
+}
+div.content div.thing.odd
+{
+    background-image: url(%%T2%%);
+}
+div.content div.thing.even
+{
+    background-image: url(%%T3%%);
+}
+div.content div.thing span.rank
+{
+    display: none !important;
+}
+div.content div.thing div.arrow
+{
+    background-image: url(%%Arrows%%);
+    height: 14px;
+    width: 15px;
+}
+div.content div.thing div.arrow.up
+{
+    background-position: 0px 0px;
+}
+div.content div.thing div.arrow.down
+{
+    background-position: 0px -15px;
+}
+div.content div.thing div.arrow.upmod
+{
+    background-position: -15px 0;
+}
+div.content div.thing div.arrow.downmod
+{
+    background-position: -15px -15px;
+}
+div.content div.thing div.score
+{
+    font-family: "EB Garamond","Palatino Linotype","Book Antiqua","Georgia",monospace;
+}
+div.content div.thing div.score.likes
+{
+    color: #FF8B60 !important;
+}
+div.content div.thing div.score.unvoted
+{
+    color: #212121 !important;
+}
+div.content div.thing div.score.dislikes
+{
+    color: #9494FF !important;
+}
+div.content div.thing div.entry p.title a.title
+{
+    font-family: "EB Garamond","Palatino Linotype","Book Antiqua","Georgia",monospace;
+}
+div.content div.thing div.entry p.title span.domain /*self.teslore*/
+{
+    display: none !important;
+}
+div.content div.thing div.entry p.tagline
+{
+    color: #70381A !important;
+}
+div.content div.thing div.entry p.tagline span.userattrs a.moderator
+{
+    color: #861D1D !important;
+}
+div.content div.thing div.entry div.expando-button /*Self-text expansion*/
 {
     background-color: transparent;
-    background-image: url(%%Flair-Sheet%%);
-    border: none;
-    border-radius: 0px;
-    display: inline-block;
-    height: 30px;
-    width: 50px;
-    margin-right: 0px;
-    padding: 0px;
-    text-indent: -9999px;
-    vertical-align: middle;
-    z-index: 10;
+    background-image: url(%%expando%%);
+    height: 16px;
+    width: 20px;
 }
-span.flair-Council /*Moderators*/
+div.content div.thing div.entry div.expando-button.collapsed /*Open*/
 {
-    background-position: 0px -30px;
+    background-position: 6px -2px;
 }
-span.flair-SOTW /*Scholar of the Week*/
+div.content div.thing div.entry div.expando-button.collapsed:hover
 {
-    background-position: 0px -60px !important;
-    z-index: 11;
+    background-position: 6px -22px;
 }
-span.flair-Armiger /*Buoyant Armiger*/
+div.content div.thing div.entry div.expando-button.expanded /*Close*/
 {
-    background-position: -50px 0px;
+    background-position: -13px -2px;
 }
-span.flair-Dwemer /*Dwemer Scholar*/
+div.content div.thing div.entry div.expando-button.expanded:hover
 {
-    background-position: -50px -30px;
+    background-position: -13px -22px;
 }
-span.flair-Julianos /*Follower of Julianos*/
+div.content div.thing div.entry div.expando div.usertext-body div.md
 {
-    background-position: -50px -60px;
+    max-width: 75em !important;
 }
-span.flair-Mages /*Mages Guild Conjurer*/
+div.content div.thing div.entry ul.flat-list.buttons li a
 {
-    background-position: -50px -90px;
+    color: #70381A !important;
 }
-span.flair-Marukhati /*Marukhati Selective*/
+div.content div.commentarea div.menuarea
 {
-    background-position: -50px -120px;
-}
-span.flair-Moth /*Ancestor Moth Cultist*/
-{
-    background-position: -50px -150px;
-}
-span.flair-Mythic /*Mythic Dawn Cultist*/
-{
-    background-position: -50px -180px;
-}
-span.flair-Psijic /*Psijic Order*/
-{
-    background-position: -50px -210px;
-}
-span.flair-Telvanni /*Telvanni Houseman*/
-{
-    background-position: -50px -240px;
-}
-span.flair-Tribunal /*Member of the Tribunal Temple*/
-{
-    background-position: -50px -270px;
-}
-span.flair-Winterhold /*Scholar of Winterhold*/
-{
-    background-position: -50px -300px;
-}
-span.flair-Mane /*u-Mr_Flippers*/
-{
-    background-position: -100px 0px;
-}
-span.flair-Gerka /*u-Gerka*/
-{
-    background-position: -100px -30px;
-}
-span.flair-dbcification /*u-salivific*/
-{
-    background-position: -100px -60px;
-}
-span.flair-myrrlyn /*u-myrrlyn*/
-{
-    background-position: -100px -90px;
-}
-span.flair-c0da /*C0DA*/
-{
-    background-position: -100px -120px;
-}
-span.flair-IGS /*Imperial Geographic Society*/
-{
-    background-position: -100px -150px;
-}
-span.flair-OHT /*Mysterium Xarxes*/
-{
-    background-position: -100px -180px;
-}
-span.flair-MK /*/u/MKirkbride*/
-{
-    background-position: 0px -90px;
-    position: relative;
-    top: -2px;
-    left: -4px;
-}
-a[href$="/MKirkbride"].author.id-t2_dhl5b /*Specific User ID*/
-{
-    background-color: #0B0B0B !important;
-    color: #821C1C !important;
-    margin-right: -2px;
-    padding: 7px 8px 7px 4px;
-    border-radius: 0px !important;
-    border: none !important;
-}
-a[href$="/MKirkbride"].author.id-t2_dhl5b::after /*Postfix*/
-{
-    background-color: #0B0B0B !important;
-    color: #821C1C !important;
-    content: " | OFFICIAL";
-    border-radius: 0px !important;
-    border: none !important;
-}
-a[href$="/MKirkbride"].author.id-t2_dhl5b + span.RESUserTag, /*RES Functions*/
-a[href$="/MKirkbride"].author.id-t2_dhl5b + span.RESUserTag + a.voteWeight
-{
-    display: none !important; /*Disabled for aesthetics*/
-    border-radius: 0px !important;
-    border: none !important;
-}
-span.flair.flair-MK + span.userattrs /*Disabled for aesthetics*/
-{
-    display: none;
-}
-div.linkflair span.linkflairlabel
-{
-    padding: 2px;
-    border-radius: 4px;
-}
-div.linkflair.linkflair-Apocrypha span.linkflairlabel
-{
-    background-color: #161616;
-    color: #BF2F2F;
-}
-div.linkflair.linkflair-Discussion span.linkflairlabel
-{
-    background-color: #F5F5F5;
-    color: #BF2F2F;
-}
-div.linkflair.linkflair-Question span.linkflairlabel
-{
-    background-color: #F5F5F5;
-    color: #161616;
+    color: #70381A !important;
 }
 
-/*
-body:not(.comments-page) span.userattrs a.friend
+/*-Extra Settings*/
+div.NERPageMarker /*RES Page Marker*/
 {
-    background-image: url(%%TailFriend%%);
-    margin-left: -20px;
-    padding: 7px 14px 9px 14px;
-    z-index: 7;
+    width: 80% !important;
+    background-color: #F5F5F5 !important;
 }
-body:not(.comments-page) span.userattrs a.moderator
+div#progressIndicator /*RES Loading*/
 {
-    background-image: url(%%TailModerator%%);
-    margin-left: -20px;
-    padding: 7px 13px 9px 13px;
-    z-index: 9;
+    width: 80% !important;
 }
-body.comments-page span.userattrs a.friend
+div.content p.tagline em /*Deleted Author*/
 {
-    background-image: url(%%TailFriend%%);
-    margin-left: -20px;
-    padding: 6px 14px 9px 14px;
-    z-index: 7;
+    font-size: 0px;
 }
-body.comments-page span.userattrs a.submitter
+div.content p.tagline em:after
 {
-    background-image: url(%%TailSubmitter%%);
-    margin-left: -20px;
-    padding: 6px 14px 9px 14px;
-    z-index: 8;
+    content: "[ZER0-SUMMED]";
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: -1px;
 }
-body.comments-page span.userattrs a.moderator
+div.content .grayed div.md /*Censored Text*/
 {
-    background-image: url(%%TailModerator%%);
-    margin-left: -20px;
-    padding: 6px 13px 9px 13px;
-    z-index: 9;
+    margin: 5px 0;
 }
-*/
+div.content .grayed div.md:after
+{
+    content: "[NUMINIT]";
+}
+div.content .grayed div.md p
+{
+    display: none !important;
+}
+.RES-keyNav-activeElement,
+.commentarea .RES-keyNav-activeElement .md,
+.commentarea .RES-keyNav-activeElement.entry .noncollapsed,
+.keyHighlight
+{
+    outline: none !important;
+    background-color: transparent !important;
+}
+.thing.comment:nth-child(4n+1) p.parent {
+    background-color: transparent !important;
+    background-image: url(%%T4%%) !important;
+}
+.thing.comment:nth-child(4n+3) p.parent {
+    background-color: transparent !important;
+    background-image: url(%%T2%%) !important;
+}
+.comment, /*1*/
+.comment .comment .comment, /*3*/
+.comment .comment .comment .comment .comment, /*5*/
+.comment .comment .comment .comment .comment .comment .comment, /*7*/
+.comment .comment .comment .comment .comment .comment .comment .comment .comment /*9*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T4%%) !important;
+}
+.comment .comment, /*2*/
+.comment .comment .comment .comment, /*4*/
+.comment .comment .comment .comment .comment .comment, /*6*/
+.comment .comment .comment .comment .comment .comment .comment .comment, /*8*/
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment /*10*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T3%%) !important;
+}
+.new-comment .usertext-body /*Gold-highlit new comments*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T2%%) !important;
+    border: solid 1px #161616 !important;
+}
 
-/*Submission Page*/
+/*--Submission*/
 form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
 form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
 form#newlink.submit.content div.formtabs-content div#reddit-field /*fit with color scheme*/
 {
     background-color: transparent;
-    background-image: url(%%Bar-Texture%%);
+    background-image: url(%%DarkTex%%);
 }
 form#newlink.submit.content div.formtabs-content span.title /*Color change*/
 {
     color: #F5F5F5;
 }
 
-/*Moderator Tools*/
+/*--Moderator Tools*/
 div.linefield,
 div.linefield span.title
 { 
     background-color: transparent;
-    background-image: url(%%Bar-Texture%%);
+    background-image: url(%%DarkTex%%);
     color: #F5F5F5;
 }
 div#sr-form div.linefield input, /*Setting various text inputs*/
@@ -946,7 +1123,7 @@ div.content div.stylesheet-customize-container div#images ul#image-preview-list 
     width: 25% !important;
 }
 
-/*Wiki*/
+/*--Wiki*/
 div.md.wiki
 {
     padding: 0 5px;
@@ -959,19 +1136,12 @@ div.md.wiki a
     color: #336699;
 }
 
-/*Reddit Gold links*/
-a.gold,
-div.roundfield.gold-accent span.title
-{
-    color: #9a7d2e !important;
-    font-weight: bold !important;
-}
-/*Spoiler Code*/
-a[href="#s"], /*#links will be kind to mobile users*/
-a[href="/s"], /*/links require a mouse*/
-a[href="#spoiler"], /*Backwards compatibility*/
+/*-Spoilers*/
+a[href="#s"],       /* #links will be kind to mobile users */
+a[href="/s"],       /* /links require a mouse */
+a[href="#spoiler"], /* Backwards compatibility */
 a[href="/spoiler"]
-{
+{                   /*Defining SPOILER links*/
     background-color: #000000 !important;
     border-radius: 3px;
     color: #FFFFFF !important;
@@ -981,9 +1151,9 @@ a[href="/spoiler"]
 }
 a[href="#g"],
 a[href="/g"],
-a[href="#conjecture"], /*Optional call for conjecture code*/
+a[href="#conjecture"], /* Optional call for conjecture code */
 a[href="/conjecture"]
-{
+{                   /*Defining CONJECTURE links*/
     background-color: #558800 !important;
     /*background-image: url(%%Conjecture-Cover%%);*/
     border-radius: 3px;
@@ -992,15 +1162,15 @@ a[href="/conjecture"]
     font-weight: bold;
     padding: 0px 5px;
 }
-a[href="#s"]:hover, /*Mouse*/
-a[href="#s"]:active, /*Touch (mobile)*/
+a[href="#s"]:hover, /* Mouse */
+a[href="#s"]:active, /* Touch (mobile) */
 a[href="/s"]:hover,
 a[href="/s"]:active,
 a[href="#spoiler"]:hover,
 a[href="#spoiler"]:active,
 a[href="/spoiler"]:hover,
 a[href="/spoiler"]:active
-{
+{                   /*SPOILER cover text*/
     color: #FFFF00 !important;
 }
 a[href="#g"]:hover,
@@ -1011,16 +1181,16 @@ a[href="#conjecture"]:hover,
 a[href="#conjecture"]:active,
 a[href="/conjecture"]:hover,
 a[href="/conjecture"]:active
-{
+{                   /*CONJECTURE cover text*/
     color: #FFFF00 !important;
 }
 a[href="#s"]::after,
 a[href="/s"]::after,
 a[href="#spoiler"]::after,
 a[href="/spoiler"]::after
-{
+{                   /*SPOILER content*/
     background: #000000 !important;
-    color: #000000; /*NOT !important, so that :hover::after can overwrite it*/
+    color: #000000; /* NOT !important, so that :hover::after can overwrite it */
     content: attr(title);
     font-weight: normal;
     padding-left: 4px;
@@ -1029,7 +1199,7 @@ a[href="#g"]::after,
 a[href="/g"]::after,
 a[href="#conjecture"]::after,
 a[href="/conjecture"]::after
-{
+{                   /*CONJECTURE content*/
     background-color: #558800 !important;
     color: #000000;
     /*background-image: url(%%Conjecture-Cover%%);*/
@@ -1046,7 +1216,7 @@ a[href="#spoiler"]:hover::after,
 a[href="#spoiler"]:active::after,
 a[href="/spoiler"]:hover::after,
 a[href="/spoiler"]:active::after
-{
+{                   /*Activated SPOILER content*/
     color: #FFFFFF !important;
 }
 a[href="#g"]:hover::after,
@@ -1057,6 +1227,6 @@ a[href="#conjecture"]:hover::after,
 a[href="#conjecture"]:active::after,
 a[href="/conjecture"]:hover::after,
 a[href="/conjecture"]:active::after
-{
+{                   /*Activated CONJECTURE content*/
     color: #000000 !important;
 }
