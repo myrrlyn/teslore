@@ -244,58 +244,6 @@ div#header div#header-bottom-right span
     color: #F5F5F5 !important;
 }
 
-/*Submission Page*/
-form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
-form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
-form#newlink.submit.content div.formtabs-content div#reddit-field /*fit with color scheme*/
-{
-    background-color: transparent;
-    background-image: url(%%Bar-Texture%%);
-}
-form#newlink.submit.content div.formtabs-content span.title /*Color change*/
-{
-    color: #F5F5F5;
-}
-
-/*Moderator Tools*/
-div.linefield,
-div.linefield span.title
-{ 
-    background-color: transparent;
-    background-image: url(%%Bar-Texture%%);
-    color: #F5F5F5;
-}
-div#sr-form div.linefield input, /*Setting various text inputs*/
-div#sr-form div.linefield div textarea, /*to parchment texture*/
-div.flairgrant div.linefield input, /*rather than plain white*/
-div.flairgrant div.usertable span.flaircell input,
-div.flairlist div.flairtemplate span.flaircell input
-{
-    background-color: transparent;
-    background-image: url(%%Parchment%%);
-}
-div.content ul.tabmenu li a
-{
-    background: #161616;
-    color: #F5F5F5;
-}
-div.content ul.tabmenu li.selected a
-{
-    background: #F5F5F5;
-    color: orangered;
-}
-div.content form#subreddit_stylesheet.pretty-form.sr-form div.sheets div.col div textarea#stylesheet_contents
-{
-    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
-    height: 500px !important;
-    width: 99% !important;
-}
-div.content div.stylesheet-customize-container div#images ul#image-preview-list li
-{
-    margin-bottom: 20px !important;
-    padding-bottom: 0px !important;
-    width: 25% !important;
-=======
 div.side /*Sidebar*/
 {
     background-color: transparent;
@@ -557,7 +505,59 @@ div.side div.sidecontentbox a.helplink /*Step 3 in Renaming Moderators*/
 div.side div.sidecontentbox ul.content li a.author
 {
     color: #861D1D;
->>>>>>> origin/sidebar
+}
+
+/*Submission Page*/
+form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
+form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
+form#newlink.submit.content div.formtabs-content div#reddit-field /*fit with color scheme*/
+{
+    background-color: transparent;
+    background-image: url(%%Bar-Texture%%);
+}
+form#newlink.submit.content div.formtabs-content span.title /*Color change*/
+{
+    color: #F5F5F5;
+}
+
+/*Moderator Tools*/
+div.linefield,
+div.linefield span.title
+{ 
+    background-color: transparent;
+    background-image: url(%%Bar-Texture%%);
+    color: #F5F5F5;
+}
+div#sr-form div.linefield input, /*Setting various text inputs*/
+div#sr-form div.linefield div textarea, /*to parchment texture*/
+div.flairgrant div.linefield input, /*rather than plain white*/
+div.flairgrant div.usertable span.flaircell input,
+div.flairlist div.flairtemplate span.flaircell input
+{
+    background-color: transparent;
+    background-image: url(%%Parchment%%);
+}
+div.content ul.tabmenu li a
+{
+    background: #161616;
+    color: #F5F5F5;
+}
+div.content ul.tabmenu li.selected a
+{
+    background: #F5F5F5;
+    color: orangered;
+}
+div.content form#subreddit_stylesheet.pretty-form.sr-form div.sheets div.col div textarea#stylesheet_contents
+{
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    height: 500px !important;
+    width: 99% !important;
+}
+div.content div.stylesheet-customize-container div#images ul#image-preview-list li
+{
+    margin-bottom: 20px !important;
+    padding-bottom: 0px !important;
+    width: 25% !important;
 }
 
 /*Wiki*/
