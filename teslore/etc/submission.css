@@ -10,3 +10,7 @@ form#newlink.submit.content div.formtabs-content span.title /*Color change*/
 {
     color: #F5F5F5;
 }
+form#newlink.submit.content div.formtabs-content a
+{
+    color: #A72A2A;
+}

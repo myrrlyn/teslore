@@ -17,13 +17,14 @@ div.content div.thing div.entry p.title span.domain /*self.teslore*/
 {
     display: none !important;
 }
+div.content div.thing div.entry p.tagline
+{
+    font-size: 12px;
+    color: #70381A !important;
+}
 div.content div.thing div.entry div.expando div.usertext-body div.md /*OP background*/
 {
     background-color: #F5F5F5;
     border: 1px solid #161616;
     max-width: 75em !important;
-}
-div.content div.thing div.entry p.tagline
-{
-    color: #70381A !important;
 }

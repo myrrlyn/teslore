@@ -1,0 +1,22 @@
+div.side div.sidecontentbox div.title h1
+{
+    color: #F5F5F5;
+}
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-link-title, /*Sweet Talos, that hierarchy*/
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-comment-link,
+div.side div.account-activity-box p a
+{
+    color: #A72A2A;
+}
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-link-title:hover,
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-comment-link:hover,
+div.side div.account-activity-box p a
+{
+    text-decoration: underline;
+}
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-link-title:visited,
+div.side div.sidecontentbox ul.content li div.gadget div.clickgadget div div.reddit-link div.reddit-entry a.reddit-comment-link:visited,
+div.side div.account-activity-box p a
+{
+    color: #7F1F1F;
+}

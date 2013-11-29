@@ -13,3 +13,11 @@ body div.content
 {
     margin: 0 0 0 0 !important;
 }
+div.content div.nav-buttons span.nextprev a
+{
+    color: #161616;
+}
+div.content div.nav-buttons span.nextprev span.separator
+{
+    color: #161616;
+}
