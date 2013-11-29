@@ -3,10 +3,9 @@
  *= require content/frontpage
  *= require content/arrows
  *= require content/score
- *= require content/title
  *= require content/expando
- *= require content/menu_row
  *= require content/post
+ *= require content/comment_area
  */
 
 body div.content

@@ -3,6 +3,7 @@
  *= require etc/submission
  *= require etc/moderator
  *= require etc/wiki
+ *= require etc/footer
  */
 
 div.NERPageMarker /*RES Page Marker*/
