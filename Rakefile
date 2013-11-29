@@ -24,7 +24,7 @@ end
 
 def get_context id
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
-    env.logger = $logger
+    env.logger = Log
   end
   context.append_path ?.
   context.append_path id
@@ -32,10 +32,13 @@ def get_context id
 end
 
 def compile id
-  get_context(id).find_asset(id).to_s
+  ret = get_context(id).find_asset(id).to_s
+  ret.gsub! /\/\*\s*\*\//m, ''
+  ret.gsub! /^\s*$\r?\n/, ''
+  ret
 end
 
-namespace :ab do
+namespace :teslore do
   task :push do
     Log.info 'Logging into Reddit'
     bot, subreddit = get_bot
@@ -57,7 +60,7 @@ namespace :ab do
 
   task :compile do
     Log.info 'Compiling assets'
-    File.open 'teslore.compiled.css', 'w' do |f|
+    File.open 'build/teslore.css', 'w' do |f|
       f.write compile('teslore')
     end
     Log.info 'Done'
