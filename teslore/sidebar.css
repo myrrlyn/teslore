@@ -6,6 +6,7 @@
  *= require sidebar/titlebox
  *= require sidebar/create
  *= require sidebar/moderators
+ *= require sidebar/side_content_box
  */
  
 div.side
