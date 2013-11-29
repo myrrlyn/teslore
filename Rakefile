@@ -46,7 +46,16 @@ def compile id
   ret = get_context(id).find_asset(id).to_s
   ret.gsub! /\/\*\s*\*\//m, ''
   ret.gsub! /^\s*$\r?\n/, ''
+  verify id, ret
   ret
+end
+
+def verify id, str
+  images = Hash[FileList[File.join(id, 'images', '*')].map{|a| [File.basename(a.rpartition(?.).first), true]}]
+  return if images.empty?
+  str.gsub(/\/\*.+?\*\//m, '').scan(/%%(.+?)%%/).each do |(m)|
+    Log.warn "image `#{m}' not found in #{id}/images" unless images.include? m
+  end
 end
 
 namespace :reddit do
