@@ -8,7 +8,7 @@ Clone this repository and copy `config/reddit.yml.example` to `config/reddit.yml
 
 ## Installing stuff
 
-Run `bundle install` in this directory to install the required packages. You might need the `gcc`, `libxml2`, and `libxml2-dev` packages in addition to `ruby` on cygwin or Ubuntu.
+Run `bundle install` in this directory to install the required packages. You might need the `gcc`, `libxml2`, and `libxml2-dev` packages in addition to `ruby` on cygwin or Ubuntu. If `bundle` wasn't found, try `gem install bundler` first.
 
 ## Rake tasks
 
