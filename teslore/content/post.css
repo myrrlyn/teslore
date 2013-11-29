@@ -1,38 +1,29 @@
+body div.content > div.sitetable
+{
+    margin-left: -3px;
+    margin-right: 5px;
+}
+div.content div.thing div.entry p.title a.title
+{
+    color: #161616 !important;
+    font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Verdana, sans-serif;
+    font-size: 18px !important;
+}
+div.content div.thing div.entry p.title a.title:visited
+{
+    color: #545454 !important;
+}
+div.content div.thing div.entry p.title span.domain /*self.teslore*/
+{
+    display: none !important;
+}
 div.content div.thing div.entry div.expando div.usertext-body div.md /*OP background*/
 {
     background-color: #F5F5F5;
     border: 1px solid #161616;
     max-width: 75em !important;
 }
-.thing.comment:nth-child(4n+1) p.parent {
-    background-color: transparent !important;
-    background-image: url(%%T1%%) !important;
-}
-.thing.comment:nth-child(4n+3) p.parent {
-    background-color: transparent !important;
-    background-image: url(%%T2%%) !important;
-}
-div.comment
+div.content div.thing div.entry p.tagline
 {
-    background-color: transparent !important;
-	margin-left: 0px !important;
-    padding-bottom: 10px !important;
-    padding-right: 30px !important;
-	padding-left: 10px !important;
-}
-div.comment, /*1*/
-div.comment div.comment div.comment, /*3*/
-div.comment div.comment div.comment div.comment div.comment, /*5*/
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment, /*7*/
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment /*9*/
-{
-    background-image: url(%%T1%%) !important;
-}
-div.comment div.comment, /*2*/
-div.comment div.comment div.comment div.comment, /*4*/
-div.comment div.comment div.comment div.comment div.comment div.comment, /*6*/
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment, /*8*/
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment /*10*/
-{
-    background-image: url(%%T3%%) !important;
+    color: #70381A !important;
 }

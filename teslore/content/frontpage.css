@@ -22,3 +22,7 @@ div.content div.thing a.thumbnail
 {
     display: none!important;
 }
+div.content div.thing div.entry ul.flat-list.buttons li a
+{
+    color: #70381A !important;
+}
