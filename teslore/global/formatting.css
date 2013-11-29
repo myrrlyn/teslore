@@ -1,5 +1,6 @@
 a.author
 {
+    color: #161616;
     margin: 2px 1px 1px 1px;
 }
 a.gold, /*Reddit Gold links*/
@@ -22,7 +23,7 @@ a.voteWeight /*RES user-votes box*/
 }
 .md a:visited
 {
-    color: #7B7B7B !important;
+    color: #7F1F1F !important;
 }
 .md blockquote
 {

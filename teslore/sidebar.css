@@ -20,6 +20,7 @@ div.side
     width: 300px !important;
     z-index: 15 !important;
 }
+div.side a.author, /*Moderators and username at flair select*/
 div.side p /*Sidebar text*/
 {
     color: #F5F5F5;
