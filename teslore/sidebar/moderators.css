@@ -1,3 +1,8 @@
+/*
+ *= require_self
+ *= require sidebar/moderators/robots
+ */
+ 
 div.side div.sidecontentbox a.helplink + div.title h1 /*Step 1 in Renaming Moderators*/
 {
     display: none;
@@ -19,7 +24,3 @@ div.side div.sidecontentbox ul.content li a.author
 {
     color: #F5F5F5;
 }
-
-/*
- *= require moderators/robots
- */

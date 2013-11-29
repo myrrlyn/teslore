@@ -1,3 +1,10 @@
+/*
+ *= require_self
+ *= require flair/user
+ *= require flair/link
+ *= require flair/attributes
+ */
+
 /*Rendered Flair*/
 span.flair
 {
@@ -14,9 +21,3 @@ span.flair
     vertical-align: middle;
     z-index: 10;
 }
-
-/*
- *= require flair/user
- *= require flair/link
- *= require flair/attributes
- */

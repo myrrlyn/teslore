@@ -1,3 +1,13 @@
+/*
+ *= require_self
+ *= require sidebar/search
+ *= require sidebar/link_info
+ *= require sidebar/submission
+ *= require sidebar/titlebox
+ *= require sidebar/create
+ *= require sidebar/moderators
+ */
+ 
 div.side
 {
     background-color: transparent;
@@ -14,12 +24,3 @@ div.side p /*Sidebar text*/
 {
     color: #F5F5F5;
 }
-
-/*
- *= require sidebar/search
- *= require sidebar/link_info
- *= require sidebar/submission
- *= require sidebar/titlebox
- *= require sidebar/create
- *= require sidebar/moderators
- */

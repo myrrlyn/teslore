@@ -1,3 +1,9 @@
+/*
+ *= require_self
+ *= require header/banner/tabs
+ *= require header/banner/name
+ */
+
 div#header div#header-bottom-left /*Main header background*/
 {
     background-image: url(%%CapitalCol%%);
@@ -19,8 +25,3 @@ div#header div#header-bottom-left a#header-img-a img#header-img:hover
     background-image: url(%%Snoos%%) !important;
     background-position: 0px -60px;
 }
-
-/*
- *= require header/banner/tabs
- *= require header/banner/name
- */

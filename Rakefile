@@ -1,8 +1,13 @@
 $: << 'lib'
 
 require 'akatoshbot'
+require 'sprockets'
 require 'yaml'
 require 'pry'
+require 'pathname'
+require 'logger'
+
+Log ||= Logger.new STDOUT
 
 task :console do
   TOPLEVEL_BINDING.pry
@@ -12,20 +17,39 @@ def get_bot
   config = YAML.load File.read('config/reddit.yml')
   raise RuntimeError, "must have username, password, and subreddit" unless config.include?('username') && config.include?('password') && config.include?('subreddit')
   username, password, subreddit = config['username'], config['password'], config['subreddit']
-  bot = Crassius::Client.new username: username, password: password
+  bot = AkatoshBot::Client.new username: username, password: password
   bot.instance_eval File.read('Bindfile') if File.exists?('Bindfile')
   [bot, subreddit]
 end
 
+def get_context id
+  context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
+    env.logger = $logger
+  end
+  context.append_path ?.
+  context.append_path id
+  context
+end
+
+def compile id
+  get_context(id).find_asset(id).to_s
+end
+
 namespace :ab do
   task :push do
-    stylesheet = File.read config['stylesheet']
+    Log.info 'Logging into Reddit'
     bot, subreddit = get_bot
-    bot.put subreddit, File.read(stylesheet)
+    Log.info 'Compiling assets'
+    compiled = compile 'teslore'
+    bot.put subreddit, compiled
   end
 
   task :refresh do
+    Log.info 'Logging into Reddit'
     bot, subreddit = get_bot
-    bot.put subreddit, bot.get(subreddit)
+    Log.info "Getting stylesheet for /r/#{subreddit}"
+    stylesheet = bot.get subreddit
+    Log.info "Processing and uploading new stylesheet to /r/#{subreddit}"
+    bot.put subreddit, stylesheet
   end
 end

@@ -1,9 +1,5 @@
-body div.content
-{
-    margin: 0 0 0 0 !important;
-}
-
 /*
+ *= require_self
  *= require content/frontpage
  *= require content/arrows
  *= require content/score
@@ -11,5 +7,9 @@ body div.content
  *= require content/expando
  *= require content/menu_row
  *= require content/post
- *= require content/spoilers
  */
+
+body div.content
+{
+    margin: 0 0 0 0 !important;
+}

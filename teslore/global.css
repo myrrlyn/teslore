@@ -1,16 +1,22 @@
-html
-{
-    position: relative !important; /*Reddit Companion's shinebar does not cooperate without this*/
-}
-body
-{
-    background-attachment: fixed;
-    background-image: url(%%Map%%);
-    background-position: center center;
-    font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Verdana, sans-serif;
-}
-
 /*
+ *= require_self
  *= require global/formatting
  *= require global/spoilers
  */
+
+/*Rendered Flair*/
+span.flair
+{
+    background-color: transparent;
+    background-image: url(%%FlairSheet%%);
+    border: none;
+    border-radius: 0px;
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    margin-right: 0px;
+    padding: 0px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    z-index: 10;
+}

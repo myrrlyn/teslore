@@ -3,6 +3,7 @@
  */
 
 /*
+ *= require_self
  *= require flair
  *= require notification
  *= require global

@@ -1,3 +1,10 @@
+/*
+ *= require_self
+ *= require header/topbar
+ *= require header/userbar
+ *= require header/banner
+ */
+
 div#header
 {
     background-color: transparent !important;
