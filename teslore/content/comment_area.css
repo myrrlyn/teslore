@@ -2,11 +2,6 @@ div.content div.commentarea div.menuarea
 {
     color: #70381A !important;
 }
-div.content div.commentarea form div.usertext-edit div textarea
-{
-    background-color: transparent;
-    background-image: url(%%T4%%);
-}
 div.content div.thing.comment:nth-child(4n+1) p.parent {
     background-color: transparent !important;
     background-image: url(%%T1%%) !important;
