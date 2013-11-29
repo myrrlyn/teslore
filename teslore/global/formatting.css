@@ -78,6 +78,12 @@ a.voteWeight /*RES user-votes box*/
     font-size: 90%;
     vertical-align: middle;
 }
+.md hr
+{
+    border: 0;
+    height: 1px;
+    background-color: #aaa;
+}
 .md table
 {
     border-collapse: separate;
