@@ -44,9 +44,20 @@ end
 
 def compile id
   ret = get_context(id).find_asset(id).to_s
+
+  # Remove empty comments
   ret.gsub! /\/\*\s*\*\//m, ''
-  ret.gsub! /^\s*$\r?\n/, ''
+
+  # Normalize line endings for sending to Reddit
+  ret.gsub! /\r\n/, "\n"
+
+  # Replace multiple newlines with one
+  ret.gsub! /\n+/, "\n"
+
+  # Verify images
   verify id, ret
+
+  # Return the CSS blob
   ret
 end
 
