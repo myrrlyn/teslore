@@ -1,0 +1,101 @@
+/*SPOILER links*/
+a[href="#s"],       /* #links will be kind to mobile users*/
+a[href="/s"],       /* /links open a new site, and should only be used with a mouse*/
+a[href="#spoiler"], /* Backwards compatibility*/
+a[href="/spoiler"]
+{
+    background-color: #000000 !important;
+    border-radius: 3px;
+    color: #FFFFFF !important;
+    cursor: default;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+/*CONJECTURE links*/
+a[href="#g"],
+a[href="/g"],
+a[href="#conjecture"], /* Optional call for conjecture code*/
+a[href="/conjecture"]
+{
+    background-color: #558800 !important;
+    /*background-image: url(%%Conjecture-Cover%%);*/
+    border-radius: 3px;
+    color: #000000 !important;
+    cursor: default;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+/*SPOILER cover text*/
+a[href="#s"]:hover, /* Mouse */
+a[href="#s"]:active, /* Touch (mobile) */
+a[href="/s"]:hover,
+a[href="/s"]:active,
+a[href="#spoiler"]:hover,
+a[href="#spoiler"]:active,
+a[href="/spoiler"]:hover,
+a[href="/spoiler"]:active
+{
+    color: #FFFF00 !important;
+}
+/*CONJECTURE cover text*/
+a[href="#g"]:hover,
+a[href="#g"]:active,
+a[href="/g"]:hover,
+a[href="/g"]:active,
+a[href="#conjecture"]:hover,
+a[href="#conjecture"]:active,
+a[href="/conjecture"]:hover,
+a[href="/conjecture"]:active
+{
+    color: #FFFF00 !important;
+}
+/*SPOILER content*/
+a[href="#s"]::after,
+a[href="/s"]::after,
+a[href="#spoiler"]::after,
+a[href="/spoiler"]::after
+{
+    background: #000000 !important;
+    color: #000000; /* NOT !important, so that :hover::after can overwrite it */
+    content: attr(title);
+    font-weight: normal;
+    padding-left: 4px;
+}
+/*CONJECTURE content*/
+a[href="#g"]::after,
+a[href="/g"]::after,
+a[href="#conjecture"]::after,
+a[href="/conjecture"]::after
+{
+    background-color: #558800 !important;
+    color: #000000;
+    /*background-image: url(%%Conjecture-Cover%%);*/
+    /*color: #C3A787 !important;*/
+    content: attr(title);
+    font-weight: normal;
+    padding-left: 4px;
+}
+/*Activated SPOILER content*/
+a[href="#s"]:hover::after,
+a[href="#s"]:active::after,
+a[href="/s"]:hover::after,
+a[href="/s"]:active::after,
+a[href="#spoiler"]:hover::after,
+a[href="#spoiler"]:active::after,
+a[href="/spoiler"]:hover::after,
+a[href="/spoiler"]:active::after
+{
+    color: #FFFFFF !important;
+}
+/*Activated CONJECTURE content*/
+a[href="#g"]:hover::after,
+a[href="#g"]:active::after,
+a[href="/g"]:hover::after,
+a[href="/g"]:active::after,
+a[href="#conjecture"]:hover::after,
+a[href="#conjecture"]:active::after,
+a[href="/conjecture"]:hover::after,
+a[href="/conjecture"]:active::after
+{
+    color: #000000 !important;
+}

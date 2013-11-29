@@ -1,0 +1,33 @@
+html.res-nightmode body.res-nightmode div.side,
+html.res-nightmode body.res-nightmode div.side div.spacer,
+html.res-nightmode body.res-nightmode div.side div.spacer div.titlebox
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%) !important;
+}
+html.res-nightmode body.res-nightmode div.side div.spacer div.titlebox h1.hover.redditname
+{
+    background-color: transparent !important;
+    top: -63px !important;
+}
+html.res-nightmode body.res-nightmode div.side div.spacer div.sidebox.submit
+{
+    border-radius: 0px !important;
+    position: relative !important;
+    top: 300px !important;
+}
+html.res-nightmode body.res-nightmode div.side div.spacer div.sidebox.submit div.morelink
+{
+    position: relative !important;
+    top: 0px !important;
+}
+html.res-nightmode body.res-nightmode div.side div.spacer div.sidebox.submit div.morelink:before /*Flag-tail image*/
+{
+    content: url(%%Submit-Tail%%);
+    position: absolute !important;
+    right: 300px;
+}
+html.res-nightmode body.res-nightmode div.side div.spacer ul.content
+{
+    background-color: transparent !important;
+}

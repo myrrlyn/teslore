@@ -1,0 +1,12 @@
+form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
+form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
+form#newlink.submit.content div.formtabs-content div#url-field, /*fit with color scheme*/
+form#newlink.submit.content div.formtabs-content div#reddit-field
+{
+    background-color: transparent;
+    background-image: url(%%DarkTex%%);
+}
+form#newlink.submit.content div.formtabs-content span.title /*Color change*/
+{
+    color: #F5F5F5;
+}

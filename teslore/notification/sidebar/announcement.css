@@ -1,0 +1,22 @@
+div.side a[href$="#announcement"]
+{
+    background-image: url(%%T2%%);
+    border: 0px solid #F5F5F5;
+    border-top: 1px solid #F5F5F5;
+    color: #F5F5F5;
+    display: inline-block;
+    font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 0px 1px 0px;
+    position: absolute;
+    top: 63px;
+    right: 315px;
+    width: 300px;
+    height: 20px;
+    text-align: center;
+}
+div.side a[href$="#announcement"]:visited
+{
+    color: #F5F5F5 !important;
+}

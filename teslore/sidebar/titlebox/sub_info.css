@@ -1,0 +1,12 @@
+div.side div.titlebox div.bottom span.flair /*Remove creator flair*/
+{
+    display: none;
+}
+div.side div.titlebox div.bottom span.age time /*Subreddit age*/
+{
+    display: none !important;
+}
+div.side div.titlebox div.bottom span.age::after
+{
+    content: "2 eras";
+}

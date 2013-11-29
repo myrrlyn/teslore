@@ -1,0 +1,46 @@
+div.side a[href="#date"]
+{
+    background-image: url(%%T3%%);
+    border: 0px solid #161616;
+    color: #161616;
+    display: inline-block;
+	font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0px 0px 0px;
+    position: absolute;
+    top: 8px;
+    right: 315px;
+    width: 300px;
+/*
+    width: 350px;
+*/
+    height: 21px;
+    text-align: center;
+}
+div.side a[href="#date"]:after
+{
+    content: /*! @@date {
+                          "year": false,
+                          "holidays": {
+                            "1121": "A Very Special Day"
+                          }
+                        }
+              */ "Fredas, 29th of Sun's Dusk"; /*! @end */
+}
+div.side a[href="#date"]:before
+{
+/*
+    background-image: url(%%Date-Tail%%);
+*/
+    content:"";
+    width: 25px;
+    height: 29px;
+    position: absolute;
+    top: 0px;
+    right: 300px;
+}
+div.side a[href="#date"]:visited
+{
+    color: #161616 !important;
+}

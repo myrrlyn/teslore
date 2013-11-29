@@ -1,0 +1,139 @@
+/*Moderators*/
+span.flair-Council
+{
+    background-position: 0px -30px;
+}
+/* Scholar of the Week*/
+/*
+span.flair-SOTW
+{
+    background-position: 0px -60px !important;
+    z-index: 11;
+}
+*/
+/*Buoyant Armiger*/
+span.flair-Armiger
+{
+    background-position: 0px -60px;
+}
+/*Codal Architect - myrrlyn and numinit*/
+span.flair-c0da
+{
+    background-position: 0px -90px;
+}
+/*Scholar of Winterhold*/
+span.flair-Winterhold
+{
+    background-position: 0px -120px;
+}
+/*Dagonite*/
+span.flair-Dagonite
+{
+    background-position: 0px -150px;
+}
+/*Dwemer Scholar*/
+span.flair-Dwemer
+{
+    background-position: 0px -180px;
+}
+/*Tower Dancer - /u/Gerka*/
+span.flair-Gerka
+{
+    background-position: 0px -210px;
+}
+/*Mages Guild Conjurer*/
+span.flair-Mages
+{
+    background-position: 0px -240px;
+}
+/*Imperial Geographic Society - /u/hollymarkie*/
+span.flair-IGS
+{
+    background-position: 0px -270px;
+}
+/*Follower of Julianos*/
+span.flair-Julianos
+{
+    background-position: 0px -300px;
+}
+/*Mane - /u/Mr_Flippers*/
+span.flair-Mane
+{
+    background-position: 0px -330px;
+}
+/*Marukhati Selective*/
+span.flair-Marukhati
+{
+    background-position: 0px -360px;
+}
+/*Ancestor Moth Cultist*/
+span.flair-Moth
+{
+    background-position: 0px -390px;
+}
+/*Mythic Dawn Cultist*/
+span.flair-Mythic
+{
+    background-position: 0px -420px;
+}
+/*Orcpocrypha - /u/myrrlyn*/
+span.flair-myrrlyn
+{
+    background-position: 0px -450px;
+}
+/*Psijic Monk*/
+span.flair-Psijic
+{
+    background-position: 0px -480px;
+}
+/*Seeker - /u/salivific*/
+span.flair-dbcification
+{
+    background-position: 0px -510px;
+}
+/*Telvanni Houseman*/
+span.flair-Telvanni
+{
+    background-position: 0px -540px;
+}
+/*Member of the Tribunal Temple*/
+span.flair-Tribunal
+{
+    background-position: 0px -570px;
+}
+/*MK - /u/MKirkbride*/
+span.flair-MK
+{
+    background-position: 0px 0px;
+    position: relative;
+    top: -2px;
+    left: -4px;
+}
+a[href$="/MKirkbride"].author.id-T1_dhl5b /*Specific User ID*/
+{
+    background-color: #0B0B0B !important;
+    color: #821C1C !important;
+    margin-right: -2px;
+    padding: 5px 8px 5px 4px;
+    border-radius: 0px !important;
+    border: none !important;
+}
+a[href$="/MKirkbride"].author.id-T1_dhl5b::after /*Postfix*/
+{
+    background-color: #0B0B0B !important;
+    color: #821C1C !important;
+    content: " | OFFICIAL";
+    border-radius: 0px !important;
+    border: none !important;
+}
+a[href$="/MKirkbride"].author.id-T1_dhl5b + span.RESUserTag, /*RES Functions*/
+a[href$="/MKirkbride"].author.id-T1_dhl5b + span.RESUserTag + a.voteWeight
+{
+    display: none !important; /*Disabled for aesthetics*/
+    border-radius: 0px !important;
+    border: none !important;
+}
+span.flair.flair-MK + span.userattrs /*Disabled for aesthetics*/
+{
+    display: none;
+}

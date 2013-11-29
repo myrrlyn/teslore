@@ -1,0 +1,50 @@
+div.side div.titlebox div.usertext-body div.md h1 + table
+{
+    display: block;
+    margin-left: 0;
+}
+div.side div.titlebox div.usertext-body div.md h1 + table thead
+{
+    display: none;
+}
+
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr
+{
+    display: list-item;
+    width: 288px;
+}
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr td
+{
+    display: block;
+    border: none;
+}
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr td:first-child
+{
+    background-image: url(%%T3%%);
+    color: #161616;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #0B0B0B;
+    border-spacing: 1px;
+    font-weight: 500;
+}
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr td:first-child:hover,
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr td:first-child:active,
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr:hover td:first-child,
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr:active td:first-child
+{
+    background-image: url(%%T4%%);
+}
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr td:last-child
+{
+    display: none;
+    background-color: #161616;
+    color: #F5F5F5; 
+    border-top: 0px;
+    padding: 5px;
+}
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr:hover td:last-child,
+div.side div.titlebox div.usertext-body div.md h1 + table tbody tr:active td:last-child
+{
+    display: block;
+}

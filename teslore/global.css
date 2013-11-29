@@ -1,0 +1,16 @@
+html
+{
+    position: relative !important; /*Reddit Companion's shinebar does not cooperate without this*/
+}
+body
+{
+    background-attachment: fixed;
+    background-image: url(%%Map%%);
+    background-position: center center;
+    font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Verdana, sans-serif;
+}
+
+/*
+ *= require global/formatting
+ *= require global/spoilers
+ */

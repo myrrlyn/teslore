@@ -1,0 +1,13 @@
+div.side div.titlebox /*Moving items away from sidebar edge*/
+{
+    padding-left: 5px;
+}
+
+/*
+ *= require sidebar/titlebox/h1
+ *= require sidebar/titlebox/subscribers
+ *= require sidebar/titlebox/buttons
+ *= require sidebar/titlebox/flair_selector
+ *= require sidebar/titlebox/sub_info
+ *= require sidebar/titlebox/rules
+ */

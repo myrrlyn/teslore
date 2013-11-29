@@ -1,0 +1,22 @@
+/*Rendered Flair*/
+span.flair
+{
+    background-color: transparent;
+    background-image: url(%%FlairSheet%%);
+    border: none;
+    border-radius: 0px;
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    margin-right: 0px;
+    padding: 0px;
+    text-indent: -9999px;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+/*
+ *= require flair/user
+ *= require flair/link
+ *= require flair/attributes
+ */

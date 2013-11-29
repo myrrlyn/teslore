@@ -1,0 +1,22 @@
+div.side div.titlebox div.tagline div.flairselector /*Flair List*/
+{
+    background-color: #F5F5F5 !important;
+/*
+    background-color: transparent !important;
+    background-image: url(%%Parchment%%) !important;
+*/
+    box-shadow: none !important;
+    position: relative !important;
+    top: 0px !important;
+    left: -81px !important;
+    width: 346px !important;
+}
+div.side div.titlebox div.tagline div.flairselector h2
+{
+    background-color: transparent !important;
+    background-image: url(%%DarkTex%%) !important;
+}
+div.side div.titlebox div.tagline  div.flairselector form div.customizer /*Custom Flair Text*/
+{
+    display: none;
+}

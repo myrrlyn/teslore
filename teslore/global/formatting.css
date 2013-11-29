@@ -1,0 +1,93 @@
+a.author
+{
+    margin: 2px 1px 1px 1px;
+}
+a.gold, /*Reddit Gold links*/
+div.roundfield.gold-accent span.title
+{
+    color: #9a7d2e !important;
+    font-weight: bold !important;
+}
+a.voteWeight /*RES user-votes box*/
+{
+    background-color: transparent;
+}
+.md a
+{
+    color: #A72A2A;
+}
+.md a:hover
+{
+	text-decoration: underline;
+}
+.md a:visited
+{
+    color: #7B7B7B !important;
+}
+.md blockquote
+{
+    background-image: url(%%T1%%) !important;
+    border-left: 6px solid #333333 !important;
+    padding: 1px 2px 1px 5px !important;
+}
+.md code
+{
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    font-size: small;
+}
+.md h1
+{
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+}
+.md h2
+{
+    color: inherit;
+    font-size: 17px;
+    font-weight: 600;
+}
+.md h3
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.md h4
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.md h5
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+.md h6
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.md p
+{
+    color: #000000;
+    margin: 7px 10px;
+    line-height: 16px;
+}
+.md sup
+{
+    font-size: 90%;
+    vertical-align: middle;
+}
+.md table
+{
+    border-collapse: separate;
+}
+.md table thead tr th
+{
+    text-align: center;
+    
+}
+.md table tbody tr td
+{
+    text-align: center;
+}

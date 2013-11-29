@@ -1,0 +1,24 @@
+div.content div.thing.link
+{
+    margin: 1px 5px 1px -3px !important;
+}
+div.content div.thing.stickied a.title
+{
+    color: #228822 !important;
+}
+div.content div.thing.odd
+{
+    background-image: url(%%T2%%);
+}
+div.content div.thing.even
+{
+    background-image: url(%%T3%%);
+}
+div.content div.thing span.rank
+{
+    display: none !important;
+}
+div.content div.thing a.thumbnail
+{
+    display: none!important;
+}

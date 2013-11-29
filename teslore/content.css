@@ -1,0 +1,15 @@
+body div.content
+{
+    margin: 0 0 0 0 !important;
+}
+
+/*
+ *= require content/frontpage
+ *= require content/arrows
+ *= require content/score
+ *= require content/title
+ *= require content/expando
+ *= require content/menu_row
+ *= require content/post
+ *= require content/spoilers
+ */

@@ -1,0 +1,23 @@
+div.side form#search input[type="text"] /*Search*/
+{
+    background-color: transparent !important;
+    background-image: url(%%T2%%) !important;
+    color: #C7C7C7 !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+}
+div.side form#search div#searchexpando.infobar /*Search Expansion*/
+{
+    background-color: #161616;
+    border: none;
+    border-radius: 0px !important;
+    color: #EEEEEE;
+    margin: -5px 0 16px 0 !important;
+    padding-top: 10px;
+    }
+div.side form#search div#searchexpando.infobar label /*Checkbox definition*/
+{
+    color: #F5F5F5;
+}

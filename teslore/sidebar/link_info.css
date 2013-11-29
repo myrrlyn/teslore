@@ -1,0 +1,28 @@
+div.side div.linkinfo
+{
+    background-color: #161616;
+    border: none;
+    border-radius: 10px;
+    color: #EEEEEE;
+    margin-bottom: 0px;
+    position: absolute !important;
+    top: 264px;
+    right: 15px;
+    width: 260px !important;
+    z-index: 20;
+}
+div.side div.linkinfo div.shortlink input
+{
+    background-color: transparent !important;
+    background-image: url(%%T2%%) !important;
+    color: #C7C7C7 !important;
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+}
+div.side form.login-form.login-form-side
+{
+    display: none !important;
+}
+div.side div.sponsorshipbox
+{
+    display: none !important;
+}

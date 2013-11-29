@@ -1,0 +1,9 @@
+.sidecontentbox > .content > li > a.author[href$="/AkatoshBot"] {
+    display: none;
+}
+.sidecontentbox > .content > li > a.author[href$="/Dreamsleeve"] {
+    display: none;
+}
+.side .userTagLink {
+    display: none;
+}
