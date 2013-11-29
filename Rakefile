@@ -69,7 +69,7 @@ namespace :reddit do
     compiled = compile get_stylesheet(config)
     subreddit = get_subreddit config
     Log.info "Processing and uploading new stylesheet to /r/#{subreddit}"
-    puts bot.put subreddit, compiled
+    bot.put subreddit, compiled
     Log.info 'Done'
   end
 

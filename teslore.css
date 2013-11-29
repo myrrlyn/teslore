@@ -13,3 +13,5 @@
  *= require nightmode
  *= require etc
  */
+
+.md a[href*="https://www.redditdonate.com/"]{display:inline-block;height:40px;padding:0 0 0 100px;margin:0;background:transparent url(%%donatebutton%%) 0 50% no-repeat;text-decoration:none}.md a[href*="https://www.redditdonate.com/"]:hover{background-position:-105px 50%}.md a[href*="https://www.redditdonate.com/"] em{display:inline-block;padding-right:20px;height:40px;color:#fff;font-family:Helvetica;font-weight:bold;font-size:15px;font-style:normal;line-height:40px;background:#ef4923}.md a[href*="https://www.redditdonate.com/"]:hover em{background-color:#db4321}
