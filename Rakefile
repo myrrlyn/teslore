@@ -42,6 +42,7 @@ namespace :ab do
     Log.info 'Compiling assets'
     compiled = compile 'teslore'
     bot.put subreddit, compiled
+    Log.info 'Done'
   end
 
   task :refresh do
@@ -51,5 +52,14 @@ namespace :ab do
     stylesheet = bot.get subreddit
     Log.info "Processing and uploading new stylesheet to /r/#{subreddit}"
     bot.put subreddit, stylesheet
+    Log.info 'Done'
+  end
+
+  task :compile do
+    Log.info 'Compiling assets'
+    File.open 'teslore.compiled.css', 'w' do |f|
+      f.write compile('teslore')
+    end
+    Log.info 'Done'
   end
 end
