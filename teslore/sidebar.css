@@ -19,7 +19,6 @@ div.side
     top: -88px;
     width: 300px !important;
     z-index: 15 !important;
-    padding: 0px 2px 0px 2px;
 }
 div.side p /*Sidebar text*/
 {
