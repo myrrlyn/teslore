@@ -1,13 +1,17 @@
-div.side div.sidecontentbox div.title h1
+div.side div.sidecontentbox div.title h1,
+div.side div.sidecontentbox ul.content li div.gadget div.reddit-entry span.score
 {
     color: #F5F5F5;
 }
-div.side div.sidecontentbox ul.content li div.reddit-entry a,
-div.side div.sidecontentbox ul.content li div.gadget div.right a,
-div.side iframe#ad_main div#redditthis a,
+div.side div.sidecontentbox ul.content li div.gadget div.reddit-entry a,
 div.side div.account-activity-box p a
 {
     color: #A72A2A;
+}
+div.side iframe#ad_main div#redditthis a
+{
+    font-family: Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Verdana, sans-serif !important;
+    color: #A72A2A !important;
 }
 div.side div.sidecontentbox ul.content li div.reddit-entry a:hover,
 div.side div.sidecontentbox ul.content li div.gadget div.right a:hover,
