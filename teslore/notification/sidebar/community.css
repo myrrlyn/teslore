@@ -1,12 +1,10 @@
 div.side a[href$="#com"]
 {
-    background-image: url(%%T2%%);
     border: 0px solid #F5F5F5;
     color: #F5F5F5;
     display: inline-block;
     font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
     position: absolute;
     top: 39px;
     right: 315px;

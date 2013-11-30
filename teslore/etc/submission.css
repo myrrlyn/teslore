@@ -1,16 +1,36 @@
-form#newlink.submit.content div.formtabs-content div#title-field, /*Blue background*/
-form#newlink.submit.content div.formtabs-content div#text-field, /*areas changed to*/
-form#newlink.submit.content div.formtabs-content div#url-field, /*fit with color scheme*/
-form#newlink.submit.content div.formtabs-content div#reddit-field
+body.submit-page  div.formtabs-content div#title-field, /*Blue background*/
+body.submit-page  div.formtabs-content div#text-field, /*areas changed to*/
+body.submit-page  div.formtabs-content div#url-field, /*fit with color scheme*/
+body.submit-page  div.formtabs-content div#reddit-field
 {
     background-color: transparent;
     background-image: url(%%DarkTex%%);
 }
-form#newlink.submit.content div.formtabs-content span.title /*Color change*/
+body.submit-page  div.formtabs-content span.title /*Color change*/
 {
     color: #F5F5F5;
 }
-form#newlink.submit.content div.formtabs-content a
+body.submit-page div.content a
 {
     color: #A72A2A;
+}
+body.submit-page div#suggested-reddits  h3
+{
+    color: #F5F5F5;
+}
+body.submit-page div#title-field textarea
+{
+    background-color: transparent;
+    background-image: url(%%T4%%);
+}
+body.submit-page div#text-field div.usertext div.usertext-edit textarea
+{
+    background-color: transparent;
+    background-image: url(%%T4%%);
+    height: 500px;
+}
+body.submit-page div#reddit-field div#sr-autocomplete-area input#sr-autocomplete
+{
+    background-color: transparent;
+    background-image: url(%%T4%%);
 }
