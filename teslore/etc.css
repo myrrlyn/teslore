@@ -6,14 +6,25 @@
  *= require etc/footer
  */
 
-div.NERPageMarker /*RES Page Marker*/
-{
-    width: 80% !important;
-    background-color: #F5F5F5 !important;
-}
+div.NERPageMarker, /*RES Page Marker*/
 div#progressIndicator /*RES Loading*/
 {
-    width: 80% !important;
+	background-color: transparent;;
+	background-image: url(%%T4%%);
+	color: #161616;
+    width: 80%;
+}
+div#progressIndicator h2,p
+{
+	color: #161616;
+}
+div#progressIndicator p a#NERStaticLink
+{
+	color: #A72A2A;
+}
+div#progressIndicator a:hover
+{
+	text-decoration: underline;
 }
 div.content p.tagline em /*Deleted Author*/
 {

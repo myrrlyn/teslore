@@ -4,14 +4,21 @@ div.side a[href$="#faq"]
     color: #161616;
     display: inline-block;
     font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-    font-size: 16px;
-    padding: 15px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
     position: absolute;
-    top: 39px;
-    right: 616px;
-    width: 49px;
-    height: 34px;
+    top: 52px;
+    right: 550px;
     text-align: center;
+    text-transform: uppercase;
+}
+div.side a[href$="#faq"]:active,
+div.side a[href$="#faq"]:hover
+{
+    background-color: #F5F5F5;
+    border: 1px solid #FFFFFF;
+    color: #BF2F2F;
 }
 div.side a[href$="#faq"]:visited
 {
