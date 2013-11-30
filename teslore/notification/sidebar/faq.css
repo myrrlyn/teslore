@@ -1,13 +1,10 @@
-/*
 div.side a[href$="#faq"]
 {
-    background-image: url(%%T4%%);
     border: 0px solid #F5F5F5;
     color: #161616;
     display: inline-block;
     font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
     padding: 15px 0px 0px 0px;
     position: absolute;
     top: 39px;
@@ -20,4 +17,3 @@ div.side a[href$="#faq"]:visited
 {
     color: #F5F5F5 !important;
 }
-*/
