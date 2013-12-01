@@ -8,7 +8,7 @@
  *= require sidebar/moderators
  *= require sidebar/side_content_box
  */
- 
+
 div.side
 {
     background-color: transparent;
