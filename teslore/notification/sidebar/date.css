@@ -1,6 +1,6 @@
 div.side a[href="#date"]
 {
-    background-image: url(%%T3%%);
+    background-image: url(%%T4%%);
     border: 0px solid #161616;
     color: #161616;
     display: inline-block;
@@ -10,8 +10,8 @@ div.side a[href="#date"]
     padding: 5px 0px 0px 0px;
     position: absolute;
     top: 8px;
-    right: 315px;
-    width: 350px;
+    right: 305px;
+    width: 306px;
     height: 21px;
     text-align: center;
 }
