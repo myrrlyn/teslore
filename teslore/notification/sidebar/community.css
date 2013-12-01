@@ -11,12 +11,7 @@ div.side a[href$="#com"]
     right: 250px;
     text-align: center;
     text-transform: uppercase;
-/*Announcement--
-	top: 42px;
---Announcement*/
-/*No Announcement*/
-	top: 52px;
-/*No Announcement*/
+	top: 41px;
 }
 div.side a[href$="#com"]:active,
 div.side a[href$="#com"]:hover
