@@ -5,13 +5,13 @@ div.content div.thing div.score
 }
 div.content div.thing div.score.likes
 {
-    color: #FF8B60 !important;
+    color: #FF8B60;
 }
 div.content div.thing div.score.unvoted
 {
-    color: #212121 !important;
+    color: #212121;
 }
 div.content div.thing div.score.dislikes
 {
-    color: #9494FF !important;
+    color: #9494FF;
 }

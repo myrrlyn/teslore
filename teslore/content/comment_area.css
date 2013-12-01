@@ -1,6 +1,6 @@
 div.content div.commentarea div.menuarea
 {
-    color: #70381A !important;
+    color: #70381A;
 }
 div.content div.commentarea form div.usertext-edit div textarea
 {
@@ -8,20 +8,20 @@ div.content div.commentarea form div.usertext-edit div textarea
     background-image: url(%%T4%%);
 }
 div.content div.thing.comment:nth-child(4n+1) p.parent {
-    background-color: transparent !important;
-    background-image: url(%%T1%%) !important;
+    background-color: transparent;
+    background-image: url(%%T1%%);
 }
 div.content div.thing.comment:nth-child(4n+3) p.parent {
-    background-color: transparent !important;
-    background-image: url(%%T2%%) !important;
+    background-color: transparent;
+    background-image: url(%%T2%%);
 }
 div.comment
 {
-    background-color: transparent !important;
-	margin-left: 0px !important;
-    padding-bottom: 10px !important;
-    padding-right: 30px !important;
-	padding-left: 10px !important;
+    background-color: transparent;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 div.comment, /*1*/
 div.comment div.comment div.comment, /*3*/

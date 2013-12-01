@@ -57,18 +57,12 @@ div.content .grayed div.md p
     outline: none !important;
     background-color: transparent !important;
 }
-div#RESMainGearOverlay.RESGearOverlay
-{
-    top: 20px !important;
-}
-div#RESPrefsDropdown.RESDropdownList
-{
-    top: 48px !important;
-}
+div#RESMainGearOverlay.RESGearOverlay,
 span#RESAccountSwitcherIconOverlay
 {
     top: 20px !important;
 }
+div#RESPrefsDropdown.RESDropdownList,
 ul#RESAccountSwitcherDropdown.RESDropdownList
 {
     top: 48px !important;
@@ -76,7 +70,7 @@ ul#RESAccountSwitcherDropdown.RESDropdownList
 .new-comment .usertext-body /*Gold-highlit new comments*/
 {
     background-color: transparent !important;
-    background-image: url(%%T2%%) !important;
+    background-image: url(%%T3%%) !important;
     border: solid 1px #161616 !important;
 }
 body.mod-toolbox div#tb-bottombar.tb-toolbar

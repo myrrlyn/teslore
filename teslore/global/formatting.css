@@ -23,17 +23,17 @@ a.voteWeight /*RES user-votes box*/
 }
 .md a:visited
 {
-    color: #7F1F1F !important;
+    color: #7F1F1F;
 }
 .md blockquote
 {
-    background-image: url(%%T1%%) !important;
-    border-left: 6px solid #333333 !important;
-    padding: 1px 2px 1px 5px !important;
+    background-image: url(%%T1%%);
+    border-left: 6px solid #333333;
+    padding: 1px 2px 1px 5px;
 }
 .md code
 {
-    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
     font-size: small;
 }
 .md h1

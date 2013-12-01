@@ -1,6 +1,6 @@
 div.content div.thing.link
 {
-    margin: 1px 5px 1px -3px !important;
+    margin: 1px 5px 1px -3px;
 }
 div.content div.thing.stickied a.title
 {
@@ -20,9 +20,9 @@ div.content div.thing span.rank
 }
 div.content div.thing a.thumbnail
 {
-    display: none!important;
+    display: none !important;
 }
 div.content div.thing div.entry ul.flat-list.buttons li a
 {
-    color: #70381A !important;
+    color: #70381A;
 }

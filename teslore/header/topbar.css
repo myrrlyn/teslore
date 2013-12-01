@@ -27,10 +27,6 @@ div#header div#sr-header-area div.drop-choices.srdrop a.choice:hover
     background-color: #F5F5F5;
     color: #161616;
 }
-div#header div#sr-header-area a[href*="/mod"]
-{
-    color: #228822 !important;
-}
 div#header div#sr-header-area a[href*="/lounge"]
 {
     color: #9A7D2E !important;

@@ -1,20 +1,16 @@
 div.side div.titlebox div.tagline div.flairselector /*Flair List*/
 {
-    background-color: #F5F5F5 !important;
-/*
-    background-color: transparent !important;
-    background-image: url(%%Parchment%%) !important;
-*/
-    box-shadow: none !important;
-    position: relative !important;
-    top: 0px !important;
-    left: -81px !important;
-    width: 346px !important;
+    background-color: #F5F5F5;
+    box-shadow: none;
+    position: relative;
+    top: 0px;
+    left: -81px;
+    width: 346px;
 }
 div.side div.titlebox div.tagline div.flairselector h2
 {
-    background-color: transparent !important;
-    background-image: url(%%DarkTex%%) !important;
+    background-color: transparent;
+    background-image: url(%%DarkTex%%);
 }
 div.side div.titlebox div.tagline  div.flairselector form div.customizer /*Custom Flair Text*/
 {

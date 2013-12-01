@@ -15,8 +15,7 @@ div.side div.sidecontentbox div.arrow.up
     background-position: 0px 0px;
 }
 div.content div.thing div.arrow.down,
-div.side div.sidecontentbox div.arrow.down,
-html shinebar html body div#bar.logged-in div#buttons div#downvote
+div.side div.sidecontentbox div.arrow.down
 {
     background-position: 0px -15px;
     display: none !important;
@@ -30,4 +29,9 @@ div.content div.thing div.arrow.downmod,
 div.side div.sidecontentbox div.arrow.downmod
 {
     background-position: -15px -15px;
+}
+html shinebar html body div#bar.logged-in div#buttons div#downvote
+{
+	display: none !important;
+	visibility: hidden !important;
 }

@@ -4,6 +4,8 @@
 .sidecontentbox > .content > li > a.author[href$="/Dreamsleeve"] {
     display: none;
 }
-.side .userTagLink {
+div.side span.RESUserTag,
+div.side span.RESUserTag a.userTagLink
+{
     display: none;
 }

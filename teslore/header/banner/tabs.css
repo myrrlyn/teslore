@@ -4,7 +4,7 @@ div#header div#header-bottom-left ul.tabmenu
     position: absolute;
     top: 94px;
     left: 5px;
-    z-index: 8 !important;
+    z-index: 8;
 }
 div#header div#header-bottom-left ul.tabmenu li a /*Tab menu buttons*/
 {
@@ -17,8 +17,8 @@ div#header div#header-bottom-left ul.tabmenu li a /*Tab menu buttons*/
 }
 div#header div#header-bottom-left ul.tabmenu li.selected a /*currently selected button*/
 {
-    background-color: #F5F5F5 !important;
-    border: 1px solid #FFFFFF !important;
+    background-color: #F5F5F5;
+    border: 1px solid #FFFFFF;
     color: #BF2F2F !important;
 }
 div#header div#header-bottom-left ul.tabmenu li a[href*="/controversial"],

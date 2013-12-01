@@ -4,13 +4,13 @@ div.side div#moderation_tools div.title h1 /*Mod Toolbox Title*/
 }
 div.side div#moderation_tools div.title span.collapse-button
 {
-    background-color: #F5F5F5 !important;
+    background-color: #F5F5F5;
     border: none;
     color: #161616 !important;
 }
 div.side div#moderation_tools ul li ul li a /*Moderator Toolbox*/
 {
-    background-color: transparent !important;
+    background-color: transparent;
     color: #A72A2A;
 }
 div.linefield,
@@ -26,7 +26,7 @@ div.flairgrant div.linefield input[type="text"],
 div.flairgrant div.usertable span.flaircell input,
 div.flairlist div.flairtemplate span.flaircell input
 {
-    background-color: #F5F5F5 !important;
+    background-color: #F5F5F5;
 }
 div#sr-form div.linefield div.usertext div.usertext-edit div textarea[name="description"]
 {
@@ -40,12 +40,12 @@ div.content ul.tabmenu li a
 div.content ul.tabmenu li.selected a
 {
     background: #F5F5F5;
-    color: orangered;
+    color: #BF2F2F;
 }
 div.content form#subreddit_stylesheet.pretty-form.sr-form div.sheets div.col div textarea#stylesheet_contents
 {
-    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
-    height: 500px !important;
+    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
+    height: 750px !important;
     width: 99% !important;
 }
 div.content div.stylesheet-customize-container div#images ul#image-preview-list li
@@ -53,8 +53,4 @@ div.content div.stylesheet-customize-container div#images ul#image-preview-list 
     margin-bottom: 20px !important;
     padding-bottom: 0px !important;
     width: 25% !important;
-}
-div#header-bottom-left ul.tabmenu li a.modtools-on
-{
-    color: #228822 !important;
 }
