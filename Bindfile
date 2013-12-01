@@ -1,6 +1,5 @@
 bind :date do |body, args={}|
   t = Time.now.utc
   c = t.strftime('%m%d').to_sym
-  binding.pry
   !args[:holidays].nil? && args[:holidays][c].is_a?(String) ? args[:holidays][c] : t.tamriel(args[:year])
 end
