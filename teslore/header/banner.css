@@ -6,7 +6,10 @@
 
 div#header div#header-bottom-left /*Main header background*/
 {
-    background-image: url(%%CapitalCol%%);
+    background-color: #161616;
+    background-image: url(%%Capital%%);
+    background-position: top;
+    background-repeat: repeat-x;
     height: 113px !important;
     z-index: 5 !important;
 }

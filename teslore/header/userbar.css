@@ -14,10 +14,6 @@ div#header div#header-bottom-right.res-navTop /*RES' name for user bar*/
     padding: 4px 8px;
     z-index: 9 !important;
 }
-body.loggedin div#header div#header-bottom-right span.user > a:before
-{
-    content: "/u/";
-}
 div#header div#header-bottom-right.res-navTop div#userbarToggle.userbarHide
 {
     background-color: transparent !important;
