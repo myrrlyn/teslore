@@ -1,6 +1,16 @@
-div.content div.commentarea div.menuarea
+div.content div.commentarea div.panestack-title span.panestack-title
 {
-    color: #70381A !important;
+    color: #161616;
+}
+div.content div.commentarea div.menuarea,
+div.content div.commentarea div.menuarea div.dropdown span.selected,
+div.content div.commentarea div.menuarea div.drop-choices form a.choice
+{
+    color: #70381A;
+}
+div.content div.commentarea div.menuarea div.drop-choices
+{
+    background-color: #F5F5F5;
 }
 div.content div.commentarea form div.usertext-edit div textarea
 {
