@@ -1,0 +1,23 @@
+/*
+ *=require_self
+ *=require wiki/wiki_stylesheet
+ *=require wiki/wiki_body
+ */
+div.side div#wikiactions div.title h1 /*Wiki Toolbox Title*/
+{
+    padding-left: 5px;
+}
+div.side div#wikiactions div.title span.collapse-button
+{
+    background-color: #F5F5F5 !important;
+/*
+    background-color: transparent !important;
+    background-image: url(%%Parchment%%) !important;
+*/
+    border: none;
+    color: #161616 !important;
+}
+div.side div#wikiactions ul li ul li a /*Wiki Toolbox*/
+{
+    background-color: transparent !important;
+}
