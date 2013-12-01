@@ -1,3 +1,4 @@
+/*
 div.content div.thing.link div.arrow.up:hover::before
 {
     position: absolute;
@@ -59,8 +60,8 @@ div.content div.thing.comment div.arrow.down:hover::before
     z-index: 1000;
     width: auto;
     padding: 5px;
-    border: 1px solid #000;
-    background-color: #000;
+    border: 1px solid #000000;
+    background-color: #000000;
     content: "Don't downvote just because you disagree - is it really a poor comment?";
     text-align: center;
     font-size: 11px;
@@ -70,3 +71,4 @@ div.content div.thing.comment div.arrow.down:hover::before
     margin-top: 5px;
     border-radius: 4px;
 }
+*/

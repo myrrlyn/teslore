@@ -5,16 +5,13 @@ div.side div#moderation_tools div.title h1 /*Mod Toolbox Title*/
 div.side div#moderation_tools div.title span.collapse-button
 {
     background-color: #F5F5F5 !important;
-/*
-    background-color: transparent !important;
-    background-image: url(%%Parchment%%) !important;
-*/
     border: none;
     color: #161616 !important;
 }
 div.side div#moderation_tools ul li ul li a /*Moderator Toolbox*/
 {
     background-color: transparent !important;
+    color: #A72A2A;
 }
 div.linefield,
 div.linefield span.title
@@ -30,10 +27,6 @@ div.flairgrant div.usertable span.flaircell input,
 div.flairlist div.flairtemplate span.flaircell input
 {
     background-color: #F5F5F5 !important;
-/*
-    background-color: transparent !important;
-    background-image: url(%%Parchment%%) !important;
-*/
 }
 div#sr-form div.linefield div.usertext div.usertext-edit div textarea[name="description"]
 {
