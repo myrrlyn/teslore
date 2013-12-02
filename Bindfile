@@ -1,4 +1,4 @@
-bind :date do |**args|
+bind :date do |body, args={}|
   t = Time.now.utc
   c = t.strftime('%m%d').to_sym
   !args[:holidays].nil? && args[:holidays][c].is_a?(String) ? args[:holidays][c] : t.tamriel(args[:year])

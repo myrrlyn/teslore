@@ -1,17 +1,17 @@
 GIT
   remote: git@git.stratosphe.re:reddit/akatoshbot.git
-  revision: d654641fb346633d901e36cebf77d9d4ef578317
+  revision: 586f3473f79618e17a441585588ef914fbe6d6bd
   branch: master
   specs:
-    akatoshbot (0.2.1)
+    akatoshbot (0.3.0)
       crassius
 
 GIT
   remote: git@git.stratosphe.re:reddit/crassius.git
-  revision: 879c7ec3b25d57d0b5d1bde3c8e777c853cc7f1f
+  revision: dfc6acee1c613818e3e3f80f42f834f2c7cea9f0
   branch: master
   specs:
-    crassius (0.2.1)
+    crassius (0.3.0)
       erubis
       htmlentities
       snoo
