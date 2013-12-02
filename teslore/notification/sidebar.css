@@ -2,7 +2,6 @@
  *= require_self
  *= require notification/sidebar/date
  *= require notification/sidebar/community
- *= require notification/sidebar/announcement
  *= require notification/sidebar/faq
  */
  
