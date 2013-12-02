@@ -1,11 +1,4 @@
-$: << 'lib'
-
-require 'akatoshbot'
-require 'sprockets'
-require 'yaml'
-require 'pry'
-require 'pathname'
-require 'logger'
+%w[pry yaml pathname logger akatoshbot sprockets sprockets-sass].each(&method(:require))
 
 Log ||= Logger.new STDOUT
 
