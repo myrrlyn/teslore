@@ -1,0 +1,30 @@
+<% if args.include? :banners and args[:banners].is_a? Hash %>
+    <%# Pick today's banner: day of year mod number of banners %>
+    <% id, banner = args[:banners].to_a[Time.now.utc.yday % args[:banners].length] %>
+    div#header div#header-bottom-left /* Main header background */
+    {
+        background-color: #161616;
+        background-image: url(<%= banner[:url] %>);
+        background-position: top;
+        background-repeat: repeat-x;
+        height: 113px !important;
+        z-index: 5 !important;
+    }
+    div.side a[href="<%= banner[:author] %>#banner"]
+    {
+        background-image: url(%%T4%%);
+        border: 0px solid #161616;
+        color: #161616;
+        display: inline-block !important;
+        font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 0px 0px 0px;
+        position: absolute;
+        top: -25px;
+        right: 305px;
+        width: 306px;
+        height: 21px;
+        text-align: center;
+    }
+<% end %>

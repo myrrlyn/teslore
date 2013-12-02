@@ -1,0 +1,23 @@
+/*! @banner {
+              "banners": {
+                "prophet": {
+                  "url": "%%CapitalCol%%",
+                  "author": "http://ladynerevar.tumblr.com"
+                },
+                "numinatus": {
+                  "url": "%%BannerNuminatus%%",
+                  "author": "http://ladynerevar.tumblr.com"
+                }
+              }
+            }
+ */
+  /* Banner goes here */
+/*! @end */
+div.side a[href$="#banner"]
+{
+    display: none;
+}
+div.side a[href$="#banner"]:visited
+{
+    color: #161616 !important;
+}

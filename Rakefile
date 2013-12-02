@@ -65,11 +65,13 @@ end
 namespace :reddit do
   task :compile do
     config = get_config
+    Log.info 'Logging into Reddit'
+    bot = get_bot config
     Log.info 'Compiling assets'
     mkdir_p 'build'
     stylesheet = get_stylesheet config
     File.open "build/#{stylesheet}.css", 'w' do |f|
-      f.write compile(stylesheet)
+      f.write bot.interpret(compile(stylesheet))
     end
     Log.info 'Done'
   end
