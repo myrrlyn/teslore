@@ -1,0 +1,33 @@
+/* Initializing variable definitions for sheet
+ * This will later be fractured as the stylesheet pieces are
+ */
+
+/* Global */
+
+/* Colors */
+$black: #161616;
+$gold: #9A7D2E;
+$red: #A72A2A;
+$white: #F5F5F5;
+
+/* Font Set */
+$code: Inconsolata, Consolas;
+$sans-serif-set: Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Verdana, sans-serif;
+$serif-set: Georgia, "Book Antiqua", "Palatino Linotype", serif
+
+/* Images */
+$texture: url(%%DarkTex%%);
+
+/*Header*/
+$banner: url(%%Banner%%);
+$banner-height: 89px;
+$logo: url(%%Snoos%%);
+$name: url(%%Realms%%);
+
+/* Sidebar */
+
+/* Content */
+
+/* Misc */
+
+/* MIXINS */

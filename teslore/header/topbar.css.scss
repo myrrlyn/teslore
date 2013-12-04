@@ -1,60 +1,96 @@
-div#header div#sr-header-area /*Subreddit list*/
+div#header
 {
-    background-color: transparent;
-    background-image: url(%%DarkTex%%);
-    border-bottom: 0px;
-    z-index: 6 !important;
-}
-div#header div#sr-header-area a,
-div#header div#sr-header-area span
-{
-    color: #F5F5F5;
-    font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-    font-size: 95% !important;
-}
-div#header div#sr-header-area div.drop-choices.srdrop /*Dropdown menu of subreddits*/
-{
-    background-color: transparent;
-    background-image: url(%%DarkTex%%);
-    z-index: 50 !important;
-}
-div#header div#sr-header-area div.drop-choices.srdrop a.choice
-{
-    padding: 1px 2px !important;
-}
-div#header div#sr-header-area div.drop-choices.srdrop a.choice:hover
-{
-    background-color: #F5F5F5;
-    color: #161616;
-}
-div#header div#sr-header-area a[href*="/mod"]
-{
-    color: #228822 !important;
-}
-div#header div#sr-header-area a[href*="/lounge"]
-{
-    color: #9A7D2E !important;
-}
-div#header div#sr-header-area a[href*="/teslore"]
-{
-    color: #BF2F2F !important;
-    font-size: 125% !important;
-}
-div#header div#sr-header-area a#sr-more-link
-{
-    background-image: url(%%DarkTex%%);
-    border-bottom: 0px;
-    z-index: 7 !important;
-}
-div#header div#sr-header-area div#RESShortcutsEditContainer, /*RES buttons*/
-div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsSort,
-div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsRight,
-div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsLeft,
-div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsAdd,
-div#header div#sr-header-area div#RESShortcutsEditContainer div#RESShortcutsTrash
-{
-    background-color: transparent !important;
-    background-image: url(%%DarkTex%%)!important;
-    color: #F5F5F5;
-    z-index: 9 !important;
+    div#sr-header-area /* Subreddit lists */
+    {
+        background
+        {
+            color: transparent;
+            image: $texture;
+        }
+        border
+        {
+            bottom: 0px;
+        }
+        z-index: 6 !important;
+
+        a,
+        span
+        {
+            color: $white;
+            font:
+            {
+                family: $serif-set;
+                size: 95% !important;
+            }
+        }
+        a#sr-more-link
+        {
+            background:
+            {
+                image: $texture;
+            }
+            border:
+            {
+                bottom: 0px;
+            }
+            z-index: 7 !important;
+        }
+        a[href*="/r/lounge"]
+        {
+            color: $gold;
+        }
+        a[href*="/r/teslore"]
+        {
+            color: $red;
+            font:
+            {
+                size: 125%;
+            }
+        }
+        div.drop-choices.srdrop /* Dropdown menu of subreddits */
+        {
+            background
+            {
+                color: transparent;
+                image: $texture;
+            }
+            z-index: 15 !important;
+            
+            a.choice
+            {
+                padding:
+                {
+                    top: 1px !important;
+                    left: 2px !important;
+                    right: 2px !important;
+                    bottom: 1px !important;
+                }
+            }
+            a.choice:hover
+            {
+                background:
+                {
+                    color: $white;
+                }
+                color: $black;
+            }
+        }
+        div#RESShortcutsEditContainer /* RES Buttons */
+        {
+            div#RESShortcutsAdd,
+            div#RESShortcutsLeft,
+            div#RESShortcutsSort,
+            div#RESShortcutsRight,
+            div#RESShortcutsTrash
+            {
+                background:
+                {
+                    color: transparent;
+                    image: $texture;
+                }
+                color: $white;
+                z-index: 15 !important;
+            }
+        }
+    }
 }

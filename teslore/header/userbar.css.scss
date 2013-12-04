@@ -1,48 +1,47 @@
-div#header div#header-bottom-right,
-div#header div#header-bottom-right.res-navTop /*RES' name for user bar*/
+div#header
 {
-    background-color: transparent !important;
-    background-image: url(%%DarkTex%%);
-    position: absolute;
-    top: 23px;
-    bottom: 93px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 0px;
-    margin: -5px 5px -5px 0px;
-    padding: 4px 8px;
-    z-index: 9 !important;
-}
-div#header div#header-bottom-right.res-navTop div#userbarToggle.userbarHide
-{
-    background-color: transparent !important;
-    background-image: url(%%DarkTex%%);
-    border-right: none;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 0px;
-    color: #7EB5B5 !important;
-    line-height: 20px;
-    z-index: 9 !important;
-}
-div#header div#header-bottom-right.res-navTop div#userbarToggle.userbarShow
-{
-    background-color: transparent !important;
-    background-image: url(%%DarkTex%%);
-    border-right: none;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    color: #7EB5B5 !important;
-    line-height: 20px;
-    z-index: 9 !important;
-}
-div#header div#header-bottom-right a,
-div#header div#header-bottom-right form,
-div#header div#header-bottom-right span
-{
-    color: #F5F5F5 !important;
+    div#header-bottom-right,
+    div#header-bottom-right.resNavTop
+    {
+        background:
+        {
+            color: transparent;
+            image: $texture;
+        }
+        border:
+        {
+            radius: 0px;
+            width: 0px;
+        }
+        bottom: $banner-height - 20px;
+        margin:
+        {
+            top: -5px;
+            left: 0px;
+            right: 5px;
+            bottom: -5px;
+        }
+        padding:
+        {
+            top: 4px;
+            left: 8px;
+            right: 8px;
+            bottom: 4px;
+        }
+        position: absolute;
+        top: 23px;
+        z-index: 15 !important;
+
+        a,
+        form,
+        span
+        {
+            color: $white !important;
+        }
+        div#userbarToggle.userbarHide,
+        div#userbarToggle.userbarShow
+        {
+            line-height: 20px;
+        }
+    }
 }

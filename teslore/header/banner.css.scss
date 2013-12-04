@@ -4,27 +4,46 @@
  *= require header/banner/name
  */
 
-div#header div#header-bottom-left /*Main header background*/
+div#header
 {
-    background-color: #161616;
-    background-image: url(%%Capital%%);
-    background-position: top;
-    background-repeat: repeat-x;
-    height: 113px !important;
-    z-index: 5 !important;
-}
-div#header div#header-bottom-left a#header-img-a img#header-img /*Snoo*/
-{
-    background-image: url(%%Snoos%%) !important;
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    margin-top: 0px;
-    height: 60px !important;
-    width: 214px !important;
-    z-index: 6 !important;
-}
-div#header div#header-bottom-left a#header-img-a img#header-img:hover
-{
-    background-image: url(%%Snoos%%) !important;
-    background-position: 0px -60px;
+    div#header-bottom-left /* Main header background */
+    {
+        background:
+        {
+            color: $black;
+            image: $banner;
+            position: top;
+            repeat: repeat-x;
+        }
+        height: $banner-height !important;
+        z-index: 5 !important;
+
+        a#header-img-a
+        {
+            img#header-img /* Snoo */
+            {
+                background:
+                {
+                    color: transparent;
+                    image: $Snoos;
+                    position: 0px 0px;
+                    repeat: no-repeat;
+                }
+                height: 60px !important;
+                margin:
+                {
+                    top: 0px;
+                }
+                width: 214px !important;
+                z-index: 6 !important;
+            }
+            img#header-img:hover
+            {
+                background:
+                {
+                    position: 0px -60px;
+                }
+            }
+        }
+    }
 }
