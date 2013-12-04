@@ -1,45 +1,45 @@
-div.side div.sidebox.submit div.morelink /*Submission*/
+div.side
 {
-    background-color: #161616 !important;
-    border: none;
-    position: relative !important;
-    top: 300px;
-    right: 0px;
-    height: 29px;
-    width: 300px;
-    vertical-align: middle;
-    z-index: 20;
-}
-div.side div.sidebox.submit div.morelink:before /*Flag-tail image*/
-{
-    content: url(%%Submit-Tail%%);
-    position: absolute !important;
-    right: 300px;
-}
-div.side div.sidebox.submit div.morelink:hover
-{
-    background-color: #161616;
-    border: none;
-    height: 29px;
-    width: 300px;
-}
-div.side div.sidebox.submit div.morelink a /*Submission Text*/
-{
-    background-color: #161616;
-    color: #FFFFFF;
-    font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-    font-size: large;
-    font-weight: 400;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-}
-div.side div.sidebox.submit div.morelink a:hover
-{
-    color: #FFFFFF;
-    text-shadow: 0px 0px 5px #FFFFFF;
-}
-div.side div.sidebox.submit div.morelink div.nub /*Ill-fitting nub*/
-{
-    display: none !important;
+    div.sidebox.submit /* Submission */
+    {
+        div.morelink
+        {
+            @include create
+            top: 300px;
+            right: 0px;
+            
+            a
+            {
+                @include create-link
+            }
+            a:hover
+            {
+                text-shadow: 0px 0px 5px #FFFFFF;
+            }
+            div.nub
+            {
+                display: none !important;
+            }
+        }
+        div.morelink:before
+        {
+            content: url(%%Submit-Tail%%);
+            position: absolute !important;
+            right: 300px;
+        }
+        div.morelink:hover
+        {
+            background:
+            {
+                color: $black;
+            }
+            border:
+            {
+                style: none;
+                width: 0px;
+            }
+            height: 29px;
+            width: 300px;
+        }
+    }
 }

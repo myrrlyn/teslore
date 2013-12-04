@@ -1,28 +1,46 @@
-div.side div.titlebox h1.redditname /*Banner in sidebar*/
+div.side
 {
-    background-image: url(%%Flag%%);
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    display: block;
-    position: relative !important;
-    top: 25px - $banner-height;
-    left: 0px;
-    margin-left: -5px;
-    overflow: hidden !important;
-    z-index: 17;
-}
-div.side div.titlebox h1.redditname a
-{
-    background-image: url(%%T-Flag%%);
-    font-size: 0px;
-    padding-top: 17px;
-    padding-right: 300px;
-    padding-bottom: 32px;
-}
-div.side div.titlebox h1.redditname a:hover
-{
-    background-position: 0px -45px;
-    padding-bottom: 28px;
+    div.titlebox
+    {
+        h1.redditname /* Sidebar banner */
+        {
+            background:
+            {
+                color: transparent;
+                image: url(%%Flag%%);
+                position: 0px 0px;
+                repeat: no-repat;
+            }
+            display: block;
+            width: 300px;
+            height: 300px;
+            position: relative !important;
+            top: 25px - $banner-height;
+            left: 0px;
+            margin:
+            {
+                left: -5px;
+            }
+            z-index: 17;
+
+            a
+            {
+                background:
+                {
+                    color: transparent;
+                    image: url(%%T-Flag%%);
+                }
+                font:
+                {
+                    size: 0px;
+                }
+                padding:
+                {
+                    top: 17px;
+                    right: 300px;
+                    bottom: 32px;
+                }
+            }
+        }
+    }
 }

@@ -11,9 +11,9 @@ $red: #A72A2A;
 $white: #F5F5F5;
 
 /* Font Set */
-$code: Inconsolata, Consolas;
+$code: Inconsolata, Consolas, "C;
 $sans-serif-set: Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Verdana, sans-serif;
-$serif-set: Georgia, "Book Antiqua", "Palatino Linotype", serif
+$serif-set: Georgia, Garamond, "Book Antiqua", "Palatino Linotype", serif
 
 /* Images */
 $texture: url(%%DarkTex%%);
@@ -90,3 +90,42 @@ $name: url(%%Realms%%);
     }
     width: auto;
     z-index: 1000 !important;
+
+/* Submission and Creation */
+@mixin create
+{
+    background:
+    {
+        color: $black !important;
+    }
+    border:
+    {
+        style: none;
+        width: 0px;
+    }
+    height: 29px;
+    width: 300px;
+    vertical-align: middle;
+    z-index: 20;
+}
+
+@mixin create-link
+{
+    background
+    {
+        color: $black;
+    }
+    color: $white;
+    font:
+    {
+        family: $serif-set !important;
+        size: large;
+        weight: 400;
+    }
+    position: relative;
+    text:
+    {
+        align: center;
+        transform: uppercase;
+    }
+}

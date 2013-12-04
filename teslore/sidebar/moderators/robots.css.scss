@@ -1,9 +1,19 @@
-.sidecontentbox > .content > li > a.author[href$="/AkatoshBot"] {
-    display: none;
-}
-.sidecontentbox > .content > li > a.author[href$="/Dreamsleeve"] {
-    display: none;
-}
-.side .userTagLink {
-    display: none;
+div.side
+{
+    div.sidecontentbox:
+    {
+        ul.content
+        {
+            li
+            {
+                a.author[href*="/Dreamsleeve"],
+                a.author[href*="/Akatoshbot"],
+                span.RESUserTag,
+                a.voteWeight
+                {
+                    display: none;
+                }
+            }
+        }
+    }
 }
