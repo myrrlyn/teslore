@@ -1,6 +1,99 @@
-/*
- *= require_self
- *= require nightmode/header
- *= require nightmode/sidebar
- *= require nightmode/content
- */
+html.res-nightmode
+{
+    body.res-nightmode
+    {
+        div#header
+        {
+            background:
+            {
+                color: $black;
+            }
+            div#header-bottom-left
+            {
+                background:
+                {
+                    color: $black;
+                }
+            }
+        }
+        div.side
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture !important;
+            }
+
+            div.spacer
+            {
+                background:
+                {
+                    color: transparent;
+                    image: $texture !important;
+                }
+
+                div.titlebox
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture !important;
+                    }
+                    h1.hover.redditname
+                    {
+                        background:
+                        {
+                            color: transparent !important;
+                        }
+                        top: -63px !important;
+                    }
+                }
+                div.sidebox.submit
+                {
+                    border:
+                    {
+                        radius: 0px;
+                    }
+                    position: relative !important;
+                    top: 300px !important;
+
+                    div.morelink
+                    {
+                        position: relative !important;
+                        top 0px !important;
+                    }
+                    div.morelink:before /* Flag-tail image */
+                    {
+                        content: url(%%Submit-Tail%%);
+                        position: absolute !important;
+                        right: 300px;
+                    }
+                }
+                ul.content
+                {
+                    background-color: transparent !important;
+                }
+            }
+        }
+        span.flair
+        {
+            background
+            {
+                color: transparent !important;
+            }
+        }
+        div.thing
+        {
+            div.expando
+            {
+                div.md
+                {
+                    background:
+                    {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

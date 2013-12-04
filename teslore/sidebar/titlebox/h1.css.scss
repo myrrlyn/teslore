@@ -7,7 +7,7 @@ div.side div.titlebox h1.redditname /*Banner in sidebar*/
     height: 300px;
     display: block;
     position: relative !important;
-    top: -58px;
+    top: 25px - $banner-height;
     left: 0px;
     margin-left: -5px;
     overflow: hidden !important;
