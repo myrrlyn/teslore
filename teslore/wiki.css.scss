@@ -1,7 +1,3 @@
-/*
- @import "wiki/wiki_stylesheet"
- @import "wiki/wiki_body"
- */
 div.side div#wikiactions ul li ul li a /*Wiki Toolbox*/
 {
     background-color: transparent !important;
@@ -43,3 +39,6 @@ div.side
         }
     }
 }
+
+@import "wiki/wiki_stylesheet";
+@import "wiki/wiki_body";

@@ -24,11 +24,9 @@ body
     }
 }
 
-/*
- @import "content/frontpage"
- @import "content/arrows"
- @import "content/score"
- @import "content/expando"
- @import "content/post"
- @import "content/comment_area"
- */
+@import "content/frontpage";
+@import "content/arrows";
+@import "content/score";
+@import "content/expando";
+@import "content/post";
+@import "content/comment_area";

@@ -77,8 +77,6 @@ body.mod-toolbox div#tb-bottombar.tb-toolbar
     background-image: url(%%T1%%) !important;
 }
 
-/*
- @import "etc/submission"
- @import "etc/moderator"
- @import "etc/footer"
- */
+@import "etc/submission";
+@import "etc/moderator";
+@import "etc/footer";

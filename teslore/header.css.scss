@@ -6,8 +6,6 @@ div#header
     z-index: 5 !important;
 }
 
-/*
- @require "header/topbar"
- @require "header/userbar"
- @require "header/banner"
- */
+@require "header/topbar";
+@require "header/userbar";
+@require "header/banner";

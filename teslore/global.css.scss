@@ -13,7 +13,5 @@ body
     font-family: $sans-serif-set;
 }
 
-/*
- @import "global/formatting"
- @import "global/spoilers"
- */
+@import "global/formatting";
+@import "global/spoilers";

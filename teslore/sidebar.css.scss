@@ -24,13 +24,11 @@ div.side
     }
 }
 
-/*
- @import "sidebar/search"
- @import "sidebar/link_info"
- @import "sidebar/submission"
- @import "sidebar/titlebox"
- @import "sidebar/create"
- @import "sidebar/moderators"
- @import "sidebar/side_content_box"
- */
+@import "sidebar/search";
+@import "sidebar/link_info";
+@import "sidebar/submission";
+@import "sidebar/titlebox";
+@import "sidebar/create";
+@import "sidebar/moderators";
+@import "sidebar/side_content_box";
  
