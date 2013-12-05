@@ -10,8 +10,11 @@ html
 }
 body
 {
-    background-attachment: fixed;
-    background-image: url(%%Map%%);
-    background-position: center center;
-    font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Verdana, sans-serif;
+    background:
+    {
+        attachment: fixed;
+        image: url(%%Map%%);
+        position: center center;
+    }
+    font-family: $sans-serif-set;
 }

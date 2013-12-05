@@ -1,35 +1,53 @@
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source /*Stylesheet in the wiki*/
+body.wiki-page
 {
-    background-color: #F5F5F5;
-    font-family: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace !important;
-}
-/*Styling of wiki-stylesheet*/
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.attribute
-{
-    color: #8080C0;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.class
-{
-    color: #800000;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.comment
-{
-    color: #008000;
-    margin-left: 0px;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.id
-{
-    color: #00D0FF;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.important
-{
-    color: #FF0000;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.pseudo
-{
-    color: #FF8000;
-}
-body.wiki-page div.wiki-page-content pre.subreddit-stylesheet-source code.language-css span.tag
-{
-    color: #0000FF;
+    div.wiki-page-content
+    {
+        pre.subreddit-stylesheet-source /* Stylesheet in wiki */
+        {
+            background:
+            {
+                color: $white;
+            }
+            font:
+            {
+                family: $code;
+            }
+
+            code.language-css /* Styling parts of stylesheet */
+            {
+                span.attribute
+                {
+                    color: #8080C0;
+                }
+                span.class
+                {
+                    color: #800000;
+                }
+                span.comment
+                {
+                    color: #008000;
+                    margin:
+                    {
+                        left: 0px;
+                    }
+                }
+                span.id
+                {
+                    color: #00D0FF;
+                }
+                span.important
+                {
+                    color: #FF0000;
+                }
+                span.psuedo
+                {
+                    color: #FF8000;
+                }
+                span.tag
+                {
+                    color: #0000FF;
+                }
+            }
+        }
+    }
 }

@@ -1,4 +1,3 @@
-/*
 div.linkflair span.linkflairlabel
 {
     padding: 2px 5px;
@@ -7,17 +6,16 @@ div.linkflair span.linkflairlabel
 }
 div.linkflair.linkflair-Apocrypha span.linkflairlabel
 {
-    background-color: #161616;
-    color: #BF2F2F;
+    background-color: $black;
+    color: $red;
 }
 div.linkflair.linkflair-Discussion span.linkflairlabel
 {
-    background-color: #F5F5F5;
-    color: #BF2F2F;
+    background-color: $white;
+    color: $red;
 }
 div.linkflair.linkflair-Question span.linkflairlabel
 {
-    background-color: #F5F5F5;
-    color: #161616;
+    background-color: $white;
+    color: $black;
 }
-*/

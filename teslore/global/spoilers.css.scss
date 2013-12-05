@@ -4,9 +4,9 @@ a[href="/s"],       /* /links open a new site, and should only be used with a mo
 a[href="#spoiler"], /* Backwards compatibility*/
 a[href="/spoiler"]
 {
-    background-color: #000000 !important;
+    background-color: $black !important;
     border-radius: 3px;
-    color: #FFFFFF !important;
+    color: $white !important;
     cursor: default;
     font-weight: bold;
     padding: 0px 5px;
@@ -17,10 +17,9 @@ a[href="/g"],
 a[href="#conjecture"], /* Optional call for conjecture code*/
 a[href="/conjecture"]
 {
-    background-color: #558800 !important;
-    /*background-image: url(%%Conjecture-Cover%%);*/
+    background-color: $green !important;
     border-radius: 3px;
-    color: #000000 !important;
+    color: $black !important;
     cursor: default;
     font-weight: bold;
     padding: 0px 5px;
@@ -35,7 +34,7 @@ a[href="#spoiler"]:active,
 a[href="/spoiler"]:hover,
 a[href="/spoiler"]:active
 {
-    color: #FFFF00 !important;
+    color: $gold !important;
 }
 /*CONJECTURE cover text*/
 a[href="#g"]:hover,
@@ -47,7 +46,7 @@ a[href="#conjecture"]:active,
 a[href="/conjecture"]:hover,
 a[href="/conjecture"]:active
 {
-    color: #FFFF00 !important;
+    color: $gold !important;
 }
 /*SPOILER content*/
 a[href="#s"]::after,
@@ -55,8 +54,8 @@ a[href="/s"]::after,
 a[href="#spoiler"]::after,
 a[href="/spoiler"]::after
 {
-    background: #000000 !important;
-    color: #000000; /* NOT !important, so that :hover::after can overwrite it */
+    background: $black !important;
+    color: $black; /* NOT !important, so that :hover::after can overwrite it */
     content: attr(title);
     font-weight: normal;
     padding-left: 4px;
@@ -67,10 +66,8 @@ a[href="/g"]::after,
 a[href="#conjecture"]::after,
 a[href="/conjecture"]::after
 {
-    background-color: #558800 !important;
-    color: #000000;
-    /*background-image: url(%%Conjecture-Cover%%);*/
-    /*color: #C3A787 !important;*/
+    background-color: $green !important;
+    color: $black;
     content: attr(title);
     font-weight: normal;
     padding-left: 4px;
@@ -85,7 +82,7 @@ a[href="#spoiler"]:active::after,
 a[href="/spoiler"]:hover::after,
 a[href="/spoiler"]:active::after
 {
-    color: #FFFFFF !important;
+    color: $white !important;
 }
 /*Activated CONJECTURE content*/
 a[href="#g"]:hover::after,
@@ -97,5 +94,5 @@ a[href="#conjecture"]:active::after,
 a[href="/conjecture"]:hover::after,
 a[href="/conjecture"]:active::after
 {
-    color: #000000 !important;
+    color: $black !important;
 }

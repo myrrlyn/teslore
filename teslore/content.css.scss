@@ -8,15 +8,28 @@
  *= require content/comment_area
  */
 
-body div.content
+body
 {
-    margin: 0 0 0 0 !important;
-}
-div.content div.nav-buttons span.nextprev a
-{
-    color: #161616;
-}
-div.content div.nav-buttons span.nextprev span.separator
-{
-    color: #161616;
+    div.content
+    {
+        margin:
+        {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        div.nav-buttons
+        {
+            span.nextprev
+            {
+                a,
+                span.separator
+                {
+                    color: $black;
+                }
+            }
+        }
+    }
 }
