@@ -26,6 +26,10 @@ def get_stylesheet config
   ENV['stylesheet'] || config[:stylesheet] || 'teslore'
 end
 
+def get_postprocess config
+  (ENV['postprocess'] || config[:postprocess]).split(',')
+end
+
 def get_context id
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
     env.logger = Log
@@ -35,8 +39,8 @@ def get_context id
   context
 end
 
-def compile id
-  ret = get_context(id).find_asset(id).to_s
+def compile id, config
+  ret = get_context(id).find_asset(id).to_s + get_postprocess(config).reduce(''){|s, x| s + File.read(File.join(id, x)) + "\n"}
 
   # Remove empty comments
   ret.gsub! /\/\*\s*\*\//m, ''
@@ -71,7 +75,7 @@ namespace :reddit do
     mkdir_p 'build'
     stylesheet = get_stylesheet config
     File.open "build/#{stylesheet}.css", 'w' do |f|
-      f.write bot.interpret(compile(stylesheet))
+      f.write bot.interpret(compile(stylesheet, config))
     end
     Log.info 'Done'
   end
@@ -81,7 +85,7 @@ namespace :reddit do
     Log.info 'Logging into Reddit'
     bot = get_bot config
     Log.info 'Compiling assets'
-    compiled = compile get_stylesheet(config)
+    compiled = compile get_stylesheet(config), config
     subreddit = get_subreddit config
     Log.info "Processing and uploading new stylesheet to /r/#{subreddit}"
     bot.put subreddit, compiled

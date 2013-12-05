@@ -1,0 +1,31 @@
+div.side a[href="#date"]:after
+{
+    content: /*!
+               @@date {
+                 "year": false,
+                 "holidays": {
+                    "0101": "New Life Festival",
+                    "0113": "Meridia's Summoning Day",
+                    "0202": "Mad Pelagius",
+                    "0316": "Heart's Day",
+                    "0305": "Hermaeus Mora's Summoning Day",
+                    "0321": "Hogithum",
+                    "0409": "Peryite's Summoning Day",
+                    "0509": "Marukh's Day",
+                    "0605": "Hircine's Summoning Day",
+                    "0616": "Mid Year Celebration",
+                    "0624": "Tibedetha",
+                    "0710": "Merchants' Festival",
+                    "0908": "Nocturnal's Summoning Day",
+                    "1008": "Malacath's Summoning Day",
+                    "1013": "Witches' Festival",
+                    "1030": "Emperor's Day",
+                    "1102": "Gauntlet",
+                    "1108": "Moon Festival",
+                    "1120": "Warriors Festival",
+                    "1225": "Saturalia",
+                    "1230": "Old Life Festival",
+                    "1231": "Old Life Festival"
+                  }
+                } */ "Date"; /*! @end */
+}
