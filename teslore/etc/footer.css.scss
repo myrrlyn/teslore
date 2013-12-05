@@ -1,39 +1,56 @@
 div.footer-parent
 {
     padding-top: 0px;
-}
-div.footer-parent a
-{
-    color: #A72A2A;
-}
-div.footer-parent a:visited
-{
-    color: #7F1F1F;
-}
-div.footer-parent div.footer.rounded
-{
-    border: 1px solid #161616;
-}
-div.footer-parent div.footer.rounded col
-{
-    border-left: 1px solid #161616;
-}
-div.footer-parent div.footer.rounded col ul.flat-vert.hover li.flat-vert.title
-{
-    color: #161616;
-    font-family: Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Verdana, sans-serif;
-}
-div.footer-parent p.bottommenu
-{
-    color: #161616;
+    
+    a
+    {
+        @include links;
+    }
+    div.footer.rounded
+    {
+        border:
+        {
+            color: $black;
+            style: solid;
+            width: 1px;
+        }
+        col
+        {
+            border:
+            {
+                left:
+                {
+                    color: $black;
+                    style: solid;
+                    width: 1px;
+                }
+            }
+            ul.flat-vert.hover li.flat-vert.title
+            {
+                color: $black'
+                font-family: $sans-serif-set;
+            }
+        }
+    }
+    p.bottommenu
+    {
+        color: $black
+        font-family: $sans-serif-set;
+    }
 }
 p.debuginfo
 {
     color: #161616;
-}
-p.debuginfo span.icon
-{
-    background-image: url(%%teslorecouncilsmallest%%); /*change pi to septim dragon*/
-    font-size: 0px;
-    padding: 10px 9px 5px 0px;
+    span.icon
+    {
+        background-image: url(%%teslorecouncilsmallest%%); /*change pi to septim dragon*/
+        font-size: 0px;
+        padding:
+        {
+            top: 10px;
+            left: 0px;
+            right: 9px;
+            bottom: 5px;
+        }
+    }
 }

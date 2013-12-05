@@ -1,3 +1,39 @@
+/* Vote Warning Format */
+@mixin vote
+{
+    background:
+    {
+        color: $black;
+    }
+    border
+    {
+        color: $black;
+        style: solid;
+        radius: 4px;
+        width: 1px;
+    }
+    display: block;
+    font:
+    {
+        family: $serif-set;
+        size: 11px;
+        weight: bold;
+    }
+    margin:
+    {
+        top: 5px;
+        left: 25px;
+    }
+    padding: 5px;
+    position: absolute;
+    text:
+    {
+        align: center;
+    }
+    width: auto;
+    z-index: 1000 !important;
+}
+
 div.content
 {
     div.thing.link

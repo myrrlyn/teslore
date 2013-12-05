@@ -1,4 +1,27 @@
+/* Notification Link Format */
+@mixin notification
+{
+    border:
+    {
+        color: $white;
+        style: solid;
+        width: 0px;
+    }
+    display: inline-block;
+    font:
+    {
+        family: $serif-set;
+        size: 14px;
+        weight: bold;
+    }
+    position: absolute;
+    text:
+    {
+        align: center;
+        transform: uppercase;
+    }
+}
+
 /*
- *= require_self
- *= require notification/sidebar
+ @import "notification/sidebar"
  */

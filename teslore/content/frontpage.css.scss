@@ -1,28 +1,40 @@
-div.content div.thing.link
+div.content
 {
-    margin: 1px 0px 1px -3px !important;
-}
-div.content div.thing.stickied a.title
-{
-    color: #228822 !important;
-}
-div.content div.thing.odd
-{
-    background-image: url(%%T2%%);
-}
-div.content div.thing.even
-{
-    background-image: url(%%T3%%);
-}
-div.content div.thing span.rank
-{
-    display: none !important;
-}
-div.content div.thing a.thumbnail
-{
-    display: none!important;
-}
-div.content div.thing div.entry ul.flat-list.buttons li a
-{
-    color: #70381A !important;
+    div.thing
+    {
+        span.rank,
+        a.thumbnail
+        {
+            display: none !important;
+        }
+        div.entry ul.flat-list.buttons li a
+        {
+            color: #70381A;
+        }
+    }
+    div.thing.link
+    {
+        margin: 1px 0px 1px -3px !important;
+    }
+    div.thing.stickied
+    {
+        a.title
+        {
+            color: $green !important;
+        }
+    }
+    div.thing.odd
+    {
+        background:
+        {
+            image: url(%%T2%%);
+        }
+    }
+    div.thing.even
+    {
+        background:
+        {
+            image: url(%%T3%%);
+        }
+    }
 }

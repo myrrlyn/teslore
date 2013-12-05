@@ -35,65 +35,6 @@ $name: url(%%Realms%%);
 
 /* MIXINS */
 
-/* Notification Link Format */
-@mixin notification
-{
-    border:
-    {
-        color: $white;
-        style: solid;
-        width: 0px;
-    }
-    display: inline-block;
-    font:
-    {
-        family: $serif-set;
-        size: 14px;
-        weight: bold;
-    }
-    position: absolute;
-    text:
-    {
-        align: center;
-        transform: uppercase;
-    }
-}
-
-/* Vote Warning Format */
-@mixin vote
-{
-    background:
-    {
-        color: $black;
-    }
-    border
-    {
-        color: $black;
-        style: solid;
-        radius: 4px;
-        width: 1px;
-    }
-    display: block;
-    font:
-    {
-        family: $serif-set;
-        size: 11px;
-        weight: bold;
-    }
-    margin:
-    {
-        top: 5px;
-        left: 25px;
-    }
-    padding: 5px;
-    position: absolute;
-    text:
-    {
-        align: center;
-    }
-    width: auto;
-    z-index: 1000 !important;
-
 /* Submission and Creation */
 @mixin create
 {

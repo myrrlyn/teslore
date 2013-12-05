@@ -1,14 +1,3 @@
-/*
- *= require_self
- *= require sidebar/search
- *= require sidebar/link_info
- *= require sidebar/submission
- *= require sidebar/titlebox
- *= require sidebar/create
- *= require sidebar/moderators
- *= require sidebar/side_content_box
- */
- 
 div.side
 {
     background:
@@ -34,3 +23,14 @@ div.side
         color: $white;
     }
 }
+
+/*
+ @import "sidebar/search"
+ @import "sidebar/link_info"
+ @import "sidebar/submission"
+ @import "sidebar/titlebox"
+ @import "sidebar/create"
+ @import "sidebar/moderators"
+ @import "sidebar/side_content_box"
+ */
+ 

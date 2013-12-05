@@ -1,13 +1,3 @@
-/*
- *= require_self
- *= require content/frontpage
- *= require content/arrows
- *= require content/score
- *= require content/expando
- *= require content/post
- *= require content/comment_area
- */
-
 body
 {
     div.content
@@ -33,3 +23,12 @@ body
         }
     }
 }
+
+/*
+ @import "content/frontpage"
+ @import "content/arrows"
+ @import "content/score"
+ @import "content/expando"
+ @import "content/post"
+ @import "content/comment_area"
+ */
