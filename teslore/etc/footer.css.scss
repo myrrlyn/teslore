@@ -27,15 +27,18 @@ div.footer-parent
             }
             ul.flat-vert.hover li.flat-vert.title
             {
-                color: $black'
+                color: $black;
                 font-family: $sans-serif-set;
             }
         }
     }
     p.bottommenu
     {
-        color: $black
-        font-family: $sans-serif-set;
+        color: $black;
+        font:
+        {
+            family: $sans-serif-set;
+        }
     }
 }
 p.debuginfo

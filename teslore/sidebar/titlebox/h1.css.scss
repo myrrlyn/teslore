@@ -47,7 +47,7 @@ body.listing-page
         {
             h1.hover.redditname /* Sidebar banner */
             {
-                @mixin(-58px)
+                @include sidebar-flag(-58px);
             }
         }
     }
@@ -60,7 +60,7 @@ body.comments-page
         {
             h1.hover.redditname
             {
-                @mixin(-168px)
+                @include sidebar-flag(-168px)
             }
         }
     }
