@@ -3,20 +3,29 @@
  *= require sidebar/moderators/robots
  */
  
-div.side div.sidecontentbox a.helplink + div.title h1 /*Step 1 in Renaming Moderators*/
+div.side
 {
-    display: none;
-}
-div.side div.sidecontentbox a.helplink + div.title::before /*Step 2 in Renaming Moderators*/
-{
-    content: "ELDER COUNCIL";
-    color: #F5F5F5;
-    display: block;
-    font-size: 130%;
-}
-div.side div.sidecontentbox a.helplink /*Step 3 in Renaming Moderators*/
-{
-    color: #F5F5F5;
-    position: relative;
-    top: -1px;
+    div.sidecontentbox
+    {
+        a.helplink /* Step 0 to Rename Moderators */
+        {
+            color: $white;
+            position: relative;
+            top: -1px;
+        }
+        a.helplink + div.title /* Step 1 to Rename Moderators */
+        {
+            display: none;
+        }
+        a.helplink + div.title:before /* Step 2 to Rename Moderators */
+        {
+            content: "ELDER COUNCIL";
+            color: $white;
+            display: block;
+            font:
+            {
+                size: 130%;
+            }
+        }
+    }
 }

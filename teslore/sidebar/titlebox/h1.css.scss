@@ -1,45 +1,66 @@
-div.side
+@mixin sidebar-flag($flag-stop)
 {
-    div.titlebox
+    background:
     {
-        h1.redditname /* Sidebar banner */
+        color: transparent;
+        image: url(%%Flag%%);
+        position: 0px 0px;
+        repeat: no-repat;
+    }
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: relative !important;
+    top: $flag-stop;
+    left: 0px;
+    margin:
+    {
+        left: -5px;
+    }
+    z-index: 17;
+    
+    a
+    {
+        background:
         {
-            background:
-            {
-                color: transparent;
-                image: url(%%Flag%%);
-                position: 0px 0px;
-                repeat: no-repat;
-            }
-            display: block;
-            width: 300px;
-            height: 300px;
-            position: relative !important;
-            top: 25px - $banner-height;
-            left: 0px;
-            margin:
-            {
-                left: -5px;
-            }
-            z-index: 17;
+            color: transparent;
+            image: url(%%T-Flag%%);
+        }
+        font:
+        {
+            size: 0px;
+        }
+        padding:
+        {
+            top: 17px;
+            right: 300px;
+            bottom: 32px;
+        }
+    }
+}
 
-            a
+body.listing-page
+{
+    div.side
+    {
+        div.titlebox
+        {
+            h1.hover.redditname /* Sidebar banner */
             {
-                background:
-                {
-                    color: transparent;
-                    image: url(%%T-Flag%%);
-                }
-                font:
-                {
-                    size: 0px;
-                }
-                padding:
-                {
-                    top: 17px;
-                    right: 300px;
-                    bottom: 32px;
-                }
+                @mixin(-58px)
+            }
+        }
+    }
+}
+body.comments-page
+{
+    div.side
+    {
+        div.titlebox
+        {
+            h1.hover.redditname
+            {
+                @mixin(-168px)
             }
         }
     }

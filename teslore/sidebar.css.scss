@@ -11,18 +11,26 @@
  
 div.side
 {
-    background-color: transparent;
-    background-image: url(%%DarkTex%%);
-    border: none;
-    color: #F5F5F5;
-    margin-right: 5px;
-    position: relative;
-    top: -88px;
+    background:
+    {
+        color: transparent;
+        image: $texture;
+    }
+    border:
+    {
+        style: none;
+        width: 0px;
+    }
+    color: $white;
+    position: absolute !important;
+    right: 5px;
+    top:  $banner-height - 37px;
     width: 300px !important;
     z-index: 15 !important;
-}
-div.side a.author, /*Moderators and username at flair select*/
-div.side p /*Sidebar text*/
-{
-    color: #F5F5F5;
+
+    a.author,
+    p
+    {
+        color: $white;
+    }
 }

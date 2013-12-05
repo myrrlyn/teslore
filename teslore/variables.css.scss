@@ -7,20 +7,21 @@
 /* Colors */
 $black: #161616;
 $gold: #9A7D2E;
+$grey: #C7C7C7;
 $red: #A72A2A;
 $white: #F5F5F5;
 
 /* Font Set */
-$code: Inconsolata, Consolas, "C;
-$sans-serif-set: Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Verdana, sans-serif;
-$serif-set: Georgia, Garamond, "Book Antiqua", "Palatino Linotype", serif
+$code: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
+$sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
+$serif-set: "Georgia", "Garamond", "Book Antiqua", "Palatino Linotype", serif;
 
 /* Images */
 $texture: url(%%DarkTex%%);
 
 /*Header*/
 $banner: url(%%Banner%%);
-$banner-height: 89px;
+$banner-height: 64px;
 $logo: url(%%Snoos%%);
 $name: url(%%Realms%%);
 
