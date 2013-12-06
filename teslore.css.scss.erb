@@ -1,6 +1,6 @@
 /* === /r/teslore ===
  * Written by /u/myrrlyn and /u/numinit. Original version by /u/starvedafricanchild.
- * Built <%= Time.now.utc %> from Git revision <%= `git rev-parse --verify HEAD`.strip[0..7] %>:<%= `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip %>
+ * Built <%= $build[:time] %> from Git revision <%= $build[:hash][0..7] %>:<%= $build[:branch] %>
  */
 
 @import "variables";

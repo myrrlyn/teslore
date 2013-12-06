@@ -31,12 +31,22 @@ div#header
         position: absolute;
         top: 23px;
         z-index: 15 !important;
-
         a,
         form,
         span
         {
             color: $white !important;
+        }
+        div#userbarToggle
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+            border: 0;
+            border-radius: 0;
+            min-height: 100%;
         }
         div#userbarToggle.userbarHide,
         div#userbarToggle.userbarShow

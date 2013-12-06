@@ -19,7 +19,7 @@ div.side a[href$="#faq"]:hover
     {
         color: $white;
     }
-    color: $red !important;
+    color: $red;
 }
 div.side a[href$="#faq"]:visited
 {
@@ -28,5 +28,5 @@ div.side a[href$="#faq"]:visited
 div.side a[href$="#faq"]:active:visted,
 div.side a[href$="#faq"]:hover:visited
 {
-    color: $red !important;
+    color: $red;
 }

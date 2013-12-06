@@ -8,11 +8,11 @@ div.side
             position: relative;
             top: -1px;
         }
-        a.helplink + div.title /* Step 1 to Rename Moderators */
+        a.helplink + div.title h1 /* Step 1 to Rename Moderators */
         {
             display: none;
         }
-        a.helplink + div.title:before /* Step 2 to Rename Moderators */
+        a.helplink + div.title h1:before /* Step 2 to Rename Moderators */
         {
             content: "ELDER COUNCIL";
             color: $white;
@@ -27,7 +27,7 @@ div.side
             li
             {
                 a.author[href*="/Dreamsleeve"],
-                a.author[href*="/Akatoshbot"],
+                a.author[href*="/AkatoshBot"],
                 span.RESUserTag,
                 a.voteWeight
                 {

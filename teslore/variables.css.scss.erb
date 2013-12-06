@@ -13,6 +13,7 @@ $serif-set: "Georgia", "Garamond", "Book Antiqua", "Palatino Linotype", serif;
 
 $texture: url(%%DarkTex%%);
 
+/* Banner and logo */
 $banner: url(%%BannerProphet%%);
 $bannerheight: 100px + 20px;
 $logo: url(%%SnoosBig%%);
@@ -20,6 +21,14 @@ $logoheight: 79px;
 $logowidth: 282px;
 $logooffset: 20px;
 $name: url(%%Realms%%);
+
+/* Versioning information */
+$build_version: "<%= $build[:version] %>";
+$build_name: "<%= $build[:name] %>";
+$build_time: "<%= $build[:time] %>";
+$build_hash: "<%= $build[:hash][0..7] %>";
+$build_hash_long: "<%= $build[:hash] %>";
+$build_branch: "<%= $build[:branch] %>";
 
 @mixin create
 {

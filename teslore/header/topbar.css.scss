@@ -91,6 +91,19 @@ div#header
                 color: $white;
                 z-index: 15 !important;
             }
+            div#RESShortcutsSort
+            {
+                left: 0 !important;
+            }
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
         }
+    }
+    div#RESShortcutsViewport /* RES shortcut placeholder */
+    {
+        color: $white;
     }
 }

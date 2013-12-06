@@ -31,6 +31,7 @@ def get_postprocess config
 end
 
 def get_context id
+  $build = eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
     env.logger = Log
   end
