@@ -16,15 +16,9 @@ div.side a[href$="#announcement"]
 div.side a[href$="#announcement"]:active,
 div.side a[href$="#announcement"]:hover
 {
-    background
+    background:
     {
         color: $white;
-    }
-    border:
-    {
-        color: $white;
-        style: solid;
-        width: 1px;
     }
     color: $red !important;
 }

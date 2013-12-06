@@ -5,13 +5,13 @@ body div.content > div.sitetable
 }
 div.content div.thing div.entry p.title a.title
 {
-    color: #161616 !important;
-    font-family: Roboto, "Helvetica Neue", Helvetica, "Segoe UI", Verdana, sans-serif;
+    color: $black;
+    font-family: $sans-serif-set;
     font-size: 18px !important;
 }
 div.content div.thing div.entry p.title a.title:visited
 {
-    color: #545454 !important;
+    color: $black-desat;
 }
 div.content div.thing div.entry p.title span.domain /*self.teslore*/
 {
@@ -24,7 +24,7 @@ div.content div.thing div.entry p.tagline
 }
 div.content div.thing div.entry div.expando div.usertext-body div.md /*OP background*/
 {
-    background-color: #F5F5F5;
-    border: 1px solid #161616;
+    background-color: $white;
+    border: 1px solid $black;
     max-width: 75em !important;
 }

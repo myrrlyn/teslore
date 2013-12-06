@@ -1,13 +1,18 @@
 div.side a[href$="#faq"]
 {
     @include notification;
+    border:
+    {
+        style: solid;
+        width: 0px;
+    }
     color: $white;
     padding:
     {
         top:2px;
         left: 6px;
         right: 6px;
-        bottom: 1px;
+        bottom: 2px;
     }
     right: 565px;
     top: 39px;
@@ -15,14 +20,9 @@ div.side a[href$="#faq"]
 div.side a[href$="#faq"]:active,
 div.side a[href$="#faq"]:hover
 {
-    background
+    background:
     {
         color: $white;
-    }
-    border:
-    {
-        style: solid;
-        width: 0px;
     }
     color: $red !important;
 }

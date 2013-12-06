@@ -2,6 +2,14 @@ div.side
 {
     div.titlebox
     {
+        background:
+        {
+            color: transparent;
+        }
+        font:
+        {
+            size: 10px;
+        }
         span.subcribe-button
         {
             a.option
@@ -33,6 +41,20 @@ div.side
         p.users-online span.number:after
         {
             content: " scholars present";
+        }
+        div.leavemoderator
+        {
+            background:
+            {
+                color: transparent;
+            }
+        }
+        form.toggle
+        {
+            background:
+            {
+                color: transparent;
+            }
         }
     }
 }

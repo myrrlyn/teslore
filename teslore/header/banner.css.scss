@@ -9,7 +9,7 @@ div#header
             position: top;
             repeat: repeat-x;
         }
-        height: $banner-height !important;
+        height: $bannerheight !important;
         z-index: 5 !important;
 
         a#header-img-a
@@ -23,19 +23,19 @@ div#header
                     position: 0px 0px;
                     repeat: no-repeat;
                 }
-                height: 60px !important;
+                height: $logoheight !important;
                 margin:
                 {
-                    top: 0px;
+                    top: $logooffset;
                 }
-                width: 214px !important;
+                width: $logowidth !important;
                 z-index: 6 !important;
             }
             img#header-img:hover
             {
                 background:
                 {
-                    position: 0px -60px;
+                    position: 0px 0px-$logoheight;
                 }
             }
         }

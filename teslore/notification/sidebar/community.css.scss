@@ -7,7 +7,7 @@ div.side a[href$="#com"]
         top: 2px;
         left: 0px;
         right: 0px;
-        bottom: 1px;
+        bottom: 2px;
     }
     right: 305px;
     top: 39px;
@@ -16,15 +16,9 @@ div.side a[href$="#com"]
 div.side a[href$="#com"]:active,
 div.side a[href$="#com"]:hover
 {
-    background
+    background:
     {
         color: $white;
-    }
-    border:
-    {
-        color: $white;
-        style: solid;
-        width: 1px;
     }
     color: $red !important;
 }

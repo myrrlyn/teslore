@@ -1,15 +1,5 @@
 div.side
 {
-    div.sidecontentbox
-    {
-        div.title
-        {
-            padding:
-            {
-                left: 5px;
-            }
-        }
-    }
     div.sidebox.create
     {
         div.morelink
@@ -19,13 +9,12 @@ div.side
             a
             {
                 @include create-link;
+            }
+            a:hover
+            {
                 text-shadow: 0px 0px 5px #FFFFFF;
             }
-            div.nub,
-            div.spacer
-            {
-                display: none !important;
-            }
+
         }
         div.morelink:before /* Flag tail image */
         {
@@ -46,6 +35,10 @@ div.side
             }
             height: 29px;
             width: 300px;
+        }
+        div.spacer
+        {
+            display: none !important;
         }
     }
 }

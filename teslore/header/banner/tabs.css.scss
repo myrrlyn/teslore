@@ -6,7 +6,7 @@ div#header
         {
             border: 0px none;
             position: absolute;
-            top: 80px;
+            top: $bannerheight - 4px;
             left: 5px;
             z-index: 8 !important;
             

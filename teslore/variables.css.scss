@@ -1,11 +1,5 @@
-/* Initializing variable definitions for sheet
- * This will later be fractured as the stylesheet pieces are
- */
-
-/* Global */
-
-/* Colors */
 $black: #161616;
+$black-desat: #545454;
 $gold: #9A7D2E;
 $green: #155415;
 $grey: #C7C7C7;
@@ -13,32 +7,27 @@ $red: #A72A2A;
 $red-desat: #7F1F1F;
 $white: #F5F5F5;
 
-/* Font Set */
 $code: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
 $sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
 $serif-set: "Georgia", "Garamond", "Book Antiqua", "Palatino Linotype", serif;
 
-/* Images */
 $texture: url(%%DarkTex%%);
 
-/*Header*/
-$banner: url(%%Banner%%);
-$banner-height: 84px;
-$logo: url(%%Snoos%%);
+$banner: url(%%BannerProphet%%);
+$bannerheight: 100px + 20px;
+$logo: url(%%SnoosBig%%);
+$logoheight: 79px;
+$logowidth: 282px;
+$logooffset: 20px;
 $name: url(%%Realms%%);
 
-/* Sidebar */
-
-/* Content */
-
-/* Misc */
-
-/* MIXINS */
-
-/* Submission and Creation */
 @mixin create
 {
-    background-color: $black !important;
+    background:
+    {
+        color: $black !important;
+        image: none !important;
+    }
     border:
     {
         style: none;
@@ -48,6 +37,11 @@ $name: url(%%Realms%%);
     width: 300px;
     vertical-align: middle;
     z-index: 20;
+
+    div.nub
+    {
+        display: none !important;
+    }
 }
 
 @mixin create-link
