@@ -24,9 +24,10 @@ $name: url(%%Realms%%);
 
 /* Versioning information */
 $build_version: "<%= $build[:version] %>";
+$build_host: "<%= $build[:host] %>";
 $build_name: "<%= $build[:name] %>";
 $build_time: "<%= $build[:time] %>";
-$build_hash: "<%= $build[:hash][0..7] %>";
+$build_hash: "<%= $build[:hash][0...7] %>";
 $build_hash_long: "<%= $build[:hash] %>";
 $build_branch: "<%= $build[:branch] %>";
 

@@ -55,7 +55,7 @@ p.debuginfo
     {
         &:after
         {
-            content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} from #{$build_hash}:#{$build_branch}.";
+            content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} on #{$build_host} from #{$build_hash}:#{$build_branch}.";
         }
         color: $green;
         font:

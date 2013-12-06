@@ -1,6 +1,7 @@
 {
   teslore: {
     time: Time.now.utc,
+    host: Socket.gethostname,
     hash: `git rev-parse --verify HEAD`.strip,
     branch: `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip,
     version: '3.1',
