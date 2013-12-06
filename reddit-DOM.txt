@@ -1,0 +1,41 @@
+An overview of reddit's DOM for reference when placing selectors. Needless elements are removed from the tree.
+
+html
+ body
+  div#header > div.width-clip
+   div#sr-header-area
+    div.dropdown.srdrop > span.selected.title
+    div.drop-choices.srdrop > a.choice
+    div.sr-list
+     ul.flat-list.sr-bar.hover
+      li > span.separator + a
+     span.separator
+     ul.flat-list.sr-bar.hover
+      li.selected > span.separator + a
+      li > span.separator + a
+     span.separator
+     ul#sr-bar.flat-list.sr-bar.hover
+      li > span.separator + a
+    a#sr-more-link
+   div#header-bottom-left
+    a#header-img-a > a#header-img-a
+    span.hover.pagename.redditname > a
+    ul.tabmenu
+     li.selected > a
+     li > a
+   div#header-bottom-right
+    span.user
+     a
+     span.userkarma
+    span.separator
+    a#mail.nohavemail OR a#mail.havemail
+    span.separator
+    a#modmail.nohavemail OR a#modmail.havemail
+    span.separator
+    ul.flat-list.hover > li > a.pref-lang
+    span.separator
+    form.logout.hover
+  div.side
+  div.content
+  div.footer-parent
+  p.debuginfo

@@ -24,5 +24,10 @@ div.side a[href$="#com"]:hover
 }
 div.side a[href$="#com"]:visited
 {
-    color: $white !important;
+    color: $white;
+}
+div.side a[href$="#com"]:active:visted,
+div.side a[href$="#com"]:hover:visited
+{
+    color: $red !important;
 }
