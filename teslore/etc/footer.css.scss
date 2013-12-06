@@ -18,12 +18,9 @@ div.footer-parent
         {
             border:
             {
-                left:
-                {
-                    color: $black;
-                    style: solid;
-                    width: 1px;
-                }
+                color: $black;
+                left: 1px;
+                style: solid;
             }
             ul.flat-vert.hover li.flat-vert.title
             {
@@ -43,7 +40,6 @@ div.footer-parent
 }
 p.debuginfo
 {
-    color: #161616;
     span.icon
     {
         background-image: url(%%teslorecouncilsmallest%%); /*change pi to septim dragon*/
@@ -54,6 +50,15 @@ p.debuginfo
             left: 0px;
             right: 9px;
             bottom: 5px;
+        }
+    }
+    span.content
+    {
+        color: $green;
+        font:
+        {
+            family: $code;
+            size: 9px;
         }
     }
 }

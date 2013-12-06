@@ -2,12 +2,12 @@ div#header
 {
     div#sr-header-area /* Subreddit lists */
     {
-        background
+        background:
         {
             color: transparent;
             image: $texture;
         }
-        border
+        border:
         {
             bottom: 0px;
         }
@@ -49,7 +49,7 @@ div#header
         }
         div.drop-choices.srdrop /* Dropdown menu of subreddits */
         {
-            background
+            background:
             {
                 color: transparent;
                 image: $texture;

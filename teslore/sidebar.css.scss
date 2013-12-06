@@ -11,9 +11,9 @@ div.side
         width: 0px;
     }
     color: $white;
-    position: absolute !important;
-    right: 5px;
-    top:  $banner-height - 37px;
+    position: relative !important;
+    right: 0px;
+    top:  25px - $banner-height;
     width: 300px !important;
     z-index: 15 !important;
 
@@ -31,4 +31,3 @@ div.side
 @import "sidebar/create";
 @import "sidebar/moderators";
 @import "sidebar/side_content_box";
- 
