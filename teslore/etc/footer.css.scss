@@ -1,7 +1,6 @@
 div.footer-parent
 {
     padding-top: 0px;
-    
     a
     {
         @include links;
@@ -54,6 +53,10 @@ p.debuginfo
     }
     span.content
     {
+        &:after
+        {
+            content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} from #{$build_hash}:#{$build_branch}.";
+        }
         color: $green;
         font:
         {
