@@ -1,0 +1,69 @@
+div.create-reddit.fancy-settings
+{
+    div#sr-form.pretty-form
+    {
+        div.linefield
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+            color: $white;
+            span.title, span.gray
+            {
+                color: $white;
+            }
+            div.linefield-content
+            {
+                div.usertext div.usertext-edit
+                {
+                    textarea
+                    {
+                        background:
+                        {
+                            color: $white;
+                        }
+                        color: $black;
+                    }
+                    textarea[name="description"]
+                    {
+                        height: 1000px;
+                    }
+                    input[type="text"]
+                    {
+                        background:
+                        {
+                                color: $white;
+                        }
+                        color: $black;
+                    }
+                    div.bottom-area
+                    {
+                        span.help-toggle.toggle,
+                        a.reddiquette
+                        {
+                            color: $white;
+                        }
+                    }
+                    div.markhelp p
+                    {
+                        color: $white;
+                        a
+                        {
+                            color: $red;
+                        }
+                        table.md tbody tr td
+                        {
+                            background:
+                            {
+                                color: $white;
+                            }
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

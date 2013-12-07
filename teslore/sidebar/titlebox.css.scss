@@ -1,6 +1,10 @@
 div.side div.titlebox /*Moving items away from sidebar edge*/
 {
     padding-left: 5px;
+    div.usertext-body div.md
+    {
+        overflow: visible !important;
+    }
 }
 
 @import "sidebar/titlebox/h1";

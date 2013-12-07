@@ -1,21 +1,8 @@
-div.linefield,
-div.linefield span.title
-{ 
-    background-color: transparent;
-    background-image: $texture;
-    color: $white;
-}
-div#sr-form div.linefield div textarea,
-div#sr-form div.linefield input[type="text"],
 div.flairgrant div.linefield input[type="text"],
 div.flairgrant div.usertable span.flaircell input,
 div.flairlist div.flairtemplate span.flaircell input
 {
     background-color: $white !important;
-}
-div#sr-form div.linefield div.usertext div.usertext-edit div textarea[name="description"]
-{
-    height: 1000px;
 }
 
 div.side
@@ -57,16 +44,33 @@ div.content
             color: $red;
         }
     }
-    form#subreddit_stylesheet.pretty-form.sr-form div.sheets div.col div textarea#stylesheet_contents
-    {
-        font-family: $code !important;
-        height: 500px !important;
-        width: 99% !important;
-    }
     div.stylesheet-customize-container div#images ul#image-preview-list li
     {
         margin-bottom: 20px !important;
         padding-bottom: 0px !important;
         width: 25% !important;
+    }
+}
+body.moderator
+{
+    div.content
+    {
+        button
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+            border:
+            {
+                color: $black;
+                style: solid;
+                width: 3px;
+            }
+        }
+        @import "etc/moderator/settings/";
+        @import "etc/moderator/flair/";
+        @import "etc/moderator/stylesheet";
     }
 }
