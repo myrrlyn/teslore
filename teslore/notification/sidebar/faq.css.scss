@@ -21,12 +21,3 @@ div.side a[href$="#faq"]:hover
     }
     color: $red;
 }
-div.side a[href$="#faq"]:visited
-{
-    color: $white;
-}
-div.side a[href$="#faq"]:active:visted,
-div.side a[href$="#faq"]:hover:visited
-{
-    color: $red;
-}

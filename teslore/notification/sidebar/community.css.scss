@@ -22,12 +22,3 @@ div.side a[href$="#com"]:hover
     }
     color: $red;
 }
-div.side a[href$="#com"]:visited
-{
-    color: $white;
-}
-div.side a[href$="#com"]:active:visted,
-div.side a[href$="#com"]:hover:visited
-{
-    color: $red;
-}
