@@ -1,0 +1,34 @@
+div.side
+{
+    div.titlebox
+    {
+        div.tagline
+        {
+            div.flairselector
+            {
+                background:
+                {
+                    color: $white;
+                }
+                box-shadow: none !important;
+                position: relative !important;
+                top: 0px !important;
+                left: -81px !important;
+                width: 346px !important;
+
+                h2
+                {
+                    background:
+                    {
+                        color: transparent !important;
+                        image: $texture !important;
+                    }
+                }
+                form div.customizer
+                {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+body
+{
+    div.content
+    {
+        margin:
+        {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        div.nav-buttons
+        {
+            span.nextprev
+            {
+                a,
+                span.separator
+                {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+@import "content/frontpage";
+@import "content/arrows";
+@import "content/score";
+@import "content/expando";
+@import "content/post";
+@import "content/comment_area";

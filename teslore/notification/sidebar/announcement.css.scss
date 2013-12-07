@@ -1,0 +1,28 @@
+div.side a[href$="#announcement"]
+{
+    @include notification;
+    color: $white;
+    padding:
+    {
+        top: 3px;
+        left: 0px
+        right: 0px
+        bottom: 1px;
+    }
+    right: 305px;
+    top: 63px;
+    width: 300px;
+}
+div.side a[href$="#announcement"]:active,
+div.side a[href$="#announcement"]:hover
+{
+    background:
+    {
+        color: $white;
+    }
+    color: $red !important;
+}
+div.side a[href$="#announcement"]:visited
+{
+    color: $white !important;
+}

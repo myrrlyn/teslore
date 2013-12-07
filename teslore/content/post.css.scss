@@ -1,0 +1,30 @@
+body div.content > div.sitetable
+{
+    margin-left: -3px;
+    margin-right: 5px;
+}
+div.content div.thing div.entry p.title a.title
+{
+    color: $black;
+    font-family: $sans-serif-set;
+    font-size: 18px !important;
+}
+div.content div.thing div.entry p.title a.title:visited
+{
+    color: $black-desat;
+}
+div.content div.thing div.entry p.title span.domain /*self.teslore*/
+{
+    display: none !important;
+}
+div.content div.thing div.entry p.tagline
+{
+    font-size: 12px;
+    color: #70381A;
+}
+div.content div.thing div.entry div.expando div.usertext-body div.md /*OP background*/
+{
+    background-color: $white;
+    border: 1px solid $black;
+    max-width: 75em !important;
+}

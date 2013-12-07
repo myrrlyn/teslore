@@ -1,0 +1,33 @@
+div.side
+{
+    background:
+    {
+        color: transparent;
+        image: $texture;
+    }
+    border:
+    {
+        style: none;
+        width: 0px;
+    }
+    color: $white;
+    position: relative !important;
+    right: 0px;
+    top:  -59px;
+    width: 300px !important;
+    z-index: 15 !important;
+
+    a.author,
+    p
+    {
+        color: $white;
+    }
+}
+
+@import "sidebar/search";
+@import "sidebar/link_info";
+@import "sidebar/submission";
+@import "sidebar/titlebox";
+@import "sidebar/create";
+@import "sidebar/moderators";
+@import "sidebar/side_content_box";

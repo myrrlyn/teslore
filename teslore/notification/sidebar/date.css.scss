@@ -1,0 +1,20 @@
+div.side a[href="#date"]
+{
+    @include notification;
+    background-image: url(%%T4%%);
+    color: $black;
+    padding:
+    {
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        bottom: 5px;
+    }
+    top: 8px;
+    right: 305px;
+    width: 306px;
+}
+div.side a[href="#date"]:visited
+{
+    color: $black !important;
+}

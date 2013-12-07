@@ -1,0 +1,40 @@
+div.content
+{
+    div.thing
+    {
+        span.rank,
+        a.thumbnail
+        {
+            display: none !important;
+        }
+        div.entry ul.flat-list.buttons li a
+        {
+            color: #70381A;
+        }
+    }
+    div.thing.link
+    {
+        margin: 1px 0px 1px -3px !important;
+    }
+    div.thing.stickied
+    {
+        a.title
+        {
+            color: $green !important;
+        }
+    }
+    div.thing.odd
+    {
+        background:
+        {
+            image: url(%%T2%%);
+        }
+    }
+    div.thing.even
+    {
+        background:
+        {
+            image: url(%%T3%%);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/* Notification Link Format */
+@mixin notification
+{
+    border:
+    {
+        color: $white;
+        style: solid;
+        width: 0px;
+    }
+    display: inline-block;
+    font:
+    {
+        family: $serif-set;
+        size: 14px !important;
+        weight: bold;
+    }
+    position: absolute;
+    text:
+    {
+        align: center;
+        transform: uppercase;
+    }
+}
+
+@import "notification/sidebar/date";
+@import "notification/sidebar/community";
+@import "notification/sidebar/faq";

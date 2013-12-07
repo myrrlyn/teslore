@@ -1,0 +1,33 @@
+div.side a[href$="#com"]
+{
+    @include notification;
+    color: $white;
+    padding:
+    {
+        top: 2px;
+        left: 0px;
+        right: 0px;
+        bottom: 2px;
+    }
+    right: 305px;
+    top: 39px;
+    width: 250px;
+}
+div.side a[href$="#com"]:active,
+div.side a[href$="#com"]:hover
+{
+    background:
+    {
+        color: $white;
+    }
+    color: $red;
+}
+div.side a[href$="#com"]:visited
+{
+    color: $white;
+}
+div.side a[href$="#com"]:active:visted,
+div.side a[href$="#com"]:hover:visited
+{
+    color: $red;
+}

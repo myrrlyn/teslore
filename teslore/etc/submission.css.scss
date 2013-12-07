@@ -1,0 +1,94 @@
+body.submit-page
+{
+    div.side
+    {
+        div.titlebox
+        {
+            h1.hover.redditname
+            {
+                top: -17px;
+            }
+        }
+    }
+    div.formtabs-content
+    {
+        div#url-field
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+        }
+        div#text-field
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+
+            div.usertext
+            {
+                div.usertext-edit
+                {
+                    textarea
+                    {
+                        background:
+                        {
+                            color: $white;
+                        }
+                        height: 500px;
+                    }
+                }
+            }
+        }
+        div#title-field
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+
+            textarea
+            {
+                background:
+                {
+                    color: $white;
+                }
+            }
+        }
+        div#reddit-field
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+        
+            div#sr-autocomplete-area
+            {
+                input#sr-autocomplete
+                {
+                    background:
+                    {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        span.title
+        {
+            color: $white;
+        }
+    }
+    div.content
+    {
+        @include links;
+    }
+    div#suggested-reddits h3
+    {
+        color: $white;
+    }
+}

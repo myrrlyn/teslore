@@ -1,0 +1,24 @@
+div.side
+{
+    div.titlebox
+    {
+        div.bottom
+        {
+            span.flair
+            {
+                display: none;
+            }
+            span.age
+            {
+                time
+                {
+                    display: none;
+                }
+            }
+            span.age::after
+            {
+                content: "2 eras";
+            }
+        }
+    }
+}

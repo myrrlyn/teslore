@@ -1,0 +1,54 @@
+div#header
+{
+    div#header-bottom-left
+    {
+        span.hover.pagename.redditname
+        {
+            font: /* Magnifying the HTML-injected text on mod pages */
+            {
+                family: $serif-set !important;
+                size: 25px;
+            }
+
+            a /* Link to subreddit main */
+            {
+                background:
+                {
+                    color: transparent;
+                    image: $name;
+                    position: 0px 0px;
+                    repeat: no-repeat;
+                }
+                display: inline-block;
+                font:
+                {
+                    family: $serif-set !important;
+                    size: 25px;
+                }
+                padding:
+                {
+                    top: 5px;
+                    left: 0px;
+                    right: 160px;
+                    bottom: 0px;
+                }
+                text-indent: -9999px;
+                z-index: 6 !important;
+            }
+            a:hover /* Switch from Daedric to Tamrielic */
+            {
+                background:
+                {
+                    position: 0px -33px;
+                }
+                padding:
+                {
+                    top: 2px;
+                    left: 0px;
+                    right: 160px;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+}

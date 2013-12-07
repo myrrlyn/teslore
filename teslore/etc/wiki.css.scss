@@ -1,0 +1,48 @@
+div.side div#wikiactions ul li ul li a /*Wiki Toolbox*/
+{
+    background-color: transparent !important;
+}
+
+body
+div.side
+{
+    div#wikiactions
+    {
+        div.title
+        {
+            h1
+            {
+                padding:
+                {
+                    left: 5px;
+                }
+            }
+            span.collapse-button
+            {
+                background:
+                {
+                    color: $white;
+                }
+                border:
+                {
+                    style: none;
+                    width: 0px;
+                }
+                color: $black !important;
+            }
+        }
+        ul.content li ul.flat-vert.hover li a
+        {
+            background:
+            {
+                color: transparent !important;
+            }
+            color: $white;
+        }
+    }
+}
+body.wiki-page
+{
+    @import "etc/wiki/body";
+    @import "etc/wiki/stylesheet";
+}

@@ -1,0 +1,58 @@
+An overview of reddit's DOM for reference when placing selectors. Needless elements are removed from the tree.
+
+html
+ body
+  div#header > div.width-clip
+   div#sr-header-area
+    div.dropdown.srdrop > span.selected.title
+    div.drop-choices.srdrop > a.choice
+    div.sr-list
+     ul.flat-list.sr-bar.hover
+      li > a
+     span.separator
+     ul.flat-list.sr-bar.hover
+      li.selected > a
+      li > a
+     span.separator
+     ul#sr-bar.flat-list.sr-bar.hover
+      li > a
+    a#sr-more-link
+   div#header-bottom-left
+    a#header-img-a > a#header-img-a
+    span.hover.pagename.redditname > a
+    ul.tabmenu
+     li.selected > a
+     li > a
+   div#header-bottom-right
+    span.user
+     a
+     span.userkarma
+    a#mail.nohavemail OR a#mail.havemail
+    a#modmail.nohavemail OR a#modmail.havemail
+    ul.flat-list.hover > li > a.pref-lang
+    form.logout.hover
+  div.side
+  div.content
+  div.footer-parent
+  p.debuginfo
+   span.icon
+   span.content
+   
+RES ELEMENTS
+
+html
+ body
+  div#header
+   div#sr-header-area
+    div#srLeftContainer.sr-bar
+    div#RESShortcutsViewport
+    div#RESShortcutsEditContainer
+   div#header-bottom-right.res-navTop
+    div#userbarToggle.userbarHide / div#userbarToggle.userbarShow
+    span.user
+     span#RESAccountSwitcherIcon
+     span.userkarma
+      a (link karma)
+      a (comment karma)
+     span#openRESPrefs
+      span#RESSettingsButton.gearIcon

@@ -1,0 +1,32 @@
+div.side a[href$="#faq"]
+{
+    @include notification;
+    color: $white;
+    padding:
+    {
+        top: 2px;
+        left: 6px;
+        right: 6px;
+        bottom: 2px;
+    }
+    right: 565px;
+    top: 39px;
+}
+div.side a[href$="#faq"]:active,
+div.side a[href$="#faq"]:hover
+{
+    background:
+    {
+        color: $white;
+    }
+    color: $red;
+}
+div.side a[href$="#faq"]:visited
+{
+    color: $white;
+}
+div.side a[href$="#faq"]:active:visted,
+div.side a[href$="#faq"]:hover:visited
+{
+    color: $red;
+}

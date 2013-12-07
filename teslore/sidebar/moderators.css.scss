@@ -1,0 +1,39 @@
+div.side
+{
+    div.sidecontentbox
+    {
+        a.helplink /* Step 0 to Rename Moderators */
+        {
+            color: $white;
+            position: relative;
+            top: -1px;
+        }
+        a.helplink + div.title h1 /* Step 1 to Rename Moderators */
+        {
+            display: none;
+        }
+        a.helplink + div.title h1:before /* Step 2 to Rename Moderators */
+        {
+            content: "ELDER COUNCIL";
+            color: $white;
+            display: block;
+            font:
+            {
+                size: 130%;
+            }
+        }
+        ul.content
+        {
+            li
+            {
+                a.author[href*="/Dreamsleeve"],
+                a.author[href*="/AkatoshBot"],
+                span.RESUserTag,
+                a.voteWeight
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}

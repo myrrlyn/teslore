@@ -1,0 +1,92 @@
+div.side
+{
+    div.titlebox
+    {
+        div.usertext-body
+        {
+            div.md h1 + table
+            {
+                display: block;
+                margin:
+                {
+                    left: 0px;
+                }
+
+                thead
+                {
+                    display: none;
+                }
+                tbody
+                {
+                    tr
+                    {
+                        display: list-item;
+                        width: 288px;
+
+                        td
+                        {
+                            display: block;
+                            border: none;
+                        }
+                        td:first-child
+                        {
+                            background:
+                            {
+                                image: url(%%T3%%);
+                            }
+                            border:
+                            {
+                                color: $black / 2;
+                                style: solid;
+                                width: 1px;
+                            }
+                            color: $black;
+                            font:
+                            {
+                                weight: 500;
+                            }
+                            padding: 5px;
+                        }
+                        td:first-child:hover,
+                        td:first-child:active
+                        {
+                            background:
+                            {
+                                image: url(%%T4%%);
+                            }
+                        }
+                        td:last-child
+                        {
+                            background:
+                            {
+                                color: $black;
+                            }
+                            border:
+                            {
+                                top: 0px;
+                            }
+                            color: $white;
+                            display: none;
+                            padding: 5px;
+                        }
+                    }
+                    tr:hover,
+                    tr:active
+                    {
+                        td:first-child
+                        {
+                            background:
+                            {
+                                image: url(%%T4%%);
+                            }
+                        }
+                        td:last-child
+                        {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

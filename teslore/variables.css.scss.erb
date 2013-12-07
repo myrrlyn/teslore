@@ -1,0 +1,92 @@
+$black: #161616;
+$black-desat: #545454;
+$gold: #9A7D2E;
+$green: #155415;
+$grey: #C7C7C7;
+$red: #A72A2A;
+$red-desat: #7F1F1F;
+$white: #F5F5F5;
+
+$code: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
+$sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
+$serif-set: "Georgia", "Garamond", "Book Antiqua", "Palatino Linotype", serif;
+
+$texture: url(%%DarkTex%%);
+
+/* Banner and logo */
+$banner: url(%%Banner%%);
+$bannerheight: 64px + 20px;
+$logo: url(%%Snoos%%);
+$logoheight: 60px;
+$logowidth: 214px;
+$logooffset: 0px;
+$name: url(%%Realms%%);
+
+/* Versioning information */
+$build_version: "<%= $build[:version] %>";
+$build_host: "<%= $build[:host] %>";
+$build_name: "<%= $build[:name] %>";
+$build_time: "<%= $build[:time] %>";
+$build_hash: "<%= $build[:hash][0...7] %>";
+$build_hash_long: "<%= $build[:hash] %>";
+$build_branch: "<%= $build[:branch] %>";
+
+@mixin create
+{
+    background:
+    {
+        color: $black !important;
+        image: none !important;
+    }
+    border:
+    {
+        style: none;
+        width: 0px;
+    }
+    height: 29px;
+    width: 300px;
+    vertical-align: middle;
+    z-index: 20;
+
+    div.nub
+    {
+        display: none !important;
+    }
+}
+
+@mixin create-link
+{
+    background
+    {
+        color: $black;
+    }
+    color: $white;
+    font:
+    {
+        family: $serif-set !important;
+        size: large;
+        weight: 400;
+    }
+    position: relative;
+    text:
+    {
+        align: center;
+        transform: uppercase;
+    }
+}
+
+@mixin links
+{
+    a
+    {
+        color: $red;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
+    a:visited
+    {
+        color: $red-desat;
+    }
+}
