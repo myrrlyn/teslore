@@ -1,8 +1,8 @@
 {
   teslore: {
     time: Time.now.utc,
-    host: Socket.gethostname,
-    hash: `git rev-parse --verify HEAD`.strip,
+    host: `hostname`.strip,
+    hash: `git rev-parse HEAD`.strip,
     branch: `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip,
     version: '3.1',
     name: 'Dancing Dreugh'
