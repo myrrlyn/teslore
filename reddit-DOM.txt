@@ -31,17 +31,46 @@ html
     a#modmail.nohavemail OR a#modmail.havemail
     ul.flat-list.hover > li > a.pref-lang
     form.logout.hover
-  div.side
+  div.side > div.spacer
+   form#search
+    input
+    div#searchexpando.infobar
+     div#moresearchinfo
+      a#search_hidemore
+   div.sponsorshipbox
+   div.sidebox.submit
+   div.titlebox
+   div#moderation_tools.sidecontentbox.collapsible
+   iframe#ad_main
+   div.sidebox.create
+   div.sidecontentbox
+   div.sidecontentbox
+   div.account-activity-box
   div.content
+   div#siteTable.sitetable.linklisting
+    div.thing.link.self
+     p.parent
+     span.rank
+     div.midcol (.likes OR .dislikes OR .unvoted)
+     div.entry (.likes OR .dislikes OR .unvoted) (.RES-keyNav-activeElement OR not)
+     div.child
+   div.gold-form.gold-payment.cloneable
   div.footer-parent
+   div.footer.rounded
+    div.col
+     ul.flat-vert.hover
+      li.flat-vert.title
+      li > a
+   p.bottommenu > a
   p.debuginfo
    span.icon
    span.content
+    a.buygold (if sever is named by gilded)
    
 RES ELEMENTS
 
 html
- body
+ body.res
   div#header
    div#sr-header-area
     div#srLeftContainer.sr-bar
@@ -56,3 +85,16 @@ html
       a (comment karma)
      span#openRESPrefs
       span#RESSettingsButton.gearIcon
+  div#RESConsole
+  div#keyCodeModal
+  div#RESMainGearOverlay.RESGearOverlay
+  div#RESPrefsDropdown.RESDropdownList
+  div#keyHelp
+  div#keyCommandLineWidget
+  div#userTaggerToolTip.RESDialogSmall
+  div#authorInfoToolTip.RESDialogSmall
+  div#NREFloat
+  span#RESAccountSwitcherIconOverlay
+  ul#RESAccountSwitcherDropdown.RESDropdownList
+  table#srList
+  div#RESShortcutsAddFormContainer
