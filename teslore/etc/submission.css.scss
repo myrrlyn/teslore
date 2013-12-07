@@ -1,5 +1,15 @@
 body.submit-page
 {
+    div.side
+    {
+        div.titlebox
+        {
+            h1.hover.redditname
+            {
+                top: -17px;
+            }
+        }
+    }
     div.formtabs-content
     {
         div#url-field
