@@ -18,28 +18,31 @@ div#progressIndicator a:hover
 {
 	text-decoration: underline;
 }
-div.content p.tagline em /*Deleted Author*/
+div.content
 {
-    font-size: 0px;
-}
-div.content p.tagline em:after
-{
-    content: "[ZER0-SUMMED]";
-    font-weight: bold;
-    font-size: 10px;
-    margin-left: -1px;
-}
-div.content .grayed div.md /*Censored Text*/
-{
-    margin: 5px 0;
-}
-div.content .grayed div.md:after
-{
-    content: "[NUMINIT]";
-}
-div.content .grayed div.md p
-{
-    display: none !important;
+    p.tagline em
+    {
+        font-size: 0px;
+        &:after
+        {
+            content: "[ZER0-SUMMED]";
+            font-weight: bold;
+            font-size: 10px;
+            margin-left: -1px;
+        }
+    }
+    div.usertext.grayed div.usertext-body div.md
+    {
+        margin: 5px 0;
+        &:after
+        {
+            content: "[NUMINIT]";
+        }
+        p
+        {
+            display: none !important;
+        }
+    }
 }
 .RES-keyNav-activeElement,
 .commentarea .RES-keyNav-activeElement .md,
@@ -79,4 +82,4 @@ body.mod-toolbox div#tb-bottombar.tb-toolbar
 
 @import "etc/submission";
 @import "etc/moderator";
-@import "etc/footer";
+@import "etc/wiki";

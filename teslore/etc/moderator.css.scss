@@ -35,9 +35,10 @@ div.side
                 color: $black !important;
             }
         }
-        ul li ul li a
+        ul.content li ul.flat-vert.icon-menu.hover li a
         {
             background-color: transparent !important;
+            color: $white;
         }
     }
 }

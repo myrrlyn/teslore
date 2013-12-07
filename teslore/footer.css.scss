@@ -13,18 +13,29 @@ div.footer-parent
             style: solid;
             width: 1px;
         }
-        col
+        div.col
         {
             border:
             {
                 color: $black;
                 left: 1px;
-                style: solid;
+                left-style: solid;
             }
-            ul.flat-vert.hover li.flat-vert.title
+            &:first-child
             {
-                color: $black;
-                font-family: $sans-serif-set;
+                border: 0px none;
+            }
+            ul.flat-vert.hover
+            {
+                li.flat-vert.title
+                {
+                    color: $black;
+                    font-family: $sans-serif-set;
+                }
+                li a
+                {
+                    color: $red !important;
+                }
             }
         }
     }
@@ -53,15 +64,22 @@ p.debuginfo
     }
     span.content
     {
-        &:after
-        {
-            content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} on #{$build_host} from #{$build_hash}:#{$build_branch}.";
-        }
         color: $green;
         font:
         {
             family: $code;
-            size: 9px;
+            size: 10px;
+        }
+        a.gold
+        {
+            &:after
+            {
+                content: "TalOS";
+            }
+        }
+        &:after
+        {
+            content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} on #{$build_host} from #{$build_hash}:#{$build_branch}.";
         }
     }
 }

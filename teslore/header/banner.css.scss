@@ -23,12 +23,12 @@ div#header
                     position: 0px 0px;
                     repeat: no-repeat;
                 }
-                height: $logoheight !important;
+                height: $logoheight;
                 margin:
                 {
                     top: $logooffset;
                 }
-                width: $logowidth !important;
+                width: $logowidth;
                 z-index: 6 !important;
             }
             img#header-img:hover

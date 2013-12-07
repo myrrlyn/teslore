@@ -3,6 +3,7 @@ div.side div#wikiactions ul li ul li a /*Wiki Toolbox*/
     background-color: transparent !important;
 }
 
+body
 div.side
 {
     div#wikiactions
@@ -30,15 +31,18 @@ div.side
                 color: $black !important;
             }
         }
-        ul li ul li a
+        ul.content li ul.flat-vert.hover li a
         {
             background:
             {
                 color: transparent !important;
             }
+            color: $white;
         }
     }
 }
-
-@import "wiki/wiki_stylesheet";
-@import "wiki/wiki_body";
+body.wiki-page
+{
+    @import "etc/wiki/body";
+    @import "etc/wiki/stylesheet";
+}

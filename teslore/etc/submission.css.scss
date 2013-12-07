@@ -26,8 +26,7 @@ body.submit-page
                     {
                         background:
                         {
-                            color: transparent;
-                            image: url(%%T4%%);
+                            color: $white;
                         }
                         height: 500px;
                     }
@@ -46,8 +45,7 @@ body.submit-page
             {
                 background:
                 {
-                    color: transparent;
-                    image: url(%%T4%%);
+                    color: $white;
                 }
             }
         }
@@ -65,8 +63,7 @@ body.submit-page
                 {
                     background:
                     {
-                        color: transparent;
-                        image: $texture;
+                        color: $white;
                     }
                 }
             }
