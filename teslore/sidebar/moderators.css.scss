@@ -8,18 +8,28 @@ div.side
             position: relative;
             top: -1px;
         }
-        a.helplink + div.title h1 /* Step 1 to Rename Moderators */
+        a.helplink + div.title /* Step 1 to Rename Moderators */
         {
-            display: none;
-        }
-        a.helplink + div.title h1:before /* Step 2 to Rename Moderators */
-        {
-            content: "ELDER COUNCIL";
-            color: $white;
-            display: block;
-            font:
+            margin:
             {
-                size: 130%;
+                bottom: -11px !important;
+            }
+            h1
+            {
+                font:
+                {
+                    size: 0px;
+                }
+                &:before /* Step 2 to Rename Moderators */
+                {
+                    content: "ELDER COUNCIL";
+                    color: $white;
+                    display: block;
+                    font:
+                    {
+                        size: 13px;
+                    }
+                }
             }
         }
         ul.content
@@ -37,3 +47,4 @@ div.side
         }
     }
 }
+body:not(.loggedin) div.side div.sidecontentbox a.helplink + div.title { margin-bottom: -11px !important; }

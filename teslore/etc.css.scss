@@ -5,18 +5,18 @@ div#progressIndicator /*RES Loading*/
 	background-image: url(%%T4%%);
 	color: $black;
     width: 80%;
-}
-div#progressIndicator h2,p
-{
-	color: $black;
-}
-div#progressIndicator p a#NERStaticLink
-{
-	color: $red;
-}
-div#progressIndicator a:hover
-{
-	text-decoration: underline;
+    h2, p
+    {
+        color: $black;
+    }
+    p a#NERStaticLink
+    {
+        color: $red;
+    }
+    a:hover
+    {
+        text-decoration: underline;
+    }
 }
 div.content
 {
@@ -50,7 +50,7 @@ div.content
 .keyHighlight
 {
     outline: none !important;
-    background-color: transparent !important;
+    background-image: url(%%T1%%) !important;
 }
 div#RESMainGearOverlay.RESGearOverlay,
 span#RESAccountSwitcherIconOverlay

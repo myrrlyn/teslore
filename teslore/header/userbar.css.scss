@@ -37,7 +37,7 @@ div#header
         {
             color: $white !important;
         }
-
+        div#userbarToggle,
         div#userbarToggle.userbarHide,
         div#userbarToggle.userbarShow
         {
@@ -46,6 +46,7 @@ div#header
                 color: transparent;
                 image: $texture;
             }
+            color: $white !important;
             border:
             {
                 style: none;

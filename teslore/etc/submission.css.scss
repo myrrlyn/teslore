@@ -10,85 +10,102 @@ body.submit-page
             }
         }
     }
-    div.formtabs-content
+    div.content
     {
-        div#url-field
+        form.pretty-form.sharelink + h1
         {
-            background:
-            {
-                color: transparent;
-                image: $texture;
-            }
+            color: $red;
         }
-        div#text-field
+        form#newlink.submit.content
         {
-            background:
+            div.formtabs-content
             {
-                color: transparent;
-                image: $texture;
-            }
-
-            div.usertext
-            {
-                div.usertext-edit
+                border:
                 {
+                    top: 3px solid $black;
+                }
+                div#url-field
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture;
+                    }
+                }
+                div#text-field
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture;
+                    }
+        
+                    div.usertext
+                    {
+                        div.usertext-edit
+                        {
+                            div.commentingAs
+                            {
+                                color: $white;
+                            }
+                            textarea
+                            {
+                                background:
+                                {
+                                    color: $white;
+                                }
+                                height: 500px;
+                            }
+                        }
+                    }
+                }
+                div#title-field
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture;
+                    }
                     textarea
                     {
                         background:
                         {
                             color: $white;
                         }
-                        height: 500px;
                     }
                 }
-            }
-        }
-        div#title-field
-        {
-            background:
-            {
-                color: transparent;
-                image: $texture;
-            }
-
-            textarea
-            {
-                background:
+                div#reddit-field
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture;
+                    }
+                
+                    div#sr-autocomplete-area
+                    {
+                        input#sr-autocomplete
+                        {
+                            background:
+                            {
+                            color: $white;
+                            }
+                        }
+                    }
+                }
+                span.title
                 {
                     color: $white;
                 }
             }
-        }
-        div#reddit-field
-        {
-            background:
+            div.content
             {
-                color: transparent;
-                image: $texture;
+                @include links;
             }
-        
-            div#sr-autocomplete-area
+            div#suggested-reddits h3
             {
-                input#sr-autocomplete
-                {
-                    background:
-                    {
-                        color: $white;
-                    }
-                }
+                color: $white;
             }
         }
-        span.title
-        {
-            color: $white;
-        }
-    }
-    div.content
-    {
-        @include links;
-    }
-    div#suggested-reddits h3
-    {
-        color: $white;
     }
 }

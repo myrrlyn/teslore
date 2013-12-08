@@ -29,6 +29,7 @@ div.side
         span.subscribers,
         p.users-online
         {
+            font-size: 11px !important;
             span.word
             {
                 display: none;
@@ -48,12 +49,17 @@ div.side
             {
                 color: transparent;
             }
+            font-size: 10px !important;
         }
-        form.toggle
+        form.toggle.flairtoggle
         {
             background:
             {
                 color: transparent;
+            }
+            label
+            {
+                font-size: 10px !important;
             }
         }
     }
