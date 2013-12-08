@@ -34,6 +34,16 @@ div.content
                 repeat: no-repeat;
             }
             color: $white;
+            &:focus
+            {
+                background:
+                {
+                    color: $white;
+                    image: none;
+                    position: -500px -100px;
+                }
+                color: $black;
+            }
         }
     }
 }

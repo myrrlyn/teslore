@@ -14,7 +14,7 @@ body.submit-page
     {
         form.pretty-form.sharelink + h1
         {
-            color: $white;
+            color: $black;
             a
             {
                 color: $red;
@@ -94,6 +94,13 @@ body.submit-page
                             {
                             color: $white;
                             }
+                        }
+                    }
+                    div#suggested-reddits
+                    {
+                        ul li a
+                        {
+                            color: $red;
                         }
                     }
                 }
