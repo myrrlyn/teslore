@@ -70,7 +70,7 @@ end
 namespace :reddit do
   task :compile do
     config = get_config
-    Log.info 'Logging into Reddit'
+    Log.info 'Logging into reddit'
     bot = get_bot config
     Log.info 'Compiling assets'
     mkdir_p 'build'
@@ -83,7 +83,7 @@ namespace :reddit do
 
   task :push do
     config = get_config
-    Log.info 'Logging into Reddit'
+    Log.info 'Logging into reddit'
     bot = get_bot config
     Log.info 'Compiling assets'
     compiled = compile get_stylesheet(config), config
@@ -95,7 +95,7 @@ namespace :reddit do
 
   task :refresh do
     config = get_config
-    Log.info 'Logging into Reddit'
+    Log.info 'Logging into reddit'
     bot, subreddit = get_bot(config), get_subreddit(config)
     Log.info "Getting stylesheet for /r/#{subreddit}"
     stylesheet = bot.get subreddit

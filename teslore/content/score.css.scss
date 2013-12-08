@@ -1,17 +1,17 @@
-div.content div.thing div.score
+div.score
 {
     font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif;
     padding-bottom: 2px;
-}
-div.content div.thing div.score.likes
-{
-    color: #FF8B60;
-}
-div.content div.thing div.score.unvoted
-{
-    color: #212121;
-}
-div.content div.thing div.score.dislikes
-{
-    color: #9494FF;
+    &.likes
+    {
+        color: #FF8B60;
+    }
+    &.unvoted
+    {
+        color: #212121;
+    }
+        &.dislikes
+    {
+        color: #9494FF;
+    }
 }

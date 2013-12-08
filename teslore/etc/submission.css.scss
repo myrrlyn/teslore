@@ -28,6 +28,28 @@ body.submit-page
                 {
                     top: 3px solid $black;
                 }
+                div#title-field
+                {
+                    background:
+                    {
+                        color: transparent;
+                        image: $texture;
+                    }
+                    textarea
+                    {
+                        background:
+                        {
+                            color: $white;
+                            image: url(%%submittitlebox%%);
+                            position: 11px 11px;
+                            repeat: no-repeat;
+                        }
+                        &:focus
+                        {
+                            background-position: 11px -39px;
+                        }
+                    }
+                }
                 div#url-field
                 {
                     background:
@@ -43,7 +65,10 @@ body.submit-page
                         color: transparent;
                         image: $texture;
                     }
-        
+                    span.gray
+                    {
+                        display: none;
+                    }
                     div.usertext
                     {
                         div.usertext-edit
@@ -60,21 +85,6 @@ body.submit-page
                                 }
                                 height: 500px;
                             }
-                        }
-                    }
-                }
-                div#title-field
-                {
-                    background:
-                    {
-                        color: transparent;
-                        image: $texture;
-                    }
-                    textarea
-                    {
-                        background:
-                        {
-                            color: $white;
                         }
                     }
                 }

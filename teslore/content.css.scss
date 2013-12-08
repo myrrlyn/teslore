@@ -9,7 +9,18 @@ body
             right: 0px;
             bottom: 0px;
         }
-
+        @import "content/frontpage";
+        div.thing.link
+        {
+            @import "content/post";
+            @import "content/score";
+            div.midcol
+            {
+                margin-top: 6px;
+                @include arrows;
+            }
+            @include expando-buttons;
+        }
         div.nav-buttons
         {
             span.nextprev
@@ -23,10 +34,10 @@ body
         }
     }
 }
+body div.content > div.sitetable
+{
+    margin-left: -3px;
+    margin-right: 5px;
+}
 
-@import "content/frontpage";
-@import "content/arrows";
-@import "content/score";
-@import "content/expando";
-@import "content/post";
 @import "content/comment_area";

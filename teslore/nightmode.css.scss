@@ -2,6 +2,11 @@ html.res-nightmode
 {
     body.res-nightmode
     {
+        @include links;
+        a.author
+        {
+            color: $white !important;
+        }
         div#header
         {
             background:
@@ -12,7 +17,11 @@ html.res-nightmode
             {
                 background:
                 {
-                    color: $black;
+                    attachment: scroll;
+                    color: $black !important;
+                    image: $banner !important;
+                    position: center top;
+                    repeat: repeat-x !important;
                 }
             }
         }
@@ -72,6 +81,10 @@ html.res-nightmode
                 ul.content
                 {
                     background-color: transparent !important;
+                    li div.gadget div.reddit-link div.midcol
+                    {
+                        @include arrows;
+                    }
                 }
             }
         }
@@ -82,15 +95,23 @@ html.res-nightmode
                 color: transparent !important;
             }
         }
-        div.thing
+        div.content
         {
-            div.expando
+            div.thing
             {
-                div.md
+                div.arrow
                 {
-                    background:
+                    @include arrows;
+                }
+                @include expando-buttons;
+                div.expando
+                {
+                    div.md
                     {
-                        color: $black;
+                        background:
+                        {
+                            color: $black;
+                        }
                     }
                 }
             }
