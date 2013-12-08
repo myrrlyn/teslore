@@ -10,7 +10,7 @@ $white: #F5F5F5;
 
 $code-set: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace;
 $sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif;
-$serif-set: "Georgia", "Garamond", "Book Antiqua", "Palatino Linotype", serif;
+$serif-set: "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", "Goudy Old Style", serif;
 
 $texture: url(%%DarkTex%%);
 
@@ -54,7 +54,6 @@ $build_branch: "<%= $build[:branch] %>";
         display: none !important;
     }
 }
-
 @mixin create-link
 {
     background
@@ -75,7 +74,6 @@ $build_branch: "<%= $build[:branch] %>";
         transform: uppercase;
     }
 }
-
 @mixin links
 {
     a
@@ -89,5 +87,75 @@ $build_branch: "<%= $build[:branch] %>";
     a:visited
     {
         color: $red-desat;
+    }
+}
+@mixin arrows
+{
+    div.arrow
+    {
+        background:
+        {
+            image: url(%%Arrows%%);
+        }
+        height: 14px;
+        width: 15px;
+        &.up
+        {
+            background:
+            {
+                position: 0px 0px;
+            }
+        }
+        &.down
+        {
+            background:
+            {
+                position: 0px -15px;
+            }
+            display: none !important;
+        }
+        &.upmod
+        {
+            background:
+            {
+                position: -15px 0;
+            }
+        }
+        &.downmod
+        {
+            background:
+            {
+                position: -15px -15px;
+            }
+        }
+    }
+}
+@mixin expando-buttons
+{
+    div.entry div.expando-button
+    {
+        background:
+        {
+            color: transparent;
+            image: url(%%expando%%);
+        }
+        height: 16px;
+        width: 20px;
+        &.collapsed
+        {
+            background-position: 6px -2px;
+            &:hover
+            {
+                background-position: 6px -22px;
+            }
+        }
+        &.expanded
+        {
+            background-position: -13px -2px;
+            &:hover
+            {
+                background-position: -13px -22px;
+            }
+        }
     }
 }

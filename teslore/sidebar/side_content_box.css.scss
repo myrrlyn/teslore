@@ -29,6 +29,7 @@ div.side
                 }
                 div.gadget
                 {
+                    @include arrows;
                     div.right
                     {
                         @include links;
