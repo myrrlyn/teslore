@@ -1,21 +1,41 @@
-div.content div.commentarea div.panestack-title span.panestack-title
+div.content
 {
-    color: #161616;
-}
-div.content div.commentarea div.menuarea,
-div.content div.commentarea div.menuarea div.dropdown span.selected,
-div.content div.commentarea div.menuarea div.drop-choices form a.choice
-{
-    color: #70381A;
-}
-div.content div.commentarea div.menuarea div.drop-choices
-{
-    background-color: #F5F5F5;
-}
-div.content div.commentarea form div.usertext-edit div textarea
-{
-    background-color: transparent;
-    background-image: url(%%T4%%);
+    div.commentarea
+    {
+        div.panestack-title span.panestack-title
+        {
+            color: $black;
+        }
+        div.menuarea
+        {
+            color: $brown;
+            div.dropdown span.selected
+            {
+                color: $brown;
+            }
+            div.drop-choices
+            {
+                background:
+                {
+                    color: $white;
+                }
+                form a.choice
+                {
+                    color: $brown;
+                }
+            }
+        }
+        form div.usertext-edit div textarea
+        {
+            background:
+            {
+                color: $black;
+                image: url(%%commentbox%%);
+                repeat: no-repeat;
+            }
+            color: $white;
+        }
+    }
 }
 div.content div.thing.comment:nth-child(4n+1) p.parent {
     background-color: transparent;

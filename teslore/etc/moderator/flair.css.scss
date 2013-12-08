@@ -2,28 +2,69 @@ div.flair-settings.fancy-settings
 {
     h1
     {
-        color: $white;
+        color: $black;
+        strong
+        {
+            color: $red;
+        }
     }
     div.pretty-form form
     {
         div.linefield
-        span.title,
-        div.linefield-content label
         {
-            color: $white;
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+            span.title,
+            div.linefield-content label
+            {
+                color: $white;
+            }
         }
     }
 }
-/*
 ul.tabmenu
 {
-    li#tab-grant
-    li#tab-templates
-    li#tab-link_templates
-    li.selected
+    li a
+    {
+        background:
+        {
+            color: $black;
+        }
+        color: $white;
+    }
+    li.selected a
+    {
+        background:
+        {
+            color: $white;
+        }
+        color: $red;
+    }
 }
 div.tabpane-content
 {
-    
+    border:
+    {
+        color: $black;
+        style: solid;
+        width: 1px;
+    }
+    div.flairgrant.flairlist
+    {
+        div.linefield.flair-jump
+        {
+            background:
+            {
+                color: transparent;
+                image: $texture;
+            }
+            span.title
+            {
+                color: $white;
+            }
+        }
+    }
 }
-*/
