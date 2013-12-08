@@ -14,7 +14,11 @@ body.submit-page
     {
         form.pretty-form.sharelink + h1
         {
-            color: $red;
+            color: $white;
+            a
+            {
+                color: $red;
+            }
         }
         form#newlink.submit.content
         {
