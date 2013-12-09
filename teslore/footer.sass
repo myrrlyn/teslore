@@ -27,7 +27,7 @@ div.footer-parent
       family: $sans-serif-set
 p.debuginfo
   span.icon
-    background-image: url(%%teslorecouncilsmallest%%) /*change pi to septim dragon*/
+    background-image: url(%%teslorecouncilsmallest%%) /*change pi to Septim Dragon*/
     font-size: 0px
     padding:
       top: 10px
@@ -40,7 +40,11 @@ p.debuginfo
       family: $code-set
       size: 10px
     a.gold
+      font:
+        size: 0px
       &:after
         content: "TalOS"
+        font:
+          size: 10px
     &:after
       content: " TESLore #{$build_version} (#{$build_name}), built #{$build_time} on #{$build_host} from #{$build_hash}:#{$build_branch}."

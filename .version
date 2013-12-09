@@ -4,7 +4,7 @@
     host: `hostname`.strip,
     hash: `git rev-parse HEAD`.strip,
     branch: `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip,
-    version: '3.1',
-    name: 'Dancing Dreugh'
+    version: '3.2',
+    name: 'Enhanced Enantiomorph'
   }
 }
