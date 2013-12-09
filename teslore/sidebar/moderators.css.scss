@@ -46,6 +46,14 @@ div.side
                         & + a.voteWeight
                         {
                             display: none !important;
+                            & + span.flair
+                            {
+                                display: none !important;
+                                & + span.userattrs
+                                {
+                                    display: none !important;
+                                }
+                            }
                         }
                     }
                 }

@@ -41,6 +41,7 @@ div.footer-parent
     }
     p.bottommenu
     {
+        @include links;
         color: $black;
         font:
         {

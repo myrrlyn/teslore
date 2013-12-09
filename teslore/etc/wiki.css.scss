@@ -41,6 +41,9 @@ body
 body.wiki-page
 {
     @import "etc/wiki/body";
-    @import "etc/wiki/formatting";
-    @import "etc/wiki/stylesheet";
+    div.wiki-page-content
+    {
+        @import "etc/wiki/formatting";
+        @import "etc/wiki/stylesheet";
+    }
 }

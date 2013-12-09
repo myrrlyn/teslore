@@ -48,7 +48,35 @@ div.content
         }
         span.pageactions
         {
-            
+            background:
+            {
+                color: transparent;
+                image: url(%%T4%%);
+            }
+            border:
+            {
+                color: $black;
+                style: solid;
+                radius: 5px;
+                width: 1px;
+            }
+            a.wikiaction
+            {
+                color: $black;
+                &.wikiaction-current
+                {
+                    background:
+                    {
+                        color: $black;
+                    }
+                    border:
+                    {
+                        radius: 5px;
+                        style: none;
+                    }
+                    color: $white;
+                }
+            }
         }
     }
     div.wiki-page-content

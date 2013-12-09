@@ -47,6 +47,7 @@ div.content
         }
         div.thing.comment
         {
+            @include arrows;
             background:
             {
                 color: transparent;
