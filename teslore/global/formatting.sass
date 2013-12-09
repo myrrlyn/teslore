@@ -5,8 +5,7 @@ a.author
     left: 1px
     right: 1px
     bottom: 1px
-a.gold, 
-a.buygold,
+a.gold, a.buygold, /* Reddit Gold links */
 div.roundfield.gold-accent span.title
   color: $gold !important
   font:
@@ -71,7 +70,8 @@ div.md
       bottom: 7px
     line-height: 16px
   sup
-    font-size: 75%
+    font:
+      size: 75%
     vertical-align: middle
   hr
     background:
@@ -81,7 +81,9 @@ div.md
       width: 0px
     height: 1px
   table
-    border-collapse: separate
+    border:
+      collapse: separate
     thead tr th,
     tbody tr td
-      text-align: center
+      text:
+        align: center

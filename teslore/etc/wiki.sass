@@ -16,8 +16,8 @@ body
         background:
           color: transparent !important
         color: $white
-body.wiki-page
-  @import etc/wiki/body
-  div.wiki-page-content
-    @import etc/wiki/formatting
-    @import etc/wiki/stylesheet
+  &.wiki-page
+    @import "etc/wiki/body"
+    div.wiki-page-content
+      @import "etc/wiki/formatting"
+      @import "etc/wiki/stylesheet"

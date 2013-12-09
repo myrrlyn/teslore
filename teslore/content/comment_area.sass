@@ -1,50 +1,49 @@
-div.content
-  div.commentarea
-    div.panestack-title span.panestack-title
-      color: $black
-    div.menuarea
+div.commentarea
+  div.panestack-title span.panestack-title
+    color: $black
+  div.menuarea
+    color: $brown
+    div.dropdown span.selected
       color: $brown
-      div.dropdown span.selected
-        color: $brown
-      div.drop-choices
-        background:
-          color: $white
-        form a.choice
-          color: $brown
-    form div.usertext-edit div textarea
+    div.drop-choices
       background:
-        color: $black
-        image: url(%%commentbox%%)
-        repeat: no-repeat
-      color: $white
-      &:focus
-        background:
-          color: $white
-          image: none
-          position: -500px -100px
-        color: $black
-    div.thing.comment
-      +arrows
-      background:
-        color: transparent
-      margin:
-        left: 0px
-      padding:
-        left: 10px
-        right: 30px
-        bottom: 10px
-      div.collapsed
+        color: $white
+      form a.choice
         color: $brown
-        a
-          color: $black
-  div.thing.comment:nth-child(4n+1) p.parent
+  form div.usertext-edit div textarea
+    background:
+      color: $black
+      image: url(%%commentbox%%)
+      repeat: no-repeat
+    color: $white
+    &:focus
+      background:
+        color: $white
+        image: none
+        position: -500px -100px
+      color: $black
+  div.thing.comment
+    +arrows
     background:
       color: transparent
-      image: url(%%T1%%)
-  div.thing.comment:nth-child(4n+3) p.parent
-    background:
-      color: transparent
-      image: url(%%T2%%)
+    margin:
+      left: 0px
+    padding:
+      left: 10px
+      right: 30px
+      bottom: 10px
+    div.collapsed
+      color: $brown
+      a
+        color: $black
+div.thing.comment:nth-child(4n+1) p.parent
+  background:
+    color: transparent
+    image: url(%%T1%%)
+div.thing.comment:nth-child(4n+3) p.parent
+  background:
+    color: transparent
+    image: url(%%T2%%)
 div.comment, /* 1 */
 div.comment div.comment div.comment, /* 3 */
 div.comment div.comment div.comment div.comment div.comment, /* 5 */

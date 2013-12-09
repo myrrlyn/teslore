@@ -1,23 +1,22 @@
-body
-  div.content
-    margin:
-      top: 0px
-      left: 0px
-      right: 0px
-      bottom: 0px
-    @import content/frontpage
-    div.thing.link
-      @import content/post
-      @import content/score
-      div.midcol
-        margin-top: 6px
-        +arrows
-      +expando-buttons
-    div.nav-buttons
-      span.nextprev
-        a, span.separator
-          color: $black
-body div.content > div.sitetable
-  margin-left: -3px
-  margin-right: 5px
-@import "content/comment_area"
+div.content
+  margin:
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+  @import content/frontpage
+  div.thing.link
+    @import content/post
+    @import content/score
+    div.midcol
+      margin-top: 6px
+      +arrows
+    +expando-buttons
+  & > div.sitetable
+    margin-left: -3px
+    margin-right: 5px
+  div.nav-buttons
+    span.nextprev
+      a, span.separator
+        color: $black
+  @import "content/comment_area"
