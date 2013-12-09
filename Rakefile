@@ -1,4 +1,4 @@
-%w[pry yaml pathname logger akatoshbot sprockets sprockets-sass].each(&method(:require))
+%w[pry yaml pathname logger akatoshbot sass sprockets sprockets-sass].each(&method(:require))
 
 Log ||= Logger.new STDOUT
 
@@ -26,10 +26,6 @@ def get_stylesheet config
   ENV['stylesheet'] || config[:stylesheet] || 'teslore'
 end
 
-def get_postprocess config
-  (ENV['postprocess'] || config[:postprocess]).split(',')
-end
-
 def get_context id
   $build = eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
@@ -41,10 +37,9 @@ def get_context id
 end
 
 def compile id, config
-  ret = get_context(id).find_asset(id).to_s + get_postprocess(config).reduce(''){|s, x| s + File.read(File.join(id, x)) + "\n"}
-
+  ret = get_context(id).find_asset(id).to_s
   # Remove empty comments
-  ret.gsub! /\/\*\s*\*\//m, ''
+  ret.gsub! /\/\*\s*?\*\//m, ''
 
   # Normalize line endings for sending to Reddit
   ret.gsub! /\r\n/, "\n"
