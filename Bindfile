@@ -1,7 +1,8 @@
 bind :date do |body, args|
   t = Time.now.utc
   c = t.strftime('%m%d').to_sym
-  !args[:holidays].nil? && args[:holidays][c].is_a?(String) ? args[:holidays][c] : t.tamriel(args[:year])
+  ret = !args[:holidays].nil? && args[:holidays][c].is_a?(String) ? args[:holidays][c] : t.tamriel(args[:year])
+  %[content: "#{ret}";]
 end
 
 bind_partial :banner, File.read(File.join(File.dirname(__FILE__), 'partial', 'banner.css.erb'))
