@@ -157,7 +157,7 @@ div.md.wiki
     }
     h2
     {
-        color: lighten($black,4%) !important;
+        color: lighten($black,3%) !important;
         font:
         {
             family: $serif-set;
@@ -166,7 +166,7 @@ div.md.wiki
     }
     h3
     {
-        color: lighten($black,8%) !important;
+        color: lighten($black,6%) !important;
         font:
         {
             family: $serif-set;
@@ -175,7 +175,7 @@ div.md.wiki
     }
     h4
     {
-        color: lighten($black,12%) !important;
+        color: lighten($black,9%) !important;
         font:
         {
             family: $serif-set;
@@ -184,7 +184,7 @@ div.md.wiki
     }
     h5
     {
-        color: lighten($black,16%) !important;
+        color: lighten($black,12%) !important;
         font:
         {
             family: $serif-set;
@@ -193,7 +193,7 @@ div.md.wiki
     }
     h6
     {
-        color: lighten($black,20%) !important;
+        color: lighten($black,15%) !important;
         font:
         {
             family: $serif-set;

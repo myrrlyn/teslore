@@ -1,75 +1,72 @@
-div.wiki-page-content
+pre.subreddit-stylesheet-source /* Stylesheet in wiki */
 {
-    pre.subreddit-stylesheet-source /* Stylesheet in wiki */
+    background:
     {
-        background:
-        {
-            color: $black;
-        }
-        font:
-        {
-            family: $code-set;
-        }
+        color: $black;
+    }
+    font:
+    {
+        family: $code-set;
+    }
 
-        code.language-css /* Styling parts of stylesheet */
+    code.language-css /* Styling parts of stylesheet */
+    {
+        span.attribute
         {
-            span.attribute
+            color: lighten($green,20%);
+        }
+        span.attr_selector
+        {
+            color: $grey;
+        }
+        span.class
+        {
+            color: $red;
+        }
+        span.comment
+        {
+            color: $grey;
+            margin:
             {
-                color: lighten($green,20%);
+                left: 0px;
             }
-            span.attr_selector
-            {
-                color: $grey;
-            }
-            span.class
-            {
-                color: $red;
-            }
-            span.comment
-            {
-                color: $grey;
-                margin:
-                {
-                    left: 0px;
-                }
-            }
-            span.hexcolor
-            {
-                color: $gold;
-            }
-            span.id
-            {
-                color: #00D0FF;
-            }
-            span.important
-            {
-                color: #FF0000;
-            }
-            span.number
-            {
-                color: $gold;
-            }
-            span.pseudo
-            {
-                color: #FF8000;
-            }
-            span.rule,
-            span.rules
-            {
-                color: #FFFF00;
-            }
-            span.string
-            {
-                color: $white;
-            }
-            span.tag
-            {
-                color: #00FF00;
-            }
-            span.value
-            {
-                color: $white;
-            }
+        }
+        span.hexcolor
+        {
+            color: $gold;
+        }
+        span.id
+        {
+            color: #00D0FF;
+        }
+        span.important
+        {
+            color: #FF0000;
+        }
+        span.number
+        {
+            color: $gold;
+        }
+        span.pseudo
+        {
+            color: #FF8000;
+        }
+        span.rule,
+        span.rules
+        {
+            color: #FFFF00;
+        }
+        span.string
+        {
+            color: $white;
+        }
+        span.tag
+        {
+            color: #00FF00;
+        }
+        span.value
+        {
+            color: $white;
         }
     }
 }
