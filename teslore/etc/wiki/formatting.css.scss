@@ -18,18 +18,19 @@ div.md.wiki
         right: 5px;
         bottom: 0px;
     }
-    
-    a,
-    a:visited
+    a
     {
         color: $black;
-        font:
-        {
-            style: italic;
-        }
         text:
         {
             decoration: underline;
+        }
+        &:visited
+        {
+            font:
+            {
+                style: italic;
+            }
         }
     }
 }
