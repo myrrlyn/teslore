@@ -1,5 +1,3 @@
-div#header
-{
     div#sr-header-area /* Subreddit lists */
     {
         background:
@@ -65,14 +63,14 @@ div#header
                     right: 2px !important;
                     bottom: 1px !important;
                 }
-            }
-            a.choice:hover
-            {
-                background:
+                &:hover
                 {
-                    color: $white;
+                    background:
+                    {
+                        color: $white;
+                    }
+                    color: $black;
                 }
-                color: $black;
             }
         }
         div#RESShortcutsEditContainer /* RES Buttons */
@@ -106,4 +104,3 @@ div#header
     {
         color: $white;
     }
-}

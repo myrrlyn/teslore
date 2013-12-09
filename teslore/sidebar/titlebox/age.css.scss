@@ -1,28 +1,22 @@
-div.side
+div.bottom
 {
-    div.titlebox
+    font:
     {
-        div.bottom
+        size: 100%;
+    }
+    span.flair
+    {
+        display: none;
+    }
+    span.age
+    {
+        time
         {
-            font:
-            {
-                size: 100%;
-            }
-            span.flair
-            {
-                display: none;
-            }
-            span.age
-            {
-                time
-                {
-                    display: none;
-                }
-            }
-            span.age::after
-            {
-                content: "2 eras";
-            }
+            display: none;
+        }
+        &:after
+        {
+            content: "2 eras";
         }
     }
 }

@@ -40,13 +40,13 @@ body.submit-page
                         background:
                         {
                             color: $white;
-                            image: url(%%submittitlebox%%);
+                            /*image: url(%%submittitlebox%%);
                             position: 11px 11px;
                             repeat: no-repeat;
                         }
                         &:focus
                         {
-                            background-position: 11px -39px;
+                            background-position: 11px -39px;*/
                         }
                     }
                 }
@@ -73,6 +73,13 @@ body.submit-page
                     {
                         div.usertext-edit
                         {
+                            div.markdownEditor
+                            {
+                                a
+                                {
+                                    color: $white;
+                                }
+                            }
                             div.commentingAs
                             {
                                 color: $white;
@@ -84,6 +91,13 @@ body.submit-page
                                     color: $white;
                                 }
                                 height: 500px;
+                            }
+                            div.bottom-area
+                            {
+                                a
+                                {
+                                    color: $white;
+                                }
                             }
                         }
                     }

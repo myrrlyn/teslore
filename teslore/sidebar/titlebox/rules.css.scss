@@ -1,89 +1,81 @@
-div.side
+div.usertext-body
 {
-    div.titlebox
+    div.md h1 + table
     {
-        div.usertext-body
+        display: block;
+        margin:
         {
-            div.md h1 + table
+            left: 0px;
+        }
+        thead
+        {
+            display: none;
+        }
+        tbody
+        {
+            tr
             {
-                display: block;
-                margin:
+                display: list-item;
+                width: 288px;
+                td
                 {
-                    left: 0px;
-                }
-
-                thead
-                {
-                    display: none;
-                }
-                tbody
-                {
-                    tr
+                    display: block;
+                    border: none;
+                    &:first-child
                     {
-                        display: list-item;
-                        width: 288px;
-
-                        td
+                        background:
                         {
-                            display: block;
-                            border: none;
+                            image: url(%%T3%%);
                         }
-                        td:first-child
+                        border:
                         {
-                            background:
-                            {
-                                image: url(%%T3%%);
-                            }
-                            border:
-                            {
-                                color: $black / 2;
-                                style: solid;
-                                width: 1px;
-                            }
-                            color: $black;
-                            font:
-                            {
-                                weight: 500;
-                            }
-                            padding: 5px;
+                            color: $black / 2;
+                            style: solid;
+                            width: 1px;
                         }
-                        td:first-child:hover,
-                        td:first-child:active
+                        color: $black;
+                        font:
+                        {
+                            weight: 500;
+                        }
+                        padding: 5px;
+                        &:hover,
+                        &:active
                         {
                             background:
                             {
                                 image: url(%%T4%%);
                             }
-                        }
-                        td:last-child
-                        {
-                            background:
-                            {
-                                color: $black;
-                            }
-                            border:
-                            {
-                                top: 0px;
-                            }
-                            color: $white;
-                            display: none;
-                            padding: 5px;
                         }
                     }
-                    tr:hover,
-                    tr:active
+                    &:last-child
                     {
-                        td:first-child
+                        background:
                         {
-                            background:
-                            {
-                                image: url(%%T4%%);
-                            }
+                            color: $black;
                         }
-                        td:last-child
+                        border:
                         {
-                            display: block;
+                            top: 0px;
                         }
+                        color: $white;
+                        display: none;
+                        padding: 5px;
+                    }
+                }
+                &:hover,
+                &:active
+                {
+                    td:first-child
+                    {
+                        background:
+                        {
+                            image: url(%%T4%%);
+                        }
+                    }
+                    td:last-child
+                    {
+                        display: block;
                     }
                 }
             }

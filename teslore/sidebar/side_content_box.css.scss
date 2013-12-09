@@ -1,48 +1,45 @@
-div.side
+div.sidecontentbox
 {
-    div.sidecontentbox
+    div.title
     {
-        div.title
+        padding:
         {
-            padding:
-            {
-                left: 5px;
-            }
-
-            h1
-            {
-                color: $white;
-            }
+            left: 5px;
         }
-        ul.content
-        {
-            li
-            {
-                div.reddit-entry
-                {
-                    span.score
-                    {
-                        color: $white;
-                    }
 
-                    @include links;
-                }
-                div.gadget
+        h1
+        {
+            color: $white;
+        }
+    }
+    ul.content
+    {
+        li
+        {
+            div.reddit-entry
+            {
+                span.score
                 {
-                    @include arrows;
-                    div.right
-                    {
-                        @include links;
-                    }
+                    color: $white;
+                }
+
+                @include links;
+            }
+            div.gadget
+            {
+                @include arrows;
+                div.right
+                {
+                    @include links;
                 }
             }
         }
     }
-    div.account-activity-box
+}
+div.account-activity-box
+{
+    p
     {
-        p
-        {
-            @include links;
-        }
+        @include links;
     }
 }

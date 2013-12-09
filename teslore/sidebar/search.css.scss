@@ -1,52 +1,49 @@
-div.side
+form#search
 {
-    form#search
+    input[type="text"] /* Search */
     {
-        input[type="text"] /* Search */
+        background:
         {
-            background:
-            {
-                color: transparent !important;
-                image: url(%%T2%%) !important;
-            }
-            color: $grey;
-            margin:
-            {
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
-            }
-            width: 270px;
+            color: transparent !important;
+            image: url(%%T2%%) !important;
         }
-        div#searchexpando.infobar /* Search Expansion */
+        color: $grey;
+        margin:
         {
-            background:
-            {
-                color: $black;
-            }
-            border:
-            {
-                style: none;
-                radius: 0px !important;
-                width: 0px;
-            }
-            color: #EEEEEE;
-            margin:
-            {
-                top: -5px;
-                left: 0px;
-                right: 0px;
-                bottom: 16px;
-            }
-            padding:
-            {
-                top: 10px;
-            }
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+        width: 270px;
+    }
+    div#searchexpando.infobar /* Search Expansion */
+    {
+        background:
+        {
+            color: $black;
+        }
+        border:
+        {
+            style: none;
+            radius: 0px !important;
+            width: 0px;
+        }
+        color: #EEEEEE;
+        margin:
+        {
+            top: -5px;
+            left: 0px;
+            right: 0px;
+            bottom: 16px;
+        }
+        padding:
+        {
+            top: 10px;
+        }
 
-            label
-            {
-                color: $white;
-            }
+        label
+        {
+            color: $white;
         }
     }
 }

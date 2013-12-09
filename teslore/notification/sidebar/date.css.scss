@@ -13,8 +13,8 @@ div.side a[href="#date"]
     top: 8px;
     right: 305px;
     width: 306px;
-}
-div.side a[href="#date"]:visited
-{
-    color: $black !important;
+    &:visited
+    {
+        color: $black !important;
+    }
 }

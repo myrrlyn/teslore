@@ -1,28 +1,23 @@
-div.side
+div.sidebox.create
 {
-    div.sidebox.create
+    div.morelink
     {
-        div.morelink
+        @include create;
+        a
         {
-            @include create;
-
-            a
-            {
-                @include create-link;
-            }
-            a:hover
+            @include create-link;
+            &:hover
             {
                 text-shadow: 0px 0px 5px #FFFFFF;
             }
-
         }
-        div.morelink:before /* Flag tail image */
+        &:before /* Flag tail image */
         {
             content: url(%%Submit-Tail%%);
             position: absolute !important;
             right: 300px;
         }
-        div.morelink:hover
+        &:hover
         {
             background:
             {
@@ -36,9 +31,9 @@ div.side
             height: 29px;
             width: 300px;
         }
-        div.spacer
-        {
-            display: none !important;
-        }
+    }
+    div.spacer
+    {
+        display: none !important;
     }
 }

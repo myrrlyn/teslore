@@ -11,13 +11,13 @@ div.side a[href$="#faq"]
     }
     right: 565px;
     top: 43px;
-}
-div.side a[href$="#faq"]:active,
-div.side a[href$="#faq"]:hover
-{
-    background:
+    &:active,
+    &:hover
     {
-        color: $white;
+        background:
+        {
+            color: $white;
+        }
+        color: $red;
     }
-    color: $red;
 }

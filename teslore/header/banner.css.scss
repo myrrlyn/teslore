@@ -1,38 +1,34 @@
-div#header
+div#header-bottom-left /* Main header background */
 {
-    div#header-bottom-left /* Main header background */
+    background:
     {
-        background:
+        attachment: scroll;
+        color: $black;
+        image: $banner;
+        position: top;
+        repeat: repeat-x;
+    }
+    height: $bannerheight !important;
+    z-index: 5 !important;
+    a#header-img-a
+    {
+        img#header-img /* Snoo */
         {
-            attachment: scroll;
-            color: $black;
-            image: $banner;
-            position: top;
-            repeat: repeat-x;
-        }
-        height: $bannerheight !important;
-        z-index: 5 !important;
-
-        a#header-img-a
-        {
-            img#header-img /* Snoo */
+            background:
             {
-                background:
-                {
-                    color: transparent;
-                    image: $logo;
-                    position: 0px 0px;
-                    repeat: no-repeat;
-                }
-                height: $logoheight;
-                margin:
-                {
-                    top: $logooffset;
-                }
-                width: $logowidth;
-                z-index: 6 !important;
+                color: transparent;
+                image: $logo;
+                position: 0px 0px;
+                repeat: no-repeat;
             }
-            img#header-img:hover
+            height: $logoheight;
+            margin:
+            {
+                top: $logooffset;
+            }
+            width: $logowidth;
+            z-index: 6 !important;
+            &:hover
             {
                 background:
                 {
@@ -41,7 +37,7 @@ div#header
             }
         }
     }
+    @import "header/banner/tabs";
+    @import "header/banner/name";
 }
 
-@import "header/banner/tabs";
-@import "header/banner/name";

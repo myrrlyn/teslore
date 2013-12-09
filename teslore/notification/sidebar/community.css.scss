@@ -12,13 +12,13 @@ div.side a[href$="#com"]
     right: 305px;
     top: 43px;
     width: 250px;
-}
-div.side a[href$="#com"]:active,
-div.side a[href$="#com"]:hover
-{
-    background:
+    &:active,
+    &:hover
     {
-        color: $white;
+        background:
+        {
+            color: $white;
+        }
+        color: $red;
     }
-    color: $red;
 }

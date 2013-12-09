@@ -1,8 +1,8 @@
 div.side a[href$="#banner"]
 {
     display: none;
-}
-div.side a[href$="#banner"]:visited
-{
-    color: $black !important;
+    &:visited
+    {
+        color: $black !important;
+    }
 }

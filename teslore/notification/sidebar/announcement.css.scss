@@ -12,17 +12,17 @@ div.side a[href$="#announcement"]
     right: 305px;
     top: 63px;
     width: 300px;
-}
-div.side a[href$="#announcement"]:active,
-div.side a[href$="#announcement"]:hover
-{
-    background:
+    &:active,
+    &:hover
     {
-        color: $white;
+        background:
+        {
+            color: $white;
+        }
+        color: $red !important;
     }
-    color: $red !important;
-}
-div.side a[href$="#announcement"]:visited
-{
-    color: $white !important;
+    &:visited
+    {
+        color: $white !important;
+    }
 }

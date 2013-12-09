@@ -1,76 +1,62 @@
-div.side
+span.subcribe-button
 {
-    div.titlebox
+    color: $white !important;
+    a.option
     {
         background:
         {
             color: transparent;
         }
-        font:
+        border:
         {
-            size: 10px !important;
+            radius: 4px;
+            width: 0px;
         }
-        span.subcribe-button
-        {
-            color: $white !important;
-            a.option
-            {
-                background:
-                {
-                    color: transparent;
-                }
-                border:
-                {
-                    radius: 4px;
-                    width: 0px;
-                }
-                color: $white !important;
-            }
-        }
-        span.subscribers,
-        p.users-online
-        {
-            font-size: 11px !important;
-            span.word
-            {
-                display: none;
-            }
-        }
-        span.subscribers:after
-        {
-            content: " scholars";
-        }
-        p.users-online span.number:after
-        {
-            content: " scholars present";
-        }
-        div.leavemoderator
-        {
-            background:
-            {
-                color: transparent;
-            }
-            font-size: 10px !important;
-            a
-            {
-                color: $white;
-            }
-        }
-        form.toggle
-        {
-            background:
-            {
-                color: transparent;
-            }
-            font-size: 10px !important;
-            a
-            {
-                color: $white !important;
-            }
-            label 
-            {
-                font-size: 10px !important;
-            }
-        }
+        color: $white !important;
+    }
+}
+span.subscribers,
+p.users-online
+{
+    font-size: 11px !important;
+    span.word
+    {
+        display: none;
+    }
+}
+span.subscribers:after
+{
+    content: " scholars";
+}
+p.users-online span.number:after
+{
+    content: " scholars present";
+}
+div.leavemoderator
+{
+    background:
+    {
+        color: transparent;
+    }
+    font-size: 10px !important;
+    a
+    {
+        color: $white;
+    }
+}
+form.toggle
+{
+    background:
+    {
+        color: transparent;
+    }
+    font-size: 10px !important;
+    a
+    {
+        color: $white !important;
+    }
+    label 
+    {
+        font-size: 10px !important;
     }
 }

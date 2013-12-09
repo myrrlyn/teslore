@@ -10,8 +10,11 @@ body
         image: url(%%Map%%);
         position: center center;
     }
-    font-family: $sans-serif-set;
+    font:
+    {
+        family: $sans-serif-set;
+    }
+    @import "global/formatting";
+    @import "global/spoilers";
 }
 
-@import "global/formatting";
-@import "global/spoilers";

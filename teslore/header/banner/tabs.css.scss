@@ -1,43 +1,39 @@
-div#header
+ul.tabmenu
 {
-    div#header-bottom-left
+    border: 0px none;
+    position: absolute;
+    top: $bannerheight - 8px;
+    left: 5px;
+    z-index: 8 !important;
+    li a /* Tab menu buttons */
     {
-        ul.tabmenu
+        background-color: transparent;
+        color: $white;
+        font:
         {
-            border: 0px none;
-            position: absolute;
-            top: $bannerheight - 8px;
-            left: 5px;
-            z-index: 8 !important;
-            
-            li a /* Tab menu buttons */
-            {
-                background-color: transparent;
-                color: $white;
-                font-family: Georgia, "Book Antiqua", "Palatino Linotype", serif !important;
-                font-size: 14px;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-            li.selected a /* Currently selected tab */
-            {
-                background-color: $white !important;
-                border:
-                {
-                    color: #FFFFFF;
-                    style: solid;
-                    width: 1px;
-                }
-                color: $red;
-            }
-            li a[href*="/controversial"],
-            li a[href*="/gilded"],
-            li a[href*="stattit"],
-            li a.modtools-on,
-            li a#viewImagesButton
-            {
-                display: none !important;
-            }
+            family: $serif-set;
+            font-size: 14px;
+            font-weight: bold;
         }
+        text-transform: uppercase;
+    }
+    li.selected a /* Currently selected tab */
+    {
+        background-color: $white !important;
+        border:
+        {
+            color: $white;
+            style: solid;
+            width: 1px;
+        }
+        color: $red;
+    }
+    li a[href*="/controversial"],
+    li a[href*="/gilded"],
+    li a[href*="stattit"],
+    li a.modtools-on,
+    li a#viewImagesButton
+    {
+        display: none !important;
     }
 }
