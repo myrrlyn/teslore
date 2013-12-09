@@ -36,7 +36,6 @@ def get_context id
   context
 end
 
-  y/ Placeholder for actual banner code
 def compile id, config
   ret = get_context(id).find_asset(id).to_s
 
