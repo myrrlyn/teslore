@@ -12,58 +12,51 @@ div#header
         }
     }
 }
-div.content span h1.wikititle
+div.side
 {
-    color: $black;
-    font:
+    div.titlebox
     {
-        family: $serif-set;
-    }
-    text:
-    {
-        transform: uppercase;
-    }
-}
-div.md.wiki
-{
-    background:
-    {
-        color: $white;
-    }
-    border:
-    {
-        color: $black;
-        style: solid;
-        radius: 7px;
-        width: 1px;
-    }
-    padding:
-    {
-        top: 0px;
-        left: 5px;
-        right: 5px;
-        bottom: 0px;
-    }
-    
-    a,
-    a:visited
-    {
-        color: $black;
-        font:
+        p.users-online
         {
-            style: italic;
-        }
-        text:
-        {
-            decoration: underline;
+            span.number:after
+            {
+                content: " scholars hitting the books";
+            }
+            span.word
+            {
+                display: none !important;
+            }
         }
     }
 }
-div.wiki-page-content
+div.content
 {
-    form#editform textarea#wiki_page_content /* Wiki page entry */
+    & > span
     {
-        height: 500px;
-        width: 99%;
+        h1.wikititle strong
+        {
+            color: $black;
+            font:
+            {
+                family: $serif-set;
+                size: 150%;
+            }
+            text:
+            {
+                transform: uppercase;
+            }
+        }
+        span.pageactions
+        {
+            
+        }
+    }
+    div.wiki-page-content
+    {
+        form#editform textarea#wiki_page_content /* Wiki page entry */
+        {
+            height: 500px;
+            width: 99%;
+        }
     }
 }

@@ -8,10 +8,11 @@ div.side
         }
         font:
         {
-            size: 10px;
+            size: 10px !important;
         }
         span.subcribe-button
         {
+            color: $white !important;
             a.option
             {
                 background:
@@ -23,7 +24,7 @@ div.side
                     radius: 4px;
                     width: 0px;
                 }
-                color: $white;
+                color: $white !important;
             }
         }
         span.subscribers,
@@ -50,6 +51,10 @@ div.side
                 color: transparent;
             }
             font-size: 10px !important;
+            a
+            {
+                color: $white;
+            }
         }
         form.toggle
         {
@@ -57,7 +62,12 @@ div.side
             {
                 color: transparent;
             }
-            label
+            font-size: 10px !important;
+            a
+            {
+                color: $white !important;
+            }
+            label 
             {
                 font-size: 10px !important;
             }

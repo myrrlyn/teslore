@@ -21,7 +21,10 @@ div.roundfield.gold-accent span.title
 }
 a.voteWeight /*RES user-votes box*/
 {
-    background-color: transparent;
+    background:
+    {
+        color: transparent !important;
+    }
 }
 
 .md /* Body Text */
