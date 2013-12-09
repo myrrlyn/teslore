@@ -1,0 +1,48 @@
+div#header
+  div#header-bottom-left
+    background:
+      attachment: scroll
+      color: $black
+      image: url(%%BannerWiki%%)
+      position: 0px -36px
+      repeat: repeat-x
+
+div.side
+  div.titlebox
+    p.users-online
+      span.number:after
+        content: " scholars hitting the books"
+      span.word
+        display: none !important
+
+div.content
+  & > span
+    h1.wikititle strong
+      color: $black
+      font:
+        family: $serif-set
+        size: 150%
+      text:
+        transform: uppercase
+    span.pageactions
+      background:
+        color: transparent
+        image: url(%%T4%%)
+      border:
+        color: $black
+        style: solid
+        radius: 5px
+        width: 1px
+      a.wikiaction
+        color: $black
+        &.wikiaction-current
+          background:
+            color: $black
+          border:
+            radius: 5px
+            style: none
+          color: $white
+  div.wiki-page-content
+    form#editform textarea#wiki_page_content
+      height: 500px
+      width: 99%

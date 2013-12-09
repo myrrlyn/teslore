@@ -1,0 +1,59 @@
+div#sr-header-area
+  background:
+    color: transparent
+    image: $texture
+  border:
+    bottom: 0px
+  z-index: 6 !important
+  a,
+  span
+    color: $white
+    font:
+      family: $serif-set
+      size: 95% !important
+  a#sr-more-link
+    background:
+      image: $texture
+    border:
+      bottom: 0px
+    z-index: 7 !important
+  a[href*="/r/lounge"]
+    color: $gold
+  a[href*="/r/teslore"]
+    color: $red
+    font:
+      size: 125%
+  div.drop-choices.srdrop
+    background:
+      color: transparent
+      image: $texture
+    z-index: 15 !important
+    a.choice
+      padding:
+        top: 1px !important
+        left: 2px !important
+        right: 2px !important
+        bottom: 1px !important
+      &:hover
+        background:
+          color: $white
+        color: $black
+  div#RESShortcutsEditContainer
+    div#RESShortcutsAdd,
+    div#RESShortcutsLeft,
+    div#RESShortcutsSort,
+    div#RESShortcutsRight,
+    div#RESShortcutsTrash
+      background:
+        color: transparent
+        image: $texture
+      color: $white
+      z-index: 15 !important
+    div#RESShortcutsSort
+      left: 0 !important
+    background:
+      color: transparent
+      image: $texture
+
+div#RESShortcutsViewport
+  color: $white
