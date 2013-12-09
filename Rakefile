@@ -36,10 +36,9 @@ def get_context id
   context
 end
 
+  y/ Placeholder for actual banner code
 def compile id, config
   ret = get_context(id).find_asset(id).to_s
-  # Remove empty comments
-  ret.gsub! /\/\*\s*?\*\//m, ''
 
   # Normalize line endings for sending to Reddit
   ret.gsub! /\r\n/, "\n"

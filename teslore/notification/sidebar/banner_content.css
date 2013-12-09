@@ -13,6 +13,6 @@
   }
 */
 div.side a[href$="#banner"]:after {
-  // Placeholder for actual banner code
+  content: "";
 }
 /*! @end */

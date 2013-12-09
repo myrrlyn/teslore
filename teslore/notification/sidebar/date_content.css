@@ -1,7 +1,7 @@
 div.side a[href="#date"]:after
 {
     /*!
-      @@date {
+      @date {
         "year": false,
         "holidays": {
            "0101": "New Life Festival",
