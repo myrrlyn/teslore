@@ -10,7 +10,6 @@ div#progressIndicator
     color: $red
   a:hover
     text-decoration: underline
-
 div.content
   p.tagline em
     font-size: 0px
@@ -25,31 +24,25 @@ div.content
       content: "[NUMINIT]"
     p
       display: none !important
-
 .RES-keyNav-activeElement,
 .commentarea .RES-keyNav-activeElement .md,
 .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
 .keyHighlight
   outline: none !important
   background-image: url(%%T1%%) !important
-
 div#RESMainGearOverlay.RESGearOverlay,
 span#RESAccountSwitcherIconOverlay
   top: 20px !important
-
 div#RESPrefsDropdown.RESDropdownList,
 ul#RESAccountSwitcherDropdown.RESDropdownList
   top: 48px !important
-
 .new-comment .usertext-body
   background-color: transparent !important
   background-image: url(%%T2%%) !important
   border: solid 1px $black !important
-
 body.mod-toolbox div#tb-bottombar.tb-toolbar
   background-color: transparent
   background-image: url(%%T1%%) !important
-
-@import etc/submission
-@import etc/moderator
-@import etc/wiki
+@import "etc/submission"
+@import "etc/moderator"
+@import "etc/wiki"
