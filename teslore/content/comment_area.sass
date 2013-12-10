@@ -12,20 +12,19 @@ div.commentarea
         color: $brown
   form div.usertext-edit div textarea
     background:
-      color: $black
       image: url(%%commentbox%%)
       repeat: no-repeat
-    color: $white
+    color: $black
     &:focus
       background:
-        color: $white
-        image: none
-        position: -500px -100px
+        image: url(%%T4%%)
+        repeat: repeat
       color: $black
   div.thing.comment
     +arrows
     background:
-      color: transparent
+      color: transparent !important
+      image: url(%%T1%%) !important
     margin:
       left: 0px
     padding:
@@ -35,24 +34,40 @@ div.commentarea
     div.collapsed
       color: $brown
       a
-        color: $black
-div.thing.comment:nth-child(4n+1) p.parent
-  background:
-    color: transparent
-    image: url(%%T1%%)
-div.thing.comment:nth-child(4n+3) p.parent
-  background:
-    color: transparent
-    image: url(%%T2%%)
-div.comment, /* 1 */
-div.comment div.comment div.comment, /* 3 */
-div.comment div.comment div.comment div.comment div.comment, /* 5 */
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment, /* 7 */
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment /* 9 */
-  background-image: url(%%T1%%) !important
-div.comment div.comment, /* 2 */
-div.comment div.comment div.comment div.comment, /* 4 */
-div.comment div.comment div.comment div.comment div.comment div.comment, /* 6 */
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment, /* 8 */
-div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment /* 10 */
-  background-image: url(%%T3%%) !important
+        color: $brown
+    div.thing.comment
+      background:
+        color: transparent !important
+        image: url(%%T3%%) !important
+      div.thing.comment
+        background:
+          color: transparent !important
+          image: url(%%T2%%) !important
+        div.thing.comment
+          background:
+            color: transparent !important
+            image: url(%%T3%%) !important
+          div.thing.comment
+            background:
+              color: transparent !important
+              image: url(%%T1%%) !important
+            div.thing.comment
+              background:
+                color: transparent !important
+                image: url(%%T3%%) !important
+              div.thing.comment
+                background:
+                  color: transparent !important
+                  image: url(%%T2%%) !important
+                div.thing.comment
+                  background:
+                    color: transparent !important
+                    image: url(%%T3%%) !important
+                  div.thing.comment
+                    background:
+                      color: transparent !important
+                      image: url(%%T1%%) !important
+                    div.thing.comment
+                      background:
+                        color: transparent !important
+                        image: url(%%T3%%) !important
