@@ -4,10 +4,11 @@ body.submit-page
       h1.hover.redditname
         top: -17px
   div.content
-    form.pretty-form.sharelink + h1
-      color: $black
-      a
-        color: $red
+    form.pretty-form.sharelink
+      & + h1
+        color: $black
+        a
+          color: $red
     form#newlink.submit.content
       div.formtabs-content
         border:
@@ -19,11 +20,11 @@ body.submit-page
           textarea
             background:
               color: $white
-              /*image: url(%%submittitlebox%%);
-                position: 11px 11px;
-                repeat: no-repeat;
-            /*&:focus
-              background-position: 11px -39px;
+//              image: url(%%submittitlebox%%);
+//                position: 11px 11px;
+//                repeat: no-repeat;
+//            &:focus
+//              background-position: 11px -39px;
         div#url-field
           background:
             color: transparent
@@ -57,11 +58,10 @@ body.submit-page
               background:
                 color: $white
           div#suggested-reddits
-            ul li a
-              color: $red
+            h3
+              color: $white
+            ul
+              li
+                +links
         span.title
           color: $white
-      div.content
-        +links
-      div#suggested-reddits h3
-        color: $white

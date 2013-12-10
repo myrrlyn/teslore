@@ -4,24 +4,26 @@ ul.tabmenu
   top: $bannerheight - 8px
   left: 5px
   z-index: 8 !important
-  li a
-    background-color: transparent
-    color: $white
-    font:
-      family: $serif-set
-      size: 14px
-      weight: bold
-    text-transform: uppercase
-  li.selected a
-    background-color: $white !important
-    border:
+  li.selected
+    a
+      background-color: $white !important
+      border:
+        color: $white
+        style: solid
+        width: 1px
+      color: $red
+  li
+    a
+      background-color: transparent
       color: $white
-      style: solid
-      width: 1px
-    color: $red
-  li a[href*="/controversial"],
-  li a[href*="/gilded"],
-  li a[href*="stattit"],
-  li a.modtools-on,
-  li a#viewImagesButton
-    display: none !important
+      font:
+        family: $serif-set
+        size: 14px
+        weight: bold
+      text-transform: uppercase
+    a[href*="/controversial"],
+    a[href*="/gilded"],
+    a[href*="stattit"],
+    a.modtools-on,
+    a#viewImagesButton
+      display: none !important

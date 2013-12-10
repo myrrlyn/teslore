@@ -1,4 +1,4 @@
-/* Vote Warning Format */
+// Vote Warning Format
 
 =vote
   background:
@@ -26,19 +26,19 @@ div.content
   div.thing.link
     div.arrow.up:hover::before
       +vote
-      color: #FFA533
+      color: $orange
       content: "Quality submission"
     div.arrow.down:hover::before
       +vote
-      color: #66B5FF
+      color: $blue
       content: "Poor submission"
     div.content
       div.thing.comment
         div.arrow.up:hover::before
           +vote
-          color: #FFA533
+          color: $orange
           content: "Don't upvote just because you agree - be sure it's a good comment."
         div.arrow.down:hover::before
           +vote
-          color: #66B5FF
+          color: $blue
           content: "Don't downvote just because you disagree - is it really a poor comment?"

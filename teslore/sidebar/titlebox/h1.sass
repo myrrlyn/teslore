@@ -23,13 +23,24 @@
       top: 17px
       right: 300px
       bottom: 32px
-body:not(.comments-page)
-  div.side
-    div.titlebox
-      h1.hover.redditname
-        +sidebar-flag(-58px)
-body.comments-page
-  div.side
-    div.titlebox
-      h1.hover.redditname
-        +sidebar-flag(-168px)
+body
+  &:not(.comments-page)
+    div.side
+      div.titlebox
+        h1.hover.redditname
+          +sidebar-flag(-58px)
+    &:not(.loggedin)
+      div.side
+        div.titlebox
+          h1.hover.redditname
+            +sidebar-flag(-131px)
+  &.comments-page
+    div.side
+      div.titlebox
+        h1.hover.redditname
+          +sidebar-flag(-168px)
+    &:not(.loggedin)
+      div.side
+        div.titlebox
+          h1.hover.redditname
+            +sidebar-flag(-242px)

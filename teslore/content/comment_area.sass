@@ -1,25 +1,31 @@
 div.commentarea
-  div.panestack-title span.panestack-title
-    color: $black
+  div.panestack-title
+    span.panestack-title
+      color: $black
   div.menuarea
     color: $brown
-    div.dropdown span.selected
-      color: $brown
+    div.dropdown
+      span.selected
+        color: $brown
     div.drop-choices
       background:
         color: $white
-      form a.choice
-        color: $brown
-  form div.usertext-edit div textarea
-    background:
-      image: url(%%commentbox%%)
-      repeat: no-repeat
-    color: $black
-    &:focus
-      background:
-        image: url(%%T4%%)
-        repeat: repeat
-      color: $black
+      form
+        a.choice
+          color: $brown
+  form
+    div.usertext-edit
+      div
+        textarea
+          background:
+            image: url(%%commentbox%%)
+            repeat: no-repeat
+          color: $black
+          &:focus
+            background:
+              image: url(%%T4%%)
+              repeat: repeat
+            color: $black
   div.thing.comment
     +arrows
     background:
@@ -41,37 +47,28 @@ div.commentarea
         color: $brown
     div.thing.comment
       background:
-        color: transparent !important
         image: url(%%T3%%) !important
       div.thing.comment
         background:
-          color: transparent !important
           image: url(%%T2%%) !important
         div.thing.comment
           background:
-            color: transparent !important
             image: url(%%T3%%) !important
           div.thing.comment
             background:
-              color: transparent !important
               image: url(%%T1%%) !important
             div.thing.comment
               background:
-                color: transparent !important
                 image: url(%%T3%%) !important
               div.thing.comment
                 background:
-                  color: transparent !important
                   image: url(%%T2%%) !important
                 div.thing.comment
                   background:
-                    color: transparent !important
                     image: url(%%T3%%) !important
                   div.thing.comment
                     background:
-                      color: transparent !important
                       image: url(%%T1%%) !important
                     div.thing.comment
                       background:
-                        color: transparent !important
                         image: url(%%T3%%) !important

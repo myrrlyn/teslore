@@ -11,9 +11,18 @@ div.side
   top: -67px
   width: 300px !important
   z-index: 15 !important
-  a.author,
-  .md p
+  a.author
     color: $white
+  .md
+    hr
+      background:
+        color: $white
+      border:
+        style: none
+        width: 0px
+      height: 1px
+    p
+      color: $white
   @import "sidebar/search"
   @import "sidebar/link_info"
   @import "sidebar/submission"

@@ -7,15 +7,18 @@ span.subcribe-button
       radius: 4px
       width: 0px
     color: $white !important
-span.subscribers,
+span.subscribers
+  font-size: 11px !important
+  span.word
+    display: none
+  &:after
+    content: " scholars"
 p.users-online
   font-size: 11px !important
   span.word
     display: none
-span.subscribers:after
-  content: " scholars"
-p.users-online span.number:after
-  content: " scholars present"
+  span.number:after
+    content: " scholars present"
 div.leavemoderator
   background:
     color: transparent

@@ -12,10 +12,14 @@ body
             style: none
             width: 0px
           color: $black !important
-      ul.content li ul.flat-vert.hover li a
-        background:
-          color: transparent !important
-        color: $white
+      ul.content
+        li
+          ul.flat-vert.hover
+            li
+              a
+                background:
+                  color: transparent !important
+                color: $white
   &.wiki-page
     @import "etc/wiki/body"
     div.wiki-page-content

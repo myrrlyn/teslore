@@ -1,37 +1,39 @@
-/* Color Palette */
+// Color Palette
 $black: #161616
 $black-desat: #545454
+$blue: #66B5FF
 $brown: #70381a
 $gold: #9a7d2e
 $green: #155415
 $grey: #c7c7c7
+$orange: #FFA533
 $red: #a72a2a
 $red-desat: #7f1f1f
 $white: whitesmoke
 
-/* Font Kit */
+// Font Kit
 $code-set: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace
 $sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif
 $serif-set: "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", "Goudy Old Style", serif
 
-/* Wiki Variables */
+// Wiki Variables
 $size-wiki: 13px
 
-/* Textures Used */
+// Textures Used
 $texture: url(%%DarkTex%%)
 
-/* Header Image Information */
+// Header Image Information
 $banner: url(%%Banner%%)
 $bannerheight: 64px + 28px
 
-/* Image height + tab menu height. Changing tab menu height HAS DEPENDENCIES */
+// Image height + tab menu height. Changing tab menu height HAS DEPENDENCIES
 $logo: url(%%Snoos%%)
 $logoheight: 60px
 $logowidth: 214px
 $logooffset: 0px
 $name: url(%%Realms%%)
 
-/* Versioning Information */
+// Versioning Information
 $build_version: "<%= $build[:version] %>"
 $build_host: "<%= $build[:host] %>"
 $build_name: "<%= $build[:name] %>"
@@ -40,8 +42,9 @@ $build_hash: "<%= $build[:hash][0...7] %>"
 $build_hash_long: "<%= $build[:hash] %>"
 $build_branch: "<%= $build[:branch] %>"
 
-/* Mixins */
+// Mixins
 
+// Submit, Create Subreddit buttons
 =create
   background:
     color: $black !important
@@ -56,6 +59,7 @@ $build_branch: "<%= $build[:branch] %>"
   div.nub
     display: none !important
 
+//Subset of Create mixin
 =create-link
   background
     color: $black
@@ -69,6 +73,7 @@ $build_branch: "<%= $build[:branch] %>"
     align: center
     transform: uppercase
 
+// Link Formatting
 =links
   a
     color: $red
@@ -77,6 +82,7 @@ $build_branch: "<%= $build[:branch] %>"
   a:visited
     color: $red-desat
 
+// Vote Arrows
 =arrows
   div.arrow
     background:
@@ -97,6 +103,7 @@ $build_branch: "<%= $build[:branch] %>"
       background:
         position: -15px -15px
 
+// Only a mixin because RES is a whore
 =expando-buttons
   div.entry div.expando-button
     background:

@@ -1,44 +1,46 @@
 div.usertext-body
-  div.md h1 + table
-    display: block
-    margin:
-      left: 0px
-    thead
-      display: none
-    tbody
-      tr
-        display: list-item
-        width: 288px
-        td
-          display: block
-          border: none
-          &:first-child
-            background:
-              image: url(%%T3%%)
-            border:
-              color: $black / 2
-              style: solid
-              width: 1px
-            color: $black
-            font:
-              weight: 500
-            padding: 5px
+  div.md
+    h1
+      & + table
+        display: block
+        margin:
+          left: 0px
+        thead
+          display: none
+        tbody
+          tr
+            display: list-item
+            width: 288px
+            td
+              display: block
+              border: none
+              &:first-child
+                background:
+                  image: url(%%T3%%)
+                border:
+                  color: $black / 2
+                  style: solid
+                  width: 1px
+                color: $black
+                font:
+                  weight: 500
+                padding: 5px
+                &:hover,
+                &:active
+                  background:
+                    image: url(%%T4%%)
+              &:last-child
+                background:
+                  color: $black
+                border:
+                  top: 0px
+                color: $white
+                display: none
+                padding: 5px
             &:hover,
             &:active
-              background:
-                image: url(%%T4%%)
-          &:last-child
-            background:
-              color: $black
-            border:
-              top: 0px
-            color: $white
-            display: none
-            padding: 5px
-        &:hover,
-        &:active
-          td:first-child
-            background:
-              image: url(%%T4%%)
-          td:last-child
-            display: block
+              td:first-child
+                background:
+                  image: url(%%T4%%)
+              td:last-child
+                display: block
