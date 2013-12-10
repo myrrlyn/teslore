@@ -1,8 +1,6 @@
 /* SPOILER Code */
-a[href="#s"],
-a[href="/s"],
-a[href="#spoiler"],
-a[href="/spoiler"]
+a[href="#s"], a[href="#spoiler"],
+a[href="/s"], a[href="/spoiler"]
   background:
     color: $black !important
   border:
@@ -27,18 +25,20 @@ a[href="/spoiler"]
     padding:
       left: 4px
       right: 4px
+    text:
+      decoration: none !important
   &:hover,
   &:active
     color: $gold !important
     text:
-      decoration: none
+      decoration: none !important
     &:after
       color: $white !important
+  & + span.keNavAnnotation
+    display: none !important
 /* CONJECTURE Code */
-a[href="#g"],
-a[href="/g"],
-a[href="#conjecture"],
-a[href="/conjecture"]
+a[href="#g"], a[href="#conjecture"],
+a[href="/g"], a[href="/conjecture"]
   background:
     color: $green !important
   border:
@@ -63,10 +63,14 @@ a[href="/conjecture"]
     padding:
       left: 4px
       right: 4px
+    text:
+      decoration: none !important
   &:hover,
   &:active
     color: $gold !important
     text:
-      decoration: none
+      decoration: none !important
     &:after
       color: $white !important
+  & + span.keNavAnnotation
+    display: none !important

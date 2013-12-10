@@ -11,19 +11,41 @@ div#progressIndicator
   a:hover
     text-decoration: underline
 div.content
-  p.tagline em
-    font-size: 0px
-    &:after
-      content: "[ZER0-SUMMED]"
-      font-weight: bold
-      font-size: 10px
-      margin-left: -1px
-  div.usertext.grayed div.usertext-body div.md
-    margin: 5px 0
-    &:after
-      content: "[NUMINIT]"
-    p
-      display: none !important
+  p.tagline
+    em
+      font-size: 0px
+      &:after
+        background:
+          color: $black
+        color: $white
+        content: "[ZER0-SUMMED]"
+        font:
+          size: 10px
+          weight: bold
+        margin:
+          left: -1px
+        padding:
+          top: 2px
+          left: 2px
+          right: 2px
+          bottom: 2px
+  div.usertext.grayed
+    padding:
+      top: 4px
+    div.usertext-body
+      background:
+        color: $black !important
+      div.md
+        margin:
+          top: 5px
+          left: 0px
+          right: 0px
+          bottom: 5px
+        &:after
+          color: $white
+          content: "[NUMINIT]"
+        p
+          display: none !important
 .RES-keyNav-activeElement,
 .commentarea .RES-keyNav-activeElement .md,
 .commentarea .RES-keyNav-activeElement.entry .noncollapsed,
