@@ -2,11 +2,13 @@
 .commentarea
   .RES-keyNav-activeElement .md,
   .RES-keyNav-activeElement.entry .noncollapsed,
-  outline: none !important
-  background-image: url(%%T1%%) !important
+  background:
+    color: transparent !important
+    image: url(%%T4%%) !important
 .keyHighlight
-  outline: none !important
-  background-image: url(%%T1%%) !important
+  background:
+    color: transparent !important
+    image: url(%%T4%%) !important
 div.NERPageMarker, 
 div#progressIndicator
   background-color: transparent
@@ -19,5 +21,31 @@ div#progressIndicator
     color: $red
   a:hover
     text-decoration: underline
+=RES-Toggle
+  span.toggleOn
+    background:
+      color: $grey
+    border:
+      color: $white
+      style: solid
+      radius: 0px
+      width: 1px
+  span.toggleOff
+    background:
+      color: $red
+    border:
+      color: $white
+      style: solid
+      radius: 0px
+      width: 1px
+  &.enabled
+    span.toggleOn
+      background:
+        color: $blue
+    span.toggleOff
+      background:
+        color: $grey
+
 @import "RES/userbar"
 @import "RES/nightmode"
+@import "RES/settings-window"

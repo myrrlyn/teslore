@@ -46,7 +46,7 @@ div#RESPrefsDropdown.RESDropdownList
     radius: 0px
     width: 1px
   top: 44px
-  right: 5px
+  right: 5px !important
   ul#RESDropdownOptions
     li
       color: $white
@@ -70,16 +70,4 @@ div#RESPrefsDropdown.RESDropdownList
       border:
         bottom: 1px solid
       div.toggleButton
-        span.toggleOn
-          background:
-            color: $grey
-        span.toggleOff
-          background:
-            color: $red
-        &.enabled
-          span.toggleOn
-            background:
-              color: $blue
-          span.toggleOff
-            background:
-              color: $grey
+        +RES-Toggle
