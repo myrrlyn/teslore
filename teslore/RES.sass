@@ -2,42 +2,48 @@ div.content
   div.thing.link
     div.entry.RES-keyNav-activeElement
       background:
-        image: url(%%RES-Overlay%%) !important
+        image: url(%%RES-Overlay%%)
   div.commentarea
     div.thing.comment
       div.entry.RES-keyNav-activeElement
         background:
-          image: url(%%RES-Overlay%%) !important
+          image: url(%%RES-Overlay%%)
         div.noncollapsed
           background:
-            image: url(%%RES-Overlay%%) !important
+            image: url(%%RES-Overlay%%)
           form.usertext
             background:
-              image: url(%%RES-Overlay%%) !important
+              image: url(%%RES-Overlay%%)
             div.usertext-body
               background:
-                image: url(%%RES-Overlay%%) !important
+                image: url(%%RES-Overlay%%)
               div.md
                 background:
-                  image: url(%%RES-Overlay%%) !important
-//.commentarea
-//  .RES-keyNav-activeElement .md,
-//  .RES-keyNav-activeElement.entry .noncollapsed,
-//.keyHighlight
-//  background:
-//    image: url(%%T4%%)
-div.NERPageMarker, 
-div#progressIndicator
-  background-color: transparent
-  background-image: url(%%T4%%)
+                  image: url(%%RES-Overlay%%)
+div.NERPageMarker
+  background:
+    color: transparent
+    image: url(%%T4%%)
   color: $black
   width: 80%
-  h2, p
+div#progressIndicator
+  background:
+    color: transparent
+    image: url(%%T4%%)
+  color: $black
+  width: 80%
+  h2
     color: $black
-  p a#NERStaticLink
-    color: $red
-  a:hover
-    text-decoration: underline
+    font:
+      family: $serif-set
+      size: 18px
+      weight: bold
+  p
+    color: $black
+    a#NERStaticLink
+      color: $red
+      &:hover
+        text-decoration: underline
 =RES-Toggle
   span.toggleOn
     background:
