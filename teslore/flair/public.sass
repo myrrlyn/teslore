@@ -1,0 +1,58 @@
+span.flair-Armiger // Buoyant Armigers
+  background-position: -50px 0px
+span.flair-Dwemer // Dwemer Scholar
+  background-position: -50px -30px
+span.flair-Julianos // Follower of Julianos
+  background-position: -50px -60px
+span.flair-Mages // Mages Guild Scholar
+  background-position: -50px -90px
+span.flair-Marukhati // Marukhati Selective
+  background-position: -50px -120px
+span.flair-Moth // Ancestor Moth Cultist
+  background-position: -50px -150px
+span.flair-Mythic // Mythic Dawn Cultist
+  background-position: -50px -180px
+span.flair-Psijic // Psijic Monk
+  background-position: -50px -210px
+span.flair-Telvanni // Telvanni Recluse
+  background-position: -50px -240px
+span.flair-Tribunal // Member of the Tribunal Temple
+  background-position: -50px -270px
+span.flair-Winterhold // Scholar of Winterhold
+  background-position: -50px -300px
+span.flair-Worm // Black Worm Anchorite
+  background-position: -50px -330px
+
+// MK - MKirkbride
+a[href$="/MKirkbride"].author.id-T1_dhl5b
+  background:
+    color: $black / 2 !important
+  border:
+    style: none !important
+    radius: 0px !important
+    width: 0px !important
+  color: $red !important
+  margin:
+    right: -2px
+  padding:
+    top: 5px
+    left: 4px
+    right: 8px
+    bottom: 5px
+  &:after
+    background:
+      color: $black / 2 !important
+    color: $red !important
+    content: " | OFFICIAL"
+    border:
+      style: none !important
+      radius: 0px !important
+      width: 0px !important
+  & + span.RESUserTag,
+    display: none !important
+    & + a.voteWeight
+      display: none !important
+
+// Disabled for aesthetics
+span.flair.flair-MK + span.userattrs
+  display: none !important

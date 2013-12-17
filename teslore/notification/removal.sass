@@ -1,0 +1,38 @@
+div.content
+  div.commentarea
+    div.thing.comment
+      p.tagline
+        a.expand + em
+          font-size: 0px
+          &:after
+            background:
+              color: $black
+            color: $white
+            content: "[NUMINIT]"
+            font:
+              size: 10px
+              weight: bold
+            margin:
+              left: -1px
+            padding:
+              top: 2px
+              left: 2px
+              right: 2px
+              bottom: 2px
+      div.usertext.grayed
+        padding:
+          top: 4px
+        div.usertext-body
+          background:
+            color: $black !important
+          div.md
+            margin:
+              top: 5px
+              left: 0px
+              right: 0px
+              bottom: 5px
+            &:after
+              color: $white
+              content: "[TEXT REDACTED BY ORDER OF ELDER COUNCIL]"
+            p
+              display: none !important
