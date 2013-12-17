@@ -27,7 +27,8 @@ def get_stylesheet config
 end
 
 def get_context id
-  $build = eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
+  $base = {time: Time.now.utc, host: Socket.gethostname, hash: `git rev-parse HEAD`.strip, branch: `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip}
+  $build = $base.merge eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
     env.logger = Log
   end

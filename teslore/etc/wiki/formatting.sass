@@ -16,7 +16,7 @@ div.md.wiki
       border:
         color: $black
         style: solid
-        radius: 10px
+        radius: 5px
         width: 2px
       & > li
         a
@@ -24,7 +24,7 @@ div.md.wiki
             size: $size-wiki + 3px
       & > ul
         border:
-          bottom-left-radius: 9px !important
+          bottom-left-radius: 5px !important
           top: $black none 0px !important
           left: $black solid 1px !important
           right: $black none 0px !important
@@ -35,7 +35,7 @@ div.md.wiki
               size: $size-wiki + 3px
         & > ul
           border:
-            bottom-left-radius: 8px !important
+            bottom-left-radius: 4px !important
             top: $black none 0px !important
             left: $black solid 1px !important
             right: $black none 0px !important
@@ -46,7 +46,7 @@ div.md.wiki
                 size: $size-wiki + 2px
           & > ul
             border:
-              bottom-left-radius: 7px !important
+              bottom-left-radius: 3px !important
               top: $black none 0px !important
               left: $black solid 1px !important
               right: $black none 0px !important
@@ -57,7 +57,7 @@ div.md.wiki
                   size: $size-wiki + 2px
             & > ul
               border:
-                bottom-left-radius: 6px !important
+                bottom-left-radius: 2px !important
                 top: $black none 0px !important
                 left: $black solid 1px !important
                 right: $black none 0px !important
@@ -68,7 +68,7 @@ div.md.wiki
                     size: $size-wiki + 1px
               & > ul
                 border:
-                  bottom-left-radius: 5px !important
+                  bottom-left-radius: 1px !important
                   top: $black none 0px !important
                   left: $black solid 1px !important
                   right: $black none 0px !important
@@ -80,32 +80,32 @@ div.md.wiki
   h1
     color: $black !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 7px !important
   h2
     color: lighten($black, 3%) !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 6px !important
   h3
     color: lighten($black, 6%) !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 5px !important
   h4
     color: lighten($black, 9%) !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 4px !important
   h5
     color: lighten($black, 12%) !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 3px !important
   h6
     color: lighten($black, 15%) !important
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 2px !important
   hr
     background:
@@ -120,7 +120,7 @@ div.md.wiki
   p
     color: $black
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki
     code
       background:
@@ -136,20 +136,22 @@ div.md.wiki
         bottom: 1px
   blockquote
     font:
-      family: $serif-set
+      family: $sans-serif-set
       size: $size-wiki + 1px
     p
       color: darken($brown, 10%)
   pre
     background:
-      color: $black
+      //color: $black
+      color: $white
     padding:
       top: 1em
       left: 1em
       right: 1em
       bottom: 1em
     code
-      color: lighten($green, 20%)
+      //color: lighten($green, 20%)
+      color: $green
   sup
     vertical-align: super
     font-size: 90%
@@ -181,8 +183,8 @@ div.md.wiki
   ol
     li
       font:
-        family: $serif-set
+        family: $sans-serif-set
   ul
     li
       font:
-        family: $serif-set
+        family: $sans-serif-set
