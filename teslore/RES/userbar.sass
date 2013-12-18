@@ -65,9 +65,13 @@ div#RESPrefsDropdown.RESDropdownList
     li#RES-donate
       border:
         bottom: 1px solid
-    li[title="Toggle night and day"],
+    li[title="Toggle night and day"]
+      border:
+        bottom: 1px solid
+      div.toggleButton
+        +RES-ToggleON($white)
     li[title="Toggle NSFW Filter"]
       border:
         bottom: 1px solid
       div.toggleButton
-        +RES-Toggle
+        +RES-ToggleON($white)

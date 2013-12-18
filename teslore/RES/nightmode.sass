@@ -25,10 +25,6 @@ html.res-nightmode
           background:
             color: transparent
             image: $texture !important
-          h1.hover.redditname
-            background:
-              color: transparent !important
-            top: -63px !important
         div.sidebox.submit
           border:
             radius: 0px
@@ -60,3 +56,18 @@ html.res-nightmode
           div.md
             background:
               color: $black
+  &:not(.comments-page)
+    div.side
+      div.titlebox
+        h1.hover.redditname
+          background:
+            color: transparent !important
+          top: -63px !important
+  &.comments-pave
+    div.side
+      div.titlebox
+        h1.hover.redditnmae
+          background:
+            color: transparent !important
+          top: -174px !important
+

@@ -44,31 +44,74 @@ div#progressIndicator
       color: $red
       &:hover
         text-decoration: underline
-=RES-Toggle
+.RESCloseButton
+  background:
+    color: $red !important
+  border:
+    color: $white !important
+    radius: 20px !important
+    style: solid !important
+    width: 1px !important
+  color: $white !important
+=RES-ToggleON($border)
   span.toggleOn
     background:
       color: $grey
     border:
-      color: $white
+      color: $border
       style: solid
       radius: 0px
       width: 1px
+    color: $black
   span.toggleOff
     background:
       color: $red
     border:
-      color: $white
+      color: $border
       style: solid
       radius: 0px
       width: 1px
+    color: $white
   &.enabled
     span.toggleOn
       background:
         color: $blue
+      color: $white
     span.toggleOff
       background:
         color: $grey
+      color: $black
+=RES-ToggleOFF($border)
+  span.toggleOn
+    background:
+      color: $blue
+    border:
+      color: $border
+      style: solid
+      radius: 0px
+      width: 1px
+    color: $white
+  span.toggleOff
+    background:
+      color: $grey
+    border:
+      color: $border
+      style: solid
+      radius: 0px
+      width: 1px
+    color: $black
+  &.enabled
+    span.toggleOn
+      background:
+        color: $grey
+      color: $black
+    span.toggleOff
+      background:
+        color: $red
+      color: $white
+
 @import "RES/userbar"
 @import "RES/nightmode"
 @import "RES/settings-window"
 @import "RES/editor"
+@import "RES/tagger"

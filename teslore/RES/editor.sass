@@ -1,7 +1,8 @@
 div#BigEditor
   background:
     image: url(%%Map%%)
-  div#BELeft.RESDialogSmall
+    position: center center
+  div.BELeft.RESDialogSmall
     background:
       color: transparent
     border:
@@ -17,19 +18,26 @@ div#BigEditor
     div.RESDialogContents
       div.markdownEditor
         a
-          color: $red
+          color: $black
         span.RESCharCounter
-          color: $red
-        span.span.RESMacroWrappingSpan
-          span.RESMacroDropdown
+          color: $black
+          &.tooLong
             color: $red
-          ul.RESMacaroDropdownList.RESDropdownList
-            background:
-              image: $texture
-            li
-              border-bottom: 1px solid $white !important
-              a
-                color: $white
+        span.RESMacroWrappingSpan
+          span.RESMacroDropdownTitle
+            color: $black
+          span.RESMacroDropdown
+            ul.RESMacroDropdownList.RESDropdownList
+              background:
+                image: $texture
+              li
+                border:
+                  bottom: 1px solid !important
+                  color: $white !important
+                a
+                  color: $white
+      div.commentingAs
+        color: $black
       textarea#BigText
         background:
           color: $white
@@ -46,7 +54,7 @@ div#BigEditor
         span.errorList
           span.error
             color: $black
-  div#BERight.RESDialogSmall
+  div.BERight.RESDialogSmall
     background:
       color: transparent
     border:
@@ -61,8 +69,8 @@ div#BigEditor
       top: -6px
     div.RESCloseButton.RESFadeButton
       background:
-        image: url(%%T4%%)
-      color: $red
+        color: $white !important
+      color: $blue !important
     div.RESCloseButton.close
       background:
         color: $red
@@ -72,3 +80,5 @@ div#BigEditor
       color: $white
     div.RESDialogContents
       div#BigPreview.md
+        background:
+          image: url(%%T4%%)

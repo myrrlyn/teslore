@@ -50,15 +50,6 @@ div#RESConsole.slideIn
           size: 14px
         &:visited
           color: $red-desat
-      span#RESClose.RESCloseButton
-        background:
-          color: $white
-        border:
-          color: $white
-          style: solid
-          radius: 15px
-          width: 1px
-        color: $black
     ul#RESMenu
       li
         background:
@@ -112,7 +103,7 @@ div#RESConsole.slideIn
           span.moduleName
             color: $white
           div.moduleToggle
-            +RES-Toggle
+            +RES-ToggleON($white)
           div.moduleDescription
             color: $white
             +links
@@ -141,7 +132,7 @@ div#RESConsole.slideIn
               radius: 0px
               width: 1px
           div.toggleButton
-            +RES-Toggle
+            +RES-ToggleON($white)
           button.RESConsoleButton
             background:
               color: $green
