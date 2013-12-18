@@ -1,3 +1,4 @@
+/* header/banner/tabs */
 ul.tabmenu
   border: 0px none
   position: absolute
@@ -6,7 +7,8 @@ ul.tabmenu
   z-index: 8 !important
   li.selected
     a
-      background-color: $white !important
+      background:
+        color: $white !important
       border:
         color: $white
         style: solid
@@ -14,13 +16,15 @@ ul.tabmenu
       color: $red
   li
     a
-      background-color: transparent
+      background:
+        color: transparent
       color: $white
       font:
         family: $serif-set
         size: 14px
         weight: bold
-      text-transform: uppercase
+      text:
+        transform: uppercase
     a[href*="/controversial"],
     a[href*="/gilded"],
     a[href*="stattit"],
