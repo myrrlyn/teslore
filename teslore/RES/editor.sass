@@ -1,0 +1,74 @@
+div#BigEditor
+  background:
+    image: url(%%Map%%)
+  div#BELeft.RESDialogSmall
+    background:
+      color: transparent
+    border:
+      color: $black
+      radius: 0px
+      style: solid
+      width: 1px
+    h3
+      background:
+        image: $texture
+      color: $white
+      top: -6px
+    div.RESDialogContents
+      div.markdownEditor
+        a
+          color: $red
+        span.RESCharCounter
+          color: $red
+        span.span.RESMacroWrappingSpan
+          span.RESMacroDropdown
+            color: $red
+          ul.RESMacaroDropdownList.RESDropdownList
+            background:
+              image: $texture
+            li
+              border-bottom: 1px solid $white !important
+              a
+                color: $white
+      textarea#BigText
+        background:
+          color: $white
+        color: $black
+      div.BEFoot
+        & > button
+          background:
+            color: $black
+          color: $white
+          & + button
+            background:
+              color: $black
+            color: $red
+        span.errorList
+          span.error
+            color: $black
+  div#BERight.RESDialogSmall
+    background:
+      color: transparent
+    border:
+      color: $black
+      radius: 0px
+      style: solid
+      width: 1px
+    h3
+      background:
+        image: $texture
+      color: $white
+      top: -6px
+    div.RESCloseButton.RESFadeButton
+      background:
+        image: url(%%T4%%)
+      color: $red
+    div.RESCloseButton.close
+      background:
+        color: $red
+      border:
+        radius: 12px
+        style: none
+      color: $white
+    div.RESDialogContents
+      div#BigPreview.md

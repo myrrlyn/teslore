@@ -35,13 +35,25 @@ div.commentarea
         textarea
           background:
             image: url(%%commentbox%%)
+            position: 0px 0px
             repeat: no-repeat
           color: $black
+          height: 100px !important
+          width: 500px !important
           &:focus
             background:
-              image: url(%%T4%%)
-              repeat: repeat
+              position: 0px -100px
             color: $black
+      div.RESDialogSmall.livePreview
+        h3
+          background:
+            image: $texture
+          color: $white
+        div.md.RESDialogContents
+          background:
+            color: $white !important
+            image: none
+          color: $black !important
   div.thing.comment
     +arrows
     background:
