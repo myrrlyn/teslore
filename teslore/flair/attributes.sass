@@ -1,58 +1,51 @@
 /* flair/attributes */
-body:not(.comments-page)
-  span.userattrs
-    a.friend
-      background-image: url(%%TailFriend%%)
+=RES-attrs
+  a.author.friend
+    background:
+      color: $orange !important
+    border:
+      radius: 0px
+    color: $black !important
+  a.author.moderator
+    background:
+      color: $mod-red !important
+    border:
+      radius: 0px
+    color: $white !important
+=userattrs($type,$top)
+  background:
+    image: $type
+    repeat: no-repeat
+  margin:
+    left: -9px
+  padding:
+    top: $top
+    left: 15px
+    right: 15px
+    bottom: 12px
+div.thing.link
+  p.tagline
+    +RES-attrs
+    span.userattrs
+      font:
+        size: 0px
       margin:
-        left: -20px
-      padding:
-        top: 7px
-        left: 14px
-        right: 14px
-        bottom: 9px
-      z-index: 7
-    a.moderator
-      background-image: url(%%TailModerator%%)
+        left: -4px
+      a.friend
+        +userattrs($F,19px)
+      a.moderator
+        +userattrs($M,19px)
+div.thing.comment
+  p.tagline
+    +RES-attrs
+    span.userattrs
+      font:
+        size: 0px
       margin:
-        left: -20px
-      padding:
-        top: 7px
-        left: 13px
-        right: 13px
-        bottom: 9px
-      z-index: 9
-body.comments-page
-  span.userattrs
-    a.friend
-      background:
-        image: url(%%TailFriend%%)
-      margin:
-        left: -20px
-      padding:
-        top: 6px
-        left: 14px
-        right: 14px
-        bottom: 9px
-      z-index: 7
-    a.submitter
-      background:
-        image: url(%%TailSubmitter%%)
-      margin:
-        left: -20px
-      padding:
-        top: 6px
-        left: 14px
-        right: 14px
-        bottom: 9px
-      z-index: 8
-    a.moderator
-      background:
-        image: url(%%TailModerator%%)
-      margin:
-        left: -20px
-      padding:
-        top: 6px
-        left: 13px
-        right: 13px
-        bottom: 9px
-      z-index: 9
+        left: -4px
+      a.friend
+        +userattrs($F,17px)
+      a.moderator
+        +userattrs($M,17px)
+      a.submitter
+        +userattrs($S,17px)
