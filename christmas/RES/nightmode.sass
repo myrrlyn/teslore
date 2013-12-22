@@ -1,0 +1,78 @@
+/* RES/nightmode */
+html.res-nightmode
+  body.res-nightmode
+    +links
+    a.author
+      color: $white !important
+    div#header
+      background:
+        color: $black
+      div#header-bottom-left
+        background:
+          attachment: scroll
+          color: $black !important
+          image: $banner !important
+          position: center top
+          repeat: repeat-x !important
+    div.side
+      background:
+        color: transparent
+        image: $texture !important
+      div.spacer
+        background:
+          color: transparent
+          image: $texture !important
+        div.titlebox
+          background:
+            color: transparent
+            image: $texture !important
+        div.sidebox.submit
+          border:
+            radius: 0px
+          position: relative !important
+          top: 300px !important
+          div.morelink
+            position: relative !important
+            top: 0px !important
+          div.morelink:before
+            content: url(%%Submit-Tail%%)
+            position: absolute !important
+            right: 300px
+        ul.content
+          background-color: transparent !important
+          li div.gadget div.reddit-link div.midcol
+            +arrows
+    span.flair
+      background:
+        color: transparent !important
+    div.content
+      div.thing
+        div.entry.RES-keyNav-activeElement
+          background:
+            image: none
+        div.arrow
+          +arrows
+        +expando-buttons
+        div.expando
+          div.md
+            background:
+              color: $black
+            a
+              color: $red
+            p
+              color: $white
+  &:not(.comments-page)
+    div.side
+      div.titlebox
+        h1.hover.redditname
+          background:
+            color: transparent !important
+          top: -63px !important
+  &.comments-page
+    div.side
+      div.titlebox
+        h1.hover.redditnmae
+          background:
+            color: transparent !important
+          top: -174px !important
+
