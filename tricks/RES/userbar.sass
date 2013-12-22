@@ -1,0 +1,78 @@
+/* RES/userbar */
+span#RESAccountSwitcherIconOverlay
+  background:
+    color: $black
+  border:
+    color: $white
+    style: solid
+    width: 1px
+  top: 20px
+ul#RESAccountSwitcherDropdown.RESDropdownList
+  background:
+    color: transparent
+    image: $texture
+  border:
+    color: $white
+    style: solid
+    radius: 0px
+    width: 1px
+  top: 44px
+  li
+    color: $white
+    &:hover
+      background:
+        color: $grey
+      color: $black
+  li.accountName
+    border:
+      bottom: 1px solid
+  li.addAccount
+    border:
+      bottom: 0px
+div#RESMainGearOverlay.RESGearOverlay
+  background:
+    color: $black
+  border:
+    color: $white
+    style: solid
+    width: 1px
+  top: 20px
+div#RESPrefsDropdown.RESDropdownList
+  background:
+    color: transparent
+    image: $texture
+  border:
+    color: $white
+    style: solid
+    radius: 0px
+    width: 1px
+  top: 44px
+  right: 5px !important
+  ul#RESDropdownOptions
+    li
+      color: $white
+      a
+        color: $white
+      &:hover
+        background:
+          color: $grey
+        color: $black
+        a
+          background:
+            color: $grey
+          color: $black
+    li#DashboardLink,
+    li#SettingsConsole,
+    li#RES-donate
+      border:
+        bottom: 1px solid
+    li[title="Toggle night and day"]
+      border:
+        bottom: 1px solid
+      div.toggleButton
+        +RES-ToggleON($white)
+    li[title="Toggle NSFW Filter"]
+      border:
+        bottom: 1px solid
+      div.toggleButton
+        +RES-ToggleON($white)

@@ -1,0 +1,68 @@
+/* etc/submission */
+body.submit-page
+  div.side
+    div.titlebox
+      h1.hover.redditname
+        top: -17px
+  div.content
+    form.pretty-form.sharelink
+      & + h1
+        color: $black
+        a
+          color: $red
+    form#newlink.submit.content
+      div.formtabs-content
+        border:
+          top: 3px solid $black
+        div#title-field
+          background:
+            color: transparent
+            image: $texture
+          textarea
+            background:
+              color: $white
+//              image: url(%%submittitlebox%%);
+//                position: 11px 11px;
+//                repeat: no-repeat;
+//            &:focus
+//              background-position: 11px -39px;
+        div#url-field
+          background:
+            color: transparent
+            image: $texture
+        div#text-field
+          background:
+            color: transparent
+            image: $texture
+          span.gray
+            display: none
+          div.usertext
+            div.usertext-edit
+              div.markdownEditor
+                a
+                  color: $white
+              div.commentingAs
+                color: $white
+              textarea
+                background:
+                  color: $white
+                height: 500px
+              div.bottom-area
+                a
+                  color: $white
+        div#reddit-field
+          background:
+            color: transparent
+            image: $texture
+          div#sr-autocomplete-area
+            input#sr-autocomplete
+              background:
+                color: $white
+          div#suggested-reddits
+            h3
+              color: $white
+            ul
+              li
+                +links
+        span.title
+          color: $white

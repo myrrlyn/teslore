@@ -1,0 +1,103 @@
+/* content/comment_area */
+div.commentarea
+  div.panestack-title
+    border:
+      bottom: 1px solid lighten($black,15%)
+    span.panestack-title
+      color: $black
+    span#REScommentSubToggle.RESSubscriptionButton
+      background:
+        color: transparent
+        image: url(%%T3%%)
+      border:
+        color: lighten($black,15%%)
+        style: solid
+        radius: 0px
+        width: 1px
+      color: $brown
+      &:hover
+        background:
+          color: $white
+        color: $brown
+  div.menuarea
+    color: $brown
+    div.dropdown
+      span.selected
+        color: $brown
+    div.drop-choices
+      background:
+        color: $white
+      form
+        a.choice
+          color: $brown
+  form
+    div.usertext-edit
+      div
+        textarea
+          background:
+            image: url(%%commentbox%%)
+            position: 0px 0px
+            repeat: no-repeat
+          color: $black
+          height: 100px !important
+          width: 500px !important
+          &:focus
+            background:
+              position: 0px -100px
+            color: $black
+      div.RESDialogSmall.livePreview
+        h3
+          background:
+            image: $texture
+          color: $white
+        div.md.RESDialogContents
+          background:
+            color: $white !important
+            image: none
+          color: $black !important
+  div.thing.comment
+    +arrows
+    background:
+      color: transparent !important
+      image: url(%%T1%%) !important
+    border:
+      style: none !important
+      radius: 0px !important
+      width: 0px !important
+    margin:
+      left: 0px !important
+    padding:
+      left: 10px
+      right: 30px
+      bottom: 10px
+    div.collapsed
+      color: $brown
+      a
+        color: $brown
+    div.thing.comment
+      background:
+        image: url(%%T3%%) !important
+      div.thing.comment
+        background:
+          image: url(%%T2%%) !important
+        div.thing.comment
+          background:
+            image: url(%%T3%%) !important
+          div.thing.comment
+            background:
+              image: url(%%T1%%) !important
+            div.thing.comment
+              background:
+                image: url(%%T3%%) !important
+              div.thing.comment
+                background:
+                  image: url(%%T2%%) !important
+                div.thing.comment
+                  background:
+                    image: url(%%T3%%) !important
+                  div.thing.comment
+                    background:
+                      image: url(%%T1%%) !important
+                    div.thing.comment
+                      background:
+                        image: url(%%T3%%) !important

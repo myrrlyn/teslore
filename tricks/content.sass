@@ -1,0 +1,26 @@
+/* content */
+div.content
+  margin:
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+  @import "content/frontpage"
+  div.thing
+    @import "content/post"
+    @import "content/score"
+    &.link
+      div.midcol
+        margin-top: 6px
+        +arrows
+      +expando-buttons
+  & > div.sitetable
+    margin-left: -3px
+    margin-right: 5px
+  div.nav-buttons
+    span.nextprev
+      a
+        color: $black
+      span.separator
+        color: $black
+  @import "content/comment_area"

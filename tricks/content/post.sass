@@ -14,6 +14,13 @@ div.thing
     color: $brown
     font:
       size: 12px
+    a.author
+      font:
+        size: 0px
+      &:after
+        content: " "attr(class)
+        font:
+          size: 10px
   div.expando
     div.usertext-body
       div.md
