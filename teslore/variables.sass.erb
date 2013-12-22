@@ -20,13 +20,17 @@ $serif-set: "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linot
 $size-wiki: 13px
 
 // Textures Used
+$Arrows: url(%%Arrows%%)
 $texture: url(%%DarkTex%%)
+$T0: url(%%pixel-of-RES%%)
+$T1: url(%%pixel-of-darkness%%)
+$T2: url(%%pixel-of-truth%%)
+$T3: url(%%pixel-of-valor%%)
+$T4: url(%%pixel-of-light%%)
 
 // Header Image Information
 $banner: url(%%Banner%%)
-$bannerheight: 64px + 28px
-
-// Image height + tab menu height. Changing tab menu height HAS DEPENDENCIES
+$bannerheight: 64px + 28px  // Image height + tab menu height. Changing tab menu height HAS DEPENDENCIES
 $logo: url(%%Snoos%%)
 $logoheight: 60px
 $logowidth: 214px
@@ -86,7 +90,7 @@ $build_branch: "<%= $build[:branch] %>"
 =arrows
   div.arrow
     background:
-      image: url(%%Arrows%%)
+      image: $Arrows
     height: 14px
     width: 15px
     &.up
@@ -105,17 +109,39 @@ $build_branch: "<%= $build[:branch] %>"
 
 // Only a mixin because RES is a whore
 =expando-buttons
-  div.entry div.expando-button
+  div.expando-button
     background:
       color: transparent
-      image: url(%%expando%%)
-    height: 16px
-    width: 20px
+      image: $Arrows
+    height: 20px
+    width: 16px
     &.collapsed
-      background-position: 6px -2px
+      background:
+        position: -30px 0px
       &:hover
-        background-position: 6px -22px
+        background:
+          position: -30px -20px
     &.expanded
-      background-position: -13px -2px
+      background:
+        position: -46px -0px
       &:hover
-        background-position: -13px -22px
+        background:
+          position: -46px -20px
+  a.expando-button
+    background:
+      color: transparent
+      image: $Arrows
+    height: 20px
+    width: 16px
+    &.collapsedExpando
+      background:
+        position: -30px 0px
+      &:hover
+        background:
+          position: -30px -20px
+    &.expanded
+      background:
+        position: -46px 0px
+      &:hover
+        background:
+          position: -46px -20px
