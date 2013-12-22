@@ -1,0 +1,19 @@
+/* global */
+html
+  position: relative !important // Reddit Companion's shinebar does not cooperate without this
+body
+  background:
+    attachment: fixed
+    image: url(%%Map%%)
+    position: center center
+  font:
+    family: $sans-serif-set
+  button
+    font:
+      family: $sans-serif-set
+  @import "global/formatting"
+  @import "global/spoilers"
+  @import "header"
+  @import "sidebar"
+  @import "content"
+  @import "footer"

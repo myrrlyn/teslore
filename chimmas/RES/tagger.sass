@@ -1,0 +1,40 @@
+/* RES/tagger */
+div#userTaggerToolTip.RESDialogSmall
+  background:
+    color: $white
+  border:
+    color: $black
+    radius: 0px
+    style: solid
+    width: 1px
+  h3
+    background:
+      image: $texture
+    color: $white
+    top: -6px
+  div#userTaggerToolTipContents.RESDialogContents.clear
+    form
+      div#userTaggerIgnoreContainer.toggleButton
+        +RES-ToggleOFF($black)
+      input#userTaggerTag,
+      input#userTaggerLink,
+      input#userTaggerVoteWeight
+        background:
+          image: url(%%T4%%)
+        color: $black
+      input#userTaggerSave
+        background:
+          color: $green
+        border:
+          color: $black
+          radius: 0px
+          style: solid
+          width: 1px
+      label
+        color: $black
+        span.hoverHelp
+          color: $red
+      span#userTaggerPreview
+        background:
+          color: $white
+        color: $black

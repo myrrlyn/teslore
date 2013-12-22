@@ -1,0 +1,24 @@
+/* content/frontpage */
+div.thing.link
+  margin: 1px 0px
+  span.rank
+    display: none !important
+  a.thumbnail
+    display: none !important
+  div.entry
+    ul.flat-list.buttons
+      li
+        a
+          color: $brown
+  &.stickied
+    a.title
+      color: $green
+  &.odd
+    background:
+      image: url(%%T2%%)
+  &.even
+    background:
+      image: url(%%T3%%)
+  &.last-clicked
+    border:
+      style: none
