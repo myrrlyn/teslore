@@ -2,6 +2,15 @@
 html.res-nightmode
   body.res-nightmode
     +links
+    div.md
+      background:
+        color: $black
+      a
+        color: $red
+      h1, h2, h3, h4, h5, h6
+        color: $white
+      p
+        color: $white
     a.author
       color: $white !important
     div#header
@@ -53,10 +62,6 @@ html.res-nightmode
         div.arrow
           +arrows
         +expando-buttons
-        div.expando
-          div.md
-            background:
-              color: $black
   &:not(.comments-page)
     div.side
       div.titlebox
