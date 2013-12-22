@@ -2,38 +2,35 @@
 =RES-attrs
   a.author.friend
     background:
-      color: transparent
+      color: transparent !important
     border:
       radius: 0px
-    color: $black
+    color: $black !important
   a.author.moderator
     background:
-      color: transparent
+      color: transparent !important
     border:
       radius: 0px
-    color: $black
+    color: $black !important
   a.author.submitter
     background:
-      color: transparent
+      color: transparent !important
     border:
       radius: 0px
-    color: $black
+    color: $black !important
 =userattrs($top)
-  margin:
-    left: -9px
   padding:
     top: $top
-    left: 15px
-    right: 15px
+    left: 0px
+    right: 5px
     bottom: 12px
+  position: relative
 div.thing.link
   p.tagline
     +RES-attrs
     span.userattrs
       font:
         size: 0px
-      margin:
-        left: -4px
       a.friend
         +userattrs(19px)
         background:
@@ -48,8 +45,6 @@ div.thing.comment
     span.userattrs
       font:
         size: 0px
-      margin:
-        left: -4px
       a.friend
         +userattrs(17px)
         background:
