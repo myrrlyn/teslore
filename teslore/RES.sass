@@ -77,62 +77,30 @@ div#progressIndicator
     style: solid !important
     width: 1px !important
   color: $white !important
-=RES-ToggleON($border)
+=RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
+  span
+    border:
+      color: $border
+      radius: 0px
+      style: solid
+      width: 1px
   span.toggleOn
     background:
-      color: $grey
-    border:
-      color: $border
-      style: solid
-      radius: 0px
-      width: 1px
-    color: $black
+      color: $on-unset // When switch is DISABLED, toggleOn is unset
+    color: $unset-color
   span.toggleOff
     background:
-      color: $red
-    border:
-      color: $border
-      style: solid
-      radius: 0px
-      width: 1px
-    color: $white
+      color: $off-set // When switch is DISABLED, toggleOff is set
+    color: $set-color
   &.enabled
     span.toggleOn
       background:
-        color: $blue
-      color: $white
+        color: $on-set // When switch is ENABLED, toggleOn is set
+      color: $set-color
     span.toggleOff
       background:
-        color: $grey
-      color: $black
-=RES-ToggleOFF($border)
-  span.toggleOn
-    background:
-      color: $blue
-    border:
-      color: $border
-      style: solid
-      radius: 0px
-      width: 1px
-    color: $white
-  span.toggleOff
-    background:
-      color: $grey
-    border:
-      color: $border
-      style: solid
-      radius: 0px
-      width: 1px
-    color: $black
-  &.enabled
-    span.toggleOn
-      background:
-        color: $grey
-      color: $black
-    span.toggleOff
-      background:
-        color: $red
-      color: $white
+        color: $off-unset // When switch is ENABLED, toggleOff is unset
+      color: $unset-color
 
 @import "RES/userbar"
 @import "RES/nightmode"
