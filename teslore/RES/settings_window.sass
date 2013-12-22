@@ -2,11 +2,11 @@
 div#modalOverlay.fadeIn
   background:
     color: transparent
-    image: url(%%T4%%)
+    image: $T4
 div#RESConsole.slideIn
   background:
     color: $white
-    image: url(%%T4%%)
+    image: $T4
   border:
     radius: 0px
   div#RESConsoleHeader
@@ -26,7 +26,7 @@ div#RESConsole.slideIn
         input#SearchRES-input
           background:
             color: transparent
-            image: url(%%T2%%)
+            image: $T2
           border:
             color: $white
             style: solid
@@ -104,7 +104,7 @@ div#RESConsole.slideIn
           span.moduleName
             color: $white
           div.moduleToggle
-            +RES-ToggleON($white)
+            +RES-Toggle($white,$grey,$grey,$black,$green,$red,$white)
           div.moduleDescription
             color: $white
             +links
@@ -118,7 +118,7 @@ div#RESConsole.slideIn
             input
               background:
                 color: $white
-                image: url(%%T4%%)
+                image: $T4
               border:
                 color: $white
                 style: solid
@@ -133,10 +133,10 @@ div#RESConsole.slideIn
               radius: 0px
               width: 1px
           div.toggleButton
-            +RES-ToggleON($white)
+            +RES-Toggle($white,$grey,$grey,$black,$green,$red,$white)
           button.RESConsoleButton
             background:
-              color: $green
+              color: $blue
             border:
               color: $white
               style: solid

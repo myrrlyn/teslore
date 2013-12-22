@@ -69,10 +69,10 @@ div#RESPrefsDropdown.RESDropdownList
     li[title="Toggle night and day"]
       border:
         bottom: 1px solid
-      div.toggleButton
-        +RES-ToggleON($white)
+      div#lightSwitchToggle.toggleButton
+        +RES-Toggle($white,$grey,$grey,$black,$red,$green,$white)
     li[title="Toggle NSFW Filter"]
       border:
         bottom: 1px solid
       div.toggleButton
-        +RES-ToggleON($white)
+        +RES-Toggle($white,$grey,$grey,$black,$green,$red,$white)
