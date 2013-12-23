@@ -1,5 +1,5 @@
 /* content/post */
-div.thing
+div.entry
   p.title
     a.title
       color: $black
@@ -8,24 +8,25 @@ div.thing
         size: 18px !important
       &:visited
         color: $black-desat
-  span.domain
-    display: none !important
-  p.tagline
-    color: $brown
-    font:
-      size: 12px
-    span
-      span.res_post_ups
-        color: $orange
-      span.res_post_downs
-        color: $blue
-  div.expando
-    div.usertext-body
-      div.md
-        background:
-          color: $white
-        border:
-          color: $black
-          style: solid
-          width: 1px
-        max-width: 75em !important
+span.domain
+  display: none !important
+p.tagline
+  color: $brown
+  font:
+    size: 12px
+  span
+    span.res_post_ups
+      color: $orange
+    span.res_post_downs
+      color: $blue
+div.expando
+  div.usertext-body
+    div.md
+      background:
+        color: $white
+      border:
+        color: $black
+        radius: 16px
+        style: solid
+        width: 1px
+      max-width: 75em !important

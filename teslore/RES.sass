@@ -1,30 +1,46 @@
 /* RES */
+=RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
+  span
+    border:
+      color: $border
+      radius: 0px
+      style: solid
+      width: 1px
+  span.toggleOn
+    background:
+      color: $on-unset // When switch is DISABLED, toggleOn is unset
+    color: $unset-color
+  span.toggleOff
+    background:
+      color: $off-set // When switch is DISABLED, toggleOff is set
+    color: $set-color
+  &.enabled
+    span.toggleOn
+      background:
+        color: $on-set // When switch is ENABLED, toggleOn is set
+      color: $set-color
+    span.toggleOff
+      background:
+        color: $off-unset // When switch is ENABLED, toggleOff is unset
+      color: $unset-color
+
 div.content
   div.thing
     p.tagline
-      a.author.friend
-        background:
-          color: transparent !important
-        border:
-          radius: 0px
-        color: $black !important
-      a.author.moderator
-        background:
-          color: transparent !important
-        border:
-          radius: 0px
-        color: $black !important
+      a.author.friend,
+      a.author.moderator,
       a.author.submitter
         background:
           color: transparent !important
         border:
           radius: 0px
+        font:
+          weight: normal
         color: $black !important
       a.voteWeight
         background:
           color: transparent !important
         color: $black !important
-        display: inline !important
   div.thing.link
     div.entry.RES-keyNav-activeElement
       background:
@@ -74,33 +90,72 @@ div#progressIndicator
     style: solid !important
     width: 1px !important
   color: $white !important
-=RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
-  span
-    border:
-      color: $border
-      radius: 0px
-      style: solid
-      width: 1px
-  span.toggleOn
+.RESDialogSmall
+  background:
+    color: $white
+  border:
+    color: $black
+    radius: 0px
+    style: solid
+    width: 1px
+  h3
+    +links
     background:
-      color: $on-unset // When switch is DISABLED, toggleOn is unset
-    color: $unset-color
-  span.toggleOff
-    background:
-      color: $off-set // When switch is DISABLED, toggleOff is set
-    color: $set-color
-  &.enabled
-    span.toggleOn
-      background:
-        color: $on-set // When switch is ENABLED, toggleOn is set
-      color: $set-color
-    span.toggleOff
-      background:
-        color: $off-unset // When switch is ENABLED, toggleOff is unset
-      color: $unset-color
-
+      image: $texture
+    color: $white !important
+    top: -6px
+    span.fancy-toggle-button
+      a.option
+        background:
+          color: $red
+          image: none
+        border:
+          radius: 0px
+          style: none
+        color: $white
+  div.RESDialogContents
+    div.authorFieldPair
+      div
+        color: $black
+    div.bottomButtons
+      .blueButton
+        background:
+          color: $blue
+        border:
+          radius: 0px
+          style: none
+    form
+      div#userTaggerIgnoreContainer.toggleButton
+        +RES-Toggle($black,$green,$red,$white,$grey,$grey,$black)
+      input#userTaggerTag,
+      input#userTaggerLink,
+      input#userTaggerVoteWeight
+        background:
+          image: $T4
+        color: $black
+      input#userTaggerSave
+        background:
+          color: $green
+        border:
+          color: $black
+          radius: 0px
+          style: solid
+          width: 1px
+      label
+        color: $black
+        span.hoverHelp
+          color: $red
+      span#userTaggerPreview
+        background:
+          color: $white
+        color: $black
+p.tagline
+  span.RESUserTag
+    a.userTagLink.hasTag
+      border:
+        radius: 4px
+        style: none
 @import "RES/userbar"
 @import "RES/nightmode"
 @import "RES/settings_window"
 @import "RES/editor"
-@import "RES/tagger"
