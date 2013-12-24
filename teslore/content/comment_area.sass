@@ -1,4 +1,17 @@
 /* content/comment_area */
+=RES-keyNav($image)
+  &.RES-keyNav-activeElement
+    background:
+      image: $image !important
+      repeat: repeat
+    div.noncollapsed
+      background:
+        image: $image !important
+        repeat: repeat
+      div.md
+        background:
+          image: $image !important
+          repeat: repeat
 div.commentarea
   div.panestack-title
     border:
@@ -77,115 +90,104 @@ div.commentarea
       color: $brown
       a
         color: $brown
-  div.sitetable
-    div.thing.comment:nth-child(4n-1)
+  & > div.sitetable
+    & > div.thing.comment:nth-child(4n-1)
       background:
         color: transparent !important
         image: $T1 !important
-      &.RES-keyNav-activeElement
-        background:
-          image: $T0 !important
-          repeat: repeat
-        div.noncollapsed
-          background:
-            image: $T0 !important
-            repeat: repeat
-          div.md
-            background:
-              image: $T0 !important
-              repeat: repeat
+      +RES-keyNav($R1)
       div.thing.comment
         background:
+          color: transparent !important
           image: $T3 !important
-        &.RES-keyNav-activeElement
-          background:
-            image: $T0 !important
-            repeat: repeat
-          div.noncollapsed
-            background:
-              image: $T0 !important
-              repeat: repeat
-            div.md
-              background:
-                image: $T0 !important
-                repeat: repeat
+        +RES-keyNav($R2)
         div.thing.comment
           background:
+            color: transparent !important
             image: $T2 !important
+          +RES-keyNav($R1)
           div.thing.comment
             background:
+              color: transparent !important
               image: $T4 !important
+            +RES-keyNav($R2)
             div.thing.comment
               background:
+                color: transparent !important
                 image: $T1 !important
+              +RES-keyNav($R1)
               div.thing.comment
                 background:
+                  color: transparent !important
                   image: $T3 !important
+                +RES-keyNav($R2)
                 div.thing.comment
                   background:
+                    color: transparent !important
                     image: $T2 !important
+                  +RES-keyNav($R1)
                   div.thing.comment
                     background:
+                      color: transparent !important
                       image: $T4 !important
+                    +RES-keyNav($R2)
                     div.thing.comment
                       background:
+                        color: transparent !important
                         image: $T1 !important
+                      +RES-keyNav($R1)
                       div.thing.comment
                         background:
+                          color: transparent !important
                           image: $T3 !important
-    div.thing.comment:nth-child(4n-3)
+                        +RES-keyNav($R2)
+    & > div.thing.comment:nth-child(4n-3)
       background:
         color: transparent !important
         image: $T3 !important
-      &.RES-keyNav-activeElement
-        background:
-          image: $T5 !important
-          repeat: repeat
-        div.noncollapsed
-          background:
-            image: $T5 !important
-            repeat: repeat
-          div.md
-            background:
-              image: $T5 !important
-              repeat: repeat
+      +RES-keyNav($R2)
       div.thing.comment
         background:
+          color: transparent !important
           image: $T1 !important
-        &.RES-keyNav-activeElement
-          background:
-            image: $T5 !important
-            repeat: repeat
-          div.noncollapsed
-            background:
-              image: $T5 !important
-              repeat: repeat
-            div.md
-              background:
-                image: $T5 !important
-                repeat: repeat
+        +RES-keyNav($R1)
         div.thing.comment
           background:
+            color: transparent !important
             image: $T4 !important
+          +RES-keyNav($R2)
           div.thing.comment
             background:
+              color: transparent !important
               image: $T2 !important
+            +RES-keyNav($R1)
             div.thing.comment
               background:
+                color: transparent !important
                 image: $T3 !important
+              +RES-keyNav($R2)
               div.thing.comment
                 background:
+                  color: transparent !important
                   image: $T1 !important
+                +RES-keyNav($R1)
                 div.thing.comment
                   background:
+                    color: transparent !important
                     image: $T4 !important
+                  +RES-keyNav($R2)
                   div.thing.comment
                     background:
+                      color: transparent !important
                       image: $T2 !important
+                    +RES-keyNav($R1)
                     div.thing.comment
                       background:
+                        color: transparent !important
                         image: $T3 !important
+                      +RES-keyNav($R2)
                       div.thing.comment
                         background:
+                          color: transparent !important
                           image: $T1 !important
-                        
+                        +RES-keyNav($R1)
