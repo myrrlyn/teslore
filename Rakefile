@@ -38,7 +38,7 @@ def get_context id
 end
 
 def compile id, config
-  Sprockets::Sass.options[:style] = config[:style].to_sym
+  style = Sprockets::Sass.options[:style] = (config[:style] || :nested).to_sym
 
   ret = get_context(id).find_asset(id).to_s
 
@@ -47,6 +47,9 @@ def compile id, config
 
   # Replace multiple newlines with one
   ret.gsub! /\n+/, "\n"
+
+  # Minify a bit more if we're in compact mode
+  ret.gsub!(/\/\*[^!].+?\*\//m, '').gsub!(/\s*{\s*/, '{').gsub!(/\s*}\s*/, '}').gsub!(/^$\n/, '') if style == :compact
 
   # Verify images
   verify id, ret
