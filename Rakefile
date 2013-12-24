@@ -38,6 +38,8 @@ def get_context id
 end
 
 def compile id, config
+  Sprockets::Sass.options[:style] = config[:style].to_sym
+
   ret = get_context(id).find_asset(id).to_s
 
   # Normalize line endings for sending to Reddit
