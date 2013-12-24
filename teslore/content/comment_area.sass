@@ -57,9 +57,6 @@ div.commentarea
           color: $black !important
   div.thing.comment
     +arrows
-    background:
-      color: transparent !important
-      image: $T1 !important
     border:
       style: none !important
       radius: 0px !important
@@ -78,13 +75,54 @@ div.commentarea
         background:
           image: $T0 !important
           repeat: repeat
+        div.noncollapsed
+          background:
+            image: $T0 !important
+            repeat: repeat
+          div.md
+            background:
+              image: $T0 !important
+              repeat: repeat
     div.collapsed
       color: $brown
       a
         color: $brown
-    div.thing.comment
+  div.sitetable
+    div.thing.comment:nth-child(odd)
       background:
-        image: $T3 !important
+        color: transparent !important
+        image: $T1 !important
+      div.thing.comment
+        background:
+          image: $T3 !important
+        div.thing.comment
+          background:
+            image: $T2 !important
+          div.thing.comment
+            background:
+              image: $T3 !important
+            div.thing.comment
+              background:
+                image: $T1 !important
+              div.thing.comment
+                background:
+                  image: $T3 !important
+                div.thing.comment
+                  background:
+                    image: $T2 !important
+                  div.thing.comment
+                    background:
+                      image: $T3 !important
+                    div.thing.comment
+                      background:
+                        image: $T1 !important
+                      div.thing.comment
+                        background:
+                          image: $T3 !important
+    div.thing.comment:nth-child(even)
+      background:
+        color: transparent !important
+        image: $T4 !important
       div.thing.comment
         background:
           image: $T2 !important
@@ -93,10 +131,10 @@ div.commentarea
             image: $T3 !important
           div.thing.comment
             background:
-              image: $T1 !important
+              image: $T2 !important
             div.thing.comment
               background:
-                image: $T3 !important
+                image: $T4 !important
               div.thing.comment
                 background:
                   image: $T2 !important
@@ -105,7 +143,11 @@ div.commentarea
                     image: $T3 !important
                   div.thing.comment
                     background:
-                      image: $T1 !important
+                      image: $T2 !important
                     div.thing.comment
                       background:
-                        image: $T3 !important
+                        image: $T4 !important
+                      div.thing.comment
+                        background:
+                          image: $T2 !important
+                        
