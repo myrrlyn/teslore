@@ -67,6 +67,8 @@ div.commentarea
       left: 10px
       right: 30px
       bottom: 10px
+    span.deepthread
+      +links
     div.entry
       div.usertext-body
         div.md
@@ -88,7 +90,7 @@ div.commentarea
       a
         color: $brown
   div.sitetable
-    div.thing.comment:nth-child(odd)
+    div.thing.comment:nth-child(4n-1)
       background:
         color: transparent !important
         image: $T1 !important
@@ -119,7 +121,7 @@ div.commentarea
                       div.thing.comment
                         background:
                           image: $T3 !important
-    div.thing.comment:nth-child(even)
+    div.thing.comment:nth-child(4n-3)
       background:
         color: transparent !important
         image: $T4 !important
