@@ -57,9 +57,6 @@ div.commentarea
           color: $black !important
   div.thing.comment
     +arrows
-    background:
-      color: transparent !important
-      image: $T1 !important
     border:
       style: none !important
       radius: 0px !important
@@ -82,6 +79,11 @@ div.commentarea
       color: $brown
       a
         color: $brown
+div.sitetable
+  div.thing.comment:nth-child(odd)
+    background:
+      color: transparent !important
+      image: $T1 !important
     div.thing.comment
       background:
         image: $T3 !important
@@ -109,3 +111,34 @@ div.commentarea
                     div.thing.comment
                       background:
                         image: $T3 !important
+ div.thing.comment:nth-child(even)
+    background:
+      color: transparent !important
+      image: $T2 !important
+    div.thing.comment
+      background:
+        image: $T4 !important
+      div.thing.comment
+        background:
+          image: $T3 !important
+        div.thing.comment
+          background:
+            image: $T4 !important
+          div.thing.comment
+            background:
+              image: $T2 !important
+            div.thing.comment
+              background:
+                image: $T4 !important
+              div.thing.comment
+                background:
+                  image: $T3 !important
+                div.thing.comment
+                  background:
+                    image: $T4 !important
+                  div.thing.comment
+                    background:
+                      image: $T2 !important
+                    div.thing.comment
+                      background:
+                        image: $T4 !important
