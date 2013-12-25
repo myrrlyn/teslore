@@ -48,8 +48,9 @@ def compile id, config
   # Replace multiple newlines with one
   ret.gsub! /\n+/, "\n"
 
-  # Minify a bit more if we're in compact mode
+  # Style tweaks
   ret.gsub!(/\/\*[^!].+?\*\//m, '').gsub!(/\s*{\s*/, '{').gsub!(/\s*}\s*/, '}').gsub!(/^$\n/, '') if style == :compact
+  ret.gsub!(/\s*{/, "\n{") if style == :expanded
 
   # Verify images
   verify id, ret
