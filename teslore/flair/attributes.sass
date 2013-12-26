@@ -1,29 +1,24 @@
 /* flair/attributes */
 =RES-attrs
-  a.author.friend
-    background:
-      color: transparent !important
-    border:
-      radius: 0px
-    color: $black !important
-  a.author.moderator
-    background:
-      color: transparent !important
-    border:
-      radius: 0px
-    color: $black !important
+  a.author.admin,
+  a.author.alum,
+  a.author.friend,
+  a.author.moderator,
   a.author.submitter
     background:
       color: transparent !important
     border:
       radius: 0px
     color: $black !important
-=userattrs($top)
+=userattrs($pos)
+  background:
+    image: url(%%userattrs%%)
+    position: $pos 0
   padding:
-    top: $top
+    top: 17px
     left: 0px
     right: 5px
-    bottom: 12px
+    bottom: 11px
   position: relative
 div.thing.link
   p.tagline
@@ -31,34 +26,59 @@ div.thing.link
     span.userattrs
       font:
         size: 0px
+      position: relative
+      right: 50px
+      top: -1px
+      a.admin
+        +userattrs(-20px)
+      a.alum
+        +userattrs(-25px)
+      a.cakeday
+        +userattrs(-15px)
       a.friend
-        +userattrs(19px)
-        background:
-          image: url(%%BarFriend%%)
+        +userattrs(0)
       a.moderator
-        +userattrs(19px)
-        background:
-          image: url(%%BarModerator%%)
-      a:nth-child(2)
-      a:nth-child(4)
+        +userattrs(-5px)
+      *:nth-child(1)
+        right: 3px
+      *:nth-child(2)
+        right: 13px
+      *:nth-child(3)
+        right: 23px
+      *:nth-child(4)
+        right: 33px
+      *:nth-child(5)
+        right: 43px
 div.thing.comment
   p.tagline
     +RES-attrs
     span.userattrs
       font:
         size: 0px
+      position: relative
+      right: 50px
+      top: 1px
+      a.admin
+        +userattrs(-20px)
+      a.cakeday
+        +userattrs(-15px)
       a.friend
-        +userattrs(17px)
-        background:
-          image: url(%%BarFriend%%)
+        +userattrs(0)
       a.moderator
-        +userattrs(17px)
-        background:
-          image: url(%%BarModerator%%)
+        +userattrs(-5px)
       a.submitter
-        +userattrs(17px)
-        background:
-          image: url(%%BarSubmitter%%)
-      a:nth-child(2)
-      a:nth-child(4)
-      a:nth-child(6)
+        +userattrs(-10px)
+      span.alum
+        +userattrs(-25px)
+      *:nth-child(1)
+        right: 3px
+      *:nth-child(2)
+        right: 13px
+      *:nth-child(3)
+        right: 23px
+      *:nth-child(4)
+        right: 33px
+      *:nth-child(5)
+        right: 43px
+      *:nth-child(6)
+        right: 53px

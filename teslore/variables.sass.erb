@@ -1,17 +1,17 @@
 // Color Palette
-$black: #161616
-$black-desat: $black * 4
-$blue: #0055DF
-$blue-light: #66B5FF
-$brown: #70381A
-$gold: #9A7D2E
-$green: #155415
-$grey: $black * 9
-$mod-red: #AD1200
-$orange: #FF4500
-$red: #A72A2A
-$red-desat: #7F1F1F
-$white: #F4F4F4
+$black:       #161616
+$black-desat: #545454
+$blue:        #0055DF
+$blue-light:  #66B5FF
+$brown:       #70381A
+$gold:        #9A7D2E
+$green:       #156915
+$grey:        #C7C7C7
+$mod-red:     #AD1200
+$orange:      #FF4500
+$red:         #A72A2A
+$red-desat:   #7F1F1F
+$white:       #F4F4F4
 
 // Font Kit
 $code-set: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace
@@ -23,22 +23,25 @@ $wiki-banner: url(%%BannerWiki%%)
 $wiki-size: 13px
 
 // Textures Used
-$Arrows: url(%%Arrows%%)
-$texture: url(%%DarkTex%%)
-$T0: url(%%pixel-of-RES%%)
-$T1: url(%%pixel-of-darkness%%)
-$T2: url(%%pixel-of-truth%%)
-$T3: url(%%pixel-of-valor%%)
-$T4: url(%%pixel-of-light%%)
+$Arrows:      url(%%Arrows%%)             // Vote and Expando Arrows
+$banner:      url(%%Banner%%)             // Header Banner
+$FlairSheet:  url(%%FlairStandard%%)      // Flair List
+$logo:        url(%%Snoos%%)              // reddit.com link and logo
+$name:        url(%%Realms%%)             // /r/teslore link and logo
+$texture:     url(%%DarkTex%%)            // 
+$T0:          url(%%pixel-of-RES%%)       // 
+$T1:          url(%%pixel-of-darkness%%)  // 
+$T2:          url(%%pixel-of-truth%%)     // 
+$T3:          url(%%pixel-of-valor%%)     // 
+$T4:          url(%%pixel-of-light%%)     // 
 
 // Header Image Information
-$banner: url(%%Banner%%)
-$bannerheight: 64px + 28px  // Image height + tab menu height. Changing tab menu height HAS DEPENDENCIES
-$logo: url(%%Snoos%%)
-$logoheight: 60px
-$logowidth: 214px
-$logooffset: 0px
-$name: url(%%Realms%%)
+$tabmenuheight: 28px                            // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
+$bannerheight: 64px                             // Height of banner image
+$headerheight: $bannerheight+ $tabmenuheight    // Total height of div#header-banner-left
+$logoheight: 60px                               // Height of reddit logo
+$logowidth: 214px                               // Width of reddit logo
+$logooffset: $bannerheight - $logoheight - 4px  // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
 
 // Versioning Information
 $build_version: "<%= $build[:version] %>"
