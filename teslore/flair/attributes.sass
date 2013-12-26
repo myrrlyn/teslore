@@ -1,64 +1,64 @@
 /* flair/attributes */
 =RES-attrs
-  a.author.friend
-    background:
-      color: transparent !important
-    border:
-      radius: 0px
-    color: $black !important
-  a.author.moderator
-    background:
-      color: transparent !important
-    border:
-      radius: 0px
-    color: $black !important
+  a.author.admin,
+  a.author.alum,
+  a.author.friend,
+  a.author.moderator,
   a.author.submitter
     background:
       color: transparent !important
     border:
       radius: 0px
     color: $black !important
-=userattrs($top)
-  padding:
-    top: $top
-    left: 0px
-    right: 5px
-    bottom: 12px
+=userattrs($pos)
+  background:
+    image: url($$userattrs%%)
+    position: $pos 0
+  height: 30px
   position: relative
+  width: 5px
 div.thing.link
   p.tagline
     +RES-attrs
     span.userattrs
       font:
         size: 0px
+      a.admin
+        +userattrs(-20px)
+      a.alum
+        +userattrs(-25px)
+      a.cakeday
+        +userattrs(-15px)
       a.friend
-        +userattrs(19px)
-        background:
-          image: url(%%BarFriend%%)
+        +userattrs(0)
       a.moderator
-        +userattrs(19px)
-        background:
-          image: url(%%BarModerator%%)
+        +userattrs(-5px)
       a:nth-child(2)
       a:nth-child(4)
+      a:nth-child(6)
+      a:nth-child(8)
+      a:nth-child(10)
 div.thing.comment
   p.tagline
     +RES-attrs
     span.userattrs
       font:
         size: 0px
+      a.admin
+        +userattrs(-20px)
+      a.cakeday
+        +userattrs(-15px)
       a.friend
-        +userattrs(17px)
-        background:
-          image: url(%%BarFriend%%)
+        +userattrs(0)
       a.moderator
-        +userattrs(17px)
-        background:
-          image: url(%%BarModerator%%)
+        +userattrs(-5px)
       a.submitter
-        +userattrs(17px)
-        background:
-          image: url(%%BarSubmitter%%)
+        +userattrs(-10px)
+      span.alum
+        +userattrs(-25px)
       a:nth-child(2)
       a:nth-child(4)
       a:nth-child(6)
+      a:nth-child(8)
+      a:nth-child(10)
+      a:nth-child(12)

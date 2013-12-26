@@ -3,11 +3,29 @@ span.subcribe-button
   color: $white !important
   a.option
     background:
-      color: transparent
+      image: none
     border:
-      radius: 4px
-      width: 0px
+      radius: 0
+      style: none
     color: $white !important
+    &.add
+      background:
+        color: $green
+    &.remove
+      background:
+        color: $red
+span.RESshortcut.RESshortcutside,
+span.REStoggle.RESDashboardToggle
+  background:
+    color: $green
+    image: none
+  border:
+    radius: none
+    style: none
+  color: $white !important
+  &.remove
+    background:
+      color: $red
 span.subscribers
   font-size: 11px !important
   span.word
