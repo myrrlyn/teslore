@@ -2,17 +2,18 @@
 span.flair
   background:
     color: transparent
-    image: url(%%FlairSheet%%)
+    image: $FlairSheet
   border:
+    radius: 0
     style: none
-    radius: 0px
-    width: 0px
   display: inline-block
   height: 30px
   margin:
-    top: 0px
-    right: 0px
-  padding: 0px
+    top: 0
+    right: 0
+  padding: 0
+  position: relative
+  left: 15px                // This is for moving span.userattrs to the left of the flag
   text-indent: -9999px
   vertical-align: middle
   width: 50px

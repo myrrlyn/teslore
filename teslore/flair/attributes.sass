@@ -14,15 +14,20 @@
   background:
     image: url(%%userattrs%%)
     position: $pos 0
-  height: 30px
+  padding:
+    top: 17px
+    left: 0px
+    right: 5px
+    bottom: 11px
   position: relative
-  width: 5px
 div.thing.link
   p.tagline
     +RES-attrs
     span.userattrs
       font:
         size: 0px
+      position: relative
+      top: -1px
       a.admin
         +userattrs(-20px)
       a.alum
@@ -33,11 +38,16 @@ div.thing.link
         +userattrs(0)
       a.moderator
         +userattrs(-5px)
-      a:nth-child(2)
-      a:nth-child(4)
-      a:nth-child(6)
-      a:nth-child(8)
-      a:nth-child(10)
+      :nth-child(2)
+        right: 3px
+      :nth-child(4)
+        right: 13px
+      :nth-child(6)
+        right: 23px
+      :nth-child(8)
+        right: 33px
+      :nth-child(10)
+        right: 43px
 div.thing.comment
   p.tagline
     +RES-attrs
@@ -49,16 +59,22 @@ div.thing.comment
       a.cakeday
         +userattrs(-15px)
       a.friend
-        +userattrs(0)
+        +userattrs(17px,0)
       a.moderator
         +userattrs(-5px)
       a.submitter
         +userattrs(-10px)
       span.alum
         +userattrs(-25px)
-      a:nth-child(2)
-      a:nth-child(4)
-      a:nth-child(6)
-      a:nth-child(8)
-      a:nth-child(10)
-      a:nth-child(12)
+      :nth-child(2)
+        right: 3px
+      :nth-child(4)
+        right: 13px
+      :nth-child(6)
+        right: 23px
+      :nth-child(8)
+        right: 33px
+      :nth-child(10)
+        right: 43px
+      :nth-child(12)
+        right: 53px
