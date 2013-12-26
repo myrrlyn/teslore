@@ -28,6 +28,7 @@ div.thing.link
         size: 0px
       position: relative
       top: -1px
+      right: 35px
       a.admin
         +userattrs(-20px)
       a.alum
@@ -38,15 +39,15 @@ div.thing.link
         +userattrs(0)
       a.moderator
         +userattrs(-5px)
-      :nth-child(2)
+      *:nth-child(2)
         right: 3px
-      :nth-child(4)
+      *:nth-child(4)
         right: 13px
-      :nth-child(6)
+      *:nth-child(6)
         right: 23px
-      :nth-child(8)
+      *:nth-child(8)
         right: 33px
-      :nth-child(10)
+      *:nth-child(10)
         right: 43px
 div.thing.comment
   p.tagline
@@ -54,27 +55,29 @@ div.thing.comment
     span.userattrs
       font:
         size: 0px
+      position: relative
+      right: 35px
       a.admin
         +userattrs(-20px)
       a.cakeday
         +userattrs(-15px)
       a.friend
-        +userattrs(17px,0)
+        +userattrs(0)
       a.moderator
         +userattrs(-5px)
       a.submitter
         +userattrs(-10px)
       span.alum
         +userattrs(-25px)
-      :nth-child(2)
+      *:nth-child(2)
         right: 3px
-      :nth-child(4)
+      *:nth-child(4)
         right: 13px
-      :nth-child(6)
+      *:nth-child(6)
         right: 23px
-      :nth-child(8)
+      *:nth-child(8)
         right: 33px
-      :nth-child(10)
+      *:nth-child(10)
         right: 43px
-      :nth-child(12)
+      *:nth-child(12)
         right: 53px
