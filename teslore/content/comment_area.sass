@@ -1,137 +1,82 @@
-/* content/comment_area */
-div.commentarea
-  div.panestack-title
-    border:
-      bottom: 1px solid lighten($black,15%)
-    span.panestack-title
-      color: $black
-    span#REScommentSubToggle.RESSubscriptionButton
-      background:
-        color: transparent
-        image: $T3
+/* /content/comment_area/ */
+div.content
+  div.commentarea
+    div.panestack-title
       border:
-        color: lighten($black,15%%)
-        style: solid
-        radius: 0
-        width: 1px
-      color: $brown
-      &:hover
+        bottom: 1px solid lighten($black,15%)
+      span.panestack-title
+        color: $black
+      span#REScommentSubToggle.RESSubscriptionButton
         background:
-          color: $white
+          color: transparent
+          image: $T3
+        border:
+          color: lighten($black,15%%)
+          style: solid
+          radius: 0
+          width: 1px
         color: $brown
-  div.menuarea
-    color: $brown
-    div.dropdown
-      span.selected
-        color: $brown
-    div.drop-choices
-      background:
-        color: $white
-      form
-        a.choice
+        &:hover
+          background:
+            color: $white
           color: $brown
-  form
-    div.usertext-edit
-      div
-        textarea
-          background:
-            image: url(%%commentbox%%)
-            position: 0px 0px
-            repeat: no-repeat
-          color: $black
-          height: 100px !important
-          width: 500px !important
-          &:focus
-            background:
-              position: 0px -100px
-            color: $black
-      div.RESDialogSmall.livePreview
-        h3
-          background:
-            image: $texture
-          color: $white
-        div.md.RESDialogContents
-          background:
-            color: $white !important
-            image: none
-          color: $black !important
-  div.thing.comment
-    +arrows
-    border:
-      radius: 0 !important
-      style: none !important
-    margin:
-      left: 0px !important
-    padding:
-      left: 10px
-      right: 30px
-      bottom: 10px
-    div.entry
-      div.usertext-body
-        div.md
-          +links
-      &.RES-keyNav-activeElement
-        background:
-          image: $T0 !important
-        div.noncollapsed
-          background:
-            image: $T0 !important
-          div.md
-            background:
-              image: $T0 !important
-    div.collapsed
+    div.menuarea
       color: $brown
-      a
-        color: $brown
-div.sitetable
-  div.thing.comment:nth-child(4n+1)
-    background:
-      color: transparent !important
-      image: $T1 !important
-    div.thing.comment
-      background:
-        color: transparent !important
-        image: $T3 !important
-      div.thing.comment
+      div.dropdown
+        span.selected
+          color: $brown
+      div.drop-choices
         background:
-          color: transparent !important
-          image: $T2 !important
-        div.thing.comment
-          background:
-            color: transparent !important
-            image: $T3 !important
-          div.thing.comment
+          color: $white
+        form
+          a.choice
+            color: $brown
+    form                                                  // Comment entry
+      div.usertext-edit
+        div
+          textarea
             background:
-              color: transparent !important
-              image: $T1 !important
-            div.thing.comment
+              image: url(%%commentbox%%)
+              position: 0px 0px
+              repeat: no-repeat
+            color: $black
+            height: 100px !important
+            width: 500px !important
+            &:focus
               background:
-                color: transparent !important
-                image: $T3 !important
-              div.thing.comment
-                background:
-                  color: transparent !important
-                  image: $T2 !important
-                div.thing.comment
-                  background:
-                    color: transparent !important
-                    image: $T3 !important
-                  div.thing.comment
-                    background:
-                      color: transparent !important
-                      image: $T1 !important
-                    div.thing.comment
-                      background:
-                        color: transparent !important
-                        image: $T3 !important
-  div.thing.comment:nth-child(4n-1)
-    background:
-      color: transparent !important
-      image: $T2 !important
+                position: 0px -100px
+              color: $black
+        div.RESDialogSmall.livePreview
+          div.md.RESDialogContents
+            background:
+              color: $white !important
+              image: none
+            color: $black !important
     div.thing.comment
+      +arrows
+      border:
+        radius: 0 !important
+        style: none !important
+      margin:
+        left: 0px !important
+      padding:
+        left: 10px
+        right: 30px
+        bottom: 10px
+      div.entry
+        div.usertext-body
+          div.md
+            +links
+            +expando-buttons
+      div.collapsed
+        color: $brown
+        a
+          color: $brown
+  div.sitetable
+    div.thing.comment:nth-child(4n+1)                     // reddit neglects to provide odd and even classes as links have, and there is a div.clearleft between every comment
       background:
         color: transparent !important
-        image: $T4 !important
+        image: $T1 !important
       div.thing.comment
         background:
           color: transparent !important
@@ -139,15 +84,15 @@ div.sitetable
         div.thing.comment
           background:
             color: transparent !important
-            image: $T4 !important
+            image: $T2 !important
           div.thing.comment
             background:
               color: transparent !important
-              image: $T2 !important
+              image: $T3 !important
             div.thing.comment
               background:
                 color: transparent !important
-                image: $T4 !important
+                image: $T1 !important
               div.thing.comment
                 background:
                   color: transparent !important
@@ -155,23 +100,67 @@ div.sitetable
                 div.thing.comment
                   background:
                     color: transparent !important
-                    image: $T4 !important
+                    image: $T2 !important
                   div.thing.comment
                     background:
                       color: transparent !important
-                      image: $T2 !important
+                      image: $T3 !important
                     div.thing.comment
                       background:
                         color: transparent !important
-                        image: $T4 !important
-span.deepthread
-  +links
-  &:after
-    background:
-      image: $Arrows
-      position: 0 -40px
-    content: ""
-    height: 10px
-    width: 20px
-    position: relative
-    top: 1px
+                        image: $T1 !important
+                      div.thing.comment
+                        background:
+                          color: transparent !important
+                          image: $T3 !important
+    div.thing.comment:nth-child(4n-1)
+      background:
+        color: transparent !important
+        image: $T2 !important
+      div.thing.comment
+        background:
+          color: transparent !important
+          image: $T4 !important
+        div.thing.comment
+          background:
+            color: transparent !important
+            image: $T3 !important
+          div.thing.comment
+            background:
+              color: transparent !important
+              image: $T4 !important
+            div.thing.comment
+              background:
+                color: transparent !important
+                image: $T2 !important
+              div.thing.comment
+                background:
+                  color: transparent !important
+                  image: $T4 !important
+                div.thing.comment
+                  background:
+                    color: transparent !important
+                    image: $T3 !important
+                  div.thing.comment
+                    background:
+                      color: transparent !important
+                      image: $T4 !important
+                    div.thing.comment
+                      background:
+                        color: transparent !important
+                        image: $T2 !important
+                      div.thing.comment
+                        background:
+                          color: transparent !important
+                          image: $T4 !important
+  span.deepthread                                         // Continue Reading link at the tenth generation.
+    +links
+    &:after
+      background:
+        image: $arrows
+        position: 0 -40px
+      content: ""
+      height: 10px
+      width: 20px
+      position: relative
+      top: 1px

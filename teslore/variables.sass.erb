@@ -14,34 +14,34 @@ $red-desat:   #7F1F1F
 $white:       #F4F4F4
 
 // Font Kit
-$code-set: "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace
-$sans-serif-set: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif
-$serif-set: "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", "Goudy Old Style", serif
+$code-set:        "Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace
+$sans-serif-set:  "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif
+$serif-set:       "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", "Goudy Old Style", serif
 
 // Wiki Variables
 $wiki-banner: url(%%BannerWiki%%)
 $wiki-size: 13px
 
 // Textures Used
-$Arrows:      url(%%Arrows%%)             // Vote and Expando Arrows
-$banner:      url(%%Banner%%)             // Header Banner
-$FlairSheet:  url(%%FlairStandard%%)      // Flair List
-$logo:        url(%%Snoos%%)              // reddit.com link and logo
-$name:        url(%%Realms%%)             // /r/teslore link and logo
-$texture:     url(%%DarkTex%%)            // 
-$T0:          url(%%pixel-of-RES%%)       // 
-$T1:          url(%%pixel-of-darkness%%)  // 
-$T2:          url(%%pixel-of-truth%%)     // 
-$T3:          url(%%pixel-of-valor%%)     // 
-$T4:          url(%%pixel-of-light%%)     // 
+$arrows:      url(%%Arrows%%)                             // Vote and Expando Arrows
+$banner:      url(%%Banner%%)                             // Header Banner
+$FlairSheet:  url(%%FlairStandard%%)                      // Flair List
+$logo:        url(%%Snoos%%)                              // reddit.com link and logo
+$name:        url(%%Realms%%)                             // /r/teslore link and logo
+$texture:     url(%%DarkTex%%)                            // so far we just have one texture
+$T0:          url(%%pixel-of-RES%%)                       // until honestbleeps makes RES more useful, this is needed
+$T1:          url(%%pixel-of-darkness%%)                  // SAC named these
+$T2:          url(%%pixel-of-truth%%)                     // 
+$T3:          url(%%pixel-of-valor%%)                     // 
+$T4:          url(%%pixel-of-light%%)                     // 
 
 // Header Image Information
-$tabmenuheight: 28px                            // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
-$bannerheight: 64px                             // Height of banner image
-$headerheight: $bannerheight+ $tabmenuheight    // Total height of div#header-banner-left
-$logoheight: 60px                               // Height of reddit logo
-$logowidth: 214px                               // Width of reddit logo
-$logooffset: $bannerheight - $logoheight - 4px  // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
+$tabmenuheight: 28px                                      // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
+$bannerheight:  64px                                      // Height of banner image
+$headerheight:  $bannerheight+ $tabmenuheight             // Total height of div#header-banner-left
+$logoheight:    60px                                      // Height of reddit logo
+$logowidth:     214px                                     // Width of reddit logo
+$logooffset:    $bannerheight - $logoheight - 4px         // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
 
 // Versioning Information
 $build_version: "<%= $build[:version] %>"
@@ -53,24 +53,18 @@ $build_hash_long: "<%= $build[:hash] %>"
 $build_branch: "<%= $build[:branch] %>"
 
 // Mixins
-
-// Submit, Create Subreddit buttons
-=create
+=create                                                   // Submit, Create Subreddit buttons
   background:
     color: $black !important
     image: none !important
   border:
     style: none
-    width: 0px
   height: 29px
   width: 300px
   vertical-align: middle
-  z-index: 20
   div.nub
     display: none !important
-
-//Subset of Create mixin
-=create-link
+=create-link                                              //Subset of Create mixin
   background
     color: $black
   color: $white
@@ -82,29 +76,26 @@ $build_branch: "<%= $build[:branch] %>"
   text:
     align: center
     transform: uppercase
-
-// Link Formatting
-=links
+=links                                                    // Link Formatting
   a
     color: $red
-  a:hover
-    text-decoration: underline
-  a:visited
-    color: $red-desat
-
-// Vote Arrows
-=arrows
+    &:hover
+      text:
+        decoration: underline
+    &:visited
+      color: $red-desat
+=arrows                                                   // Vote Arrows
   div.arrow
     background:
-      image: $Arrows
+      image: $arrows
     height: 14px
     width: 15px
     &.up
       background:
-        position: 0px 0px
+        position: 0 0
     &.down
       background:
-        position: 0px -15px
+        position: 0 -15px
       display: none !important
     &.upmod
       background:
@@ -112,42 +103,23 @@ $build_branch: "<%= $build[:branch] %>"
     &.downmod
       background:
         position: -15px -15px
-
-// Only a mixin because RES is a whore
-=expando-buttons
-  div.expando-button
+=expando-buttons                                          // Only a mixin because RES is a whore
+  *.expando-button
     background:
       color: transparent
-      image: $Arrows
-    height: 20px
-    width: 16px
-    &.collapsed
-      background:
-        position: -30px 0px
-      &:hover
-        background:
-          position: -30px -20px
-    &.expanded
-      background:
-        position: -46px -0px
-      &:hover
-        background:
-          position: -46px -20px
-  a.expando-button
-    background:
-      color: transparent
-      image: $Arrows
+      image: $arrows
+    margin: 0
     height: 20px
     width: 16px
     &.collapsedExpando
       background:
-        position: -30px 0px
+        position: -30px 0
       &:hover
         background:
           position: -30px -20px
     &.expanded
       background:
-        position: -46px 0px
+        position: -46px 0
       &:hover
         background:
           position: -46px -20px

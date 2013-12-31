@@ -1,10 +1,11 @@
-/* notification/removal */
+/* /notification/removal/ */
 div.content
   div.commentarea
     div.thing.comment
       p.tagline
-        a.expand + em
-          font-size: 0px
+        a.expand + em                                     // Former a.author field
+          font:
+            size: 0
           &:after
             background:
               color: $black
@@ -20,7 +21,7 @@ div.content
               left: 2px
               right: 2px
               bottom: 2px
-      div.usertext.grayed
+      div.usertext.grayed                                 // Former text field
         padding:
           top: 4px
         div.usertext-body

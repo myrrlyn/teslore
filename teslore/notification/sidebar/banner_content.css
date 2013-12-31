@@ -1,7 +1,11 @@
-/* notification/sidebar/banner_content */
+/* /notification/sidebar/banner_content/ */
 /*!
   @banner {
     "banners": {
+      "ayrenn": {
+        "url": "%%BannerAyrenn%%",
+        "author": "http://theminttu.deviantart.com"
+      },
       "prophet": {
         "url": "%%BannerProphet%%",
         "author": "http://ladynerevar.tumblr.com"
@@ -13,7 +17,8 @@
     }
   }
 */
-div.side a[href$="#banner"]:after {
+div.side a[href$="#banner"]:after
+{
   content: "";
 }
 /*! @end */

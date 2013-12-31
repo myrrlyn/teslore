@@ -1,8 +1,8 @@
-/* flair */
+/* /flair/ */
 span.flair
   background:
     color: transparent
-    image: $FlairSheet      // Change in /variables, not here.
+    image: $FlairSheet                                    // Change in variables.sass.erb, not here.
   border:
     radius: 0
     style: none
@@ -10,14 +10,13 @@ span.flair
   height: 30px
   margin:
     top: 0
-    right: 15px             // This pushes the subsequent items so that it does not appear to overlap.
+    right: 15px                                           // This pushes the subsequent items so that it does not appear to overlap.
   padding: 0
   position: relative
-  left: 15px                // This is for moving span.userattrs to the left of the flag
+  left: 15px                                              // This is for moving span.userattrs to the left of the flag
   text-indent: -9999px
   vertical-align: middle
   width: 50px
-  z-index: 100
 @import "flair/public"
 @import "flair/private"
 @import "flair/attributes"

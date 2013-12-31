@@ -1,4 +1,4 @@
-/* RES */
+/* /RES/ */
 =RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
   span
     border:
@@ -8,59 +8,52 @@
       width: 1px
   span.toggleOn
     background:
-      color: $on-unset // When switch is DISABLED, toggleOn is unset
+      color: $on-unset                                    // When switch is DISABLED, toggleOn is UNSET
     color: $unset-color
   span.toggleOff
     background:
-      color: $off-set // When switch is DISABLED, toggleOff is set
+      color: $off-set                                     // When switch is DISABLED, toggleOff is SET
     color: $set-color
   &.enabled
     span.toggleOn
       background:
-        color: $on-set // When switch is ENABLED, toggleOn is set
+        color: $on-set                                    // When switch is ENABLED, toggleOn is SET
       color: $set-color
     span.toggleOff
       background:
-        color: $off-unset // When switch is ENABLED, toggleOff is unset
+        color: $off-unset                                 // When switch is ENABLED, toggleOff is UNSET
       color: $unset-color
 div.content
   div.thing
-    p.tagline
-      a.author.friend,
-      a.author.moderator,
-      a.author.submitter
+    div.entry.RES-keyNav-activeElement                    // RES keyboard navigation
+      background:
+        image: $T0 !important
+      div.noncollapsed                                    // requires all of the selectors
         background:
-          color: transparent !important
-        border:
-          radius: 0px
-        color: $black !important
+          image: $T0 !important
+        div.usertext-body                                 // for some reason.
+          background:
+            image: $T0 !important
+          div.md
+            background:
+              image: $T0 !important
+    p.tagline
+      span.RESUserTag
+        a.userTagLink.hasTag
+          border:
+            radius: 0
+            style: none
       a.voteWeight
         background:
           color: transparent !important
         color: $black !important
-  div.thing.link
-    div.entry.RES-keyNav-activeElement
-      background:
-        image: $T0
-      div.noncollapsed
-        background:
-          image: $T0
-        form.usertext
-          background:
-            image: $T0
-          div.usertext-body
-            background:
-              image: $T0
-            div.md
-              background:
-                image: $T0
-div.NERPageMarker
+div.NERPageMarker                                         // RES Neverending reddit page markers
   background:
     color: transparent
     image: $T4
   color: $black
   width: 80%
-div#progressIndicator
+div#progressIndicator                                     // NER loading
   background:
     color: transparent
     image: $T4
@@ -78,7 +71,7 @@ div#progressIndicator
       color: $red
       &:hover
         text-decoration: underline
-.RESCloseButton
+*.RESCloseButton                                          // Close button on RES windows
   background:
     color: $red !important
   border:
@@ -87,7 +80,16 @@ div#progressIndicator
     style: solid !important
     width: 1px !important
   color: $white !important
-.RESDialogSmall
+*.RESDropdownList                                         // Common RES list class
+  background:
+    color: transparent
+    image: $texture
+  border:
+    color: $white !important
+    style: solid
+    radius: 0px
+    width: 1px
+*.RESDialogSmall                                          // Common RES presentation class
   background:
     color: $white
   border:
@@ -146,13 +148,8 @@ div#progressIndicator
         background:
           color: $white
         color: $black
-p.tagline
-  span.RESUserTag
-    a.userTagLink.hasTag
-      border:
-        radius: 4px
-        style: none
-@import "RES/userbar"
+@import "RES/editor"
 @import "RES/nightmode"
 @import "RES/settings_window"
-@import "RES/editor"
+@import "RES/tagger"
+@import "RES/userbar"

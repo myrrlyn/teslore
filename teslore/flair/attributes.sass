@@ -1,15 +1,4 @@
-/* flair/attributes */
-=RES-attrs
-  a.author.admin,
-  a.author.alum,
-  a.author.friend,
-  a.author.moderator,
-  a.author.submitter
-    background:
-      color: transparent !important
-    border:
-      radius: 0px
-    color: $black !important
+/* /flair/attributes/ */
 =userattrs($pos)
   background:
     image: url(%%userattrs%%)
@@ -20,76 +9,42 @@
     right: 5px
     bottom: 11px
   position: relative
-div.thing.link
+div.thing
   p.tagline
-    +RES-attrs
     span.userattrs
       font:
         size: 0px
       position: relative
       right: 50px
       top: -1px
-      a.admin
+      a.admin                                             // official submission by reddit administrators
         +userattrs(-20px)
-      a.alum
+      span.alum                                           // former reddit staff
         +userattrs(-25px)
-      a.cakeday
+      a.cakeday                                           // account birthday
         +userattrs(-15px)
         height: 0
         width: 0
-      a.friend
+        top: -3px
+      a.friend                                            // friend
         +userattrs(0)
-      a.moderator
+      a.moderator                                         // official submission by moderators
         +userattrs(-5px)
-      *:nth-child(1)
-        right: 3px
-      *:nth-child(2)
-        right: 13px
-      *:nth-child(3)
-        right: 23px
-      *:nth-child(4)
-        right: 33px
-      *:nth-child(5)
-        right: 43px
-    a.author + span.userattrs,
-    a.voteWeight + span.userattrs
-      margin-right: 10px
-      right: -10px
-div.thing.comment
-  p.tagline
-    +RES-attrs
-    span.userattrs
-      font:
-        size: 0px
-      position: relative
-      right: 50px
-      a.admin
-        +userattrs(-20px)
-      a.cakeday
-        +userattrs(-15px)
-        height: 0
-        width: 0
-      a.friend
-        +userattrs(0)
-      a.moderator
-        +userattrs(-5px)
-      a.submitter
+      a.submitter                                         // thread submitter (only visible on comments)
         +userattrs(-10px)
-      span.alum
-        +userattrs(-25px)
-      *:nth-child(1)
+      *:nth-child(1)                                      // typically submitter, though friend and moderator are also common, and cakeday too
         right: 3px
-      *:nth-child(2)
+      *:nth-child(2)                                      // combination
         right: 13px
-      *:nth-child(3)
+      *:nth-child(3)                                      // supercombination
         right: 23px
-      *:nth-child(4)
+      *:nth-child(4)                                      // befriended a moderator speaking officially in one of their posts on their cakeday
         right: 33px
-      *:nth-child(5)
+      *:nth-child(5)                                      // If an admin is also a moderator, can they apply both classes with 'distinguish'? If not, this is overkill.
         right: 43px
-      *:nth-child(6)
+      *:nth-child(6)                                      // If admin and alum are mutually exclusive, this is certainly needless.
         right: 53px
     a.author + span.userattrs,
-    a.voteWeight + span.userattrs
+    a.voteWeight + span.userattrs                         // If a user lacks flair, this triggers to keep the attributes from being placed wrongly.
       margin-right: 10px
       right: -10px

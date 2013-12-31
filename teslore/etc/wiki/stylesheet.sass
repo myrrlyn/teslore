@@ -1,36 +1,38 @@
-/* etc/wiki/stylesheet */
-pre.subreddit-stylesheet-source
-  background:
-    color: $black
-  font:
-    family: $code-set
-  code.language-css
-    span.attribute
-      color: lighten($green, 20%)
-    span.attr_selector
-      color: $grey
-    span.class
-      color: $red
-    span.comment
-      color: $grey
-      margin:
-        left: 0px
-    span.hexcolor
-      color: $gold
-    span.id
-      color: #00D0FF
-    span.important
-      color: #FF0000
-    span.number
-      color: $gold
-    span.pseudo
-      color: #FF8000
-    span.rule,
-    span.rules
-      color: #FFFF00
-    span.string
-      color: $white
-    span.tag
-      color: #00FF00
-    span.value
-      color: $white
+/* /etc/wiki/stylesheet/ */
+body.wiki-page
+  div.wiki-page-content
+    pre.subreddit-stylesheet-source                       // /r/teslore/w/config/stylesheet/ printout
+      background:
+        color: $black
+      font:
+        family: $code-set
+      code.language-css
+        span.attribute                                    // attributes:                                        
+          color: lighten($green, 20%)
+        span.attr_selector                                // [custom selection methods]
+          color: $grey
+        span.class                                        // .class
+          color: $red
+        span.comment                                      // /*comments*/
+          color: $grey
+          margin:
+            left: 0px
+        span.hexcolor                                     // Color codes in #hex
+          color: $gold
+        span.id                                           // #id
+          color: #00D0FF
+        span.important                                    // !important things
+          color: #FF0000
+        span.number                                       // plain numbers
+          color: $gold
+        span.pseudo                                       // :pseudoselectors
+          color: #FF8000
+        span.rule,                                        // { rules: listing; }
+        span.rules
+          color: #FFFF00
+        span.string                                       // plaintext
+          color: $white
+        span.tag                                          // HTML element
+          color: #00FF00
+        span.value                                        // values; of attributes
+          color: $white

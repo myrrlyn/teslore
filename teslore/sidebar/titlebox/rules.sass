@@ -1,47 +1,49 @@
-/* sidebar/titlebox/rules */
-div.usertext-body
-  div.md
-    h1
-      & + table
-        display: block
-        margin:
-          left: 0px
-        thead
-          display: none
-        tbody
-          tr
-            display: list-item
-            width: 288px
-            td
-              display: block
-              border: none
-              &:first-child
-                background:
-                  image: $T3
-                border:
-                  color: $black / 2
-                  style: solid
-                  width: 1px
-                color: $black
-                font:
-                  weight: 500
-                padding: 5px
-                &:hover,
-                &:active
-                  background:
-                    image: $T4
-              &:last-child
-                background:
-                  color: $black
-                border:
-                  top: 0px
-                color: $white
-                display: none
-                padding: 5px
-            &:hover,
-            &:active
-              td:first-child
-                background:
-                  image: $T4
-              td:last-child
-                display: block
+/* /sidebar/titlebox/rules/ */
+div.side
+  div.titlebox
+    div.usertext-body
+      div.md
+        h1
+          & + table
+            display: block
+            margin:
+              left: 0px
+            thead
+              display: none                               // The rules layout in the sidebar doesn't need a THead
+            tbody
+              tr
+                display: list-item                        // Makes rows run vertically 1,1->1,2->2,1->2,2 etc.
+                width: 288px
+                td
+                  display: block
+                  border: none
+                  &:first-child                           // Parent, always visible
+                    background:
+                      image: $T3
+                    border:
+                      color: $black / 2
+                      style: solid
+                      width: 1px
+                    color: $black
+                    font:
+                      weight: 500
+                    padding: 5px
+                    &:hover,
+                    &:active
+                      background:
+                        image: $T4
+                  &:last-child                            // Child, selectively visible
+                    background:
+                      color: $black
+                    border:
+                      top: 0px
+                    color: $white
+                    display: none
+                    padding: 5px
+                &:hover,                                  // Hovering over the ROW triggers visibility
+                &:active                                  // Cover or expanded cells both work.
+                  td:first-child
+                    background:
+                      image: $T4
+                  td:last-child
+                    display: block

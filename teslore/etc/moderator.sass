@@ -1,4 +1,5 @@
-/* etc/moderator */
+/* /etc/moderator/ */
+a.author.id-t1_69xg4[href*="/StarvedAfricanChild"],
 a.author.id-t2_69xg4[href*="/StarvedAfricanChild"]
   font-size: 0px
   &:after
@@ -6,7 +7,7 @@ a.author.id-t2_69xg4[href*="/StarvedAfricanChild"]
     font-size: 10px !important
     color: $black !important
 div.side
-  div#moderation_tools
+  div#moderation_tools                                    // Moderator tools in sidebar
     div.title
       h1
         padding-left: 5px
@@ -16,15 +17,11 @@ div.side
         color: $black !important
     ul.content
       li
-        ul.flat-vert.icon-menu.hover
+        ul.flat-vert.icon-menu.hover                      // I have no idea why this does this
           li
             a
               background-color: transparent !important
               color: $white
-body.moderator
-  div.content
-    button
-      color: $black
-    @import etc/moderator/settings/
-    @import etc/moderator/flair/
-    @import etc/moderator/stylesheet
+@import "etc/moderator/settings"
+@import "etc/moderator/flair"
+@import "etc/moderator/stylesheet"

@@ -1,37 +1,34 @@
-/* content/post */
-div.entry
-  p.title
-    a.title
-      color: $black
+/* /content/post/ */
+div.content
+  div.thing.link
+    div.entry
+      p.title
+        a.title
+          color: $black
+          font:
+            family: $sans-serif-set
+            size: 18px !important
+          &:visited
+            color: $black-desat
+    span.domain
+      display: none !important
+    p.tagline
+      color: $brown
       font:
-        family: $sans-serif-set
-        size: 18px !important
-      &:visited
-        color: $black-desat
-&.stickied
-  div.entry
-    p.title
-      a.title
-        color: $green
-span.domain
-  display: none !important
-p.tagline
-  color: $brown
-  font:
-    size: 12px
-  span
-    span.res_post_ups
-      color: $orange
-    span.res_post_downs
-      color: $blue
-div.expando
-  div.usertext-body
-    div.md
-      background:
-        color: $white
-      border:
-        color: $black
-        radius: 16px
-        style: solid
-        width: 1px
-      max-width: 75em !important
+        size: 12px
+      span
+        span.res_post_ups
+          color: $orange
+        span.res_post_downs
+          color: $blue
+    div.expando
+      div.usertext-body
+        div.md
+          background:
+            color: $white
+          border:
+            color: $black
+            radius: 16px
+            style: solid
+            width: 1px
+          max-width: 75em !important

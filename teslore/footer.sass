@@ -1,8 +1,7 @@
-/* footer */
+/* /footer/ */
 div.footer-parent
-  padding-top: 0px
-  a
-    +links
+  padding-top: 0
+  +links
   div.footer.rounded
     border:
       color: $black
@@ -10,17 +9,18 @@ div.footer-parent
       width: 1px
     div.col
       border:
-        color: $black
-        left: 1px
-        left-style: solid
+        left: 1px solid $black
       &:first-child
-        border: 0px none
+        border:
+          style: none
       ul.flat-vert.hover
         li.flat-vert.title
           color: $black
-          font-family: $sans-serif-set
-        li a
-          color: $red
+          font:
+            family: $sans-serif-set
+        li
+          a
+            color: $red
   p.bottommenu
     +links
     color: $black
@@ -28,11 +28,11 @@ div.footer-parent
       family: $sans-serif-set
 p.debuginfo
   span.icon
-    background-image: url(%%teslorecouncilsmallest%%) /*change pi to Septim Dragon*/
-    font-size: 0px
+    background-image: url(%%teslorecouncilsmallest%%)     // change pi to Septim Dragon
+    font-size: 0
     padding:
       top: 10px
-      left: 0px
+      left: 0
       right: 9px
       bottom: 5px
   span.content
@@ -42,7 +42,7 @@ p.debuginfo
       size: 10px
     a.buygold
       font:
-        size: 0px
+        size: 0
       &:after
         content: "TalOS"
         font:

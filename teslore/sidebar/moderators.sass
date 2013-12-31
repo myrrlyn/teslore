@@ -1,38 +1,40 @@
-/* sidebar/moderators */
-div.sidecontentbox
-  a.helplink
-    color: $white
-    position: relative
-    top: -1px
-    & + div.title
-      margin:
-        bottom: -11px !important
-      h1
-        font:
-          size: 0px
-        &:before
-          content: "ELDER COUNCIL"
-          color: $white
-          display: block
+/* /sidebar/moderators/ */
+div.side
+  div.sidecontentbox
+    a.helplink
+      color: $white
+      position: relative
+      top: -1px
+      & + div.title
+        margin:
+          bottom: -11px !important
+        h1
           font:
-            size: 13px
-  ul.content
-    li
-      a.author
-        & + span.RESUserTag
+            size: 0px
+          &:before
+            content: "ELDER COUNCIL"
+            color: $white
+            display: block
+            font:
+              size: 13px
+    ul.content
+      li
+        a.author
+          color: $white !important
+        span.RESUserTag
           display: none !important
-      a.voteWeight
-        color: $grey
-      span.flair
-        left: 0
-      a.author[href*="/Dreamsleeve"],
-      a.author[href*="/AkatoshBot"]
-        display: none !important
-        & + span.RESUserTag
+        a.voteWeight
+          display: none
+        span.flair
+          left: 0
+        span.userattrs
+          display: none
+        a.author[href*="/AkatoshBot"],
+        a.author[href*="/Dreamsleeve"]
           display: none !important
-          & + a.voteWeight
-            display: none !important
-            & + span.flair
-              display: none !important
-              & + span.userattrs
+          & + span.RESUserTag
+            & + a.voteWeight
+              & + span.flair
                 display: none !important
+          & + span.flair
+            display: none

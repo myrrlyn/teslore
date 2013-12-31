@@ -1,56 +1,58 @@
-/* sidebar/titlebox/controls */
-span.subscribe-button.fancy-toggle-button
-  color: $white !important
-  a.option.active
-    background:
-      image: none
-    border:
-      radius: 0
-      style: none
-    color: $white !important
-    &.add
+/* /sidebar/titlebox/controls/ */
+div.side
+  div.titlebox
+    span.subscribe-button.fancy-toggle-button
+      color: $white !important
+      a.option.active
+        background:
+          image: none
+        border:
+          radius: 0
+          style: none
+        color: $white !important
+        &.add
+          background:
+            color: $green
+        &.remove
+          background:
+            color: $red
+    span.RESshortcut.RESshortcutside,
+    span.REStoggle.RESDashboardToggle
       background:
         color: $green
-    &.remove
+        image: none
+      border:
+        radius: 0
+        style: none
+      color: $white !important
+      &.remove
+        background:
+          color: $red
+    span.subscribers
+      font-size: 11px !important
+      span.word
+        display: none
+      &:after
+        content: " scholars"
+    p.users-online
+      font-size: 11px !important
+      span.word
+        display: none
+      span.number:after
+        content: " scholars present"
+    div.leavemoderator
       background:
-        color: $red
-span.RESshortcut.RESshortcutside,
-span.REStoggle.RESDashboardToggle
-  background:
-    color: $green
-    image: none
-  border:
-    radius: 0
-    style: none
-  color: $white !important
-  &.remove
-    background:
-      color: $red
-span.subscribers
-  font-size: 11px !important
-  span.word
-    display: none
-  &:after
-    content: " scholars"
-p.users-online
-  font-size: 11px !important
-  span.word
-    display: none
-  span.number:after
-    content: " scholars present"
-div.leavemoderator
-  background:
-    color: transparent
-  color: $white
-  font-size: 10px !important
-  a
-    color: $white
-form.toggle
-  background:
-    color: transparent
-  color: $white
-  font-size: 10px !important
-  a
-    color: $white !important
-  label
-    font-size: 10px !important
+        color: transparent
+      color: $white
+      font-size: 10px !important
+      a
+        color: $white
+    form.toggle
+      background:
+        color: transparent
+      color: $white
+      font-size: 10px !important
+      a
+        color: $white !important
+      label
+        font-size: 10px !important
