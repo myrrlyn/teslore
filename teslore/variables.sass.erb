@@ -23,25 +23,25 @@ $wiki-banner: url(%%BannerWiki%%)
 $wiki-size: 13px
 
 // Textures Used
-$arrows:      url(%%Arrows%%)                             // Vote and Expando Arrows
-$banner:      url(%%Banner%%)                             // Header Banner
-$FlairSheet:  url(%%FlairStandard%%)                      // Flair List
-$logo:        url(%%Snoos%%)                              // reddit.com link and logo
-$name:        url(%%Realms%%)                             // /r/teslore link and logo
-$texture:     url(%%DarkTex%%)                            // so far we just have one texture
-$T0:          url(%%pixel-of-RES%%)                       // until honestbleeps makes RES more useful, this is needed
-$T1:          url(%%pixel-of-darkness%%)                  // SAC named these
-$T2:          url(%%pixel-of-truth%%)                     // 
-$T3:          url(%%pixel-of-valor%%)                     // 
-$T4:          url(%%pixel-of-light%%)                     // 
+$arrows:      url(%%Arrows%%)                               // Vote and Expando Arrows
+$banner:      url(%%Banner%%)                               // Header Banner
+$FlairSheet:  url(%%FlairStandard%%)                        // Flair List
+$logo:        url(%%Snoos%%)                                // reddit.com link and logo
+$name:        url(%%Realms%%)                               // /r/teslore link and logo
+$texture:     url(%%DarkTex%%)                              // so far we just have one texture
+$T0:          url(%%pixel-of-RES%%)                         // until honestbleeps makes RES more useful, this is needed
+$T1:          url(%%pixel-of-darkness%%)                    // SAC named these
+$T2:          url(%%pixel-of-truth%%)                       // 
+$T3:          url(%%pixel-of-valor%%)                       // 
+$T4:          url(%%pixel-of-light%%)                       // 
 
 // Header Image Information
-$tabmenuheight: 49px                                      // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
-$bannerheight:  64px                                      // Height of banner image
-$headerheight:  $bannerheight+ $tabmenuheight             // Total height of div#header-banner-left
-$logoheight:    60px                                      // Height of reddit logo
-$logowidth:     214px                                     // Width of reddit logo
-$logooffset:    $bannerheight - $logoheight - 4px         // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
+$tabmenuheight: 49px                                        // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
+$bannerheight:  64px                                        // Height of banner image
+$headerheight:  $bannerheight+ $tabmenuheight               // Total height of div#header-banner-left
+$logoheight:    60px                                        // Height of reddit logo
+$logowidth:     214px                                       // Width of reddit logo
+$logooffset:    $bannerheight - $logoheight - 4px           // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
 
 // Versioning Information
 $build_version: "<%= $build[:version] %>"
@@ -53,7 +53,7 @@ $build_hash_long: "<%= $build[:hash] %>"
 $build_branch: "<%= $build[:branch] %>"
 
 // Mixins
-=create                                                   // Submit, Create Subreddit buttons
+=create                                                     // Submit, Create Subreddit buttons
   background:
     color: $black !important
     image: none !important
@@ -64,7 +64,7 @@ $build_branch: "<%= $build[:branch] %>"
   vertical-align: middle
   div.nub
     display: none !important
-=create-link                                              //Subset of Create mixin
+=create-link                                                //Subset of Create mixin
   background
     color: $black
   color: $white
@@ -76,7 +76,7 @@ $build_branch: "<%= $build[:branch] %>"
   text:
     align: center
     transform: uppercase
-=links                                                    // Link Formatting
+=links                                                      // Link Formatting
   a
     color: $red
     &:hover
@@ -84,7 +84,7 @@ $build_branch: "<%= $build[:branch] %>"
         decoration: underline
     &:visited
       color: $red-desat
-=arrows                                                   // Vote Arrows
+=arrows                                                     // Vote Arrows
   div.arrow
     background:
       image: $arrows
@@ -103,7 +103,7 @@ $build_branch: "<%= $build[:branch] %>"
     &.downmod
       background:
         position: -15px -15px
-=expando-buttons                                          // Only a mixin because RES is a whore
+=expando-buttons                                            // Only a mixin because RES is a whore
   *.expando-button
     background:
       color: transparent
@@ -111,6 +111,7 @@ $build_branch: "<%= $build[:branch] %>"
     margin: 0
     height: 20px
     width: 16px
+    &.collapsed,
     &.collapsedExpando
       background:
         position: -30px 0

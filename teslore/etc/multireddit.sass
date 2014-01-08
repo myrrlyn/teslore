@@ -1,0 +1,38 @@
+div.multi-selector
+  background:
+    color: $white
+  border:
+    style: none
+  &::before
+    border-left-color: $white
+  &::after
+    border-left-color: $white
+  div.title
+    background:
+      color: transparent
+      image: $texture
+    strong
+      color: $red
+      font:
+        family: $sans-serif-set
+        size: 125%
+    a.sr
+      color: $red
+  div.multi-list
+    label
+      input
+      a
+        border:
+          color: $black
+          radius: 7px
+          style: solid
+          width: 1px
+        color: $red
+      form.multi-name
+        input
+          background:
+            color: transparent
+            image: $T4
+          color: $gray
+        div.error
+          color: $red
