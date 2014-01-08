@@ -14,73 +14,73 @@ body.wiki-page
         left: 5px
         right: 5px
         bottom: 0px
-      div.toc                                             // Table of Contents
-        & > ul                                            // ToC children
+      div.toc                                               // Table of Contents
+        & > ul                                              // ToC children
           border:
             color: $black
             style: solid
             radius: 5px
             width: 2px
-          & > li                                          // H1 level listings
-            a                                             // Jump links
+          & > li                                            // H1 level listings
+            a                                               // Jump links
               font:
                 size: $wiki-size + 3px
-          & > ul                                          // H1 children
+          & > ul                                            // H1 children
             border:
               bottom-left-radius: 5px !important
               top: $black none 0px !important
               left: $black solid 1px !important
               right: $black none 0px !important
               bottom: $black solid 1px !important
-            & > li                                        // H2 level listings
-              a                                           // Jump links
+            & > li                                          // H2 level listings
+              a                                             // Jump links
                 font:
                   size: $wiki-size + 3px
-            & > ul                                        // H2 children
+            & > ul                                          // H2 children
               border:
                 bottom-left-radius: 4px !important
                 top: $black none 0px !important
                 left: $black solid 1px !important
                 right: $black none 0px !important
                 bottom: $black solid 1px !important
-              & > li                                      // H3 level listings
-                a                                         // Jump links
+              & > li                                        // H3 level listings
+                a                                           // Jump links
                   font:
                     size: $wiki-size + 2px
-              & > ul                                      // H3 children
+              & > ul                                        // H3 children
                 border:
                   bottom-left-radius: 3px !important
                   top: $black none 0px !important
                   left: $black solid 1px !important
                   right: $black none 0px !important
                   bottom: $black solid 1px !important
-                & > li                                    // H4 level listings
-                  a                                       // Jump links
+                & > li                                      // H4 level listings
+                  a                                         // Jump links
                     font:
                       size: $wiki-size + 2px
-                & > ul                                    // H4 children
+                & > ul                                      // H4 children
                   border:
                     bottom-left-radius: 2px !important
                     top: $black none 0px !important
                     left: $black solid 1px !important
                     right: $black none 0px !important
                     bottom: $black solid 1px !important
-                  & > li                                  // H5 level listings
-                    a                                     // Jump links
+                  & > li                                    // H5 level listings
+                    a                                       // Jump links
                       font:
                         size: $wiki-size + 1px
-                  & > ul                                  // H6 children
+                  & > ul                                    // H6 children
                     border:
                       bottom-left-radius: 1px !important
                       top: $black none 0px !important
                       left: $black solid 1px !important
                       right: $black none 0px !important
                       bottom: $black solid 1px !important
-                    & > li                                // H6 level listings
-                      a                                   // Jump links
+                    & > li                                  // H6 level listings
+                      a                                     // Jump links
                         font:
                           size: $wiki-size + 1px
-      h1                                                  // Text formatting from here out
+      h1                                                    // Text formatting from here out
         color: $black !important
         font:
           family: $sans-serif-set
@@ -142,7 +142,7 @@ body.wiki-page
           size: $wiki-size + 1px
         p
           color: darken($brown, 10%)
-      pre                                                 // Blocked code (separate from inline code)
+      pre                                                   // Blocked code (separate from inline code)
         background:
           color: $white
         padding:
@@ -180,11 +180,11 @@ body.wiki-page
                 color: $black
                 style: solid
                 width: 1px
-      ol                                                  // Numbered list
+      ol                                                    // Numbered list
         li
           font:
             family: $sans-serif-set
-      ul                                                  // Bulleted list
+      ul                                                    // Bulleted list
         li
           font:
             family: $sans-serif-set
