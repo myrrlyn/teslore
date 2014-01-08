@@ -1,5 +1,5 @@
 GIT
-  remote: http://git.stratosphe.re/reddit/akatoshbot.git
+  remote: git@git.stratosphe.re:reddit/akatoshbot.git
   revision: 586f3473f79618e17a441585588ef914fbe6d6bd
   branch: master
   specs:
@@ -7,7 +7,7 @@ GIT
       crassius
 
 GIT
-  remote: http://git.stratosphe.re/reddit/crassius.git
+  remote: git@git.stratosphe.re:reddit/crassius.git
   revision: dfc6acee1c613818e3e3f80f42f834f2c7cea9f0
   branch: master
   specs:
@@ -31,15 +31,15 @@ GEM
     mini_portile (0.5.2)
     multi_json (1.8.2)
     multi_xml (0.5.5)
-    nokogiri (1.6.0)
+    nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     pry (0.9.12.4)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
     rack (1.5.2)
-    rake (10.1.0)
-    sass (3.2.12)
+    rake (10.1.1)
+    sass (3.2.13)
     slop (3.4.7)
     snoo (0.1.2)
       httparty
