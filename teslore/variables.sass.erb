@@ -25,7 +25,6 @@ $wiki-size: 13px
 // Textures Used
 $arrows:      url(%%Arrows%%)                               // Vote and Expando Arrows
 $banner:      url(%%Banner%%)                               // Header Banner
-$calendar:    url(%%Cal4E204%%)                             // Sidebar Calendar Image
 $FlairSheet:  url(%%FlairStandard%%)                        // Flair List
 $logo:        url(%%Snoos%%)                                // reddit.com link and logo
 $name:        url(%%Realms%%)                               // /r/teslore link and logo
@@ -37,7 +36,7 @@ $T3:          url(%%pixel-of-valor%%)                       //
 $T4:          url(%%pixel-of-light%%)                       // 
 
 // Header Image Information
-$tabmenuheight: 28px                                        // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
+$tabmenuheight: 49px                                        // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
 $bannerheight:  64px                                        // Height of banner image
 $headerheight:  $bannerheight+ $tabmenuheight               // Total height of div#header-banner-left
 $logoheight:    60px                                        // Height of reddit logo
@@ -112,6 +111,7 @@ $build_branch: "<%= $build[:branch] %>"
     margin: 0
     height: 20px
     width: 16px
+    &.collapsed,
     &.collapsedExpando
       background:
         position: -30px 0

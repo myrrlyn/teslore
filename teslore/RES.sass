@@ -8,30 +8,30 @@
       width: 1px
   span.toggleOn
     background:
-      color: $on-unset                                    // When switch is DISABLED, toggleOn is UNSET
+      color: $on-unset                                      // When switch is DISABLED, toggleOn is UNSET
     color: $unset-color
   span.toggleOff
     background:
-      color: $off-set                                     // When switch is DISABLED, toggleOff is SET
+      color: $off-set                                       // When switch is DISABLED, toggleOff is SET
     color: $set-color
   &.enabled
     span.toggleOn
       background:
-        color: $on-set                                    // When switch is ENABLED, toggleOn is SET
+        color: $on-set                                      // When switch is ENABLED, toggleOn is SET
       color: $set-color
     span.toggleOff
       background:
-        color: $off-unset                                 // When switch is ENABLED, toggleOff is UNSET
+        color: $off-unset                                   // When switch is ENABLED, toggleOff is UNSET
       color: $unset-color
 div.content
   div.thing
-    div.entry.RES-keyNav-activeElement                    // RES keyboard navigation
+    div.entry.RES-keyNav-activeElement                      // RES keyboard navigation
       background:
         image: $T0 !important
-      div.noncollapsed                                    // requires all of the selectors
+      div.noncollapsed                                      // requires all of the selectors
         background:
           image: $T0 !important
-        div.usertext-body                                 // for some reason.
+        div.usertext-body                                   // for some reason.
           background:
             image: $T0 !important
           div.md
@@ -97,7 +97,7 @@ div#progressIndicator                                     // NER loading
     radius: 0px
     style: solid
     width: 1px
-  h3
+  & > h3
     +links
     background:
       image: $texture
