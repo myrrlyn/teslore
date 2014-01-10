@@ -1,0 +1,59 @@
+/* /etc/wiki/topiclist/ */
+body.wiki-page
+  div.content
+    div.wiki-page-content
+ul li p                                                     // Only trigger certain instances. NEEDS STYLE DECISIONS
+  & + table                                                 // If we use tables
+    border: none !important
+    margin:
+      left: 0
+    thead
+      th
+        background:
+          color: $black
+          image: $texture
+        color: $white
+      &:hover,                                              // Hovering over the THead triggers display
+      &:active
+        & + tbody
+          tr
+            display: list-item
+    tbody
+      tr
+        background:
+          color: transparent
+          image: $T1
+        display: none
+        td
+          border: none !important
+          color: $black
+          +links
+          span.RESUserTag,
+          a.voteWeight,
+          span.keyNavAnnotation
+            display: none
+      &:hover,                                              // Display is sustained when hovering over body
+      &:active
+        tr
+          display: list-item
+  & + ol,                                                   // If we use lists    
+  & + ul
+    display: none
+    padding:
+      top: 20px
+      left: 40px
+    position: relative
+    top: -30px
+    left: -40px
+    &:hover,
+    &:active
+      display: block
+  &:hover,                                                  // Hovering on the H1 trigger also allows for display
+  &:active
+    & + table
+      tbody
+        tr
+          display: list-item
+    & + ol,
+    & + ul
+      display: block

@@ -9,15 +9,15 @@ div.side
             margin:
               left: 0px
             thead
-              display: none                               // The rules layout in the sidebar doesn't need a THead
+              display: none                                 // The rules layout in the sidebar doesn't need a THead
             tbody
               tr
-                display: list-item                        // Makes rows run vertically 1,1->1,2->2,1->2,2 etc.
+                display: list-item                          // Makes rows run vertically 1,1->1,2->2,1->2,2 etc.
                 width: 288px
                 td
                   display: block
                   border: none
-                  &:first-child                           // Parent, always visible
+                  &:first-child                             // Parent, always visible
                     background:
                       image: $T3
                     border:
@@ -32,7 +32,7 @@ div.side
                     &:active
                       background:
                         image: $T4
-                  &:last-child                            // Child, selectively visible
+                  &:last-child                              // Child, selectively visible
                     background:
                       color: $black
                     border:
@@ -40,8 +40,8 @@ div.side
                     color: $white
                     display: none
                     padding: 5px
-                &:hover,                                  // Hovering over the ROW triggers visibility
-                &:active                                  // Cover or expanded cells both work.
+                &:hover,                                    // Hovering over the ROW triggers visibility
+                &:active                                    // Cover or expanded cells both work.
                   td:first-child
                     background:
                       image: $T4
