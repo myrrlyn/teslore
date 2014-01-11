@@ -1,7 +1,6 @@
 /* /global/spoilers/ */
 /* SPOILER code */
-a[href="#s"], a[href="#spoiler"],                         // # is preferable to /
-a[href="/s"], a[href="/spoiler"]                          // s is legacy code
+a[href="#s"], a[href="#spoiler"], a[href="/s"], a[href="/spoiler"]
   background:
     color: $black !important
   border:
@@ -28,18 +27,17 @@ a[href="/s"], a[href="/spoiler"]                          // s is legacy code
       right: 4px
     text:
       decoration: none !important
-  &:hover,                                                // Only mice can hover
-  &:active                                                // Touch users trigger activation
+  &:hover,                                                  // Only mice can hover
+  &:active                                                  // Touch users trigger activation
     color: $gold !important
     text:
       decoration: none !important
     &:after
       color: $white !important
-  & + span.keyNavAnnotation                               // Force RES not to give a superscript cite number
+  & + span.keyNavAnnotation                                 // Force RES not to give a superscript cite number
     display: none !important
 /* CONJECTURE code */
-a[href="#g"], a[href="#conjecture"],                      // # works with touch, / does not
-a[href="/g"], a[href="/conjecture"]                       // g is legacy code
+a[href="#g"], a[href="#conjecture"], a[href="/g"], a[href="/conjecture"]
   background:
     color: $green !important
   border:
