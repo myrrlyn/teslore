@@ -1,4 +1,4 @@
-/* /etc/moderator/flair/ */
+/* etc/moderator/flair */
 body.moderator
   div.content
     div.flair-settings.fancy-settings
@@ -22,11 +22,11 @@ body.moderator
           background:
             color: $black
           color: $white
-      li.selected
-        a
-          background:
-            color: $white
-          color: $red
+        &.selected
+          a
+            background:
+              color: $white
+            color: $red
     div.tabpane-content
       border:
         color: $black

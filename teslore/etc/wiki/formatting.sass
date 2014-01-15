@@ -1,4 +1,4 @@
-/* /etc/wiki/formatting/ */
+/* etc/wiki/formatting */
 body.wiki-page
   div.wiki-page-content
     div.md.wiki
@@ -10,50 +10,50 @@ body.wiki-page
         radius: 7px
         width: 1px
       padding:
-        top: 0px
+        top: 0
         left: 5px
         right: 5px
-        bottom: 0px
-      div.toc                                               // Table of Contents
-        & > ul                                              // ToC children
+        bottom: 0
+      div.toc
+        & > ul
           border:
             style: none
-          ul                                                // Applies to all parents
+          ul
             border:
               top: none !important
               left: $black solid 3px !important
               right: none !important
               bottom: none !important
-          & > li                                            // H1 level listings
-            a                                               // Jump links
+          & > li
+            a
               font:
                 size: $wiki-size + 3px
-          & > ul                                            // H1 children
-            & > li                                          // H2 level listings
-              a                                             // Jump links
+          & > ul
+            & > li
+              a
                 font:
                   size: $wiki-size + 3px
-            & > ul                                          // H2 children
-              & > li                                        // H3 level listings
-                a                                           // Jump links
+            & > ul
+              & > li
+                a
                   font:
                     size: $wiki-size + 2px
-              & > ul                                        // H3 children
-                & > li                                      // H4 level listings
-                  a                                         // Jump links
+              & > ul
+                & > li
+                  a
                     font:
                       size: $wiki-size + 2px
-                & > ul                                      // H4 children
-                  & > li                                    // H5 level listings
-                    a                                       // Jump links
+                & > ul
+                  & > li
+                    a
                       font:
                         size: $wiki-size + 1px
-                  & > ul                                    // H6 children
-                    & > li                                  // H6 level listings
-                      a                                     // Jump links
+                  & > ul
+                    & > li
+                      a
                         font:
                           size: $wiki-size + 1px
-      h1                                                    // Text formatting from here out
+      h1
         color: $black !important
         font:
           family: $sans-serif-set
@@ -115,7 +115,7 @@ body.wiki-page
           size: $wiki-size + 1px
         p
           color: darken($brown, 10%)
-      pre                                                   // Blocked code (separate from inline code)
+      pre
         background:
           color: $white
         padding:
@@ -153,11 +153,15 @@ body.wiki-page
                 color: $black
                 style: solid
                 width: 1px
-      ol                                                    // Numbered list
+      ol
         li
           font:
             family: $sans-serif-set
-      ul                                                    // Bulleted list
+          list-style:
+            type: upper-roman
+      ul
         li
           font:
             family: $sans-serif-set
+          list-style:
+            type: square

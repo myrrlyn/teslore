@@ -1,11 +1,11 @@
-/* /flair/attributes/ */
+/* flair/attributes */
 =userattrs($pos)
   background:
     image: url(%%userattrs%%)
     position: $pos 0
   padding:
     top: 17px
-    left: 0px
+    left: 0
     right: 5px
     bottom: 11px
   position: relative
@@ -13,38 +13,38 @@ div.thing
   p.tagline
     span.userattrs
       font:
-        size: 0px
+        size: 0
       position: relative
       right: 50px
       top: -1px
-      a.admin                                               // official submission by reddit administrators
+      a.admin
         +userattrs(-20px)
-      span.alum                                             // former reddit staff
+      span.alum
         +userattrs(-25px)
-      a.cakeday                                             // account birthday
+      a.cakeday
         +userattrs(-15px)
         height: 0
         width: 0
         top: -3px
-      a.friend                                              // friend
+      a.friend
         +userattrs(0)
-      a.moderator                                           // official submission by moderators
+      a.moderator
         +userattrs(-5px)
-      a.submitter                                           // thread submitter (only visible on comments)
+      a.submitter
         +userattrs(-10px)
-      *:nth-child(1)                                       // typically submitter, though friend and moderator are also common, and cakeday too
+      *:nth-child(1)
         right: 3px
-      *:nth-child(2)                                       // combination
+      *:nth-child(2)
         right: 13px
-      *:nth-child(3)                                       // supercombination
+      *:nth-child(3)
         right: 23px
-      *:nth-child(4)                                       // befriended a moderator speaking officially in one of their posts on their cakeday
+      *:nth-child(4)
         right: 33px
-      *:nth-child(5)                                       // If an admin is also a moderator, can they apply both classes with 'distinguish'? If not, this is overkill.
+      *:nth-child(5)
         right: 43px
-      *:nth-child(6)                                       // If admin and alum are mutually exclusive, this is certainly needless.
+      *:nth-child(6)
         right: 53px
     a.author + span.userattrs,
-    a.voteWeight + span.userattrs                           // If a user lacks flair, this triggers to keep the attributes from being placed wrongly.
+    a.voteWeight + span.userattrs
       margin-right: 10px
       right: -10px

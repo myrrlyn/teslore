@@ -1,4 +1,4 @@
-/* /global/formatting/ */
+/* global/formatting */
 a.author
   border:
     radius: 0
@@ -10,12 +10,12 @@ a.author
     left: 3px
     right: 3px
     bottom: 1px
-  &.admin                                                 // No idea if RES cares about these
+  &.admin
     background:
       color: #FF0011 !important
-  &.alum                                                  // I don't know if RES has anything for these either.
+  &.alum
     background:
-      color: #BE1337 !important                           // BE1337. BE LEET. Heh.
+      color: #BE1337 !important
   &.friend
     background:
       color: $orange !important
@@ -33,59 +33,64 @@ div.roundfield.gold-accent span.title
 button
   font:
     family: $sans-serif-set
-div.md                                                    // Markdown text formatting
+div.md
   +links
-  blockquote                                              // >blockquote
+  blockquote
     background:
       image: $T1
     border:
-      top: 0px none
-      right: 0px none
+      top: none
+      right: none
       left: #333333 6px solid
-      bottom: 0px none
+      bottom: none
     padding:
       top: 1px
       left: 5px
       right: 2px
       bottom: 1px
-  code                                                    // `code`
+  code
+    background:
+      color: $grey
+    border:
+      radius: 3px
+      style: none
     font:
       family: $code-set
-      size: 10px
-  h1                                                      // #H1
+      size: 12px
+    padding: 1px 2px
+  h1
     border:
       style: none
-      width: 0px
     color: $black
     font:
       size: 17px
       weight: 700
-  h2                                                      // ##H2
+  h2
     color: $black
     font:
       size: 17px
       weight: 600
-  h3                                                      // ###H3
+  h3
     color: $black
     font:
       size: 16px
       weight: 600
-  h4                                                      // ####H4
+  h4
     color: $black
     font:
       size: 16px
       weight: 500
-  h5                                                      // #####H5
+  h5
     color: $black
     font:
       size: 15px
       weight: 500
-  h6                                                      // ######H6
+  h6
     color: $black
     font:
       size: 14px
       weight: 400
-  p                                                       // Default text
+  p
     color: $black
     margin:
       top: 7px
@@ -93,26 +98,31 @@ div.md                                                    // Markdown text forma
       right: 10px
       bottom: 7px
     line-height: 16px
-  sup                                                     // ^superscript (nestable)
+  pre
+    background:
+      color: $grey
+    border:
+      raidus: 5px
+      style: none
+  sup
     font:
       size: 75%
     vertical-align: super
-  hr                                                      // ____ Lines
+  hr
     background:
       color: $black
     border:
       style: none
-      width: 0px
     height: 1px
-  table                                                   // Tables
+  table
     border:
       collapse: separate
-    thead                                                 // Table Head
+    thead
       tr
         th
           text:
             align: center
-    tbody                                                 // Table Body
+    tbody
       tr
         td
           text:
