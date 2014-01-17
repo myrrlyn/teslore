@@ -1,9 +1,13 @@
-/* /etc/wiki/topics/ */
+/* etc/wiki/topics */
 body.wiki-page
   h2
-    & + ul li ul li                                         // The first list is the list of topics; the second is the list of articles
+    & + ul li ul li
       display: none
-      list-style-type: decimal
+      list-style:
+        type: decimal
+      padding:
+        top: 2px
+        bottom: 2px
     & + ul li:hover ul li,
     & + ul li:active ul li,
     & + ul li ul:hover li,

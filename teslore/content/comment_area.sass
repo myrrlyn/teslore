@@ -1,4 +1,4 @@
-/* /content/comment_area/ */
+/* content/comment_area */
 div.content
   div.commentarea
     div.panestack-title
@@ -31,20 +31,20 @@ div.content
         form
           a.choice
             color: $brown
-    form                                                  // Comment entry
+    form
       div.usertext-edit
         div
           textarea
             background:
               image: url(%%commentbox%%)
-              position: 0px 0px
+              position: 0 0
               repeat: no-repeat
             color: $black
             height: 100px !important
             width: 500px !important
             &:focus
               background:
-                position: 0px -100px
+                position: 0 -100px
               color: $black
         div.RESDialogSmall.livePreview
           div.md.RESDialogContents
@@ -58,7 +58,7 @@ div.content
         radius: 0 !important
         style: none !important
       margin:
-        left: 0px !important
+        left: 0 !important
       padding:
         left: 10px
         right: 30px
@@ -73,7 +73,7 @@ div.content
         a
           color: $brown
   div.sitetable
-    div.thing.comment:nth-child(4n+1)                     // reddit neglects to provide odd and even classes as links have, and there is a div.clearleft between every comment
+    div.thing.comment:nth-child(4n+1)
       background:
         color: transparent !important
         image: $T1 !important
@@ -153,7 +153,7 @@ div.content
                         background:
                           color: transparent !important
                           image: $T4 !important
-  span.deepthread                                         // Continue Reading link at the tenth generation.
+  span.deepthread
     +links
     &:after
       background:

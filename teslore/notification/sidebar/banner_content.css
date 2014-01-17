@@ -1,4 +1,4 @@
-/* /notification/sidebar/banner_content/ */
+/* notification/sidebar/banner_content */
 /*!
   @banner {
     "banners": {
@@ -19,6 +19,6 @@
 */
 div.side a[href$="#banner"]:after
 {
-  content: "";
+    content: "";
 }
 /*! @end */

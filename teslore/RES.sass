@@ -1,37 +1,37 @@
-/* /RES/ */
+/* RES */
 =RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
   span
     border:
       color: $border
-      radius: 0px
+      radius: 0
       style: solid
       width: 1px
   span.toggleOn
     background:
-      color: $on-unset                                      // When switch is DISABLED, toggleOn is UNSET
+      color: $on-unset
     color: $unset-color
   span.toggleOff
     background:
-      color: $off-set                                       // When switch is DISABLED, toggleOff is SET
+      color: $off-set
     color: $set-color
   &.enabled
     span.toggleOn
       background:
-        color: $on-set                                      // When switch is ENABLED, toggleOn is SET
+        color: $on-set
       color: $set-color
     span.toggleOff
       background:
-        color: $off-unset                                   // When switch is ENABLED, toggleOff is UNSET
+        color: $off-unset
       color: $unset-color
 div.content
   div.thing
-    div.entry.RES-keyNav-activeElement                      // RES keyboard navigation
+    div.entry.RES-keyNav-activeElement
       background:
         image: $T0 !important
-      div.noncollapsed                                      // requires all of the selectors
+      div.noncollapsed
         background:
           image: $T0 !important
-        div.usertext-body                                   // for some reason.
+        div.usertext-body
           background:
             image: $T0 !important
           div.md
@@ -47,13 +47,13 @@ div.content
         background:
           color: transparent !important
         color: $black !important
-div.NERPageMarker                                         // RES Neverending reddit page markers
+div.NERPageMarker
   background:
     color: transparent
     image: $T4
   color: $black
   width: 80%
-div#progressIndicator                                     // NER loading
+div#progressIndicator
   background:
     color: transparent
     image: $T4
@@ -71,7 +71,7 @@ div#progressIndicator                                     // NER loading
       color: $red
       &:hover
         text-decoration: underline
-*.RESCloseButton                                          // Close button on RES windows
+*.RESCloseButton
   background:
     color: $red !important
   border:
@@ -80,21 +80,21 @@ div#progressIndicator                                     // NER loading
     style: solid !important
     width: 1px !important
   color: $white !important
-*.RESDropdownList                                         // Common RES list class
+*.RESDropdownList
   background:
     color: transparent
     image: $texture
   border:
     color: $white !important
     style: solid
-    radius: 0px
+    radius: 0
     width: 1px
-*.RESDialogSmall                                          // Common RES presentation class
+*.RESDialogSmall
   background:
     color: $white
   border:
     color: $black
-    radius: 0px
+    radius: 0
     style: solid
     width: 1px
   & > h3
@@ -109,7 +109,7 @@ div#progressIndicator                                     // NER loading
           color: $red
           image: none
         border:
-          radius: 0px
+          radius: 0
           style: none
         color: $white
   div.RESDialogContents
@@ -117,11 +117,11 @@ div#progressIndicator                                     // NER loading
       div
         color: $black
     div.bottomButtons
-      .blueButton
+      *.blueButton
         background:
           color: $blue
         border:
-          radius: 0px
+          radius: 0
           style: none
     form
       div#userTaggerIgnoreContainer.toggleButton
@@ -137,7 +137,7 @@ div#progressIndicator                                     // NER loading
           color: $green
         border:
           color: $black
-          radius: 0px
+          radius: 0
           style: solid
           width: 1px
       label

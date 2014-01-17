@@ -1,20 +1,22 @@
-/* /global/spoilers/ */
+/* global/spoilers */
 /* SPOILER code */
-a[href="#s"], a[href="#spoiler"], a[href="/s"], a[href="/spoiler"]
+a[href="#s"],
+a[href="/s"],
+a[href="#spoiler"],
+a[href="/spoiler"]
   background:
     color: $black !important
   border:
-    style: none
     radius: 3px
-    width: 0px
+    style: none
   color: $white !important
   font:
     weight: bold
   padding:
-    top: 0px
+    top: 0
     left: 5px
     right: 5px
-    bottom: 0px
+    bottom: 0
   &:after
     background:
       color: $black !important
@@ -27,31 +29,33 @@ a[href="#s"], a[href="#spoiler"], a[href="/s"], a[href="/spoiler"]
       right: 4px
     text:
       decoration: none !important
-  &:hover,                                                  // Only mice can hover
-  &:active                                                  // Touch users trigger activation
+  &:hover,
+  &:active
     color: $gold !important
     text:
       decoration: none !important
     &:after
       color: $white !important
-  & + span.keyNavAnnotation                                 // Force RES not to give a superscript cite number
+  & + span.keyNavAnnotation
     display: none !important
 /* CONJECTURE code */
-a[href="#g"], a[href="#conjecture"], a[href="/g"], a[href="/conjecture"]
+a[href="#g"],
+a[href="/g"],
+a[href="#conjecture"],
+a[href="/conjecture"]
   background:
     color: $green !important
   border:
-    style: none
     radius: 3px
-    width: 0px
+    style: none
   color: $white !important
   font:
     weight: bold
   padding:
-    top: 0px
+    top: 0
     left: 5px
     right: 5px
-    bottom: 0px
+    bottom: 0
   &:after
     background:
       color: $green !important

@@ -1,32 +1,35 @@
-/* /header/banner/tabs/ */
-div#header
-  div#header-bottom-left
-    ul.tabmenu
-      border: none
-      text-align: center
-      li
-        &.selected                                          // Current tab
-          a
-            background:
-              color: $white
-            border:
-              color: $white
-              style: solid
-              width: 1px
-            color: $red
+/* header/banner/tabs */
+div#header-bottom-left
+  ul.tabmenu
+    border: none
+    left: 5px
+    position: absolute
+    text:
+      align: center
+    top: 92px
+    li
+      &.selected
         a
           background:
-            color: transparent
-          color: $white
-          font:
-            family: $serif-set
-            size: 14px
-            weight: bold
-          text:
-            transform: uppercase
-        a[href*="/controversial"],
-        a[href*="/gilded"],
-        a[href*="stattit"],
-        a.modtools-on,
-        a#viewImagesButton
-          display: none !important
+            color: $white
+          border:
+            color: $white
+            style: solid
+            width: 1px
+          color: $red
+      a
+        background:
+          color: transparent
+        color: $white
+        font:
+          family: $serif-set
+          size: 14px
+          weight: bold
+        text:
+          transform: uppercase
+      a[href*="/controversial"],
+      a[href*="/gilded"],
+      a[href*="stattit"],
+      a.modtools-on,
+      a#viewImagesButton
+        display: none !important
