@@ -1,46 +1,52 @@
-/* /flag/ */
-=sidebar-flag($flagstop)
-  background:
-    color: transparent
-    image: url(%%Flag%%)
-    position: 0 0
-    repeat: no-repeat
-  display: block
-  width: 300px
-  height: 300px
-  position: relative !important
-  top: $flagstop
-  left: 0
-  margin:
-    left: -5px
-  a
-    background:
-      color: transparent
-      image: url(%%T-Flag%%)
-    font:
-      size: 0
-    padding:
-      top: 17px
-      right: 300px
-      bottom: 32px
+/* flag */
 body
+  div.side
+    div.titlebox
+      h1.hover.redditname
+        background:
+          color: transparent
+          image: url(%%Flag%%)
+          position: 0 0
+          repeat: no-repeat
+        display: block
+        width: 300px
+        height: 300px
+        position: relative !important
+        left: 0
+        margin:
+          left: -5px
+        a
+          background:
+            color: transparent
+            image: url(%%T-Flag%%)
+          font:
+            size: 0
+          padding:
+            top: 17px
+            right: 300px
+            bottom: 32px
   &:not(.comments-page)
     div.side
       div.titlebox
         h1.hover.redditname
-          +sidebar-flag(-131px)
+          top: -131px
     &.loggedin
       div.side
         div.titlebox
           h1.hover.redditname
-            +sidebar-flag(-58px)
+            top: -58px
   &.comments-page
     div.side
       div.titlebox
         h1.hover.redditname
-          +sidebar-flag(-242px)
+          top: -242px
     &.loggedin
       div.side
         div.titlebox
           h1.hover.redditname
-            +sidebar-flag(-168px)
+            top: -168px
+  &.submit-page
+    div.side
+      div.titlebox
+        h1.hover.redditname
+          top: -17px !important
