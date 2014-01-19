@@ -2,24 +2,23 @@
 a[href$="#Daedric"]
   font:
     family: Daedric
-    size: 16px
-  text:
-    transform: uppercase
 a[href$="#Dovah"]
   font:
     family: Dragon_script
-    size: 16px
-  text:
-    transform: uppercase
 a[href$="#Dwemer"]
   font:
     family: Dwemer
-    size: 16px
-  text:
-    transform: uppercase
 a[href$="#Falmer"]
   font:
     family: Falmer
+a[href$="#Daedric"],
+a[href$="#Dovah"],
+a[href$="#Dwemer"],
+a[href$="#Falmer"]
+  color: $black
+  font:
     size: 16px
   text:
-    transform: uppercase
+    transform: 16px
+  &:visited
+    color: $black
