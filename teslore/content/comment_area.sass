@@ -72,8 +72,8 @@ div.content
         color: $brown
         a
           color: $brown
-  div.sitetable
-    div.thing.comment:nth-child(4n+1)
+  div.sitetable.nestedlisting
+    & > div.thing.comment:nth-of-type(2n+1)
       background:
         color: transparent !important
         image: $T1 !important
@@ -113,7 +113,7 @@ div.content
                         background:
                           color: transparent !important
                           image: $T3 !important
-    div.thing.comment:nth-child(4n-1)
+    & > div.thing.comment:nth-of-type(2n-1)
       background:
         color: transparent !important
         image: $T2 !important
