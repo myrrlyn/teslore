@@ -1,19 +1,21 @@
 /* header/banner/name */
 div#header-bottom-left
-  img#header-img
-    background:
-      color: transparent
-      image: $logo
-      position: 0 0
-      repeat: no-repeat
-    height: $logoheight
-    left: 5px
-    position: absolute
-    top: 57px
-    width: $logowidth
-    &:hover
+  a#header-img-a
+    img#header-img
       background:
-        position: 0 0 - $logoheight
+        color: transparent
+        image: $logo
+        position: 0 0
+        repeat: no-repeat
+      height: $logoheight
+      left: 5px
+      position: absolute
+      top: 57px
+      width: $logowidth
+      z-index: 10
+      &:hover
+        background:
+          position: 0 0 - $logoheight
   span.hover.pagename.redditname
     font:
       family: $serif-set !important
@@ -21,22 +23,13 @@ div#header-bottom-left
     a
       background:
         color: transparent
-        image: $name
-        position: 0 0
-        repeat: no-repeat
-      display: none
+        image: $banner
+        position: center center
+        repeat: repeat-x
+      display: inline-block
       font:
-        family: $serif-set !important
-        size: 25px
-      padding:
-        top: 2px
-        left: 0
-        right: 160px
-        bottom: 0
-      position: relative
-      top: -3px
-      text-indent: -9999px
-      &:hover
-        background:
-          position: 0 -33px
-        top: 1px
+        size: 0
+      height: $bannerheight
+      position: absolute
+      left: 0
+      width: 100%
