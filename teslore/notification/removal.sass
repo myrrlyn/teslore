@@ -1,40 +1,46 @@
 /* notification/removal */
 div.content
   div.commentarea
-    div.thing.comment
-      p.tagline
-        a.expand + em
+    div.thing
+      &.comment
+        p.tagline
+          a.expand + em
+            font:
+              size: 0
+            &:after
+              background:
+                color: $black
+              color: $white
+              content: "[NUMINIT]"
+              font:
+                size: 10px
+                weight: bold
+              margin:
+                left: -1px
+              padding: 2px
+        div.usertext.grayed
+          padding:
+            top: 4px
+          div.usertext-body
+            background:
+              color: $black !important
+            div.md
+              margin: 5px 0
+              &:after
+                color: $white
+                content: "[TEXT REDACTED BY ORDER OF ELDER COUNCIL]"
+              *
+                display: none !important
+    &.link.hidden
+      div.usertext-body
+        em
+          background:
+            color: $black
+          color: $white
           font:
             size: 0
+          padding: 2px
           &:after
-            background:
-              color: $black
-            color: $white
-            content: "[NUMINIT]"
+            content: "[TEXT REDACTED BY ORDER OF ELDER COUNCIL]"
             font:
-              size: 10px
-              weight: bold
-            margin:
-              left: -1px
-            padding:
-              top: 2px
-              left: 2px
-              right: 2px
-              bottom: 2px
-      div.usertext.grayed
-        padding:
-          top: 4px
-        div.usertext-body
-          background:
-            color: $black !important
-          div.md
-            margin:
-              top: 5px
-              left: 0
-              right: 0
-              bottom: 5px
-            &:after
-              color: $white
-              content: "[TEXT REDACTED BY ORDER OF ELDER COUNCIL]"
-            *
-              display: none !important
+              size: 12px

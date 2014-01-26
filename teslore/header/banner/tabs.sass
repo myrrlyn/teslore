@@ -6,7 +6,7 @@ div#header-bottom-left
     position: absolute
     text:
       align: center
-    top: 92px
+    top: $bannerheight + 28px
     li
       &.selected
         a
@@ -17,6 +17,10 @@ div#header-bottom-left
             style: solid
             width: 1px
           color: $red
+      &:nth-of-type(1):hover
+        a
+          font:
+            family: "Dragon_script"
       a
         background:
           color: transparent
@@ -27,9 +31,21 @@ div#header-bottom-left
           weight: bold
         text:
           transform: uppercase
-      a[href*="/controversial"],
-      a[href*="/gilded"],
-      a[href*="stattit"],
-      a.modtools-on,
-      a#viewImagesButton
-        display: none !important
+        &[href*="/new"]:hover
+          font:
+            family: "Falmer"
+        &[href*="/rising"]:hover
+          font:
+            family: "Daedric"
+        &[href*="/top"]:hover
+          font:
+            family: "Mage Script"
+        &[href*="/wiki"]:hover
+          font:
+            family: "Dwemer"
+        &[href*="/controversial"],
+        &[href*="/gilded"],
+        &[href*="stattit"],
+        &.modtools-on,
+        &#viewImagesButton
+          display: none !important
