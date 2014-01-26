@@ -1,9 +1,5 @@
-/* /etc/submission/ */
+/* etc/submission */
 body.submit-page
-  div.side
-    div.titlebox
-      h1.hover.redditname
-        top: -17px
   div.content
     form.pretty-form.sharelink
       & + h1
@@ -14,6 +10,13 @@ body.submit-page
       div.formtabs-content
         border:
           top: 3px solid $black
+        div#text-desc.infobar
+          background:
+            image: $texture
+          border:
+            radius: 4px
+            style: none
+          color: $white
         div#title-field
           background:
             color: transparent
@@ -61,3 +64,22 @@ body.submit-page
                 +links
         span.title
           color: $white
+        div.roundfield.gold-accent
+          background:
+            image: $texture
+          border:
+            radius: 4px
+            style: none
+          span.title,
+          label
+            color: $gold !important
+          span.little.gray
+            color: $white
+        div.roundfield.info-notice
+          background:
+            image: $texture
+          border:
+            radius: 4px
+            style: none
+          color: $white
+          +links

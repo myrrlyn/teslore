@@ -1,4 +1,4 @@
-/* /sidebar/titlebox/rules/ */
+/* sidebar/titlebox/rules */
 div.side
   div.titlebox
     div.usertext-body
@@ -7,17 +7,17 @@ div.side
           & + table
             display: block
             margin:
-              left: 0px
+              left: 0
             thead
-              display: none                               // The rules layout in the sidebar doesn't need a THead
+              display: none
             tbody
               tr
-                display: list-item                        // Makes rows run vertically 1,1->1,2->2,1->2,2 etc.
+                display: list-item
                 width: 288px
                 td
                   display: block
                   border: none
-                  &:first-child                           // Parent, always visible
+                  &:first-child
                     background:
                       image: $T3
                     border:
@@ -32,16 +32,16 @@ div.side
                     &:active
                       background:
                         image: $T4
-                  &:last-child                            // Child, selectively visible
+                  &:last-child
                     background:
                       color: $black
                     border:
-                      top: 0px
+                      top: 0
                     color: $white
                     display: none
                     padding: 5px
-                &:hover,                                  // Hovering over the ROW triggers visibility
-                &:active                                  // Cover or expanded cells both work.
+                &:hover,
+                &:active
                   td:first-child
                     background:
                       image: $T4

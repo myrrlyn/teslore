@@ -20,28 +20,30 @@ $serif-set:       "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino
 
 // Wiki Variables
 $wiki-banner: url(%%BannerWiki%%)
-$wiki-size: 13px
+$wiki-size:   13px
 
 // Textures Used
-$arrows:      url(%%Arrows%%)                               // Vote and Expando Arrows
-$banner:      url(%%Banner%%)                               // Header Banner
-$FlairSheet:  url(%%FlairStandard%%)                        // Flair List
-$logo:        url(%%Snoos%%)                                // reddit.com link and logo
-$name:        url(%%Realms%%)                               // /r/teslore link and logo
-$texture:     url(%%DarkTex%%)                              // so far we just have one texture
-$T0:          url(%%pixel-of-RES%%)                         // until honestbleeps makes RES more useful, this is needed
-$T1:          url(%%pixel-of-darkness%%)                    // SAC named these
-$T2:          url(%%pixel-of-truth%%)                       // 
-$T3:          url(%%pixel-of-valor%%)                       // 
-$T4:          url(%%pixel-of-light%%)                       // 
+$arrows:      url(%%Arrows%%)
+$banner:      url(%%BannerXarxes%%)
+$calendar:    url(%%Cal4E204%%)
+$FlairSheet:  url(%%FlairStandard%%)
+$logo:        url(%%Snoos%%)
+$name:        url(%%Realms%%)
+$texture:     url(%%DarkTex%%)
+$T0:          url(%%pixel-of-RES%%)
+$T1:          url(%%pixel-of-darkness%%)
+$T2:          url(%%pixel-of-truth%%)
+$T3:          url(%%pixel-of-valor%%)
+$T4:          url(%%pixel-of-light%%)
 
 // Header Image Information
-$tabmenuheight: 49px                                        // Height of tab menu. THIS HAS HEIGHT DEPENDENCIES IN /header/banner/tabmenu
-$bannerheight:  64px                                        // Height of banner image
-$headerheight:  $bannerheight+ $tabmenuheight               // Total height of div#header-banner-left
-$logoheight:    60px                                        // Height of reddit logo
-$logowidth:     214px                                       // Width of reddit logo
-$logooffset:    $bannerheight - $logoheight - 4px           // The -4px is for the Banner image, so Snoo appears to be resting on part of the texture.
+$tabmenuheight: 49px
+$bannerheight:  100px
+$headerheight:  $bannerheight + $tabmenuheight
+$logoheight:    60px
+$logowidth:     214px
+$logooffset:    $bannerheight - $logoheight
+$noticeheight:	53px
 
 // Versioning Information
 $build_version: "<%= $build[:version] %>"
@@ -53,7 +55,7 @@ $build_hash_long: "<%= $build[:hash] %>"
 $build_branch: "<%= $build[:branch] %>"
 
 // Mixins
-=create                                                     // Submit, Create Subreddit buttons
+=create
   background:
     color: $black !important
     image: none !important
@@ -64,7 +66,7 @@ $build_branch: "<%= $build[:branch] %>"
   vertical-align: middle
   div.nub
     display: none !important
-=create-link                                                //Subset of Create mixin
+=create-link
   background
     color: $black
   color: $white
@@ -76,7 +78,7 @@ $build_branch: "<%= $build[:branch] %>"
   text:
     align: center
     transform: uppercase
-=links                                                      // Link Formatting
+=links
   a
     color: $red
     &:hover
@@ -84,7 +86,7 @@ $build_branch: "<%= $build[:branch] %>"
         decoration: underline
     &:visited
       color: $red-desat
-=arrows                                                     // Vote Arrows
+=arrows
   div.arrow
     background:
       image: $arrows
@@ -103,7 +105,7 @@ $build_branch: "<%= $build[:branch] %>"
     &.downmod
       background:
         position: -15px -15px
-=expando-buttons                                            // Only a mixin because RES is a whore
+=expando-buttons
   *.expando-button
     background:
       color: transparent
@@ -124,3 +126,17 @@ $build_branch: "<%= $build[:branch] %>"
       &:hover
         background:
           position: -46px -20px
+
+//  Image               | Dimension | Source
+//  banner.png          | 1920x64   | Oblivion
+//  BannerAyrenn.png    | 1920x125  | Minttu
+//  BannerDaedric.jpg   | 1920x100  | ?
+//  BannerKel.jpg       | 1000x100  | Skyrim
+//  BannerMapCyrod.jpg  | 1920x100  | ?
+//  BannerMapSkyrim.jpg | 1920x100  | ?
+//  BannerMapSlice.jpg  | 1920x100  | ?
+//  BannerNuminatus.jpg | 1920x76   | LadyN
+//  BannerPretty.jpg    | 1920x100  | LadyN
+//  BannerProphet.jpg   | 1920x125  | Minttu
+//  BannerWiki.png      | 1920x149  | ?
+//  BannerXarxes.jpg    | 1920x100  | ?

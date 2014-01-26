@@ -1,5 +1,5 @@
-/* /notification/vote/ */
-=vote                                                     // Vote Warning Format
+/* notification/vote */
+=vote
   background:
     color: $black
   border
@@ -25,8 +25,8 @@ div.content
   div.thing
     &.link
       div.arrow
-        &.up:hover::before
           +vote
+        &.up:hover::before
           color: $orange
           content: "Quality submission"
         &.down:hover::before
