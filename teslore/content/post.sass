@@ -10,6 +10,28 @@ div.content
             size: 18px !important
           &:visited
             color: $black-desat
+      ul.flat-list.buttons
+        li
+          div.flairselector.drop-choices.active
+            background:
+              color: $white
+            h2
+              background:
+                image: $texture
+              color: $white
+            div.flairoptionpane
+              ul
+                li
+                  &:hover
+                    background:
+                      color: $black
+                    color: $white
+            form
+              border:
+                top: 1px solid $black
+              div.flairselection
+                div.flairremove
+                  color: $red
     span.domain
       display: none !important
     p.tagline
