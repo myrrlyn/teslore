@@ -1,32 +1,51 @@
-/* /header/banner/tabs/ */
-div#header
-  div#header-bottom-left
-    ul.tabmenu
-      border: none
-      text-align: center
-      li
-        &.selected                                          // Current tab
-          a
-            background:
-              color: $white
-            border:
-              color: $white
-              style: solid
-              width: 1px
-            color: $red
+/* header/banner/tabs */
+div#header-bottom-left
+  ul.tabmenu
+    border: none
+    left: 5px
+    position: absolute
+    text:
+      align: center
+    top: $bannerheight + 28px
+    li
+      &.selected
         a
           background:
-            color: transparent
-          color: $white
+            color: $white
+          border:
+            color: $white
+            style: solid
+            width: 1px
+          color: $red
+      &:nth-of-type(1):hover
+        a
           font:
-            family: $serif-set
-            size: 14px
-            weight: bold
-          text:
-            transform: uppercase
-        a[href*="/controversial"],
-        a[href*="/gilded"],
-        a[href*="stattit"],
-        a.modtools-on,
-        a#viewImagesButton
+            family: "Dragon_script"
+      a
+        background:
+          color: transparent
+        color: $white
+        font:
+          family: $serif-set
+          size: 14px
+          weight: bold
+        text:
+          transform: uppercase
+        &[href*="/new"]:hover
+          font:
+            family: "Falmer"
+        &[href*="/rising"]:hover
+          font:
+            family: "Daedric"
+        &[href*="/top"]:hover
+          font:
+            family: "Mage Script"
+        &[href*="/wiki"]:hover
+          font:
+            family: "Dwemer"
+        &[href*="/controversial"],
+        &[href*="/gilded"],
+        &[href*="stattit"],
+        &.modtools-on,
+        &#viewImagesButton
           display: none !important
