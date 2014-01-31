@@ -1,7 +1,9 @@
 /* global/formatting */
 a.author
+  background:
+    color: transparent !important
   border:
-    radius: 0
+    radius: 0 !important
     style: none
   color: $black !important
   margin: 0
@@ -10,23 +12,21 @@ a.author
     left: 3px
     right: 3px
     bottom: 3px
-  &.admin
-    background:
-      color: #FF0011 !important
-  &.alum
-    background:
-      color: #BE1337 !important
-  &.friend
-    background:
-      color: $orange !important
+  &.admin,
+  &.alum,
+  &.cakeday,
+  &.friend,
+  &.moderator,
   &.submitter
     background:
-      color: $blue !important
-    color: $white !important
-  &.moderator
-    background:
-      color: $green !important
-    color: $white !important
+      color: transparent !important
+    text:
+      decoration: none !important
+    &:hover
+      background:
+        color: transparent !important
+      text:
+        decoration: none !important
 a.gold, a.buygold,
 div.roundfield.gold-accent span.title
   color: $gold !important
