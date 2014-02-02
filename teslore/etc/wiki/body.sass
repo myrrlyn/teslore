@@ -5,9 +5,24 @@ body.wiki-page
       background:
         attachment: scroll
         color: $black
-        image: $wiki-banner
-        position: 0px -36px
+        image: url(%%T-Flag%%)
+        position: left top
         repeat: repeat-x
+      height: $headerheight
+      span.hover.pagename.redditname
+        a
+          background:
+            color: transparent
+            image: $wiki-banner
+            position: left top
+            repeat: repeat-x
+          display: inline-block
+          font:
+            size: 0
+          height: $bannerheight
+          left: 0
+          position: absolute
+          width: 100%
   div.side
     div.titlebox
       p.users-online

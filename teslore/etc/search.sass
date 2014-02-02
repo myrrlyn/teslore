@@ -1,0 +1,42 @@
+/* etc/search*/
+body.search-page
+  div.content
+    div.search-summary
+      div.result-count
+        color: $black
+      div
+        a.pretty-button
+          border:
+            radius: 0
+            style: none
+          color: $white
+          &.positive
+            background:
+              color: $green
+          &.negative
+            background:
+              color: $red
+      p.debuginfo
+        span.content
+          &:after
+            content: ""
+    div.searchpane.raisedbox
+      background:
+        image: $T0
+      h4
+        color: $brown
+      a#search_showmore
+        color: $red
+      div#moresearchinfo
+        color: $black
+        a
+          color: $red
+    div.menuarea
+      border:
+        bottom: none
+      div.spacer
+        span.dropdown-title
+          color: $black
+        div.dropdown.lightdrop
+          span.selected
+            color: $brown

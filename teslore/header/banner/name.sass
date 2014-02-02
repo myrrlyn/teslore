@@ -10,16 +10,13 @@ div#header-bottom-left
       height: $logoheight
       left: 5px
       position: absolute
-      top: 57px
+      top: $bannerheight - $logoheight + $logooffset
       width: $logowidth
       z-index: 10
       &:hover
         background:
           position: 0 0 - $logoheight
   span.hover.pagename.redditname
-    font:
-      family: $serif-set !important
-      size: 25px
     a
       background:
         color: transparent
@@ -30,6 +27,6 @@ div#header-bottom-left
       font:
         size: 0
       height: $bannerheight
-      position: absolute
       left: 0
+      position: absolute
       width: 100%
