@@ -1,5 +1,5 @@
 /* notification/sidebar/date_content */
-div.side a[href="#date"]:after
+div.side a[href$="#date"]:after
 {
 /*!
 	@date
@@ -10,6 +10,14 @@ div.side a[href="#date"]:after
 			"0101": "New Life Festival",
 			"0113": "Meridia's Summoning Day",
 			"0202": "Mad Pelagius",
+            "0207": "SEVEN DAYS TO C0DA",
+            "0208": "SIX DAYS TO C0DA",
+            "0209": "FIVE DAYS TO C0DA",
+            "0210": "FOUR DAYS TO C0DA",
+            "0211": "THREE DAYS TO C0DA",
+            "0212": "TWO DAYS TO C0DA",
+            "0213": "ONE DAY TO C0DA",
+            "0214": "C0DA RELEASE",
 			"0316": "Heart's Day",
 			"0305": "Hermaeus Mora's Summoning Day",
 			"0321": "Hogithum",
