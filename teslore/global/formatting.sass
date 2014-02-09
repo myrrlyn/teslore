@@ -1,7 +1,9 @@
 /* global/formatting */
 a.author
+  background:
+    color: transparent !important
   border:
-    radius: 0
+    radius: 0 !important
     style: none
   color: $black !important
   margin: 0
@@ -10,23 +12,6 @@ a.author
     left: 3px
     right: 3px
     bottom: 3px
-  &.admin
-    background:
-      color: #FF0011 !important
-  &.alum
-    background:
-      color: #BE1337 !important
-  &.friend
-    background:
-      color: $orange !important
-  &.submitter
-    background:
-      color: $blue !important
-    color: $white !important
-  &.moderator
-    background:
-      color: $green !important
-    color: $white !important
 a.gold, a.buygold,
 div.roundfield.gold-accent span.title
   color: $gold !important
@@ -36,6 +21,7 @@ button
   font:
     family: $sans-serif-set
 div.md
+  overflow: hidden
   +links
   blockquote
     background:
@@ -67,31 +53,50 @@ div.md
     font:
       size: 17px
       weight: 700
+    margin:
+      left: 5px
   h2
     color: $black
     font:
       size: 17px
       weight: 600
+    margin:
+      left: 5px
   h3
     color: $black
     font:
       size: 16px
       weight: 600
+    margin:
+      left: 5px
   h4
     color: $black
     font:
       size: 16px
       weight: 500
+    margin:
+      left: 5px
   h5
     color: $black
     font:
       size: 15px
       weight: 500
+    margin:
+      left: 5px
   h6
     color: $black
     font:
       size: 14px
       weight: 400
+    margin:
+      left: 5px
+  hr
+    background:
+      color: $black
+    border:
+      style: none
+    height: 1px
+    margin: 0 -5px
   p
     color: $black
     margin:
@@ -110,12 +115,6 @@ div.md
     font:
       size: 75%
     vertical-align: super
-  hr
-    background:
-      color: $black
-    border:
-      style: none
-    height: 1px
   table
     border:
       collapse: separate

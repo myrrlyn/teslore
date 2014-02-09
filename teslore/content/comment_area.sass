@@ -54,6 +54,8 @@ div.content
             color: $black !important
     div.thing.comment
       +arrows
+      background:
+        color: transparent !important
       border:
         radius: 0 !important
         style: none !important
@@ -73,86 +75,46 @@ div.content
         a
           color: $brown
   div.sitetable.nestedlisting
-    & > div.thing.comment:nth-of-type(2n+1)
-      background:
-        color: transparent !important
-        image: $T1 !important
-      div.thing.comment
-        background:
-          color: transparent !important
-          image: $T3 !important
-        div.thing.comment
-          background:
-            color: transparent !important
-            image: $T2 !important
-          div.thing.comment
-            background:
-              color: transparent !important
-              image: $T3 !important
-            div.thing.comment
-              background:
-                color: transparent !important
-                image: $T1 !important
-              div.thing.comment
-                background:
-                  color: transparent !important
-                  image: $T3 !important
-                div.thing.comment
-                  background:
-                    color: transparent !important
-                    image: $T2 !important
-                  div.thing.comment
-                    background:
-                      color: transparent !important
-                      image: $T3 !important
-                    div.thing.comment
-                      background:
-                        color: transparent !important
-                        image: $T1 !important
-                      div.thing.comment
-                        background:
-                          color: transparent !important
-                          image: $T3 !important
-    & > div.thing.comment:nth-of-type(2n-1)
-      background:
-        color: transparent !important
-        image: $T2 !important
-      div.thing.comment
-        background:
-          color: transparent !important
-          image: $T4 !important
-        div.thing.comment
-          background:
-            color: transparent !important
-            image: $T3 !important
-          div.thing.comment
-            background:
-              color: transparent !important
-              image: $T4 !important
-            div.thing.comment
-              background:
-                color: transparent !important
-                image: $T2 !important
-              div.thing.comment
-                background:
-                  color: transparent !important
-                  image: $T4 !important
-                div.thing.comment
-                  background:
-                    color: transparent !important
-                    image: $T3 !important
-                  div.thing.comment
-                    background:
-                      color: transparent !important
-                      image: $T4 !important
-                    div.thing.comment
-                      background:
-                        color: transparent !important
-                        image: $T2 !important
-                      div.thing.comment
-                        background:
-                          color: transparent !important
-                          image: $T4 !important
+    & > div.comment:nth-child(8n+1),
+    & > div.comment:nth-child(8n+1) div.comment div.comment div.comment div.comment,
+    & > div.comment:nth-child(8n+1) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
+      background-image: $T1
+      div.comment
+        background-image: $T3
+        div.comment
+          background-image: $T2
+          div.comment
+            background-image: $T4
+    & > div.comment:nth-child(8n+3),
+    & > div.comment:nth-child(8n+3) div.comment div.comment div.comment div.comment,
+    & > div.comment:nth-child(8n+3) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
+      background-image: $T4
+      div.comment
+        background-image: $T2
+        div.comment
+          background-image: $T3
+          div.comment
+            background-image: $T1
+    & > div.comment:nth-child(8n-3),
+    & > div.comment:nth-child(8n-3) div.comment div.comment div.comment div.comment,
+    & > div.comment:nth-child(8n-3) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
+      background-image: $T3
+      div.comment
+        background-image: $T1
+        div.comment
+          background-image: $T4
+          div.comment
+            background-image: $T2
+    & > div.comment:nth-child(8n-1),
+    & > div.comment:nth-child(8n-1) div.comment div.comment div.comment div.comment,
+    & > div.comment:nth-child(8n-1) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
+      background-image: $T2
+      div.comment
+        background-image: $T4
+        div.comment
+          background-image: $T1
+          div.comment
+            background-image: $T3
   span.deepthread
     +links
     &:after

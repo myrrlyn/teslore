@@ -15,6 +15,9 @@ body.wiki-page
         right: 5px
         bottom: 0
       div.toc
+        ul
+          li
+            list-style: none !important
         & > ul
           border:
             style: none
@@ -117,13 +120,13 @@ body.wiki-page
           color: darken($brown, 10%)
       pre
         background:
-          color: $white
-        padding:
-          top: 1em
-          left: 1em
-          right: 1em
-          bottom: 1em
+          color: $grey
+        max:
+          width: 60em
+        padding: 1em
         code
+          background:
+            color: transparent
           color: $green
       sup
         vertical-align: super
