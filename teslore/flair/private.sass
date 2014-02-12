@@ -8,7 +8,16 @@ span.flair
       position: 0 -60px
     left: 0
     margin:
-      top: -1px
+      top: -3px
+      right: 0
+    & + span.userattrs
+      display: none
+  &.flair-Squirrel
+    background:
+      position: 0 -90px
+    left: 0
+    margin:
+      top: -3px
       right: 0
     & + span.userattrs
       display: none
@@ -43,24 +52,10 @@ span.flair
     background:
       position: -100px -270px
 // MK-specific things
-a[href$="/MKirkbride"].author.id-t2_dhl5b
-  background:
-    color: $black / 2 !important
-  border:
-    radius: 0 !important
-    style: none !important
-  color: $white !important
-  margin:
-    right: -5px
-  padding: 8px
+body.res div.content div.commentarea div.thing.comment div.entry p.tagline a.author.id-t2_dhl5b,
+a.author.id-t2_dhl5b
   &:after
-    background:
-      color: $black / 2 !important
-    color: $white !important
     content: " | OFFICIAL"
-    border:
-      radius: 0 !important
-      style: none !important
   & + span.RESUserTag
     display: none !important
     & + a.voteWeight

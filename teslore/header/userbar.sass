@@ -22,6 +22,30 @@ div#header-bottom-right.resNavTop
   top: 23px
   a, form, span
     color: $white !important
+  a#mail
+    background:
+      color: transparent
+      image: url(%%Mail%%)
+    height: 10px
+    width: 15px
+    &.havemail
+      background:
+        position: -16px 0
+    &.nohavemail
+      background:
+        position: 0 0
+  a#modmail
+    background:
+      color: transparent
+      image: url(%%Mail%%)
+    height: 16px
+    width: 16px
+    &.havemail
+      background:
+        position: -16px -10px
+    &.nohavemail
+      background:
+        position: 0px -10px
 div#userbarToggle
   background:
     color: transparent

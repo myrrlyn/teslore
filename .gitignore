@@ -5,3 +5,4 @@
 config/reddit.yml
 build/*.css
 teslore/images/Thumbs.db
+.version
