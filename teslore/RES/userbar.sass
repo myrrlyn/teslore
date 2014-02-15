@@ -1,66 +1,66 @@
 /* RES/userbar */
 span#RESAccountSwitcherIcon,
 span#RESAccountSwitcherIconOverlay
-  background:
-    image: url(%%RES-usr-ico%%)
-  height: 16px
-  width: 15px
+	background:
+		image:	url(%%RES-usr-ico%%)
+	height:	16px
+	width:	15px
 span#RESAccountSwitcherIconOverlay
-  background:
-    color: $black
-  border:
-    color: $white
-    style: solid
-    width: 1px
-  top: 20px
+	background:
+		color:	$black
+	border:
+		color:	$white
+		style:	solid
+		width:	1px
+	top:	20px
 ul#RESAccountSwitcherDropdown.RESDropdownList
-  top: 44px
-  li
-    border:
-      color: $white !important
-      style: solid
-      width: 1px
-    color: $white
-    &:hover
-      background:
-        color: $grey
-      color: $black
+	top:	44px
+	li
+		border:
+			color:	$white !important
+			style:	solid
+			width:	1px
+		color:	$white
+		&:hover
+			background:
+				color:	$grey
+			color:	$black
 div#RESMainGearOverlay.RESGearOverlay
-  background:
-    color: $black
-  border:
-    color: $white
-    style: solid
-    width: 1px
-  top: 20px
+	background:
+		color:	$black
+	border:
+		color:	$white
+		style:	solid
+		width:	1px
+	top:	20px
 div#RESPrefsDropdown.RESDropdownList
-  top: 44px
-  right: 5px !important
-  ul#RESDropdownOptions
-    li
-      border:
-        bottom: 1px solid
-      color: $white
-      a
-        color: $white
-      i#RESSearchMenuItem
-        border:
-          color: $white
-          radius: 0
-          style: solid
-          width: 1px
-        color: $white
-      &[title="Toggle night and day"]
-        div#lightSwitchToggle.toggleButton
-          +RES-Toggle($white,$grey,$grey,$black,$red,$green,$white)
-      &[title="Toggle NSFW Filter"]
-        div.toggleButton
-          +RES-Toggle($white,$grey,$grey,$black,$green,$red,$white)
-      &:hover
-        background:
-          color: $grey
-        color: $black
-        a
-          background:
-            color: $grey
-          color: $black
+	top:	44px
+	right:	5px !important
+	ul#RESDropdownOptions
+		li
+			border:
+				bottom:	1px solid
+			color:	$white
+			a
+				color:	$white
+			i#RESSearchMenuItem
+				border:
+					color:	$white
+					radius:	0
+					style:	solid
+					width:	1px
+				color:	$white
+			&[title="Toggle night and day"]
+				div#lightSwitchToggle.toggleButton
+					+RES-Toggle($white,$grey,$grey,$black,$red,$green,$white)
+			&[title="Toggle NSFW Filter"]
+				div.toggleButton
+					+RES-Toggle($white,$grey,$grey,$black,$green,$red,$white)
+			&:hover
+				background:
+					color:	$grey
+				color:	$black
+				a
+					background:
+						color:	$grey
+					color:	$black

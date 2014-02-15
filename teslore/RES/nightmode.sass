@@ -1,61 +1,61 @@
 /* RES/nightmode */
 html.res-nightmode
-  body.res-nightmode
-    +links
-    div.md
-      background:
-        color: $black
-      a
-        color: $red !important
-      h1, h2, h3, h4, h5, h6
-        color: $white
-      p
-        color: $white
-    div#header
-      background:
-        color: $black
-      div#header-bottom-left
-        background:
-          color: $black !important
-    div.side
-      background:
-        color: transparent
-        image: $texture !important
-      div.spacer
-        background:
-          color: transparent
-          image: $texture !important
-        div.titlebox
-          background:
-            color: transparent
-            image: $texture !important
-        div.sidebox.submit
-          border:
-            radius: 0
-          position: relative !important
-          top: 300px !important
-          div.morelink
-            position: relative !important
-            top: 0 !important
-          div.morelink:before
-            content: url(%%Submit-Tail%%)
-            position: absolute !important
-            right: 300px
-        ul.content
-          background-color: transparent !important
-          li div.gadget div.reddit-link div.midcol
-            +arrows
-    span.flair
-      background:
-        color: transparent !important
-    div.content
-      div.thing
-        div.entry
-          &.RES-keyNav-activeElement
-            background:
-              image: none
-          p.tagline
-            a.author
-              color: $white !important
-        div.midcol
-          +arrows
+	body.res-nightmode
+		+links
+		div.md
+			background:
+				color:	$black
+			a
+				color:	$red !important
+			h1, h2, h3, h4, h5, h6
+				color:	$white
+			p
+				color:	$white
+		div#header
+			background:
+				color:	$black
+			div#header-bottom-left
+				background:
+					color:	$black !important
+		div.side
+			background:
+				color:	transparent
+				image:	$texture !important
+			div.spacer
+				background:
+					color:	transparent
+					image:	$texture !important
+				div.titlebox
+					background:
+						color:	transparent
+						image:	$texture !important
+				div.sidebox.submit
+					border:
+						radius:	0
+					position:	relative !important
+					top:	300px !important
+					div.morelink
+						position:	relative !important
+						top:	0 !important
+					div.morelink:before
+						content:	url(%%Submit-Tail%%)
+						position:	absolute !important
+						right:	300px
+				ul.content
+					background-color:	transparent !important
+					li div.gadget div.reddit-link div.midcol
+						+arrows
+		span.flair
+			background:
+				color:	transparent !important
+		div.content
+			div.thing
+				div.entry
+					&.RES-keyNav-activeElement
+						background:
+							image:	none
+					p.tagline
+						a.author
+							color:	$white !important
+				div.midcol
+					+arrows

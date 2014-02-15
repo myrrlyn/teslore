@@ -1,45 +1,45 @@
 /* notification/vote */
 =vote
-  background:
-    color: $black
-  border
-    color: $black
-    style: solid
-    radius: 4px
-    width: 1px
-  display: block
-  font:
-    family: $serif-set
-    size: 11px
-    weight: bold
-  margin:
-    top: 5px
-    left: 25px
-  padding: 5px
-  position: absolute
-  text:
-    align: center
-  width: auto
-  z-index: 1000 !important
+	background:
+		color:	$black
+	border
+		color:	$black
+		style:	solid
+		radius:	4px
+		width:	1px
+	display:	block
+	font:
+		family:	$serif-set
+		size:	11px
+		weight:	bold
+	margin:
+		top:	5px
+		left:	25px
+	padding:	5px
+	position:	absolute
+	text:
+		align:	center
+	width:	auto
+	z-index:	1000 !important
 div.content
-  div.thing
-    &.link
-      div.arrow
-          +vote
-        &.up:hover::before
-          color: $orange
-          content: "Quality submission"
-        &.down:hover::before
-          +vote
-          color: $blue-light
-          content: "Poor submission"
-    &.comment
-      div.arrow
-        &.up:hover::before
-          +vote
-          color: $orange
-          content: "Don't upvote just because you agree - be sure it's a good comment."
-        &.down:hover::before
-          +vote
-          color: $blue
-          content: "Don't downvote just because you disagree - is it really a poor comment?"
+	div.thing
+		&.link
+			div.arrow
+					+vote
+				&.up:hover::before
+					color:	$orange
+					content:	"Quality submission"
+				&.down:hover::before
+					+vote
+					color:	$blue-light
+					content:	"Poor submission"
+		&.comment
+			div.arrow
+				&.up:hover::before
+					+vote
+					color:	$orange
+					content:	"Don't upvote just because you agree - be sure it's a good comment."
+				&.down:hover::before
+					+vote
+					color:	$blue
+					content:	"Don't downvote just because you disagree - is it really a poor comment?"
