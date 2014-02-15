@@ -9,14 +9,14 @@ a[href$="/spoiler"]
 	border:
 		radius:	3px
 		style:	none
-	color:	$black !important
+	color:	$white
 	font:
 		weight:	bold
 	padding:
 		top:	0
 		left:	5px
 		right:	5px
-	bottom:	0
+		bottom:	0
 	&:after
 		background:
 			color:	$black !important
@@ -27,15 +27,15 @@ a[href$="/spoiler"]
 		padding:
 			left:	4px
 			right:	4px
-		text-decoration:	none !important
-	&:before
-		content: "Spoiler "
-		color: $gold !important
-		text-decoration: none !important
+		text:
+			decoration:	none !important
 	&:hover,
 	&:active
-		color:	$white !important
-		text-decoration: none !important
+		color:	$gold !important
+		text:
+			decoration:	none !important
+		&:after
+			color:	$white !important
 	& + span.keyNavAnnotation
 		display:	none !important
 /* CONJECTURE code */
@@ -48,7 +48,7 @@ a[href$="/conjecture"]
 	border:
 		radius:	3px
 		style:	none
-	color:	$green !important
+	color:	$white !important
 	font:
 		weight:	bold
 	padding:
@@ -66,15 +66,12 @@ a[href$="/conjecture"]
 		padding:
 			left:	4px
 			right:	4px
-		text-decoration:	none !important
-	&:before
-		content: "Conjecture "
-		color: $gold !important
-		text-decoration: none !important
+		text:
+			decoration:	none !important
 	&:hover,
 	&:active
-	&:before
-		color:	$white !important
-		text-decoration: none !important
+		color:	$gold !important
+		text:
+			decoration:	none !important
 	& + span.keyNavAnnotation
 		display:	none !important
