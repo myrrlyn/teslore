@@ -10,14 +10,7 @@ div.side a[href$="#date"]:after
 			"0101": "New Life Festival",
 			"0113": "Meridia's Summoning Day",
 			"0202": "Mad Pelagius",
-            "0207": "SEVEN DAYS TO C0DA",
-            "0208": "SIX DAYS TO C0DA",
-            "0209": "FIVE DAYS TO C0DA",
-            "0210": "FOUR DAYS TO C0DA",
-            "0211": "THREE DAYS TO C0DA",
-            "0212": "TWO DAYS TO C0DA",
-            "0213": "ONE DAY TO C0DA",
-            "0214": "C0DA RELEASE",
+      "0214": "Registered by C0DA",
 			"0316": "Heart's Day",
 			"0305": "Hermaeus Mora's Summoning Day",
 			"0321": "Hogithum",
@@ -34,6 +27,7 @@ div.side a[href$="#date"]:after
 			"1102": "Gauntlet",
 			"1108": "Moon Festival",
 			"1120": "Warriors Festival",
+			"1126": "Happy Anniversary, /r/teslore!",
 			"1225": "Saturalia",
 			"1230": "Old Life Festival",
 			"1231": "Old Life Festival"
@@ -41,5 +35,5 @@ div.side a[href$="#date"]:after
 	}
 */
 	content: "";
-    /*! @end */
+/*! @end */
 }

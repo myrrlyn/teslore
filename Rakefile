@@ -50,7 +50,7 @@ def compile id, config
 
   # SASS Style Tweaks
   ret.gsub!(/\/\*[^!].+?\*\//m, '').gsub!(/\s*{\s*/, '{').gsub!(/\s*}\s*/, '}').gsub!(/^$\n/, '') if style == :compact
-  ret.gsub!(/\s*{/, "\n{") if style == :expanded
+  ret.gsub!(/\s*{/, "\n{").gsub!(/\n\s\s/, "\n\t") if style == :expanded
 
   # Verify images
   verify id, ret

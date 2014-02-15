@@ -1,50 +1,50 @@
 /* flair/attributes */
 =userattrs($pos)
-  background:
-    image: url(%%userattrs%%)
-    position: $pos 0
-  bottom: -10px
-  padding:
-    top: 28px
-    left: 0
-    right: 5px
-    bottom: 0
-  position: relative
+	background:
+		image:	url(%%userattrs%%)
+		position:	$pos 0
+	bottom:	-10px
+	padding:
+		top:	28px
+		left:	0
+		right:	5px
+		bottom:	0
+	position:	relative
 div.thing
-  p.tagline
-    span.userattrs
-      font:
-        size: 0
-      position: relative
-      right: 50px
-      a.admin
-        +userattrs(-20px)
-      span.alum
-        +userattrs(-25px)
-      a.cakeday
-        +userattrs(-15px)
-        height: 0
-        width: 0
-        top: -4px
-      a.friend
-        +userattrs(0)
-      a.moderator
-        +userattrs(-5px)
-      a.submitter
-        +userattrs(-10px)
-      *:nth-child(1)
-        right: 3px
-      *:nth-child(2)
-        right: 13px
-      *:nth-child(3)
-        right: 23px
-      *:nth-child(4)
-        right: 33px
-      *:nth-child(5)
-        right: 43px
-      *:nth-child(6)
-        right: 53px
-    a.author + span.userattrs,
-    a.voteWeight + span.userattrs
-      margin-right: 10px
-      right: -10px
+	p.tagline
+		span.userattrs
+			font:
+				size:	0
+			position:	relative
+			right:	50px
+			a.admin
+				+userattrs(0)
+			span.alum
+				+userattrs(-5px)
+			a.cakeday
+				+userattrs(-10px)
+				height:	0
+				width:	0
+				top:	-4px
+			a.friend
+				+userattrs(-15px)
+			a.moderator
+				+userattrs(-20px)
+			a.submitter
+				+userattrs(-25px)
+			*:nth-child(1)
+				right:	3px
+			*:nth-child(2)
+				right:	13px
+			*:nth-child(3)
+				right:	23px
+			*:nth-child(4)
+				right:	33px
+			*:nth-child(5)
+				right:	43px
+			*:nth-child(6)
+				right:	53px
+		a.author + span.userattrs,
+		a.voteWeight + span.userattrs
+			margin-right:	10px
+			right:	-10px

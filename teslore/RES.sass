@@ -1,171 +1,171 @@
 /* RES */
 =RES-Toggle($border,$on-unset,$off-unset,$unset-color,$on-set,$off-set,$set-color)
-  span
-    border:
-      color: $border
-      radius: 0
-      style: solid
-      width: 1px
-  span.toggleOn
-    background:
-      color: $on-unset
-    color: $unset-color
-  span.toggleOff
-    background:
-      color: $off-set
-    color: $set-color
-  &.enabled
-    span.toggleOn
-      background:
-        color: $on-set
-      color: $set-color
-    span.toggleOff
-      background:
-        color: $off-unset
-      color: $unset-color
+	span
+		border:
+			color:	$border
+			radius:	0
+			style:	solid
+			width:	1px
+	span.toggleOn
+		background:
+			color:	$on-unset
+		color:	$unset-color
+	span.toggleOff
+		background:
+			color:	$off-set
+		color:	$set-color
+	&.enabled
+		span.toggleOn
+			background:
+				color:	$on-set
+			color:	$set-color
+		span.toggleOff
+			background:
+				color:	$off-unset
+			color:	$unset-color
 body.res
-  div.content
-    div.thing
-      div.entry
-        &.entry.RES-keyNav-activeElement
-          background:
-            image: $T0 !important
-          div.noncollapsed
-            background:
-              image: $T0 !important
-            div.usertext-body
-              background:
-                image: $T0 !important
-              div.md
-                background:
-                  image: $T0 !important
-        p.tagline
-          a.author
-            background:
-              color: transparent !important
-            color: $black !important
-            text:
-              decoration: none !important
-            &:hover
-              background:
-                color: transparent !important
-              color: $black !important
-              text:
-                decoration: none !important
-          span.RESUserTag
-            a.userTagLink.hasTag
-              border:
-                radius: 0
-                style: none
-          a.voteWeight
-            background:
-              color: transparent !important
-            color: $black !important
-  div.NERPageMarker
-    background:
-      color: transparent
-      image: $T4
-    color: $black
-    width: 80%
-  div#progressIndicator
-    background:
-      color: transparent
-      image: $T4
-    color: $black
-    width: 80%
-    h2
-      color: $black
-      font:
-        family: $serif-set
-        size: 18px
-        weight: bold
-    p
-      color: $black
-      a#NERStaticLink
-        color: $red
-        &:hover
-          text-decoration: underline
-  *.RESCloseButton
-    background:
-      color: $red !important
-    border:
-      color: $white !important
-      radius: 20px !important
-      style: solid !important
-      width: 1px !important
-    color: $white !important
-  *.RESDropdownList
-    background:
-      color: transparent
-      image: $texture
-    border:
-      color: $white !important
-      style: solid
-      radius: 0
-      width: 1px
-  *.RESDialogSmall
-    background:
-      color: $white
-    border:
-      color: $black
-      radius: 0
-      style: solid
-      width: 1px
-    & > h3
-      +links
-      background:
-        image: $texture
-      color: $white !important
-      top: -6px
-      span.fancy-toggle-button
-        a.option
-          background:
-            color: $red
-            image: none
-          border:
-            radius: 0
-            style: none
-          color: $white
-    div.RESDialogContents
-      div.authorFieldPair
-        div
-          color: $black
-      div.bottomButtons
-        *.blueButton
-          background:
-            color: $blue
-          border:
-            radius: 0
-            style: none
-      form
-        div#userTaggerIgnoreContainer.toggleButton
-          +RES-Toggle($black,$green,$red,$white,$grey,$grey,$black)
-        input#userTaggerTag,
-        input#userTaggerLink,
-        input#userTaggerVoteWeight
-          background:
-            image: $T4
-          color: $black
-        input#userTaggerSave
-          background:
-            color: $green
-          border:
-            color: $black
-            radius: 0
-            style: solid
-            width: 1px
-        label
-          color: $black
-          span.hoverHelp
-            color: $red
-        span#userTaggerPreview
-          background:
-            color: $white
-          color: $black
+	div.content
+		div.thing
+			div.entry
+				&.entry.RES-keyNav-activeElement
+					background:
+						image:	$T0 !important
+					div.noncollapsed
+						background:
+							image:	$T0 !important
+						div.usertext-body
+							background:
+								image:	$T0 !important
+							div.md
+								background:
+									image:	$T0 !important
+				p.tagline
+					a.author
+						background:
+							color:	transparent !important
+						color:	$black !important
+						text:
+							decoration:	none !important
+						&:hover
+							background:
+								color:	transparent !important
+							color:	$black !important
+							text:
+								decoration:	none !important
+					span.RESUserTag
+						a.userTagLink.hasTag
+							border:
+								radius:	0
+								style:	none
+					a.voteWeight
+						background:
+							color:	transparent !important
+						color:	$black !important
+	div.NERPageMarker
+		background:
+			color:	transparent
+			image:	$T4
+		color:	$black
+		width:	80%
+	div#progressIndicator
+		background:
+			color:	transparent
+			image:	$T4
+		color:	$black
+		width:	80%
+		h2
+			color:	$black
+			font:
+				family:	$serif-set
+				size:	18px
+				weight:	bold
+		p
+			color:	$black
+			a#NERStaticLink
+				color:	$red
+				&:hover
+					text-decoration:	underline
+	*.RESCloseButton
+		background:
+			color:	$red !important
+		border:
+			color:	$white !important
+			radius:	20px !important
+			style:	solid !important
+			width:	1px !important
+		color:	$white !important
+	*.RESDropdownList
+		background:
+			color:	transparent
+			image:	$texture
+		border:
+			color:	$white !important
+			style:	solid
+			radius:	0
+			width:	1px
+	*.RESDialogSmall
+		background:
+			color:	$white
+		border:
+			color:	$black
+			radius:	0
+			style:	solid
+			width:	1px
+		& > h3
+			+links
+			background:
+				image:	$texture
+			color:	$white !important
+			top:	-6px
+			span.fancy-toggle-button
+				a.option
+					background:
+						color:	$red
+						image:	none
+					border:
+						radius:	0
+						style:	none
+					color:	$white
+		div.RESDialogContents
+			div.authorFieldPair
+				div
+					color:	$black
+			div.bottomButtons
+				*.blueButton
+					background:
+						color:	$blue
+					border:
+						radius:	0
+						style:	none
+			form
+				div#userTaggerIgnoreContainer.toggleButton
+					+RES-Toggle($black,$green,$red,$white,$grey,$grey,$black)
+				input#userTaggerTag,
+				input#userTaggerLink,
+				input#userTaggerVoteWeight
+					background:
+						image:	$T4
+					color:	$black
+				input#userTaggerSave
+					background:
+						color:	$green
+					border:
+						color:	$black
+						radius:	0
+						style:	solid
+						width:	1px
+				label
+					color:	$black
+					span.hoverHelp
+						color:	$red
+				span#userTaggerPreview
+					background:
+						color:	$white
+					color:	$black
 
 // I hate RES sometimes
 .res-commentBoxes.res-commentHoverBorder .content .comment:hover
-  border: 0 !important
+	border:	0 !important
 
 @import "RES/editor"
 @import "RES/nightmode"

@@ -1,85 +1,85 @@
 /* etc/submission */
 body.submit-page
-  div.content
-    form.pretty-form.sharelink
-      & + h1
-        color: $black
-        a
-          color: $red
-    form#newlink.submit.content
-      div.formtabs-content
-        border:
-          top: 3px solid $black
-        div#text-desc.infobar
-          background:
-            image: $texture
-          border:
-            radius: 4px
-            style: none
-          color: $white
-        div#title-field
-          background:
-            color: transparent
-            image: $texture
-          textarea
-            background:
-              color: $white
-        div#url-field
-          background:
-            color: transparent
-            image: $texture
-        div#text-field
-          background:
-            color: transparent
-            image: $texture
-          span.gray
-            display: none
-          div.usertext
-            div.usertext-edit
-              div.markdownEditor
-                a
-                  color: $white
-              div.commentingAs
-                color: $white
-              textarea
-                background:
-                  color: $white
-                height: 500px
-              div.bottom-area
-                a
-                  color: $white
-        div#reddit-field
-          background:
-            color: transparent
-            image: $texture
-          div#sr-autocomplete-area
-            input#sr-autocomplete
-              background:
-                color: $white
-          div#suggested-reddits
-            h3
-              color: $white
-            ul
-              li
-                +links
-        span.title
-          color: $white
-        div.roundfield.gold-accent
-          background:
-            image: $texture
-          border:
-            radius: 4px
-            style: none
-          span.title,
-          label
-            color: $gold !important
-          span.little.gray
-            color: $white
-        div.roundfield.info-notice
-          background:
-            image: $texture
-          border:
-            radius: 4px
-            style: none
-          color: $white
-          +links
+	div.content
+		form.pretty-form.sharelink
+			& + h1
+				color:	$black
+				a
+					color:	$red
+		form#newlink.submit.content
+			div.formtabs-content
+				border:
+					top:	3px solid $black
+				div#text-desc.infobar
+					background:
+						image:	$texture
+					border:
+						radius:	4px
+						style:	none
+					color:	$white
+				div#title-field
+					background:
+						color:	transparent
+						image:	$texture
+					textarea
+						background:
+							color:	$white
+				div#url-field
+					background:
+						color:	transparent
+						image:	$texture
+				div#text-field
+					background:
+						color:	transparent
+						image:	$texture
+					span.gray
+						display:	none
+					div.usertext
+						div.usertext-edit
+							div.markdownEditor
+								a
+									color:	$white
+							div.commentingAs
+								color:	$white
+							textarea
+								background:
+									color:	$white
+								height:	500px
+							div.bottom-area
+								a
+									color:	$white
+				div#reddit-field
+					background:
+						color:	transparent
+						image:	$texture
+					div#sr-autocomplete-area
+						input#sr-autocomplete
+							background:
+								color:	$white
+					div#suggested-reddits
+						h3
+							color:	$white
+						ul
+							li
+								+links
+				span.title
+					color:	$white
+				div.roundfield.gold-accent
+					background:
+						image:	$texture
+					border:
+						radius:	4px
+						style:	none
+					span.title,
+					label
+						color:	$gold !important
+					span.little.gray
+						color:	$white
+				div.roundfield.info-notice
+					background:
+						image:	$texture
+					border:
+						radius:	4px
+						style:	none
+					color:	$white
+					+links
