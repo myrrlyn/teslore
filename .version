@@ -1,10 +1,10 @@
 {
-  teslore: {
-    version: '4.06',
-    name: 'Deadly Dagoth'
-  },
-  almsivi: {
-    version: '1.0',
-    name: 'Sassy ALMSIVI'
-  }
+	teslore: {
+		version: '4.07',
+		name: 'Devious Direnni'
+	},
+	almsivi: {
+		version: '1.0',
+		name: 'Sassy ALMSIVI'
+	}
 }
