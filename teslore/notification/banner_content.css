@@ -99,6 +99,6 @@
 */
 div.side a[href$="#banner"]:after
 {
-    content: "";
+	content: "";
 }
 /*! @end */
