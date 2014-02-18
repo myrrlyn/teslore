@@ -4,29 +4,30 @@ div#header-bottom-left
 		img#header-img
 			background:
 				color:	transparent
-				image:	$logo
+				image:	$snoo
 				position:	0 0
 				repeat:	no-repeat
-			height:	$logoheight
+			height:	$snooheight
 			left:	5px
 			position:	absolute
-			top:	$bannerheight - $logoheight + $logooffset
-			width:	$logowidth
+			top:	$bannerheight - $snooheight + $snoooffset
+			width:	$snoowidth
 			z-index:	10
-			&:hover
-				background:
-					position:	0 0 - $logoheight
 	span.hover.pagename.redditname
 		a
-			background:
-				color:	transparent
-				image:	$banner
-				position:	left top
-				repeat:	repeat-x
+			color:	$white
 			display:	inline-block
 			font:
-				size:	0
-			height:	$bannerheight
-			left:	0
+				family:	$daedric-set, $serif-set
+				size:	66px
+				weight:	500
+			margin:	-10px 10px
 			position:	absolute
-			width:	100%
+			bottom:	$tabmenuheight
+			left:	$snoowidth + 5px
+			text:
+				decoration:	none
+			&:hover,
+			&:active
+				font:
+					family:	$serif-set
