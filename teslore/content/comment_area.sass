@@ -1,6 +1,8 @@
 /* content/comment_area */
 div.content
 	div.commentarea
+		p.error
+			color: $red
 		div.panestack-title
 			border:
 				bottom:	1px solid lighten($black,15%)
@@ -52,6 +54,11 @@ div.content
 							color:	$white !important
 							image:	none
 						color:	$black !important
+				a.reddiquette,
+				a.option
+					color: $black
+				span.error
+					color: $red
 		div.thing.comment
 			+arrows
 			background:
