@@ -15,19 +15,22 @@ div#header-bottom-left
 			z-index:	10
 	span.hover.pagename.redditname
 		a
-			color:	$white
-			display:	inline-block
+			background:
+				color:		transparent
+				image:		$name
+				position:	0 0
 			font:
-				family:	$daedric-set, $serif-set
-				size:	66px
-				weight:	500
-			margin:	-10px 10px
+				size:	0
+			padding:
+				top:	64px
+				right:	270px
 			position:	absolute
-			bottom:	$tabmenuheight
-			left:	$snoowidth + 5px
-			text:
-				decoration:	none
+			bottom:	50px
+			left:	90px
 			&:hover,
 			&:active
-				font:
-					family:	$serif-set
+				background:
+					position:	0 45px
+				padding:
+					top:	45px
+					right:	280px
