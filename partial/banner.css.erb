@@ -1,12 +1,15 @@
 <%- if args.include? :banners and args[:banners].is_a? Hash -%>
 	<%# Pick banner of the day: day of year mod number of banners %>
-	<%- id, banner = args[:banners].to_a[Time.now.utc.yday % args[:banners].length] -%>
+  <%- id, banner = args[:banners].to_a[Time.now.utc.yday % args[:banners].length] -%>
+  <%- banner[:background_color] ||= '#161616' -%>
+  <%- banner[:background_repeat] ||= 'no-repeat' -%>
+  <%- banner[:background_position] ||= 'center top' -%>
 	div#header-bottom-left {
 		/** Today's banner: <%= id %> */
-		background-image: url(%%<%= banner[:url] %>%%);
+    background-image: url(%%<%= banner[:url] %>%%);
 		<%- banner.each do |k, v| -%>
 			<%- next if k == :url or k == :author %>
-			<%= "#{k.to_s.gsub('_', '-')}: #{v.is_a?(String) && v.to_i == 0 ? v.inspect : v};" %>
+			<%= "#{k.to_s.gsub('_', '-')}: #{v};" %>
 		<%- end -%>
 	}
 	<%- if banner.include? :author -%>
