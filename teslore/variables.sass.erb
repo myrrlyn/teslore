@@ -28,7 +28,6 @@ $arrows:		url(%%Arrows%%)
 $banner:		url(%%Tools-Bright%%)
 $calendar:		url(%%Cal4E204%%)
 $FlairSheet:	url(%%FlairStandard%%)
-$name:			url(%%teslore-white%%)
 $texture:		url(%%DarkTex%%)
 $T0:			url(%%pixel-of-RES%%)
 $T1:			url(%%pixel-of-darkness%%)
@@ -36,20 +35,21 @@ $T2:			url(%%pixel-of-truth%%)
 $T3:			url(%%pixel-of-valor%%)
 $T4:			url(%%pixel-of-light%%)
 
-$snoo:			url(%%Snoo%%)
-$snooheight:	78px
-$snoowidth:		75px
-$snoooffset:	17px
+$snoo:				url(%%Snoo%%)
+$snoo-height:		94px
+$snoo-width:		90px
+$snoo-offset:		29px - 8px	//	Varies with Image. -8px for the glow space
 
-$teslore:		url(%%Realms%%)
-$tesloreheight:	29px
-$teslorewidth:	158px
+$teslore:			url(%%teslore-black%%)
+$teslore-height:	29px
+$teslore-width:		280px
+$teslore-offset:	29px
 
 //	Header Image Information
-$tabmenuheight:	49px
-$bannerheight:	190px
-$headerheight:	$bannerheight + $tabmenuheight
-$noticeheight:	53px
+$tabmenu-height:	49px
+$banner-height:		190px
+$header-height:		$banner-height + $tabmenu-height
+$notice-height:		53px
 
 //	Wiki Variables
 $wiki-size:	13px
@@ -85,7 +85,7 @@ $build_branch:		"<%= $build[:branch] %>"
 		weight:	400
 	position:	relative
 	text:
-		align:		center
+		align:	center
 		transform:	uppercase
 =links
 	a

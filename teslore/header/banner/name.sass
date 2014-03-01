@@ -7,30 +7,33 @@ div#header-bottom-left
 				image:	$snoo
 				position:	0 0
 				repeat:	no-repeat
-			height:	$snooheight
+			height:	$snoo-height
 			left:	5px
 			position:	absolute
-			top:	$bannerheight - $snooheight + $snoooffset
-			width:	$snoowidth
+			bottom:	$tabmenu-height + $snoo-offset
+			width:	$snoo-width
 			z-index:	10
+			&:hover
+				background:
+					position:	-90px 0
 	span.hover.pagename.redditname
 		a
 			background:
-				color:		transparent
-				image:		$name
+				color:	transparent
+				image:	$teslore
 				position:	0 0
+				repeat:	no-repeat
 			font:
 				size:	0
 			padding:
 				top:	64px
-				right:	270px
+				right:	$teslore-width
 			position:	absolute
-			bottom:	50px
-			left:	90px
+			bottom:	$tabmenu-height + $teslore-offset
+			left:	$snoo-width + 10px
 			&:hover,
 			&:active
 				background:
-					position:	0 45px
+					position:	0 -70px
 				padding:
 					top:	45px
-					right:	280px
