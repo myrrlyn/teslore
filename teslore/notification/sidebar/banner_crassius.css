@@ -1,0 +1,24 @@
+/* notification/banner_content */
+/*!
+@banner
+{
+	"banners":
+	{
+		"c0da_1": {
+			"url": "BannerC0DA-1",
+			"author": "http://pong.cghub.com/",
+			"height": "150px"
+		},
+		"c0da_2": {
+			"url": "BannerC0DA-2",
+			"author": "http://skadi.cgsociety.org/portfolio/about",
+			"height": "200px"
+		}
+	}
+}
+*/
+div.side a[href$="#banner"]:after
+{
+	content: "";
+}
+/*! @end */

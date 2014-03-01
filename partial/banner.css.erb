@@ -1,15 +1,17 @@
 <%- if args.include? :banners and args[:banners].is_a? Hash -%>
-  <%# Pick banner of the day: day of year mod number of banners %>
-  <%- id, banner = args[:banners].to_a[Time.now.utc.yday % args[:banners].length] -%>
-div#header-bottom-left {
-  /** Today's banner: <%= id %> */
-  image: url(%%<%= banner[:url] %>%%);
-  <%- banner.each |k, v| -%>
-    <%- next if k == :url or k == :author %>
-    <%= "#{k.gsub('_', '-')}: #{v.is_a?(String) ? v.inspect : v};" %>
-  <%- end -%>
-}
-div.side a[href="<%= banner[:url] %>#banner"] {
-  display: inline-block !important;
-}
+	<%# Pick banner of the day: day of year mod number of banners %>
+	<%- id, banner = args[:banners].to_a[Time.now.utc.yday % args[:banners].length] -%>
+	div#header-bottom-left {
+		/** Today's banner: <%= id %> */
+		background-image: url(%%<%= banner[:url] %>%%);
+		<%- banner.each do |k, v| -%>
+			<%- next if k == :url or k == :author %>
+			<%= "#{k.to_s.gsub('_', '-')}: #{v.is_a?(String) && v.to_i == 0 ? v.inspect : v};" %>
+		<%- end -%>
+	}
+	<%- if banner.include? :author -%>
+		div.side a[href="<%= banner[:author] %>#banner"] {
+			display: inline-block !important;
+		}
+	<%- end -%>
 <%- end -%>
