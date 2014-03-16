@@ -19,3 +19,4 @@ To compile and upload the CSS, use `rake reddit:push`.
 To compile the CSS without uploading it, use `rake reddit:compile`. Output will be saved to the `build` directory.
 
 If you want to override the default subreddit or stylesheet, try something like `rake reddit:refresh subreddit=teslore`.
+
