@@ -1,9 +1,50 @@
 /* etc/wiki/stylesheet */
-body.wiki-page
+body.wiki-page-config-stylesheet
+	div.infobar
+		background:
+			color:	$gold
+		border:
+			style:	none
+		div.md
+			p
+				color:	$black
 	div.wiki-page-content
+		table.diff
+			font:
+				family:	$code-set !important
+			span.diff_add
+				background:
+					color:	$green
+			span.diff_chg
+				background:
+					color:	$gold
+			span.diff_sub
+				background:
+					color:	$red
+			colgroup
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(4),
+				&:nth-child(5)
+					backgorund:
+						color:	$black
+					color:	$white
+				&:nth-child(3),
+				&:nth-child(6)
+					background:
+						color:	$white
+					color:	$black
+			thead
+				tr
+					th
+						background:
+							color:	$black
+						color:	$white
 		pre.subreddit-stylesheet-source
 			background:
 				color:	$black
+			border:
+				radius:	15px
 			font:
 				family:	$code-set
 			code.language-css

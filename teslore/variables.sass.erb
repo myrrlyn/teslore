@@ -12,7 +12,7 @@ $orange:		#FF4500
 $parchment:		#E9DDC0
 $red:			#A72A2A
 $red-desat:		#7F1F1F
-$white:			#F4F4F4
+$white:			#F0F0F0
 
 //	Font Kit
 $code-set:			"Inconsolata", "Consolas", "Lucida Console", "Courier New", monospace
@@ -27,7 +27,7 @@ $falmer-set:		"Falmer"
 $mage-set:			"Mage Script"
 
 //	Textures Used
-$banner:		url(%%Magnus%%)
+$banner:		url(%%Seas%%)
 $banner-pos:	center top
 $calendar:		url(%%Cal4E204%%)
 $FlairSheet:	url(%%FlairStandard%%)
@@ -153,3 +153,14 @@ $build_branch:		"<%= $build[:branch] %>"
 			&:hover
 				background:
 					position:	-40px -15px
+=userattrs($pos)
+	background:
+		image:	$spritesheet
+		position:	$pos -70px
+	bottom:	-10px
+	padding:
+		top:	28px
+		left:	0
+		right:	5px
+		bottom:	0
+	position:	relative
