@@ -17,10 +17,6 @@ div#header-bottom-left
 						style:	solid
 						width:	1px
 					color:	$red
-			&:nth-of-type(1):hover
-				a
-					font:
-						family:	$dovah-set
 			a
 				background:
 					color:	transparent
@@ -31,6 +27,9 @@ div#header-bottom-left
 					weight:	bold
 				text:
 					transform:	uppercase
+				&[href$="/r/teslore/"]:hover
+					font:
+						family:	$dovah-set
 				&[href*="/new"]:hover
 					font:
 						family:	$falmer-set
