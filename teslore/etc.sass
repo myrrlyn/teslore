@@ -12,6 +12,18 @@ body.mod-toolbox div#tb-bottombar.tb-toolbar
 	background:
 		color:	transparent
 		image:	$T1 !important
+div#headdit-box
+	button
+		background:
+			color:	$white
+		&:before
+			background:
+				image:	url(%%headdit%%) !important
+				position:	0 0 !important
+		&:hover
+			&:before
+				background:
+					position:	0 -36px !important
 @import "etc/submission"
 @import "etc/moderator"
 @import "etc/search"
