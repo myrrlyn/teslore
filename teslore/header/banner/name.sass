@@ -17,6 +17,13 @@ div#header-bottom-left
 			//	background:
 			//		position:	$snoo-x-2 $snoo-y-2
 	span.hover.pagename.redditname
+		color:	$white
+		font:
+			family:	$code-set
+			size:	50px
+		position:	absolute
+		left:	$snoo-width + $teslore-width
+		bottom:	$tabmenu-height
 		a
 			background:
 				color:	transparent
@@ -29,8 +36,8 @@ div#header-bottom-left
 				top:	64px
 				right:	$teslore-width
 			position:	absolute
-			bottom:	$tabmenu-height + $teslore-offset
-			left:	$snoo-width + 10px
+			bottom:	0
+			left:	0 - $teslore-width
 			&:hover,
 			&:active
 				background:
