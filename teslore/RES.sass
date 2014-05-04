@@ -29,16 +29,16 @@ body.res
 			div.entry
 				&.entry.RES-keyNav-activeElement
 					background:
-						image:	$T0	!important
+						color:	$T0	!important
 					div.noncollapsed
 						background:
-							image:	$T0	!important
+							color:	$T0	!important
 						div.usertext-body
 							background:
-								image:	$T0	!important
+								color:	$T0	!important
 							div.md
 								background:
-									image:	$T0	!important
+									color:	$T0	!important
 				p.tagline
 					a.author
 						background:
@@ -66,6 +66,7 @@ body.res
 			color:	transparent
 			image:	$T4
 		color:	$black
+		margin:	0 auto
 		width:	80%
 	div#progressIndicator
 		background:
@@ -140,20 +141,21 @@ body.res
 			form
 				div#userTaggerIgnoreContainer.toggleButton
 					+RES-Toggle($black,$green,$red,$white,$grey,$grey,$black)
-				input#userTaggerTag,
-				input#userTaggerLink,
-				input#userTaggerVoteWeight
-					background:
-						image:	$T4
-					color:	$black
-				input#userTaggerSave
-					background:
-						color:	$green
-					border:
+				input
+					&#userTaggerTag,
+					&#userTaggerLink,
+					&#userTaggerVoteWeight
+						background:
+							image:	$T4
 						color:	$black
-						radius:	0
-						style:	solid
-						width:	1px
+					&#userTaggerSave
+						background:
+							color:	$green
+						border:
+							color:	$black
+							radius:	0
+							style:	solid
+							width:	1px
 				label
 					color:	$black
 					span.hoverHelp
@@ -162,10 +164,13 @@ body.res
 					background:
 						color:	$white
 					color:	$black
-
-// I hate RES sometimes
-.res-commentBoxes.res-commentHoverBorder .content .comment:hover
-	border:	0	!important
+body.res-commentBoxes.res-commentHoverBorder
+	div.content
+		div.comment:hover
+			border:
+				color:	$brown
+				style:	none	!important
+				width:	0	!important
 
 @import "RES/editor"
 @import "RES/nightmode"
