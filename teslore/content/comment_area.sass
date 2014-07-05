@@ -1,133 +1,150 @@
-/* content/comment_area */
-div.content
-	div.commentarea
-		p.error
-			color: $red
-		div.panestack-title
+/*	content/comment_area	*/
+div.commentarea
+	p.error
+		color: $red
+	div.panestack-title
+		border:
+			bottom:	1px solid lighten($black,15%)
+		span.panestack-title
+			color:	$black
+		span#REScommentSubToggle.RESSubscriptionButton
+			background:
+				color:	$T3
 			border:
-				bottom:	1px solid lighten($black,15%)
-			span.panestack-title
-				color:	$black
-			span#REScommentSubToggle.RESSubscriptionButton
-				background:
-					color:	transparent
-					image:	$T3
-				border:
-					color:	lighten($black,15%%)
-					style:	solid
-					radius:	0
-					width:	1px
-				color:	$brown
-				&:hover
-					background:
-						color:	$white
-					color:	$brown
-		div.menuarea
+				color:	lighten($black,15%)
+				style:	solid
+				radius:	0
+				width:	1px
 			color:	$brown
-			div.dropdown
-				span.selected
-					color:	$brown
-			div.drop-choices
+			&:hover
 				background:
 					color:	$white
-				form
-					a.choice
-						color:	$brown
-		form
-			div.usertext-edit
-				div
-					textarea
-						background:
-							image:	url(%%commentbox%%)
-							position:	0 0
-							repeat:	no-repeat
-						color:	$black
-						height:	100px !important
-						width:	500px !important
-						&:focus
-							background:
-								position:	0 -100px
-							color:	$black
-				div.RESDialogSmall.livePreview
-					div.md.RESDialogContents
-						background:
-							color:	$white !important
-							image:	none
-						color:	$black !important
-				a.reddiquette,
-				a.option
-					color: $black
-				span.error
-					color: $red
-		div.thing.comment
-			+arrows
-			background:
-				color:	transparent !important
-			border:
-				radius:	0 !important
-				style:	none !important
-			margin:
-				left:	0 !important
-			padding:
-				left:	10px
-				right:	30px
-				bottom:	10px
-			div.entry
-				div.usertext-body
-					div.md
-						+links
-						+expando-buttons
-			div.collapsed
 				color:	$brown
-				a
+	div.menuarea
+		color:	$brown
+		div.dropdown
+			span.selected
+				color:	$brown
+		div.drop-choices
+			background:
+				color:	$white
+			form
+				a.choice
 					color:	$brown
+	form
+		div.usertext-edit
+			div
+				textarea
+					background:
+						image:	url(%%commentbox%%)
+						position:	0 0
+						repeat:	no-repeat
+					color:	$black
+					min-height:	100px	!important
+					min-width:	500px	!important
+					&:focus
+						background:
+							position:	0 -100px
+						color:	$black
+			div.RESDialogSmall.livePreview
+				div.md.RESDialogContents
+					background:
+						color:	$white	!important
+						image:	none
+					color:	$black	!important
+			a.reddiquette,
+			a.option
+				color: $black
+			span.error
+				color: $red
+	div.thing.comment
+		+arrows
+		border:
+			radius:	0	!important
+			style:	none	!important
+		margin:
+			left:	0	!important
+		padding:
+			left:	10px
+			right:	30px
+			bottom:	10px
+		div.entry
+			div.usertext-body
+				div.md
+					+links
+					+expando-buttons
+		div.collapsed
+			color:	$brown
+			a
+				color:	$brown
 	div.sitetable.nestedlisting
 		& > div.comment:nth-child(8n+1),
 		& > div.comment:nth-child(8n+1) div.comment div.comment div.comment div.comment,
 		& > div.comment:nth-child(8n+1) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
-			background-image:	$T1
+			background:
+				color:	$T1
 			div.comment
-				background-image:	$T3
+				background:
+					color:	$T3
 				div.comment
-					background-image:	$T2
+					background:
+						color:	$T2
 					div.comment
-						background-image:	$T4
+						background:
+							color:	$T4
 		& > div.comment:nth-child(8n+3),
 		& > div.comment:nth-child(8n+3) div.comment div.comment div.comment div.comment,
 		& > div.comment:nth-child(8n+3) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
-			background-image:	$T4
+			background:
+				color:	$T4
 			div.comment
-				background-image:	$T2
+				background:
+					color:	$T2
 				div.comment
-					background-image:	$T3
+					background:
+						color:	$T3
 					div.comment
-						background-image:	$T1
+						background:
+							color:	$T1
 		& > div.comment:nth-child(8n-3),
 		& > div.comment:nth-child(8n-3) div.comment div.comment div.comment div.comment,
 		& > div.comment:nth-child(8n-3) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
-			background-image:	$T3
+			background:
+				color:	$T3
 			div.comment
-				background-image:	$T1
+				background:
+					color:	$T1
 				div.comment
-					background-image:	$T4
+					background:
+						color:	$T4
 					div.comment
-						background-image:	$T2
+						background:
+							color:	$T2
 		& > div.comment:nth-child(8n-1),
 		& > div.comment:nth-child(8n-1) div.comment div.comment div.comment div.comment,
 		& > div.comment:nth-child(8n-1) div.comment div.comment div.comment div.comment div.comment div.comment div.comment div.comment
-			background-image:	$T2
+			background:
+				color:	$T2
 			div.comment
-				background-image:	$T4
+				background:
+					color:	$T4
 				div.comment
-					background-image:	$T1
+					background:
+						color:	$T1
 					div.comment
-						background-image:	$T3
+						background:
+							color:	$T3
+	span.morecomments
+		a.button
+			color:	$red
+			span.grey
+				color:	$grey
 	span.deepthread
 		+links
 		&:after
 			background:
-				image:	$arrows
-				position:	0 -40px
+				image:	$spritesheet
+				position:	0 -35px
 			content:	""
 			height:	10px
 			width:	20px

@@ -1,4 +1,4 @@
-/* etc/submission */
+/*	etc/submission	*/
 body.submit-page
 	div.content
 		form.pretty-form.sharelink
@@ -69,6 +69,13 @@ body.submit-page
 					color: $white
 					h1
 						color: $red
+					div.md
+						h3
+							color:	$white
+						ul
+							li
+								p
+									color:	$white
 				div.captcha
 					background:
 						color: transparent
@@ -86,15 +93,15 @@ body.submit-page
 						style:	none
 					span.title,
 					label
-						color:	$gold !important
+						color:	$gold	!important
 					span.little.gray
 						color:	$white
-				div.roundfield.info-notice
-					background:
-						color: transparent
-						image:	$texture
-					border:
-						radius:	4px
-						style:	none
-					color:	$white
-					+links
+			div.roundfield.info-notice
+				background:
+					color: transparent
+					image:	$texture
+				border:
+					radius:	4px
+					style:	none
+				color:	$white
+				+links

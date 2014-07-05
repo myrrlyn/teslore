@@ -1,10 +1,11 @@
-/* footer */
+/*	footer	*/
 div.footer-parent
 	padding-top:	0
 	+links
 	div.footer.rounded
 		border:
 			color:	$black
+			radius:	15px
 			style:	solid
 			width:	1px
 		div.col
@@ -19,8 +20,7 @@ div.footer-parent
 					font:
 						family:	$sans-serif-set
 				li
-					a
-						color:	$red
+					+links
 	p.bottommenu
 		+links
 		color:	$black
@@ -28,8 +28,13 @@ div.footer-parent
 			family:	$sans-serif-set
 p.debuginfo
 	span.icon
-		background-image:	url(%%teslorecouncilsmallest%%)
-		font-size:	0
+		background:
+			color:	transparent
+			image:	url(%%spritesheet%%)
+			position:	-15px -50px
+			repeat:	no-repeat
+		font:
+			size:	0
 		padding:
 			top:	10px
 			left:	0

@@ -1,4 +1,4 @@
-/* header/userbar */
+/*	header/userbar	*/
 div#header-bottom-right,
 div#header-bottom-right.resNavTop
 	background:
@@ -7,7 +7,7 @@ div#header-bottom-right.resNavTop
 	border:
 		radius:	0
 		width:	0
-	bottom:	$header-height - 20px
+	bottom:	$tabmenu-height + $banner-height - 20px
 	margin:
 		top:	-5px
 		left:	0
@@ -19,38 +19,38 @@ div#header-bottom-right.resNavTop
 		right:	8px
 		bottom:	4px
 	position:	absolute
-	top:	23px
+	top:	25px
 	a, form, span
-		color:	$white !important
+		color:	$white	!important
 	a#mail
 		background:
 			color:	transparent
-			image:	url(%%Mail%%)
+			image:	url(%%spritesheet%%)
 		height:	10px
 		width:	15px
 		&.havemail
 			background:
-				position:	-16px 0
+				position:	-45px -30px
 		&.nohavemail
 			background:
-				position:	0 0
+				position:	-30px -30px
 	a#modmail
 		background:
 			color:	transparent
-			image:	url(%%Mail%%)
+			image:	url(%%spritesheet%%)
 		height:	16px
 		width:	16px
 		&.havemail
 			background:
-				position:	-16px -10px
+				position:	-45px -45px
 		&.nohavemail
 			background:
-				position:	0px -10px
+				position:	-30px -45px
 div#userbarToggle
 	background:
 		color:	transparent
 		image:	$texture
-	color:	$white !important
+	color:	$white	!important
 	border:
 		radius:	0
 		style:	none
