@@ -1,6 +1,6 @@
 GIT
   remote: git@git.stratosphe.re:reddit/akatoshbot.git
-  revision: a4e143523fbe262c6d3acbf6c6b9eeb537ad4636
+  revision: 0cc21214e4ef625cef2834ad6de4fc66ac939084
   branch: master
   specs:
     akatoshbot (0.3.1)
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git@git.stratosphe.re:reddit/crassius.git
-  revision: f3fe42e98d6518941ee8ef12331a32dc6d5e49f7
+  revision: 9d069b0b2ca8625c7643434148528b7ed6a157ab
   branch: master
   specs:
     crassius (0.3.1)
