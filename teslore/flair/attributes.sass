@@ -1,0 +1,28 @@
+//  flair/attributes
+//  User attributes (friend, submitter, moderator, etc)
+//  Work on an image-based system to be applied after flair is in progress, but
+//  has proven troublesome in the past and so is not present at this time.
+span.userattrs
+  font:
+    //  Ensure graceful degradation for those without fonts installed.
+    family: $fonts-serf
+    //  This has been troublesome in the past and needs to stay put.
+    size:  $font-base !important
+  //  Current reddit administrators
+  a.admin
+    font-family:  $font-mage
+  //  Former reddit administrators
+  span.alum
+    font-family:  $font-falmer
+  //  Anniversary of account creation
+  a.cakeday
+    //  No code for this at present.
+  //  Friends
+  a.friend
+    font-family:  $font-daedric
+  //  Moderator speaking in official capacity
+  a.moderator
+    font-family:  $font-dovah
+  //  OP
+  a.submitter
+    font-family:  $font-dwemer

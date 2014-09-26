@@ -1,0 +1,29 @@
+//  flair/link
+//  Link flair for certain categories of post
+
+//  Post with link flair of any kind applied
+div.linkflair
+  //  The link flair element
+  span.linkflairlabel
+    border:
+      radius: 4px
+      style:  none
+    padding:
+      top:    2px
+      left:   5px
+      right:  5px
+      bottom: 2px
+    //  Posts with Moderator-assigned flair
+    &.linkflair-Mod
+      p.title
+        //  Title of post
+        a.title
+          color:  $grn
+          font:
+            weight: 600
+          padding:
+            top:    0
+            bottom: 0
+      //  No label displayed
+      span.linkflairlabel
+        display:  none

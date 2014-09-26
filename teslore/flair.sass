@@ -1,0 +1,30 @@
+//  flair
+//  User flair images (black flags to right of username)
+
+//  User flair assignments
+.flair
+  //  Dimensions
+  height:   $flair-height
+  width:    $flair-width
+  background:
+    //  Strip default grey
+    color:  transparent
+    //  Image defaults to blank flag if class error
+    image:  $flair-sheet
+  border:
+    //  reddit rounds corners
+    radius: 0
+    style:  none
+  //  Images are IRRITATING to work with
+  display:  inline-block
+  margin:
+    top:  0
+  padding:  0
+  //  So irritating.
+  position: relative
+  //  font-size:0; would mess things up more.
+  text-indent:  -10000px
+  vertical-align: middle
+@import "flair/flags"
+@import "flair/attributes"
+@import "flair/link"
