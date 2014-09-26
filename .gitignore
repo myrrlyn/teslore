@@ -1,0 +1,12 @@
+# Sass detritus
+.sass-cache/
+*.s[ac]ssc
+
+# Windows filesystem detritus
+Thumbs.db
+
+# Sensitive files
+config/reddit.yml
+
+# Compilation results
+/build/

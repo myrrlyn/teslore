@@ -1,0 +1,16 @@
+# /u/USERNAME of the moderator account
+username:    'your username'
+# Password of same account
+password:    'your password'
+# Default upload target
+# Recommended to set to a testing subreddit and require explicit directive to
+# upload to production subreddit
+subreddit:   'your subreddit'
+# Stylesheet (directory and .css.sass.erb file) to use
+stylesheet:  'your stylesheet'
+# Sass compilation style
+# Expanded: Selectors and braces are on their own lines with zero indentation
+# Nested: Sass' default style; nested selectors receive indentation
+# Compact: Middle ground between legibility and small size
+# Compressed: As minified as it gets.
+style:       'nested|expanded|compact|compressed'
