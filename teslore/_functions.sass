@@ -1,0 +1,10 @@
+//  functions
+//  Holds functions out of the way
+
+//  Allows us to think in pixels but actually code in ems
+@function PxToEm($px)
+  @return ($px / (14)) * 1em
+
+//  Bespoke greys
+@function grey($val)
+  @return hsla(000.00, 00.00%, $val, 1.0000)

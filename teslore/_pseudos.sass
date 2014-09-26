@@ -1,0 +1,19 @@
+//  pseudos
+//  Pseudoclasses stay in Sass memory but never get compiled to CSS. They are most
+//  useful for collecting selectors that all have identical properties, preventing
+//  duplication of these statements and minimizing character usage.
+
+//  Force backgrounds to this image
+%bg-tex
+  background:
+    color:  transparent
+    image:  $bg-texture
+//  Link coloration
+%link-color
+  color:  $red
+  &:hover,
+  &:active
+    text:
+      decoration: underline
+  &:visited
+    color:  $red-desat

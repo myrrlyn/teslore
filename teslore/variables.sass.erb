@@ -1,0 +1,126 @@
+//  variables
+//  Holds globally-used variables such as color nicknames, images, sizing data, font
+//  collections, Sass pseudoclasses, custom functions and Ruby placeholder text.
+
+//  Functions
+@import "functions"
+
+//  COLOR PALETTE
+//  Monochromes
+$black:                 hsla(000.00, 00.00%, 08.63%, 1.0000)
+$black-lt:              hsla(000.00, 00.00%, 16.66%, 1.0000)
+$grey-25:               hsla(000.00, 00.00%, 25.00%, 1.0000)
+$grey-33:               hsla(000.00, 00.00%, 33.33%, 1.0000)
+$grey-50:               hsla(000.00, 00.00%, 50.00%, 1.0000)
+$grey-66:               hsla(000.00, 00.00%, 66.66%, 1.0000)
+$grey-75:               hsla(000.00, 00.00%, 75.00%, 1.0000)
+$white-dk:              hsla(000.00, 00.00%, 84.33%, 1.0000)
+$white:                 hsla(000.00, 00.00%, 91.40%, 1.0000)
+//  Primaries
+$red:                   hsla(000.00, 60.00%, 40.00%, 1.0000)
+$red-desat:             hsla(000.00, 60.00%, 30.00%, 1.0000)
+$red-mod:               hsla(006.25, 90.00%, 33.33%, 1.0000)
+$grn:                   hsla(120.00, 80.00%, 20.00%, 1.0000)
+$blu:                   hsla(240.00, 80.00%, 33.33%, 1.0000)
+$blu-lite:              hsla(209.00, 100.0%, 43.70%, 1.0000)
+//  Others
+$orange:                hsla(016.20, 100.0%, 50.00%, 1.0000)
+$brown:                 hsla(020.90, 62.30%, 27.10%, 1.0000)
+$parchment:             hsla(042.40, 48.20%, 83.33%, 1.0000)
+$gold:                  hsla(043.90, 54.00%, 39.20%, 1.0000)
+//  Semitransparencies
+$cover-res:             hsla(042.00, 17.00%, 91.00%, 0.8750)
+$cover-darkness:        hsla(000.00, 00.00%, 20.00%, 0.1490)
+$cover-truth:           hsla(000.00, 00.00%, 50.00%, 0.2040)
+$cover-valor:           hsla(032.00, 08.00%, 99.00%, 0.5765)
+$cover-light:           hsla(000.00, 00.00%, 99.00%, 0.5608)
+
+//  FONTS
+$font-base:             14px
+//  Common Fonts
+$fonts-mono:            "Inconsolata-dz", "Inconsolata", "Lucida Console", "Consolas", "Courier New", monospace
+$fonts-sans:            "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif
+$fonts-serf:            "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", "Goudy Old Style", serif
+//  TES Fonts
+$font-daedric:          "Oblivion", "Daedric"
+$font-dovah:            "Dragon_script"
+$font-dwemer:           "Dwemer"
+$font-falmer:           "Falmer"
+$font-mage:             "Mage Script"
+//  Map
+$fonts-TES:             (Daedric, $font-daedric), (Dovah, $font-dovah), (Dwemer, $font-dwemer), (Falmer, $font-falmer), (Mage, $font-mage)
+
+//  IMAGES
+$sprites:               url(%%sprites%%)
+$bg-main:               url(%%map%%)
+$bg-texture:            url(%%dark-tex%%)
+
+//  Flair
+$flair-sheet:           url(%%flair%%)
+$flair-height:          30px
+$flair-width:           50px
+
+//  Flag
+$flagImage:             url(%%flag%%)
+$flagText:              url(%%flag-text%%)
+
+//  Banner data
+$header-banner-img:     url(%%banner%%)
+$header-banner-pos:     bottom center
+$header-banner-h:       100px
+//  Height of subreddit bar
+$header-submenu-h:      20px
+//  Height of tab menu below banner
+$header-tabmenu-h:      49px
+$header-sum-h:          $header-submenu-h + $header-banner-h + $header-tabmenu-h
+//  Y-value of notification inserts
+$header-notice-y:       53px
+
+//  Snoo
+$snoo-img:              url(%%Snoo%%)
+//  Height of a single Snoo sprite
+$snoo-h:                94px
+//  Width of a single Snoo sprite
+$snoo-w:                90px
+//  Distance between Snoo's feet and bottom of image file
+$snoo-o:                0 - 8px
+//  Image coordinates of resting Snoo
+$snoo-x-0:              0
+$snoo-y-0:              0
+//  Image coordinates of active Snoo
+$snoo-x-1:              -90px
+$snoo-y-1:              0
+
+//  Teslore Logo
+$logo-img:              url(%%teslore%%)
+//  Height of a single logo sprite
+$logo-h:                29px
+//  Width of a single logo sprite
+$logo-w:                280px
+//  Any vertical offset needed
+$logo-o:                0
+//  Image coordinates of resting logo
+$logo-x-0:              0
+$logo-y-0:              -280px
+//  Image coordinates of active logo
+$logo-x-1:              -280px
+$logo-y-1:              -70px
+
+//  Versioning Information (processed by Ruby and returned as plaintext)
+//  Build number (taken from /.version file)
+$build_version:         "<%= $build[:version] %>"
+//  Machine which compiled current document
+$build_host:            "<%= $build[:host] %>"
+//  Build name (taken from /.version file)
+$build_name:            "<%= $build[:name] %>"
+//  Time of compilation
+$build_time:            "<%= $build[:time] %>"
+//  Current Git commit hash (7 chars)
+$build_hash:            "<%= $build[:hash][0...7] %>"
+//  Current Git commit hash (40 chars)
+$build_hash_long:       "<%= $build[:hash] %>"
+//  Current Git branch
+$build_branch:          "<%= $build[:branch] %>"
+
+//  Pseudoclasses
+@import "pseudos"

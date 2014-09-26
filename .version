@@ -1,0 +1,12 @@
+{
+  teslore:
+  {
+    version: '5.00',
+    name: 'Rewrite'
+  },
+  almsivi:
+  {
+    version: '1.0',
+    name: 'Sassy ALMSIVI'
+  }
+}
