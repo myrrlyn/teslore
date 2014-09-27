@@ -1,6 +1,11 @@
 //  global
 //  General properties
 
+//  Pseudoclasses
+//  I wanted to have the flair classes at the top of the sheet, so the list of
+//  @extend targets needs to be below the flair in compilation order.
+@import "pseudos"
+
 //  We have had lots of issues because of this and I can't really explain why. Just
 //  take my word for it: HTML parsing is a *seriously* strange creature.
 html,
@@ -43,74 +48,5 @@ div.gold-accent span.title
   font:
     weight: 700 !important
 
-//  Markdown Text Containers
-div.md
-  overflow: hidden
-  a
-    @extend %link-color
-  //  >Quoted text
-  blockquote
-    background:
-      color:  $cover-darkness
-    border:
-      top:  none
-      left:
-        color:  grey(20%)
-        style:  solid
-        width:  6px
-      right:  none
-      bottom: none
-    //  ># H1 .. >###### H6
-    //  I've appropriated blockquote-headings to be used for titles.
-    h1,h2,h3,h4,h5,h6
-      text:
-        align:  center
-  //  `Monospaced text`
-  code
-    font:
-      family: $fonts-mono
-      size:   1.2em
-  //  # H1 .. ###### H6
-  @for $h from 1 through 6
-    h#{$h}
-      @extend %heading-style
-      font:
-        size:   26px - (2 * $h)
-        weight: 700 - (100 * floor($h))
-  //  ____ Horizontal Divider
-  hr
-    color:  $black
-    border:
-      style:  none
-    height: 1px
-    margin: 0 -5px
-  //  Paragraph text
-  p
-    color:  $black
-    font:
-      family: $fonts-sans
-      size: 13px
-    line:
-      height: 16px
-    margin: 7px 10px
-  //  ----Indented Code Blocks
-  pre
-    background:
-      color:  transparentize($grey-50, 0.25)
-    border:
-      radius: 5px
-      style:  none
-    padding:  1em
-  //  ^superscript
-  sup
-    font:
-      size: 75%
-    vertical:
-      align:  super
-  //  Tables
-  table
-    border:
-      collapse: collapse
-    th, td
-      text:
-        align:  center
+@import "global/markdown"
+@import "global/spoilers"

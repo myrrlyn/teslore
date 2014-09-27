@@ -53,6 +53,8 @@ def compile id, config
   ret.gsub!(/\/\*[^!].+?\*\//m, '').gsub!(/\s*{\s*/, '{').gsub!(/\s*}\s*/, '}').gsub!(/^$\n/, '') if style == :compact
   # Replace selector { with selector\n{ and two-spaces with tab. We're on a budget.
   ret.gsub!(/\s*{/, "\n{").gsub!(/\n\s\s/, "\n\t") if style == :expanded
+  # Replace ,\s with ,\n in selector groups (and not in value choice lists). ...Just because.
+  ret.gsub!(/,\s/, ",\n").gsub!(/\",\n/, "\", ") if style == :expanded
 
   # Verify images
   verify id, ret

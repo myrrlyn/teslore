@@ -1,0 +1,79 @@
+//  global/markdown
+//  Markdown-text formatting - Markdown parsing is only implemented for user-entered
+//  text (post/comment content, sidebar, wiki), and not on machine-generated text,
+//  so div.md will always be present on *actual content* but not on structural
+//  elements.
+
+//  Markdown Text Containers
+div.md
+  //  Scroll bars occasionally glitch.
+  overflow: hidden
+  //  [Links](destination "title")
+  a
+    @extend %link-color
+  //  >Quoted text
+  blockquote
+    background:
+      color:  $cover-darkness
+    border:
+      top:  none
+      left:
+        color:  grey(20%)
+        style:  solid
+        width:  6px
+      right:  none
+      bottom: none
+    //  ># H1 .. >###### H6
+    //  I've appropriated blockquote-headings to be used for titles.
+    h1,h2,h3,h4,h5,h6
+      text:
+        align:  center
+  //  `Monospaced text`
+  code
+    font:
+      family: $fonts-mono
+      size:   1.2em
+  //  # H1 .. ###### H6
+  @for $h from 1 through 6
+    h#{$h}
+      @extend %heading-style
+      font:
+        size:   26px - (2 * $h)
+        weight: 700 - (100 * floor($h))
+  //  ____ Horizontal Divider
+  hr
+    color:  $black
+    border:
+      style:  none
+    height: 1px
+    margin: 0 -5px
+  //  Paragraph text
+  p
+    color:  $black
+    font:
+      family: $fonts-sans
+      size: 13px
+    line:
+      height: 16px
+    margin: 7px 10px
+  //  ----Indented Code Blocks
+  pre
+    background:
+      color:  transparentize($grey-50, 0.25)
+    border:
+      radius: 5px
+      style:  none
+    padding:  1em
+  //  ^superscript
+  sup
+    font:
+      size: 75%
+    vertical:
+      align:  super
+  //  Tables (reddit-customized Markdown, NOT in spec)
+  table
+    border:
+      collapse: collapse
+    th, td
+      text:
+        align:  center

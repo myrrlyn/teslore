@@ -1,0 +1,102 @@
+//  global/spoilers
+//  This is, in my opinion, the most effective and functional spoiler BACK END on
+//  reddit. It responds to both hover and touch, and does not change shape when
+//  changing states. The aesthetics of our code is incredibly plain, as we only
+//  change colors, rather than having image covers, but implementing such would be
+//  relatively trivial.
+//  IMPORTANT: If you are implementing spoilers for the first time in your subreddit
+//  you should ONLY use the #id style rather than the /page style. The former will
+//  never cause navigation issues, while the latter will attempt to find a /spoiler
+//  page and navigate to it. Since mobile users can ONLY cause click events, using
+//  / instead of # will ROYALLY WRECK THEIR EXPERIENCE. I am forced to retain the /
+//  syntax for backwards compatibility with the original designer's work from years
+//  back. This is also why we have two different words for both types.
+//  Moral of the story: ONLY USE #. / IS TERRIBLE. Tell your friends.
+
+//  How it works:
+//  There are two parts to the text here: the cover text and the hidden text. The
+//  HTML of our spoilers looks like this:
+//      <a href="#s" title="hidden text">cover text</a>
+//  In CSS, the a[] hits everything, but most obviously the cover text
+//  the ::after pseudoelement receives the hidden text, which is by default styled
+//  to be invisible. When :hover or :active states are triggered, the ::after
+//  pseudoelement is given different styles to make the text there visible.
+//  And the span.keyNavAnnotation is a RES thing we kill because this isn't a real
+//  link. God dammit RES. Always in my way.
+
+//  How to use in Markdown:
+//  [Spoiler/Conjecture notice](#keyword "Actual spoiler or conjecture content)
+//  The [text] can be anything. Good practice is to indicate scope of the spoiling
+//  or conjectural text (i.e. the game or questline to which the spoiler refers, or
+//  the topic about which one is making things up), #keyword is one of the eight,
+//  BY WHICH I REALLY MEAN FOUR, SEE ABOVE RANT, magic words below, and in between
+//  the quotes is the actual sensitive text. Markdown of this type:
+//      [alpha](beta "gamma")
+//  becomes HTML of this type:
+//      <a href="beta" title="gamma">alpha</a>
+//  and when our CSS is implemented, we get this:
+//      <a href="beta" title="gamma">alpha<a::after>gamma</a::after></a>.
+
+//  Both types use these styles.
+%cover-style
+  border:
+    radius: 4px
+    style:  none
+  color:  $white !important
+  font:
+    weight: 700
+  padding:  0 5px
+  &::after
+    //  Grab the title attribute contents and stick it here. That's how the magic happens
+    content:  attr(title)
+    font:
+      weight: normal
+    padding:  0 4px
+    text:
+      decoration: none !important
+  &:hover,
+  &:active
+    color:  $gold !important
+    text:
+      decoration: none !important
+  & + span.keyNavAnnotation
+    display:  none !important
+
+//  Spoiler Cover
+//  #spoiler is favored over #s, but both are extant
+//  /spoiler and /s are both strongly deprecated
+a[href$="#s"], a[href$="#spoiler"],
+a[href$="/s"], a[href$="/spoiler"]
+  @extend %cover-style
+  background:
+    color:  $black
+  //  Note on pseudoselectors:
+  //  :word refers to an EVENT or STATE of the element in question. Think JavaScript.
+  //  ::word refers to a CHILD ELEMENT of the element in question. Think HTML. Most
+  //  CSS processors will accept : and :: interchangeably, since poor practice vastly
+  //  outweighs the spec, and also browsers kind of do what they want. THAT'S NO
+  //  EXCUSE FOR POOR CODE. USE PROPER COLONS FOR PSEUDOSELECTORS.
+  &::after
+    background:
+      color:  $black
+    //  Hide text
+    color:  $black !important
+  &:hover,
+  &:active
+    &::after
+      //  Show text
+      color:  $white !important
+
+//  Conjecture Cover
+//  #conjecture is favored over #g, but both are extant
+//  /conjecture and /g are both strongly deprecated
+//  Conjecture text can always be visible, so we don't have any state changes for it
+a[href$="#conjecture"], a[href$="#g"],
+a[href$="/conjecture"], a[href$="/g"]
+  @extend %cover-style
+  background:
+    color:  $grn
+  &::after
+    background:
+      color:  $grn
+    color:  $white
