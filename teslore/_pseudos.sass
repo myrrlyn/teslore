@@ -8,6 +8,7 @@
   background:
     color:  transparent
     image:  $bg-texture
+
 //  Link coloration
 %link-color
   color:  $red
@@ -17,3 +18,63 @@
       decoration: underline
   &:visited
     color:  $red-desat
+
+//  TES fonts are designated using [Text](#Font) Markdown, which creates a dead link
+//  in the HTML. And because it's a link, we have to override the link styles we
+//  defined JUST above this.
+%tes-font-link
+  color:  $black !important
+  font:
+    size: $font-base
+  //  Many of the fonts have either no or awful support for lower-case letters, so
+  //  we're just dodgint that bullet /entirely/
+  text:
+    transform:  uppercase
+  &:hover,
+  &:active
+    text:
+      decoration: none
+  &:visited
+    color:  $black !important
+
+//  Font Classes
+//  Because we have so many fonts lined up in each of the three major sets (numinit
+//  is a bit of a font-junkie, and I'm not exactly averse to that, and we've run
+//  into people /not having/ some of the fonts we use, even the common ones, hence
+//  the list), duplicating font-family calls consumed a fair chunk of characters.
+//  NO MORE.
+%fonts-mono
+  font:
+    family: $fonts-mono
+%fonts-sans
+  font:
+    family: $fonts-sans
+%fonts-serf
+  font:
+    family: $fonts-serf
+%tes-font-daedric
+  font:
+    family: $tes-font-daedric
+%tes-font-dovah
+  font:
+    family: $tes-font-dovah
+%tes-font-dwemer
+  font:
+    family: $tes-font-dwemer
+%tes-font-falmer
+  font:
+    family: $tes-font-falmer
+%tes-font-mage
+  font:
+    family: $tes-font-mage
+%font-size-standard
+  font:
+    size: $font-base
+
+//  Markdown Text Styles
+%heading-style
+  border:
+    style:  none
+  color:  $black
+  margin:
+    left: 5px
