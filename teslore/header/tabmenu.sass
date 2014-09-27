@@ -1,0 +1,45 @@
+//  header/tabmenu
+//  List of options for posts (sort method, related data, etc).
+//  We've moved this from being displayed next to the subreddit name to a black bar
+//  below the banner that appears to cross the sidebar (I'm proud of that trick;
+//  it's harder than you'd think and involves blatant lies).
+div#header-bottom-left
+  ul.tabmenu
+    border:
+      style:  none
+    left: 5px
+    position: absolute
+    text:
+      align:  center
+    //  Magic number, puts the text in ~center of black bar. Don't argue with me.
+    top:  $header-banner-h + 30px
+    li
+      //  Active tab
+      &.selected
+        a
+          background:
+            color:  $white
+          border:
+            color:  $white
+            radius: 0
+            style:  solid
+            width:  1px
+          color:  $red
+      a
+        background:
+          color:  transparent
+        color:  $white
+        font:
+          family: $fonts-serf
+          size:   $font-base + 4px
+          weight: 700
+        text:
+          transform:  uppercase
+        //  Tabs we do not wish to show
+        &[href*="/controversial"],
+        &[href*="/gilded"],
+        &[href*="stattit"],
+        &.modtools-on,
+        //  RES button that is not useful, as we do not have many images
+        &#viewImagesButton
+          display:  none !important

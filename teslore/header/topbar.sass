@@ -1,0 +1,53 @@
+//  header/topbar
+//  List of subreddits subscribed
+div#sr-header-area
+  @extend %bg-tex
+  border:
+    bottom: 0
+  height: $header-submenu-h
+  //  Subreddit links and dividers
+  a, span
+    color:  $white
+    font:
+      family: $fonts-serf
+      size:   95%
+  a#sr-more-link
+    @extend %bg-tex
+    border:
+      bottom: 0
+  //  reddit gold subscribers
+  a[href*="/r/lounge"]
+    color:  $gold
+  //  /r/teslore and /r/teslorecss
+  a[href*="/r/teslore"]
+    color:  $red
+    font:
+      size: 125%
+  //  Dropdown menu (vanilla reddit, on far left)
+  div.drop-choices
+    @extend %bg-tex
+    a.choice
+      padding:
+        top:    1px
+        left:   2px
+        right:  2px
+        bottom: 1px
+      &:hover
+        background:
+          color:  $white
+        color:  $black
+//  RES has a lot of stuff up here
+div#RESShortcutsEditContainer
+  @extend %bg-tex
+div#RESShortcutsAdd,
+div#RESShortcutsLeft,
+div#RESShortcutsRight,
+div#RESShortcutsSort,
+div#RESShortcutsTrash
+  background:
+    color:  transparent
+  color:  $white
+div#RESShortcutsSort
+  left: 0
+div#RESShortcutsViewport
+  color:  $white

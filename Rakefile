@@ -23,12 +23,19 @@ def get_subreddit config
 end
 
 def get_stylesheet config
+  # The 'teslore' at the end is a default case. Change to whatever name you'd like as the default.
   ENV['stylesheet'] || config[:stylesheet] || 'teslore'
 end
 
 def get_context id
+  # Fetch system information including time, machine name, and Git context
   $base = {time: Time.now.utc, host: Socket.gethostname, hash: `git rev-parse HEAD`.strip, branch: `git rev-parse --symbolic-full-name --abbrev-ref HEAD`.strip}
+  # Fetch repository information from .version
   $build = $base.merge eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
+  # Fetch banner information from .banner (EXPERIMENTAL)
+  $banners = eval(File.read(File.join(File.dirname(__FILE__), '.banner')))[id.to_sym]
+  # Eventually we'll need to make this automatic, but for now, manual control
+  $banner = $banners[:dragons_color]
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
     env.logger = Log
   end
@@ -74,10 +81,10 @@ end
 namespace :reddit do
   task :compile do
     config = get_config
-    Log.info 'Logging into reddit'
     bot = get_bot config
     Log.info 'Compiling assets'
-    mkdir_p 'build'
+    # Gonna be honest numi having a mkdir -p build message every time was getting irksome
+    FileUtils.mkdir_p 'build' unless Dir.exist?('build')
     stylesheet = get_stylesheet config
     File.open "build/#{stylesheet}.css", 'w' do |f|
       f.write bot.interpret(compile(stylesheet, config))

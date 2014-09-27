@@ -39,8 +39,8 @@ $cover-light:           hsla(000.00, 00.00%, 99.00%, 0.5608)
 $font-base:             12px
 //  Common Fonts
 $fonts-mono:            "Inconsolata-dz", "Inconsolata", "Consolas", "Courier New", monospace
-$fonts-sans:            "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Verdana", sans-serif
-$fonts-serf:            "Georgia", "Garamond", "Constantia", "Book Antiqua", "Palatino Linotype", serif
+$fonts-sans:            "Roboto", "Segoe UI", "Helvetica Neue", "Verdana", sans-serif
+$fonts-serf:            "Georgia", "Garamond", "Constantia", "Palatino Linotype", serif
 //  TES Fonts
 $tes-font-daedric:      "Oblivion", "Daedric"
 $tes-font-dovah:        "Dragon_script"
@@ -65,9 +65,15 @@ $flagImage:             url(%%flag%%)
 $flagText:              url(%%flag-text%%)
 
 //  Banner data
-$header-banner-img:     url(%%banner%%)
-$header-banner-pos:     bottom center
-$header-banner-h:       100px
+//  Ruby reads from .banner and selects a single banner object, which contains the
+//  image, position, and height data to be parsed into Sass variables and propagated
+//  from here.
+//  The banner(s) file to use
+$header-banner-img:     url(%%<%= $banner[:image] %>%%)
+//  Multiple banners to an image file requires this as a setting.
+$header-banner-pos:     <%= $banner[:position] %>
+//  Height in pixels of the selected banner. Ideally between 50-150.
+$header-banner-h:       <%= $banner[:height] %>
 //  Height of subreddit bar
 $header-submenu-h:      20px
 //  Height of tab menu below banner
@@ -77,7 +83,7 @@ $header-sum-h:          $header-submenu-h + $header-banner-h + $header-tabmenu-h
 $header-notice-y:       53px
 
 //  Snoo
-$snoo-img:              url(%%Snoo%%)
+$snoo-img:              url(%%snoo%%)
 //  Height of a single Snoo sprite
 $snoo-h:                94px
 //  Width of a single Snoo sprite
@@ -100,8 +106,8 @@ $logo-w:                280px
 //  Any vertical offset needed
 $logo-o:                0
 //  Image coordinates of resting logo
-$logo-x-0:              0
-$logo-y-0:              -280px
+$logo-x-0:              -280px
+$logo-y-0:              0
 //  Image coordinates of active logo
 $logo-x-1:              -280px
 $logo-y-1:              -70px

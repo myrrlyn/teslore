@@ -5,14 +5,12 @@
 //  process. This allows for much cleaner code and greatly eases reordering the
 //  flair spritesheet.
 
-//  This generates 32 pseudo-classes with row and column identifiers matching flag
+//  This generates 36 pseudo-classes with row and column identifiers matching flag
 //  position in the spritesheet. These pseudo-classes are then extended by class
 //  names as used in the subreddit. The separation of code and naming is an
 //  extraordinary convenience and I never wish to go back to my old methods.
-//  Unfortunately, the map functions are not supported across all compilers, or we
-//  would simply use a @foreach and a map of names in the loop to generate this.
 //  Note: from..to is non-inclusive of the end number
-@for $row from 0 to 8
+@for $row from 0 to 9
   $f-y: $row * (-$flair-height)
   @for $col from 0 to 4
     $f-x: $col * -($flair-width)

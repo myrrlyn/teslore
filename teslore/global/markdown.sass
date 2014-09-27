@@ -30,8 +30,8 @@ div.md
         align:  center
   //  `Monospaced text`
   code
+    @extend %fonts-mono
     font:
-      family: $fonts-mono
       size:   1.2em
   //  # H1 .. ###### H6
   @for $h from 1 through 6
@@ -58,6 +58,7 @@ div.md
     margin: 7px 10px
   //  ----Indented Code Blocks
   pre
+    @extend %fonts-mono
     background:
       color:  transparentize($grey-50, 0.25)
     border:

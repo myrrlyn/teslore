@@ -1,0 +1,66 @@
+//  header/userbar
+//  The user information bar, including RES buttons
+//  Apparently I will always be at war with RES
+div#header-bottom-right,
+div#header-bottom-right.resNavTop
+  @extend %bg-tex
+  border:
+    radius: 0
+    style:  none
+  height: 20px
+  margin: 0 5px 0 0
+  //  margin and padding are the banes of my existence
+  padding:  0 5px 4px
+  position: absolute
+  top:    20px
+  //  All text
+  a, form, span
+    color:  $white !important
+  //  Mail Icons
+  //  Logically, this makes a 2x2 grid of #mail/#modmail x .havemail/.nohavemail
+  //  Unfortunately for that nicely compact model, CSS doesn't have a way to nicely
+  //  implementi something like that. So instead I've split properties and grouped
+  //  identical sub-properties using the comma-splice to save space in the compiled
+  //  CSS. The end result is five selectors rather than four, but no properties are
+  //  needlessly duplicated, so the end result is actually smaller.
+  @at-root
+    //  I /really/ wish reddit would have broken the classes into mail and yes|no
+    %mail
+      background:
+        color:  transparent
+        image:  $sprites !important
+      height: 16px
+      width:  16px
+    //  Standard mail (PMs, replies)
+    //  RES' floating mail icon in Never-Ending Reddit mode
+    a#mail,
+    a#NREMail
+      @extend %mail
+      top:  4px
+      &.havemail
+        background:
+          position: -80px 0
+      &.nohavemail
+        background:
+          position: -64px 0
+    //  Modmail
+    a#modmail
+      @extend %mail
+      &.havemail
+        background:
+          position: -80px -16px
+      &.nohavemail
+        background:
+          position: -64px -16px
+
+//  RES button to show and hide the userbar
+div#userbarToggle
+  @extend %bg-tex
+  border:
+    radius: 0
+    style:  none
+  color:  $white !important
+  line:
+    height: 22px
+  min:
+    height: 100%

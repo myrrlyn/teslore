@@ -1,0 +1,173 @@
+{
+  teslore:
+  {
+    celebration:
+    {
+      image:    'banner-celebration',
+      height:   '175px',
+      position: 'center center'
+    },
+    kel:
+    {
+      image:    'banner-kel',
+      height:   '100px',
+      position: 'center center'
+    },
+    magnus:
+    {
+      image:    'banner-magnus',
+      height:   '150px',
+      position: 'center center'
+    },
+    numinatus:
+    {
+      image:    'banner-numinatus',
+      height:   '76px',
+      position: 'center center'
+    },
+    pretty:
+    {
+      image:    'banner-pretty',
+      height:   '100px',
+      position: 'center center'
+    },
+    c0da_kinmune:
+    {
+      image:    'banners-c0da',
+      height:   '125px',
+      position: 'center top'
+    },
+    c0da_prophet:
+    {
+      image:    'banners-c0da',
+      height:   '125px',
+      position: 'center 125px'
+    },
+    c0da_velothii:
+    {
+      image:    'banners-c0da',
+      height:   '150px',
+      position: 'center 250px'
+    },
+    c0da_nirn:
+    {
+      image:    'banners-c0da',
+      height:   '200px',
+      position: 'center bottom'
+    },
+    default_standard:
+    {
+      image:    'banners-default',
+      height:   '64px',
+      position: 'center top'
+    },
+    default_plain:
+    {
+      image:    'banners-default',
+      height:   '64px',
+      position: 'center bottom'
+    },
+    dragons_color:
+    {
+      image:    'banners-dragons',
+      height:   '150px',
+      position: 'center top'
+    },
+    dragons_parchment:
+    {
+      image:    'banners-dragons',
+      height:   '150px',
+      position: 'center bottom'
+    },
+    seas:
+    {
+      image:    'banner-seas',
+      height:   '180px',
+      position: 'center center'
+    },
+    kelle_stark:
+    {
+      image:    'banners-kelle',
+      height:   '150px',
+      position: 'center top'
+    },
+    kelle_faded:
+    {
+      image:    'banners-kelle',
+      height:   '150px',
+      position: 'center center'
+    },
+    kelle_blurred:
+    {
+      image:    'banners-kelle',
+      height:   '150px',
+      position: 'center bottom'
+    },
+    map_cyrod:
+    {
+      image:    'banners-maps',
+      height:   '100px',
+      position: 'center top'
+    },
+    map_skyrim:
+    {
+      image:    'banners-maps',
+      height:   '150px',
+      position: 'center center'
+    },
+    map_wilderness:
+    {
+      image:    'banners-maps',
+      height:   '150px',
+      position: 'center bottom'
+    },
+    scripts_daedric:
+    {
+      image:    'banners-scripts',
+      height:   '100px',
+      position: 'center top'
+    },
+    scripts_oghma:
+    {
+      image:    'banners-scripts',
+      height:   '100px',
+      position: 'center bottom'
+    },
+    tools_bright:
+    {
+      image:    'banners-tools',
+      height:   '190px',
+      position: 'center top'
+    },
+    tools_dim:
+    {
+      image:    'banners-tools',
+      height:   '190px',
+      position: 'center bottom'
+    },
+    wilds_bright:
+    {
+      image:    'banners-wilds',
+      height:   '150px',
+      position: 'center top'
+    },
+    wilds_vivid:
+    {
+      image:    'banners-wilds',
+      height:   '150px',
+      position: 'center center'
+    },
+    wilds_pretty:
+    {
+      image:    'banners-wilds',
+      height:   '150px',
+      position: 'center bottom'
+    },
+    wiki:
+    {
+      image:    'banner-wiki',
+      height:   '190px',
+      position: 'center center'
+    }
+  }
+}
