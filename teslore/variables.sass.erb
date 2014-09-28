@@ -74,17 +74,49 @@ $flag-text-y-1:         -49px
 //  Ruby reads from .banner and selects a single banner object, which contains the
 //  image, position, and height data to be parsed into Sass variables and propagated
 //  from here.
+//  It turns out reddit provides an in-page random number, which is CSS-accessible.
+//  This means CSS can give results mapped to the state of that number. This
+//  requires that the stylesheet have present at upload the whole dictionary of
+//  state/assignment sets, which for our purposes (banner) requires that we print
+//  all of the objects in .banner to a Sass list, which will be parsed into
+//  individual banner objects, which will then be processed into styles assigned
+//  based on the state of that number.
+
+//  This is not as irritating as it looks.
+
+//  It is much, much more so.
+
+//  You are not required to understand how or why this does what it does. You will
+//  be perfectly fine if all you ever do is grow .banner by copying the syntax you
+//  see here, and adjusting the end results in header/banner.
+
+//  Translate .banner file to an enormous Sass ... container
+//  It's a list of lists of lists. The first shell is a banner object, the second
+//  shell is the name or list of values, and the third shell is individual values.
+$banners-map: (<%= $banners_all[:teslore].map { |key, values| "(#{key}, (url(%%#{values[:image]}%%), #{values[:height]}, #{values[:position]}, #{values[:repeat]}))" }.join(", ") %>)
+
+//  Map RNG-values to banners
+$banner-key-kel:              ('0', '6', 'c', 'i', 'o', 'u')
+$banner-key-scripts_daedric:  ('1', '7', 'd', 'j', 'p', 'v')
+$banner-key-scripts_oghma:    ('2', '8', 'e', 'k', 'q', 'w')
+$banner-key-maps_cyrod:       ('3', '9', 'f', 'l', 'r', 'x')
+$banner-key-maps_skyrim:      ('4', 'a', 'g', 'm', 's', 'y')
+$banner-key-maps_wilderness:  ('5', 'b', 'h', 'n', 't', 'z')
+
+//  If you want to use plain Ruby and Raking to generate banner info.
 //  The banner(s) file to use
-$header-banner-img:     url(%%<%= $banner[:image] %>%%)
+//  $banner-img:            url(%%<%=" $banner[:image] "%>%%)
 //  Multiple banners to an image file requires this as a setting.
-$header-banner-pos:     <%= $banner[:position] %>
+//  $banner-pos:            <%=" $banner[:position] "%>
 //  Height in pixels of the selected banner. Ideally between 50-150.
-$header-banner-h:       <%= $banner[:height] %>
+//  $banner-h:              <%=" $banner[:height] "%>
+//  Incidentally, all the banners in our limited use set are the same height.
+$banner-h:              getHeight(2)
 //  Height of subreddit bar
 $header-submenu-h:      20px
 //  Height of tab menu below banner
 $header-tabmenu-h:      49px
-$header-sum-h:          $header-submenu-h + $header-banner-h + $header-tabmenu-h
+$header-sum-h:          $header-submenu-h + $banner-h + $header-tabmenu-h
 //  Y-value of notification inserts
 $header-notice-y:       53px
 

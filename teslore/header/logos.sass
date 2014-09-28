@@ -1,0 +1,57 @@
+//  header/logos
+//  Governs the header logo-links to reddit.com and the subreddit front page.
+
+div#header-bottom-left
+  @at-root
+    //  reddit logo
+    img#header-img
+      background:
+        color:    transparent
+        image:    $snoo-img
+        position: $snoo-x-0 $snoo-y-0
+      width:    $snoo-w
+      height:   $snoo-h
+      position: absolute
+      left:     5px
+      //  Snoo stands on top of the tabmenu
+      bottom:   $header-tabmenu-h + $snoo-o
+      //  Necessary because browsers.
+      z-index:  10
+      &:hover,
+      &:active
+        background:
+          position: $snoo-x-1 $snoo-y-1
+  //  Some pages have a text node here as well as the link
+  span.redditname
+    color:  $white
+    font:
+      family: $fonts-mono
+      size:   50pt
+    position: absolute
+    //  Move the text node to the right of the link below
+    left:     $snoo-w + $logo-w
+    bottom:   $header-tabmenu-h
+    //  Subreddit link
+    a
+      background:
+        color:    transparent
+        image:    $logo-img
+        position: $logo-x-0 $logo-y-0
+        repeat:   no-repeat
+      font:
+        size: 0
+      padding:
+        //  Magic number derived from repeated trial&error
+        top:    64px
+        right:  $logo-w
+      position: absolute
+      left:   0 - $logo-w
+      bottom: 0
+      //  :hover for mice, :active for fingers
+      &:hover,&:active
+        background:
+          //  Switch to the other part of the image
+          position: $logo-x-1 $logo-y-1
+        padding:
+          //  Also magic number from trial&error
+          top:  45px

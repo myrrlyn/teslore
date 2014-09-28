@@ -1,64 +1,71 @@
 //  header/banner
 //  Banner image, subreddit name, tabmenu
 
-//  Banner image work
+//  Using Ruby, define a dictionary of banners
+//  reddit automatically creates a 50-digit hash of alphanumerics (base 36) on every
+//  pageload. This gives us two easily-accessed random digits (we can select first
+//  and last) and many more less-reliable numbers (you can test if a certain string
+//  is present at all). If you're feeling too lazy to look up how to select from
+//  within attribute/value pairs right now, you're in luck: I am too, so I copied
+//  the list to here.
+//  attr=string returns true only on a perfect match
+//  attr~=string returns true if string is present anywhere in value as a whole word
+//  attr*= string returns true if string is present anywhere in value, period.
+//  attr|=string returns true if the value is equal to string, or if the value is of
+//    the form "string-ANYTHINGELSE" (prefix via hyphenation). Not helpful here.
+//  attr^=string returns true if the value opens with string
+//  attr$=string returns true if the value ends with string
+
+//  Create pseudoclasses for each RNG state
+@each $banner in $banners-map
+  $name:  getNameFromBanner($banner)
+  $props: getPropertiesFromBanner($banner)
+  %banner-#{$name} ~ a::after
+    background:
+      image:    getImageFromProperties($props)
+      position: getPosFromProperties($props)
+      repeat:   getRepeatFromProperties($props)
+
+//  This is the source of random-enough numbers.
+input[name="uh"]
+  @each $state in $banner-key-kel
+    &[value$="#{$state}"]
+      @extend %banner-kel
+  @each $state in $banner-key-scripts_daedric
+    &[value$="#{$state}"]
+      @extend %banner-scripts_daedric
+  @each $state in $banner-key-scripts_oghma
+    &[value$="#{$state}"]
+      @extend %banner-scripts_oghma
+  @each $state in $banner-key-maps_cyrod
+    &[value$="#{$state}"]
+      @extend %banner-maps_cyrod
+  @each $state in $banner-key-maps_skyrim
+    &[value$="#{$state}"]
+      @extend %banner-maps_skyrim
+  @each $state in $banner-key-maps_wilderness
+    &[value$="#{$state}"]
+      @extend %banner-maps_wilderness
+
+//  Banner image area
 div#header-bottom-left
   background:
     color:    $black
-    image:    $header-banner-img
-    position: $header-banner-pos
-    repeat:   no-repeat
+//      image:    $header-banner-img
+//      position: $header-banner-pos
+//      repeat:   $header-banner-rpt
   height: $header-banner-h
-  @at-root
-    //  reddit logo
-    img#header-img
-      background:
-        color:    transparent
-        image:    $snoo-img
-        position: $snoo-x-0 $snoo-y-0
-      width:    $snoo-w
-      height:   $snoo-h
-      position: absolute
-      left:     5px
-      //  Snoo stands on top of the tabmenu
-      bottom:   $header-tabmenu-h + $snoo-o
-      //  Necessary because browsers.
-      z-index:  10
-      &:hover,
-      &:active
-        background:
-          position: $snoo-x-1 $snoo-y-1
-  //  Some pages have a text node here as well as the link
-  span.redditname
-    color:  $white
-    font:
-      family: $fonts-mono
-      size:   50pt
+//  Banner attachment point
+div#header-bottom-right input[name="uh"] ~ a
+  &::after
+    border:
+      radius: 0
+      style:  none
+    content:  ""
+    height: $banner-h
+    width:  1920px
+    padding:  0
     position: absolute
-    //  Move the text node to the right of the link below
-    left:     $snoo-w + $logo-w
-    bottom:   $header-tabmenu-h
-    //  Subreddit link
-    a
-      background:
-        color:    transparent
-        image:    $logo-img
-        position: $logo-x-0 $logo-y-0
-        repeat:   no-repeat
-      font:
-        size: 0
-      padding:
-        //  Magic number derived from repeated trial&error
-        top:    64px
-        right:  $logo-w
-      position: absolute
-      left:   0 - $logo-w
-      bottom: 0
-      //  :hover for mice, :active for fingers
-      &:hover,&:active
-        background:
-          //  Switch to the other part of the image
-          position: $logo-x-1 $logo-y-1
-        padding:
-          //  Also magic number from trial&error
-          top:  45px
+    top:  0
+    right:  -5px
+    z-index:  5

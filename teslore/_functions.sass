@@ -8,3 +8,114 @@
 //  Bespoke greys
 @function grey($val)
   @return hsla(000.00, 00.00%, $val, 1.0000)
+
+//  Banner List Accessors
+//  Remember the $banners-map Ruby definition from variables? It prints something in
+//  this format: ((name, (val0, val1, val2, val3)), (name, (val0, ...))) You get the
+//  idea. Long list of name/(vals) lists. So that neither of us has to weep into our
+//  keyboards, these functions will retrieve specific banner properties on demand.
+//  Isn't that nice of me.
+
+//  Note: COUNT FROM ONE, NOT FROM ZERO FOR ALL OF THESE
+//  It feels wrong, I know.
+
+//  GET BANNER OBJECTS
+
+//  Get a whole banner object by index
+@function getBanner($index)
+  //  nth($list, $idx) returns the $idx-th element of the $list list.
+  @return nth($banners-map, $index)
+//  Get whole banner object by name
+@function getBannerByName($name)
+  //  Walk the list of banners until the first sub-element matches the argument
+  @each $banner in $banners-map
+    @if $name == nth($banner, 1)
+      @return $banner
+      //  If no element in $banners-map has a first-child matching argument, FAIL
+    @else
+      @error "No such banner"
+
+//  GET BANNER NAMES
+
+//  Get the name of a numbered banner
+//  I really hope Sass allows function-chaining for user-defined functions, else
+//  this is going to get UGLY
+@function getName($index)
+  //  Return the first element of the specified banner object, which is itself a
+  //  specified object of the main banner list. Isn't nesting fun.
+  @return nth(getBanner($index), 1)
+//  @each loops trawl by number, so we need a name-return for automated work
+@function getNameFromBanner($banner)
+  @return nth($banner, 1)
+
+//  GET BANNER PROPERTY OBJECTS
+
+//  Get the properties object of a specific banner by index
+@function getProperties($index)
+  //  Every banner object is composed of two elements, name and props-list. getName
+  //  returned the name. getProperties returns the props-list. Simple, right?
+  @return nth(getBanner($index), 2)
+//  Get the properties object of a specific banner by name
+@function getPropertiesByBannerName($name)
+  //  Resolve the $name argument into a banner object
+  $localBanner: getBannerByName($name)
+  //  Ironically enough, we can't actually call getProperties here because
+  //  getProperties takes an index of $banners-map, NOT the object to which that
+  //  index points
+  @return nth($localBanner, 2)
+//  Get the properties object of an automatically-retrieved banner
+@function getPropertiesFromBanner($banner)
+  @return nth($banner, 2)
+
+//  GET INDIVIDUAL BANNER PROPERTIES
+
+//  Get individual properties by number, name, or banner object, or props object
+
+//  Get the image url of a specific banner
+@function getImage($index)
+  $localProps:  getProperties($index)
+  @return nth($localProps, 1)
+@function getImageByName($name)
+  $localProps:  getPropertiesByBannerName($name)
+  @return nth($localProps, 1)
+@function getImageFromBanner($banner)
+  $localProps:  getPropertiesFromBanner($banner)
+  @return nth($localProps, 1)
+@function getImageFromProperties($props)
+  @return nth($props, 1)
+//  Get the height of a specific banner
+@function getHeight($index)
+  $localProps:  getProperties($index)
+  @return nth($localProps, 2)
+@function getHeightByName($name)
+  $localProps:  getPropertiesByBannerName($name)
+  @return nth($localProps, 2)
+@function getHeightFromBanner($banner)
+  $localProps:  getPropertiesFromBanner($banner)
+  @return nth($localProps, 2)
+@function getHeightFromProperties($props)
+  @return nth($props, 2)
+//  Get the position of a specific banner
+@function getPos($index)
+  $localProps:  getProperties($index)
+  @return nth($localProps, 3)
+@function getPosByName($name)
+  $localProps:  getPropertiesByBannerName($name)
+  @return nth($localProps, 3)
+@function getPosFromBanner($banner)
+  $localProps:  getPropertiesFromBanner($banner)
+  @return nth($localProps, 3)
+@function getPosFromProperties($props)
+  @return nth($props, 3)
+//  Get the repeat status of a specific banner
+@function getRepeat($index)
+  $localProps:  getProperties($index)
+  @return nth($localProps, 4)
+@function getRepeatByName($name)
+  $localProps:  getPropertiesByBannerName($name)
+  @return nth($localProps, 4)
+@function getRepeatFromBanner($banner)
+  $localProps:  getPropertiesFromBanner($banner)
+  @return nth($localProps, 4)
+@function getRepeatFromProperties($props)
+  @return nth($props, 4)

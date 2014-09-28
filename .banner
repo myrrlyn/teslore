@@ -5,169 +5,197 @@
     {
       image:    'banner-celebration',
       height:   '175px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     kel:
     {
       image:    'banner-kel',
       height:   '100px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'repeat-x'
     },
     magnus:
     {
       image:    'banner-magnus',
       height:   '150px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     numinatus:
     {
       image:    'banner-numinatus',
       height:   '76px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     pretty:
     {
       image:    'banner-pretty',
       height:   '100px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     c0da_kinmune:
     {
       image:    'banners-c0da',
       height:   '125px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     c0da_prophet:
     {
       image:    'banners-c0da',
       height:   '125px',
-      position: 'center 125px'
+      position: 'center 125px',
+      repeat:   'no-repeat'
     },
     c0da_velothii:
     {
       image:    'banners-c0da',
       height:   '150px',
-      position: 'center 250px'
+      position: 'center 250px',
+      repeat:   'no-repeat'
     },
     c0da_nirn:
     {
       image:    'banners-c0da',
       height:   '200px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     default_standard:
     {
       image:    'banners-default',
       height:   '64px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     default_plain:
     {
       image:    'banners-default',
       height:   '64px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     dragons_color:
     {
       image:    'banners-dragons',
       height:   '150px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     dragons_parchment:
     {
       image:    'banners-dragons',
       height:   '150px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     seas:
     {
       image:    'banner-seas',
       height:   '180px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     kelle_stark:
     {
       image:    'banners-kelle',
       height:   '150px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     kelle_faded:
     {
       image:    'banners-kelle',
       height:   '150px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     kelle_blurred:
     {
       image:    'banners-kelle',
       height:   '150px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     maps_cyrod:
     {
       image:    'banners-maps',
       height:   '100px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     maps_skyrim:
     {
       image:    'banners-maps',
       height:   '150px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     maps_wilderness:
     {
       image:    'banners-maps',
       height:   '150px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     scripts_daedric:
     {
       image:    'banners-scripts',
       height:   '100px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     scripts_oghma:
     {
       image:    'banners-scripts',
       height:   '100px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     tools_bright:
     {
       image:    'banners-tools',
       height:   '190px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     tools_dim:
     {
       image:    'banners-tools',
       height:   '190px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     wilds_bright:
     {
       image:    'banners-wilds',
       height:   '150px',
-      position: 'center top'
+      position: 'center top',
+      repeat:   'no-repeat'
     },
     wilds_vivid:
     {
       image:    'banners-wilds',
       height:   '150px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     },
     wilds_pretty:
     {
       image:    'banners-wilds',
       height:   '150px',
-      position: 'center bottom'
+      position: 'center bottom',
+      repeat:   'no-repeat'
     },
     wiki:
     {
       image:    'banner-wiki',
       height:   '190px',
-      position: 'center center'
+      position: 'center center',
+      repeat:   'no-repeat'
     }
   }
 }

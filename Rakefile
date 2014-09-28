@@ -33,9 +33,10 @@ def get_context id
   # Fetch repository information from .version
   $build = $base.merge eval(File.read(File.join(File.dirname(__FILE__), '.version')))[id.to_sym]
   # Fetch banner information from .banner (EXPERIMENTAL)
-  $banners = eval(File.read(File.join(File.dirname(__FILE__), '.banner')))[id.to_sym]
+  $banners_all = eval(File.read(File.join(File.dirname(__FILE__), '.banner')))
   # Eventually we'll need to make this automatic, but for now, manual control
-  $banner = $banners[:dragons_color]
+  # But we're shaking up how we do banners entirely, so SCRATCH THIS
+  # $banner = $banners[:dragons_color]
   context = Sprockets::Environment.new(Pathname(File.dirname(__FILE__))) do |env|
     env.logger = Log
   end
