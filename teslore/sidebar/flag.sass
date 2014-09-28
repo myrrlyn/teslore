@@ -3,7 +3,7 @@
 div.side
   //  Advertisement block. I'm not against adverts; this one just REALLY fucks with
   //  positioning if it fails and there's no way to test if it succeeded or not.
-  div.spacer:nth-child(2)
+  div.sponsorshipbox
     display:  none
   //  The text block
   h1.redditname
@@ -16,7 +16,7 @@ div.side
       size: 0
     height: $flag-h
     position: relative
-    top:  -79px
+    top:  -43px
     //  The link (there's a reason I style these separately)
     a
       background:
@@ -33,3 +33,9 @@ div.side
       &:active
         background:
           position: $flag-text-x-1 $flag-text-y-1
+//  This is where we start conditionally moving the flag around
+body
+  //  Inside a post: needs to accomodate the div.linkinfo box
+  &.comments-page
+    h1.redditname
+      top:  -130px

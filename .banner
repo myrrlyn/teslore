@@ -103,19 +103,19 @@
       height:   '150px',
       position: 'center bottom'
     },
-    map_cyrod:
+    maps_cyrod:
     {
       image:    'banners-maps',
       height:   '100px',
       position: 'center top'
     },
-    map_skyrim:
+    maps_skyrim:
     {
       image:    'banners-maps',
       height:   '150px',
       position: 'center center'
     },
-    map_wilderness:
+    maps_wilderness:
     {
       image:    'banners-maps',
       height:   '150px',

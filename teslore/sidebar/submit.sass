@@ -1,0 +1,49 @@
+//  sidebar/submit
+//  Governs the two submission buttons (though /r/teslore is usually self-post only)
+%submission
+  background:
+    color:  $black
+    image:  none
+  border:
+    style:  none
+  height: 29px
+  width:  300px
+  vertical:
+    align:  middle
+
+div.sidebox.submit
+  @extend %submission
+  //  Move these from above the flag to below it
+  position: relative
+  top:  $flag-h
+  //  RES trying to be helpful, but not.
+  &.mod-override
+    display:  none
+  &:hover,
+  &:active
+    @extend %submission
+  //  Left-hand flag tail
+  &::before
+    content:  url(%%submit-tail%%)
+    //  These WILL ruin everything if we don't remove them from the object flow
+    position: absolute
+    right:  300px
+  a
+    color:  $white
+    font:
+      family: $fonts-serf
+      size: $font-base + 4px
+      weight: 400
+    position: relative
+    text:
+      align:  center
+      transform:  uppercase
+    &:hover,
+    &:active
+      text:
+        shadow: 0 0 5px $white
+  div.morelink
+    @extend %submission
+  //  Taper on the right-hand side
+  div.nub
+    display:  none
