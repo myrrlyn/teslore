@@ -1,0 +1,35 @@
+//  sidebar/flag
+//  Displays and governs the flag logo in the sidebar
+div.side
+  //  Advertisement block. I'm not against adverts; this one just REALLY fucks with
+  //  positioning if it fails and there's no way to test if it succeeded or not.
+  div.spacer:nth-child(2)
+    display:  none
+  //  The text block
+  h1.redditname
+    background:
+      //  These actually /are/ important, since the images have transparent pixels
+      color:  transparent
+      image:  $flag-image
+      repeat: no-repeat
+    font:
+      size: 0
+    height: $flag-h
+    position: relative
+    top:  -79px
+    //  The link (there's a reason I style these separately)
+    a
+      background:
+        color:  transparent
+        image:  $flag-text
+        position: $flag-text-x-0 $flag-text-y-0
+        repeat: no-repeat
+      height: $header-tabmenu-h
+      //  With font-size: 0 from above, a is now a 0px box that we have to size
+      padding:
+        right:  300px
+        bottom: $header-tabmenu-h
+      &:hover,
+      &:active
+        background:
+          position: $flag-text-x-1 $flag-text-y-1
