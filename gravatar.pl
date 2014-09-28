@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#fetch Gravatars
+# fetch Gravatars
 
 use strict;
 use warnings;

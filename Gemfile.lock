@@ -1,19 +1,20 @@
 GIT
   remote: git@git.stratosphe.re:reddit/akatoshbot.git
-  revision: 586f3473f79618e17a441585588ef914fbe6d6bd
+  revision: 0cc21214e4ef625cef2834ad6de4fc66ac939084
   branch: master
   specs:
-    akatoshbot (0.3.0)
+    akatoshbot (0.3.1)
       crassius
 
 GIT
   remote: git@git.stratosphe.re:reddit/crassius.git
-  revision: dfc6acee1c613818e3e3f80f42f834f2c7cea9f0
+  revision: 9d069b0b2ca8625c7643434148528b7ed6a157ab
   branch: master
   specs:
-    crassius (0.3.0)
+    crassius (0.3.1)
       erubis
       htmlentities
+      rake
       snoo
 
 GEM
@@ -31,25 +32,25 @@ GEM
     mini_portile (0.6.0)
     multi_json (1.10.1)
     multi_xml (0.5.5)
-    nokogiri (1.6.2.1)
+    nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
-    pry (0.10.0)
+    pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.5.2)
     rake (10.3.2)
-    sass (3.3.9)
-    slop (3.5.0)
+    sass (3.4.5)
+    slop (3.6.0)
     snoo (0.1.2)
       httparty
       nokogiri
-    sprockets (2.12.1)
+    sprockets (2.12.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-sass (1.1.0)
+    sprockets-sass (1.2.0)
       sprockets (~> 2.0)
       tilt (~> 1.1)
     tilt (1.4.1)
