@@ -7,12 +7,14 @@ div#header-bottom-right.resNavTop
   border:
     radius: 0
     style:  none
-  height: 20px
-  margin: 0 5px 0 0
+  height: 24px
+  margin: 0 5px
   //  margin and padding are the banes of my existence
-  padding:  0 5px 4px
+  padding:  0 5px
   position: absolute
-  top:    20px
+  top:  20px
+  //  Make sure this DOES go over the sidebar, in the event of conflict
+  z-index:  20
   //  All text
   a, form, span
     color:  $white !important

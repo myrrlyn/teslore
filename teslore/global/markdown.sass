@@ -6,6 +6,7 @@
 
 //  Markdown Text Containers
 div.md
+  color:  $black
   //  Scroll bars occasionally glitch.
   overflow: hidden
   //  [Links](destination "title")
@@ -14,7 +15,7 @@ div.md
   //  >Quoted text
   blockquote
     background:
-      color:  $cover-darkness
+      color:  $cover-of-darkness
     border:
       top:  none
       left:
@@ -42,14 +43,12 @@ div.md
         weight: 700 - (100 * floor($h))
   //  ____ Horizontal Divider
   hr
-    color:  $black
     border:
       style:  none
     height: 1px
     margin: 0 -5px
   //  Paragraph text
   p
-    color:  $black
     font:
       family: $fonts-sans
       size: 13px

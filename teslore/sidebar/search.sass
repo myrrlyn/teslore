@@ -1,0 +1,33 @@
+//  sidebar/search
+//  Form for searching reddit or subreddit. For search page styles, see misc/search
+div.side
+  //  I like explicitly marking where these things are, and if there's a collision
+  //  later, fixing it is merely a delete and left-tab away
+  @at-root
+    form#search
+      //  Distingusih this from the checkbox input in div#searchexpando
+      input[type="text"]
+        background:
+          color:  $cover-of-truth
+        color:  $grey-66
+        margin: 0 10px 7px
+        width:  280px !important
+      @at-root
+        div#searchexpando
+          background:
+            color:  $black
+          border:
+            radius: 0
+            style:  none
+          color:  $grey-75
+          margin: 0
+          padding:
+            top:  10px
+          label
+            color:  $white
+          @at-root
+            div#moresearchinfo
+              border:
+                style:  none
+              > a
+                @extend %fonts-mono

@@ -1,0 +1,20 @@
+//  sidebar
+//  Holds subreddit general information, the flag logo, post information, etc.
+div.side
+  @extend %bg-tex
+  border:
+    style:  none
+  color:  $white
+  margin:   0 5px
+  padding:  0
+  position: relative
+  top:  -$header-tabmenu-h - 41px
+  width:  300px
+  z-index:  15
+  a.author
+    color:  $white
+  //  Give text some padding off the edges
+  div.md
+    padding:  0 2px
+
+@import "sidebar/search"

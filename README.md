@@ -4,11 +4,19 @@ This repository holds the code behind the stylesheet for [/r/teslore](http://red
 
 ## Features
 
-Thanks to script work provided by numinit, the repository is able to produce a dynamic stylesheet that can be processed and uploaded to reddit automatically.
+Thanks to programming work provided by numinit, the repository is able to produce a dynamic stylesheet that can be processed and uploaded to reddit automatically.
+
+The banner and date are both time-responsive, and can be programmed to follow standard construction with exceptions for specific events. Banners of different sizes are also supported.
+
+Version information (Git commit info, host machine, and time of compilation) are appended to the icon in the lower right of the footer.
+
+We also offer near-complete coverage of RES elements, including the settings console, menu, etc.
+
+As this project continually aims to reach complete coverage of reddit's DOM while maintaining a modular construction between components, it should (hopefully) be very easy to adapt to individual style needs.
 
 ### Getting Started
 
-Clone this repository and copy `config/reddit.yml.example` to `config/reddit.yml`. This file is ignored by Git. Insert the reddit username and password of an account with moderator (stylesheet permissions required) access to your subreddit, and specify the default subreddit under the `subreddit` key. If you wish to hold more than one stylesheet simultaneously, specify the default-upload stylesheet using the `stylesheet` key. There **must** be a `stylesheet.css.*` file next to a `stylesheet/` directory in the repository root. Note that in our case, the root file is `teslore.css.sass.erb`; this is because the compilation tasks first run all `.erb` files through a Ruby processor which replaces the strings of embedded Ruby with their outputs, then passes the result to the Sass processesor which replaces Sass directives with the CSS outputs, finally resulting in an actual CSS document which is then handed to the reddit-API tools.
+Clone this repository and copy `config/reddit.yml.example` to `config/reddit.yml`. This file is ignored by Git. Insert the reddit username and password of an account with moderator (stylesheet permissions required) access to your subreddit, and specify the default subreddit under the `subreddit` key. If you wish to hold more than one stylesheet simultaneously, specify the default-upload stylesheet using the `stylesheet` key. There **must** be a `stylesheet.css.sass.erb` file next to a `stylesheet/` directory in the repository root. The triple extension is present because that file is the focal point for three tasks, each of which works with a different language.
 
 ### Installation
 
@@ -20,9 +28,9 @@ Run `bundle install` in this directory to install the required packages. Two pro
 
 Once the bundle installation has completed, use `rake` or `bundle exec rake` (if `rake` does not work alone) followed by `reddit:` and the task name and options, if any. The tasks are:
 
-* `compile`: Compiles, but does not transmit, the stylesheet. It can be found in `build\stylesheet.css`.
+* `compile`: Compiles, but does not transmit, the stylesheet. It can be found in `build/stylesheet.css`.
 * `refresh`: Pulls the stylesheet from the subreddit, reprocesses it, and returns the new version. Most useful for scheduled jobs like a calendar.
-* `push`:    Compiles and, if successful, pushes the stylesheet to the subreddit.
+* `push`:    Compiles and, if successful, pushes the stylesheet to the subreddit. Note: A successful compile does not guarantee a successful push. If the push fails, copy `build/stylesheet.css` to your subreddit's `/about/stylesheet` page and submit. reddit will return the errors there; as yet, we cannot pull specifics via the API.
 
 Options from `config/reddit.yml` can be overridden by including `key=value` parameters in the command. For example, we have our config file targeted at a private testing subreddit, and must explictly call `bundle exec rake reddit:push subreddit=teslore` in order to push to /r/teslore. This helps prevent accidentally uploading a sheet that isn't quite ready to the general public.
 
@@ -62,6 +70,6 @@ Read the [Sass Reference](http://sass-lang.com/documentation/file.SASS_REFERENCE
 
 During the USA academic year, we will try to update the sheet (even if only to cycle the banner) every Saturday. Versions are formatted similarly to the Ubuntu numbering scheme, but with week numbers rather than month numbers. The project is asymptotically approaching a finished state, however, so this may not necessarily be the case.
 
-## Questions, Comments, Feedback, Suggestions, ...
+## Questions, Comments, Feedback, Suggestions&hellip;
 
 myrrlyn is more than happy to answer questions about the Sass code, but has had no part in nor intimate knowledge of the Ruby and barely knows how to work it himself. He's more than happy to answer questions about Sass, CSS, or working with reddit, and can most easily be reached as [/u/myrrlyn](http://reddit.com/u/myrrlyn), assuming he checks his mail. We also welcome comments, feature requests, and release name suggestions (and even pull requests, if you're that dedicated) from the teslore community. Timeliness not guaranteed on anything.

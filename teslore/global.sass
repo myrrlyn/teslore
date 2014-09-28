@@ -6,6 +6,16 @@
 //  @extend targets needs to be below the flair in compilation order.
 @import "pseudos"
 
+//  This was originally an IE glitch which turned out to be a good call. With this
+//  flag, the width of an element is measured at the boundary between padding and
+//  border, not at the border of content and padding. Thus, padding doesn't change
+//  width, and merely pushes the content farther in.
+//  For whatever reason, this doesn't seem to be inheriting neatly in reddit's DOM,
+//  so we have to use the global operator. Yes, I know it's a last resort, but for
+//  this property, I'll allow it.
+*
+  box:
+    sizing: border-box
 //  We have had lots of issues because of this and I can't really explain why. Just
 //  take my word for it: HTML parsing is a *seriously* strange creature.
 html,
@@ -28,6 +38,10 @@ body
   a[href$="##{$name}"]
     @extend %tes-font-link
     @extend %#{$font}
+
+//  Non-Markdown <code> tags
+code
+  @extend %fonts-mono
 
 //  Username
 a.author
