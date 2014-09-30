@@ -47,25 +47,35 @@ input[name="uh"]
     &[value$="#{$state}"]
       @extend %banner-maps_wilderness
 
-//  Banner image area
+//  Banner image area (shunted over the actual banner image, which is still logout)
 div#header-bottom-left
-  background:
-    color:    $black
-//      image:    $header-banner-img
-//      position: $header-banner-pos
-//      repeat:   $header-banner-rpt
-  height: $header-banner-h
+  @extend %bg-trans
+  height: $banner-h
+  z-index:  5
 //  Banner attachment point
-div#header-bottom-right input[name="uh"] ~ a
-  &::after
-    border:
-      radius: 0
-      style:  none
-    content:  ""
-    height: $banner-h
-    width:  1920px
-    padding:  0
-    position: absolute
-    top:  0
-    right:  -5px
-    z-index:  5
+div#header-bottom-right
+  //  Cover to prevent people from clicking
+  span.user
+    margin:
+      left: 15px
+    &::before
+      content:  ""
+      height: $banner-h
+      position: absolute
+      top:  $topbar-h
+      right:  0
+      width:  1920px
+      z-index:  10
+  input[name="uh"] ~ a
+    &::after
+      border:
+        radius: 0
+        style:  none
+      content:  ""
+      height: $banner-h
+      width:  1920px
+      padding:  0
+      position: absolute
+      top:  $topbar-h
+      right:  -5px
+      z-index:  -1

@@ -7,12 +7,12 @@ div#header-bottom-right.resNavTop
   border:
     radius: 0
     style:  none
-  height: 24px
+  height: $topbar-h
   margin: 0 5px
   //  margin and padding are the banes of my existence
   padding:  0 5px
   position: absolute
-  top:  20px
+  top:  0
   //  Make sure this DOES go over the sidebar, in the event of conflict
   z-index:  20
   //  All text
@@ -28,8 +28,8 @@ div#header-bottom-right.resNavTop
   @at-root
     //  I /really/ wish reddit would have broken the classes into mail and yes|no
     %mail
+      @extend %bg-trans
       background:
-        color:  transparent
         image:  $sprites !important
       height: 16px
       width:  16px

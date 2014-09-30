@@ -112,13 +112,18 @@ $banner-key-maps_wilderness:  ('5', 'b', 'h', 'n', 't', 'z')
 //  $banner-h:              <%=" $banner[:height] "%>
 //  Incidentally, all the banners in our limited use set are the same height.
 $banner-h:              getHeight(2)
+$banner-adjust:         -($banner-h + 10px)
 //  Height of subreddit bar
-$header-submenu-h:      20px
+$topbar-h:              24px
 //  Height of tab menu below banner
 $header-tabmenu-h:      49px
-$header-sum-h:          $header-submenu-h + $banner-h + $header-tabmenu-h
+//  Total header height
+$header-sum-h:          $topbar-h + $banner-h + $header-tabmenu-h
 //  Y-value of notification inserts
 $header-notice-y:       53px
+
+//  Dimensions
+$sidebar-padding:   5px
 
 //  Snoo
 $snoo-img:              url(%%snoo%%)

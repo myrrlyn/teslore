@@ -3,11 +3,23 @@
 //  useful for collecting selectors that all have identical properties, preventing
 //  duplication of these statements and minimizing character usage.
 
-//  Force backgrounds to this image
-%bg-tex
+//  Black backgrounds
+%bg-black
+  background:
+    color:  $black
+//  Force backgrounds to transparency
+%bg-trans
   background:
     color:  transparent
+//  Force backgrounds to this image
+%bg-tex
+  @extend %bg-trans
+  background:
     image:  $bg-texture
+
+//  Black text
+%col-black
+  color:  $black
 
 //  Link coloration
 %link-color
