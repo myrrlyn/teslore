@@ -10,7 +10,7 @@ div#header-bottom-right.resNavTop
   height: $topbar-h
   margin: 0 5px
   //  margin and padding are the banes of my existence
-  padding:  0 5px
+  padding:  0 0 0 5px
   position: absolute
   top:  0
   //  Make sure this DOES go over the sidebar, in the event of conflict
@@ -18,6 +18,14 @@ div#header-bottom-right.resNavTop
   //  All text
   a, form, span
     color:  $white !important
+  span.user
+    border:
+      left:
+        color:  $white
+        style:  solid
+        width:  2px
+    padding:
+      left: 5px
   //  Mail Icons
   //  Logically, this makes a 2x2 grid of #mail/#modmail x .havemail/.nohavemail
   //  Unfortunately for that nicely compact model, CSS doesn't have a way to nicely
@@ -55,14 +63,16 @@ div#header-bottom-right.resNavTop
         background:
           position: -64px -16px
 
-//  RES button to show and hide the userbar
+//  RES button to show and hide the userbar. Toggles display:none; on all userbar
+//  elements. This also happens to murder the banner, so I've disabled this feature.
 div#userbarToggle
-  @extend %bg-tex
-  border:
-    radius: 0
-    style:  none
-  color:  $white !important
-  line:
-    height: 22px
-  min:
-    height: 100%
+  display:  none
+  //  @extend %bg-tex
+  //  border:
+  //    radius: 0
+  //    style:  none
+  //  color:  $white !important
+  //  line:
+  //    height: 22px
+  //  min:
+  //    height: 100%

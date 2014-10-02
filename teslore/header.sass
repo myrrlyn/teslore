@@ -1,18 +1,17 @@
 //  header
 //  Subreddit bar, banner area, userbar
 div#header
-  background:
-    color:  $black
+  @extend %bg-black
   border:
     radius: 0
     style:  none
   font:
-    size: 90%
+    size: 95%
   height: $header-sum-h
   padding:
     bottom: $header-tabmenu-h
   position: relative
-  z-index:  100
+  z-index:  10
 
 @import "header/topbar"
 @import "header/userbar"
